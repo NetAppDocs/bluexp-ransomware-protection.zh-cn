@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: rp-start-login.html 
+keywords: bluexp login, ransomware protection log in 
+summary: 通过访问BlueXP中的服务开始使用BlueXP勒索软件保护。 
+---
+= 访问BlueXP勒索软件保护
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+您可以使用NetApp BlueXP登录到BlueXP勒索软件保护服务。
+
+要登录到BlueXP、您可以使用NetApp 支持站点 凭据、也可以使用电子邮件和密码注册NetApp云登录。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有关登录的更多信息"^]。
+
+.步骤
+. 打开Web浏览器并转到 https://console.bluexp.netapp.com/["BlueXP控制台"^]。
++
+此时将显示NetApp BlueXP登录页面。
+
+. 登录到BlueXP。
+. 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
++
+如果这是您首次登录此服务、则会显示登录页面。
+
++
+否则、将显示BlueXP勒索软件保护信息板。
+
++
+image:screen-dashboard.png["BlueXP勒索软件保护信息板"]
+
+. 开始使用此服务。
++
+** 如果您没有BlueXP连接器或它不是此预览版的连接器、您可能需要联系NetApp支持部门或按照消息注册此预览版。
+** 如果您是BlueXP的新用户且尚未使用任何Connector、则在选择"*防软件保护*"时、将显示一条有关注册的消息。请继续并提交表单。NetApp将就您的评估请求与您联系。
+** 如果您是具有现有Connector的BlueXP用户、则在选择"*防软件保护*"时、将显示有关注册的消息。
+** 如果您已经参与了预览，则在选择“*防系统保护*”时，您可以继续使用该服务。如果尚未选择*发现工作负载*选项，则应选择此选项。
+
+
+

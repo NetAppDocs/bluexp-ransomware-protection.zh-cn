@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: rp-use-manage.html 
+keywords: ransomware protection workload name, ransomware protection 
+summary: 您可以通过更改工作负载名称来管理工作负载、而不是使用风险更高的默认名称。 
+---
+= 管理工作负载
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以通过更改工作负载名称来管理工作负载。使用默认名称会面临勒索软件攻击的风险。
+
+.步骤
+. 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
+. 从菜单中，选择*Protection。
+. 选择一个工作负载，然后选择*Actions*... 图标并选择*编辑工作负载名称*。
+. 输入新工作负载名称并选择*保存*。
+

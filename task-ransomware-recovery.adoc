@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task-ransomware-recovery.html 
+keywords: ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, recovery 
+summary: 勒索软件恢复信息板提供了用于恢复可能已被勒索软件感染的数据的选项。这有助于您快速备份和运行系统。 
+---
+= 从勒索软件攻击中恢复
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP勒索软件保护恢复信息板提供了用于恢复可能已被勒索软件感染的数据的选项。这有助于您快速备份和运行系统。
+
+如果BlueXP勒索软件保护信息板中的勒索软件事件面板指示一个或多个卷已受到勒索软件感染、您可以单击*恢复*按钮尝试解决此问题描述。
+
+此时、通过勒索软件恢复信息板、您可以将受感染的卷替换为未受勒索软件影响的Snapshot副本。
+
+.步骤
+. 在勒索软件意外事件面板中、单击已受勒索软件感染的卷的*恢复*。
++
+"Ransy要 恢复信息板"将显示卷名称。
+
++
+image:screenshot_ransomware_recovery_dashboard.png["BlueXP勒索软件保护恢复信息板的屏幕截图。"]
+
+. 单击*显示快照*可查看该卷的可用Snapshot副本列表。
++
+image:screenshot_ransomware_recovery_select_snap.png["可用于恢复损坏卷的可用Snapshot副本的屏幕截图。"]
+
+. 选择没有加密数据的Snapshot、然后单击*恢复*。
+. 在"Recover data from Selected Snapsh图"(从选定快照恢复数据)对话框中、单击*是*以从快照恢复数据。
++
+您可以查看快照的恢复状态、以及快照何时还原损坏的卷。
+
++
+image:screenshot_ransomware_recovery_snap_complete.png["屏幕截图显示Snapshot已恢复损坏的卷。"]
+
+
+
+.结果
+已使用过去创建的Snapshot恢复损坏的卷。
+
+如果还原操作是从非最新Snapshot执行的、则还原后、所有较新的Snapshot副本都将从ONTAP系统中删除、因为它们也可能已损坏(如上面的屏幕截图所示)。

@@ -1,0 +1,147 @@
+---
+sidebar: sidebar 
+permalink: rp-use-settings.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
+summary: 您可以在BlueXP勒索软件保护服务中配置多个选项、包括备份目标。 
+---
+= 配置BlueXP勒索软件保护设置
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+您可以通过查看信息板上的建议来配置备份目标。
+
+
+
+== 添加备份目标
+
+BlueXP勒索软件保护可以识别尚未进行任何备份的工作负载以及尚未分配任何备份目标的工作负载。
+
+要保护这些工作负载、您应添加一个备份目标。您可以选择以下备份目标之一：
+
+* NetApp StorageGRID
+* Amazon Web Services （ AWS ）
+
+
+您可以根据信息板中的建议操作添加备份目标。
+
+
+
+=== 从信息板的建议操作访问备份目标选项
+
+信息板提供了许多建议。其中一个建议可能是配置备份目标。
+
+.步骤
+. 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
+. 查看信息板的"建议操作"窗格。
++
+image:screen-dashboard-recommended-actions-configure-backup-destinations.png["信息板页面"]
+
+. 从信息板中，选择*Review and fix*以获取“配置备份目标”的建议。
+. 根据备份提供程序继续执行说明。
+
+
+
+
+== 将StorageGRID添加为备份目标
+
+要将NetApp StorageGRID设置为备份目标、请输入以下信息。
+
+. 在*设置>备份目的地*页面中，选择*添加*。
+. 输入备份目标的名称。
++
+image:screen-settings-backup-destination-storagegrid.png["备份目标页面"]
+
+. 选择* StorageGRID *。
+. 选择每个设置旁边的向下箭头、然后输入或选择值：
++
+** *提供者设置*：
++
+*** 创建新存储分段或自带存储分段来存储备份。
+*** StorageGRID网关节点完全限定域名、端口、StorageGRID访问密钥和机密密钥凭据。
+
+
+** *联网*：选择IP空间。
++
+*** IP空间是要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站 Internet 访问权限。
+
+
+** *Backup lock*:选择您希望服务保护备份不被修改或删除。此选项使用NetApp数据锁技术。每个备份都将在保留期限内锁定、或者至少锁定30天、再加上长达14天的缓冲期。
++
+
+CAUTION: 如果您现在配置备份锁定设置、则在配置备份目标后、您将无法稍后更改该设置。
+
++
+*** *合规模式*：用户在保留期间无法覆盖或删除受保护的备份文件。
+
+
+
+
+. 选择 * 添加 * 。
+
+
+.结果
+新备份目标将添加到备份目标列表中。
+
+image:screen-settings-backup-destinations-list-storagegrid.png["备份目标页面上的设置选项"]
+
+
+
+== 将Amazon Web Services添加为备份目标
+
+要将AWS设置为备份目标、请输入以下信息。
+
+有关在BlueXP中管理AWS存储的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["管理Amazon S3存储分段"^]。
+
+. 在*设置>备份目的地*页面中，选择*添加*。
+. 输入备份目标的名称。
++
+image:screen-settings-backup-destination-storagegrid.png["备份目标页面"]
+
+. 选择* Amazon Web Services*。
+. 选择每个设置旁边的向下箭头、然后输入或选择值：
++
+** *提供者设置*：
++
+*** 创建新存储分段、如果BlueXP中已存在现有存储分段、则选择现有存储分段、或者自带存储分段来存储备份。
+*** AWS帐户、区域、AWS凭据的访问密钥和机密密钥
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["如果要自带存储分段、请参见添加S3存储分段"^]。
+
+
+
+** *加密*：如果要创建新的S3存储分段，请输入提供程序提供给您的加密密钥信息。如果您选择了现有存储分段、则加密信息已可用。
++
+默认情况下、存储分段中的数据使用AWS管理的密钥进行加密。您可以继续使用AWS管理的密钥、也可以使用自己的密钥管理数据加密。
+
+** *联网*：选择IP空间以及是否使用专用端点。
++
+*** IP空间是要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站 Internet 访问权限。
+*** (可选)选择是否使用先前配置的AWS专用端点(PrivateLink)。
++
+如果要使用AWS PrivateLink、请参见 https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["适用于Amazon S3的AWS PrivateLink"^]。
+
+
+
+** *Backup lock*:选择您希望服务保护备份不被修改或删除。此选项使用NetApp数据锁技术。每个备份都将在保留期限内锁定、或者至少锁定30天、再加上长达14天的缓冲期。
++
+
+CAUTION: 如果您现在配置备份锁定设置、则在配置备份目标后、您将无法稍后更改该设置。
+
++
+*** *监管模式*：特定用户(具有S3：BypassGovernance保留 权限)可以在保留期间覆盖或删除受保护的文件。
+*** *合规模式*：用户在保留期间无法覆盖或删除受保护的备份文件。
+
+
+
+
+. 选择 * 添加 * 。
+
+
+.结果
+新备份目标将添加到备份目标列表中。
+
+image:screen-settings-backup-destinations-list-aws.png["备份目标页面上的设置选项"]

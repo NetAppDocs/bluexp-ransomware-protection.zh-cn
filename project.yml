@@ -1,0 +1,58 @@
+---
+settings:
+  name: BlueXP ransomware protection
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: BlueXP勒索软件保护文档
+    url: "/index.html"
+  - title: 发行说明
+    url: "/whats-new.html"
+  - title: 入门
+    entries:
+    - title: 了解BlueXP勒索软件保护
+      url: "/concept-ransomware-protection.html"
+    - title: 前提条件
+      url: "/rp-start-prerequisites.html"
+    - title: 快速入门
+      url: "/rp-start-quick-start.html"
+    - title: 设置BlueXP勒索软件保护
+      url: "/rp-start-setup.html"
+    - title: 访问BlueXP勒索软件保护
+      url: "/rp-start-login.html"
+    - title: 发现工作负载
+      url: "/rp-start-discover.html"
+    - title: 配置备份目标
+      url: "/rp-use-settings.html"
+    - title: 常见问题解答
+      url: "/rp-start-faq.html"
+  - title: 使用BlueXP勒索软件保护
+    entries:
+    - title: 使用BlueXP勒索软件保护概述
+      url: "/rp-use-overview.html"
+    - title: 使用信息板查看工作负载运行状况
+      url: "/rp-use-dashboard.html"
+    - title: 保护工作负载
+      url: "/rp-use-protect.html"
+    - title: 响应检测到的警报
+      url: "/rp-use-alert.html"
+    - title: 从勒索软件攻击中恢复
+      url: "/rp-use-recover.html"
+  - title: 知识和支持
+    entries:
+    - title: 注册以获得支持
+      url: "/task-support-registration.html"
+    - title: 获取帮助
+      url: "/task-get-help.html"
+  - title: 法律声明
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP
+  repo: bluexp-family

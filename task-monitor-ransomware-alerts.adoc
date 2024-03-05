@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task-monitor-ransomware-alerts.html 
+keywords: ransomware, status, monitor, alert, notification 
+summary: 您可以在BlueXP通知中心中查看勒索软件警报的状态。您还可以将通知配置为通过电子邮件发送、以便即使未登录到系统、您也能了解重要的系统活动。 
+---
+= 监控勒索软件警报的状态
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以在BlueXP通知中心中查看勒索软件警报的状态。您还可以将通知配置为通过电子邮件发送、以便即使未登录到系统、您也能了解重要的系统活动。
+
+通知中心会跟踪勒索软件事件的进度、以便您可以验证这些事件是否已解决。您可以通过单击(image:button_bell_icon.png["通知铃"])。您还可以将BlueXP配置为通过电子邮件发送通知作为警报。
+
+目前、有一个事件将触发电子邮件警报：
+
+* 在您的系统上检测到潜在的勒索软件攻击
+
+
+默认情况下、BlueXP客户管理员将收到所有"严重"和"建议"警报的电子邮件。默认情况下、所有其他用户和收件人都配置为不接收任何通知电子邮件。您可以将电子邮件发送给您的NetApp云帐户中的任何BlueXP用户或需要了解勒索软件保护事件的任何其他收件人。
+
+您需要选择"严重"通知类型才能接收BlueXP勒索软件保护电子邮件警报。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["了解有关通知中心的更多信息"^] 以及如何针对勒索软件保护事件发送警报电子邮件。

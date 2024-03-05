@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: rp-start-setup.html 
+keywords: bluexp, ransomware protection, 
+summary: 要使用BlueXP勒索软件保护、请执行几个步骤进行设置。 
+---
+= 设置BlueXP勒索软件保护
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: /media/
+
+
+[role="lead"]
+要使用BlueXP勒索软件保护、请执行几个步骤进行设置。
+
+开始之前、请查看 link:rp-start-prerequisites.html["前提条件"] 以确保您的环境已准备就绪。
+
+
+
+== 准备备份目标
+
+准备以下备份目标之一：
+
+* NetApp StorageGRID
+* Amazon Web Services
+
+
+在备份目标本身中配置选项后、您可以稍后在BlueXP勒索软件保护服务中将其配置为备份目标。
+
+
+
+=== 准备StorageGRID以成为备份目标
+
+如果要使用StorageGRID作为备份目标、请参见 https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID 文档"^] 有关StorageGRID的详细信息、请参见。
+
+
+
+=== 准备AWS以成为备份目标
+
+* 在AWS中设置帐户。
+* 配置 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS权限"^] 在AWS中。
+
+
+有关在BlueXP中管理AWS存储的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["管理Amazon S3存储分段"^]。
+
+
+
+== 设置BlueXP
+
+下一步是设置BlueXP和BlueXP勒索软件保护服务。
+
+请查看 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准BlueXP要求"^]。
+
+
+
+=== 在BlueXP中创建连接器
+
+您应联系NetApp销售代表试用此服务。然后、当您使用BlueXP Connector时、它将包括勒索软件保护服务的相应功能。
+
+要在使用此服务之前在BlueXP中创建Connector、请参阅所述的BlueXP文档 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何创建BlueXP Connector"^]。
+
+
+NOTE: 如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。此服务将发现与此帐户关联的所有工作空间和所有连接器。
+
+
+
+=== 访问BlueXP勒索软件保护
+
+您可以使用NetApp BlueXP登录到BlueXP勒索软件保护服务。从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
+
+有关详细信息，请参见 link:rp-start-login.html["访问BlueXP勒索软件保护"]。
+
+
+
+=== 在BlueXP勒索软件保护中配置备份目标
+
+使用BlueXP勒索软件保护备份目标选项配置备份目标。有关详细信息，请参见 link:rp-use-settings.html["配置设置选项"]。

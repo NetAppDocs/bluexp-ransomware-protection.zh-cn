@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: rp-start-quick-start.html 
+keywords: how to get started with bluexp ransomware protection, ransomware protection quick start 
+summary: 只需几个步骤即可开始使用NetApp BlueXP勒索软件保护服务。 
+---
+= BlueXP勒索软件保护快速入门
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+下面概述了开始使用BlueXP勒索软件保护所需的步骤。每个步骤中的链接将转到一个页面，其中提供了更多详细信息。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 查看前提条件
+[role="quick-margin-para"]
+link:rp-start-prerequisites.html["确保您的环境满足这些要求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 设置勒索软件保护服务
+[role="quick-margin-list"]
+* link:rp-start-setup.html["准备NetApp StorageGRID或Amazon Web Services作为备份目标"]。
+* link:rp-start-setup.html["在BlueXP中配置连接器"]。
+* link:rp-start-setup.html["配置备份目标"]。
+* link:rp-start-discover.html["在BlueXP中发现工作负载"]。
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 下一步是什么？
+[role="quick-margin-para"]
+设置服务后、接下来可以执行以下操作。
+
+[role="quick-margin-list"]
+* link:rp-use-dashboard.html["在信息板上查看工作负载保护运行状况"]。
+* link:rp-use-protect.html["保护工作负载"]。
+* link:rp-use-alert.html["响应对潜在勒索软件攻击的检测"]。
+* link:rp-use-recover.html["从攻击中恢复(在消除意外事件后)"]。
+
