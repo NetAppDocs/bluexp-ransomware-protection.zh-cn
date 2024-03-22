@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>了解BlueXP勒索软件保护预览版 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="了解BlueXP勒索软件保护预览版 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+	<meta property="og:description" content="勒索软件攻击可能会耗费业务时间，资源和声誉。通过BlueXP勒索软件保护服务、您可以查看有关网络安全的相关信息、并评估您的组织抵御网络攻击的能力。此外，它还会为您提供一系列警报和修复措施，帮助您提高数据的安全性。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/bluexp-ransomware-protection/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="勒索软件攻击可能会耗费业务时间，资源和声誉。通过BlueXP勒索软件保护服务、您可以查看有关网络安全的相关信息、并评估您的组织抵御网络攻击的能力。此外，它还会为您提供一系列警报和修复措施，帮助您提高数据的安全性。">
+  <meta name="keywords" content=" artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity"><!-- Icons -->
+  <link rel="icon" href="/zh-cn/bluexp-ransomware-protection/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/bluexp-ransomware-protection/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/bluexp-ransomware-protection/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-cn/bluexp-ransomware-protection/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/bluexp-ransomware-protection/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-cn/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-ransomware-protection/concept-ransomware-protection.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/bluexp-ransomware-protection/js/na-search.js'></script><script src='/zh-cn/bluexp-ransomware-protection/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-cn/bluexp-ransomware-protection/js/custom-dropdown.js'></script>
+  <script src='/zh-cn/bluexp-ransomware-protection/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/bluexp-ransomware-protection/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/bluexp-ransomware-protection/js/jszip.min.js'></script><script src='/zh-cn/bluexp-ransomware-protection/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-cn/bluexp-ransomware-protection/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/cn">
+                <image id="ie-header-logo" src="/zh-cn/bluexp-ransomware-protection/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文档</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-cn/bluexp-ransomware-protection/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">简体中文</span>
+                    <img src="/zh-cn/bluexp-ransomware-protection/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/bluexp-ransomware-protection/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-ransomware-protection/concept-ransomware-protection.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-ransomware-protection/concept-ransomware-protection.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-ransomware-protection/concept-ransomware-protection.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-ransomware-protection/concept-ransomware-protection.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-ransomware-protection/concept-ransomware-protection.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-ransomware-protection/concept-ransomware-protection.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-ransomware-protection/concept-ransomware-protection.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-ransomware-protection/concept-ransomware-protection.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-cn/bluexp-ransomware-protection/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">全部来自 NetApp</span>
+                    <img src="/zh-cn/bluexp-ransomware-protection/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/bluexp-ransomware-protection/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支持</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知识库</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/zh-hans/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">训练</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-cn/bluexp-ransomware-protection/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-cn/bluexp-ransomware-protection/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文档</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">云文档</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/zh-cn/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-cn/bluexp-ransomware-protection/">-->
+      BlueXP ransomware protection
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-cn/bluexp-ransomware-protection/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-cn/bluexp-ransomware-protection/search.html" 
+        data-type="widget"
+        data-placeholder="搜索文档"
+        data-no-results-found="未找到 {query} 的相关结果"
+        data-did-you-mean="搜索 {suggestion}。"
+        data-no-results-found-did-you-mean="未找到 {query} 的相关结果。您是指 {suggestion}？"
+        data-results-found="找到 {hitCount} 个结果"
+        data-error-message="发生错误。请重试。"
+        data-error-reset="重置搜索"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP勒索软件保护文档"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/bluexp-ransomware-protection/index.html">
+        BlueXP勒索软件保护文档
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="发行说明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/bluexp-ransomware-protection/whats-new.html">
+        发行说明
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="入门"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-ransomware-protection/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-ransomware-protection/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 入门</div>-->
+         入门
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="了解BlueXP勒索软件保护"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/concept-ransomware-protection.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/concept-ransomware-protection.html">
+        了解BlueXP勒索软件保护
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="前提条件"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-start-prerequisites.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-start-prerequisites.html">
+        前提条件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="快速入门"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-start-quick-start.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-start-quick-start.html">
+        快速入门
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="设置BlueXP勒索软件保护"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-start-setup.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-start-setup.html">
+        设置BlueXP勒索软件保护
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="访问BlueXP勒索软件保护"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-start-login.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-start-login.html">
+        访问BlueXP勒索软件保护
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="发现工作负载"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-start-discover.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-start-discover.html">
+        发现工作负载
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置备份目标"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-use-settings.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-use-settings.html">
+        配置备份目标
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="常见问题解答"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-start-faq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-start-faq.html">
+        常见问题解答
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用BlueXP勒索软件保护"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-ransomware-protection/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-ransomware-protection/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 使用BlueXP勒索软件保护</div>-->
+         使用BlueXP勒索软件保护
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用BlueXP勒索软件保护概述"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-use-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-use-overview.html">
+        使用BlueXP勒索软件保护概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用信息板查看工作负载运行状况"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-use-dashboard.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-use-dashboard.html">
+        使用信息板查看工作负载运行状况
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="保护工作负载"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-use-protect.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-use-protect.html">
+        保护工作负载
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="响应检测到的警报"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-use-alert.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-use-alert.html">
+        响应检测到的警报
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="从勒索软件攻击中恢复"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/rp-use-recover.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/rp-use-recover.html">
+        从勒索软件攻击中恢复
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="知识和支持"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-ransomware-protection/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-ransomware-protection/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 知识和支持</div>-->
+         知识和支持
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="注册以获得支持"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/support/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/support/task-support-registration.html">
+        注册以获得支持
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="获取帮助"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/support/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-ransomware-protection/support/task-get-help.html">
+        获取帮助
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律声明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/concept-ransomware-protection.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/bluexp-ransomware-protection/legal-notices.html">
+        法律声明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-cn/bluexp-ransomware-protection"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-cn/bluexp-ransomware-protection"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-cn/bluexp-ransomware-protection/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">了解BlueXP勒索软件保护预览版</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-22 16:53:13 +0000">03/22/2024</time>
+        
+    
+    
+        <span>贡献者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-cn/bluexp-ransomware-protection/images/discuss-sm.svg" alt="" class="github-icon" />建议更改</span>
+        <img src="/zh-cn/bluexp-ransomware-protection/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-cn/bluexp-ransomware-protection/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-ransomware-protection.zh-cn/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-cn/bluexp-ransomware-protection/concept-ransomware-protection.html&page-title=了解BlueXP勒索软件保护预览版" class="page-nav-contribute-link" role="button">请求文档更改</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-ransomware-protection/blob/main/concept-ransomware-protection.adoc" class="page-nav-contribute-link" role="button">编辑此页面</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >了解如何贡献</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-cn/bluexp-ransomware-protection/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-cn/bluexp-ransomware-protection/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-cn/bluexp-ransomware-protection/pdfs/fullsite-sidebar/BlueXP勒索软件保护文档.pdf" >
+                    <img src="/zh-cn/bluexp-ransomware-protection/images/pdf-icon.png" alt="" width="16" height="16"/>本文档站点的 PDF</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-ransomware-protection/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-ransomware-protection/images/pdf-icon.png" alt="" width="16" height="16"/>
+            入门
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-ransomware-protection/pdfs/sidebar/使用BlueXP勒索软件保护.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-ransomware-protection/images/pdf-icon.png" alt="" width="16" height="16"/>
+            使用BlueXP勒索软件保护
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-ransomware-protection/pdfs/sidebar/知识和支持.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-ransomware-protection/images/pdf-icon.png" alt="" width="16" height="16"/>
+            知识和支持
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-cn/bluexp-ransomware-protection/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>单独 PDF 文档的收集<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>勒索软件攻击可能会阻止对系统和数据的访问、攻击者可能会索要赎金以换取数据释放或解密。据IDC调查、勒索软件受害者遭受多次勒索软件攻击的情况并不少见。攻击可能会中断一天到几周的数据访问。</p>
+</div>
+<div class="paragraph">
+<p>BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。对于预览版、该服务可保护Oracle、MySQL、VM数据存储库、 在内部NAS存储以及Amazon Web Services中的Cloud Volumes ONTAP (使用NFS协议)上跨BlueXP帐户共享文件、并将数据备份到Amazon Web Services云存储或NetApp StorageGRID。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-ransomware-protection/images/note.svg" alt="备注">
+</td>
+<td class="content">
+本文档以技术预览形式提供。  对于此预览版产品、NetApp保留在正式发布之前修改产品详细信息、内容和时间表的权利。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="bluexp勒索软件保护功能的用途">BlueXP勒索软件保护功能的用途</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP勒索软件保护服务可充分利用多种NetApp技术、以便存储管理员、数据安全管理员或安全运营工程师可以实现以下目标：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>*识别*在BlueXP中采用NFS工作环境的NetApp内部NAS中、跨BlueXP帐户、工作空间和BlueXP连接器的所有基于应用程序的工作负载、文件共享工作负载或由VMware管理的工作负载。然后、该服务会对数据优先级进行分类、并为您提供有关改进勒索软件保护的建议。</p>
+</li>
+<li>
+<p>*通过在数据上启用备份和Snapshot副本来保护*工作负载。</p>
+</li>
+<li>
+<p>*检测*可能是勒索软件攻击的异常。</p>
+</li>
+<li>
+<p><strong>通过自动启动NetApp ONTAP Snapshot副本对潜在的勒索软件攻击做出响应</strong>。</p>
+</li>
+<li>
+<p>*恢复*您的工作负载、通过编排多种NetApp技术帮助加快工作负载正常运行时间。您可以选择恢复卷、文件夹或特定文件。该服务可提供有关最佳选项的建议。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-rp-features-phases2.png" alt="显示识别、保护、检测、响应和恢复等BlueXP勒索软件保护策略的示意图"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="使用bluexp勒索软件保护的优势">使用BlueXP勒索软件保护的优势</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP勒索软件保护具有以下优势：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>发现工作负载和数据集、根据使用情况索引分析优先级并对其相对重要性进行排名。</p>
+</li>
+<li>
+<p>评估您的勒索软件保护态势、并将其显示在易于理解的信息板中。</p>
+</li>
+<li>
+<p>根据发现和保护状况分析、提供有关后续步骤的建议。</p>
+</li>
+<li>
+<p>通过一键访问应用AI/ML驱动的数据保护建议。</p>
+</li>
+<li>
+<p>保护MySQL、Oracle、VMware数据存储库和文件共享等顶级基于应用程序的工作负载中的数据。</p>
+</li>
+<li>
+<p>使用AI技术实时检测对主存储上数据的勒索软件攻击。</p>
+</li>
+<li>
+<p>通过创建Snapshot副本并启动异常活动警报、针对检测到的潜在攻击启动自动操作。</p>
+</li>
+<li>
+<p>应用精选恢复以满足RPO策略要求。BlueXP勒索软件保护可使用多种NetApp恢复服务编排从勒索软件事件中恢复的过程、包括BlueXP备份和恢复(原Cloud Backup)。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="成本">成本</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>NetApp不会因使用BlueXP勒索软件保护预览版而向您收费。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="许可">许可</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP勒索软件保护预览版本身不需要任何特殊许可。  所有预览许可证均为评估许可证。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-ransomware-protection/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+对于预览版、NetApp可帮助您设置评估版和任何所需的许可证。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>BlueXP勒索软件保护预览版需要以下许可证：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ONTAP</p>
+</li>
+<li>
+<p>NetApp自主防网络软件保护技术。请参见 <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html" target="_blank" rel="noopener">"自主勒索软件保护概述"</a> 了解详细信息。</p>
+</li>
+<li>
+<p>BlueXP备份和恢复服务</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="bluexp勒索软件保护的工作原理">BlueXP勒索软件保护的工作原理</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>总体而言、BlueXP勒索软件保护的工作原理是这样的。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-rp-architecture-preview3.png" alt="显示BlueXP勒索软件保护架构的示意图"></span></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18.75%;">
+<col style="width: 81.25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">功能</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>识别</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>查找连接到BlueXP的所有客户内部NAS (NFS挂载)数据。</p>
+</li>
+<li>
+<p>识别ONTAP服务API中的客户数据、并将其与工作负载关联起来。了解更多信息 <a href="https://docs.netapp.com/us-en/ontap-family/" target="_blank" rel="noopener">"ONTAP"</a> 和 <a href="https://docs.netapp.com/us-en/snapcenter/index.html" target="_blank" rel="noopener">"SnapCenter 软件"</a>。</p>
+</li>
+<li>
+<p>发现每个卷的NetApp Snapshot副本和备份策略的当前保护级别以及任何机载检测功能。然后、该服务会使用BlueXP备份和恢复、BlueXP数字顾问以及ONTAP服务和NetApp技术(例如、自动防软件保护、FPolicy、备份策略和Snapshot策略)将此保护状态与工作负载关联起来。<br>
+了解更多信息 <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html" target="_blank" rel="noopener">"自主勒索软件保护"</a> 和 <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html" target="_blank" rel="noopener">"BlueXP备份和恢复"</a>， <a href="https://docs.netapp.com/us-en/active-iq/index.html" target="_blank" rel="noopener">"BlueXP数字顾问"</a>，和 <a href="https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html" target="_blank" rel="noopener">"ONTAP FPolicy"</a>。</p>
+</li>
+<li>
+<p>根据自动发现的保护级别为每个工作负载分配业务优先级、并根据工作负载的业务优先级为其建议保护策略。</p>
+</li>
+<li>
+<p>勒索软件保护还会了解策略关联、并为类似的工作负载推荐自定义策略。</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>保护</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>主动监控工作负载、并通过将策略应用于每个已识别的工作负载来编排BlueXP备份和恢复以及ONTAP API的使用。</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>检测</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>使用集成的机器学习(ML)模型检测潜在的攻击、该模型可检测潜在的异常加密和活动。</p>
+</li>
+<li>
+<p>提供双层检测、从检测主存储中的潜在勒索软件攻击开始、并通过创建额外的自动Snapshot副本创建最近的数据还原点来响应异常活动。通过该服务、您可以更深入地挖掘、更精确地识别潜在攻击、而不会影响主工作负载的性能。</p>
+</li>
+<li>
+<p>使用ONTAP、自动防软件保护和FPolicy技术确定攻击关联工作负载的特定可疑文件并映射到相关工作负载。</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>响应</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>显示相关数据、例如文件活动、用户活动和熵、以帮助您完成有关攻击的取证审查。</p>
+</li>
+<li>
+<p>使用NetApp技术和产品(例如ONTAP、自动防兰软件保护和FPolicy)启动快速Snapshot副本。</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>恢复</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>使用BlueXP备份和恢复、ONTAP、自主防兰软件保护和FPolicy技术和服务确定最佳Snapshot或备份并建议最佳实际恢复点(RPA)。</p>
+</li>
+<li>
+<p>协调工作负载(包括VM、文件共享和数据库)的恢复、确保应用程序一致性。</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="支持的备份目标工作环境和数据源">支持的备份目标、工作环境和数据源</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>使用BlueXP勒索软件保护预览查看数据在以下类型的备份目标、工作环境和数据源遭受网络攻击时的恢复能力：</p>
+</div>
+<div class="paragraph">
+<p><strong>支持的备份目标</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Amazon Web Services (AWS) S3</p>
+</li>
+<li>
+<p>NetApp StorageGRID</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>支持的工作环境</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>内部ONTAP NAS (使用NFS协议)</p>
+</li>
+<li>
+<p>ONTAP Select</p>
+</li>
+<li>
+<p>AWS中的Cloud Volumes ONTAP (使用NFS协议)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>数据源</strong></p>
+</div>
+<div class="paragraph">
+<p>对于预览版、此服务可保护以下基于应用程序的工作负载：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp文件共享</p>
+</li>
+<li>
+<p>VMware 数据存储库</p>
+</li>
+<li>
+<p>数据库(对于预览版本、Oracle和MySQL)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="可能有助于您进行勒索软件保护的术语">可能有助于您进行勒索软件保护的术语</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>了解一些与勒索软件保护相关的术语可能会让您受益匪浅。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>保护</strong>：BlueXP勒索软件保护中的保护意味着确保使用保护策略定期向不同的安全域进行Snapshot和不可更改的备份。</p>
+</li>
+<li>
+<p><strong>工作负载</strong>：BlueXP勒索软件保护预览版中的工作负载可以包括MySQL或Oracle数据库、VMware数据存储库或文件共享。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-cn/bluexp-ransomware-protection/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-cn/bluexp-ransomware-protection/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本页面中</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用条款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私策略</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">请发送有关此页面的反馈</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/bluexp-ransomware-protection/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/bluexp-ransomware-protection/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/bluexp-ransomware-protection/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/bluexp-ransomware-protection/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-cn/bluexp-ransomware-protection/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
