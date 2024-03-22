@@ -23,20 +23,15 @@
   <block id="b06d1e4e0aac4390491efcd348fe1b69" category="summary">通过验证对您的环境、网络访问、登录和Web浏览器的支持、开始使用BlueXP勒索软件保护。</block>
   <block id="1e4e512c953bb68c6492ac3e8c1ea138" category="doc">BlueXP勒索软件保护前提条件</block>
   <block id="14bae19e71c925a784053d4c31411220" category="paragraph">通过验证您的操作环境、登录、网络访问和Web浏览器是否已准备就绪、开始实施BlueXP勒索软件保护。</block>
-  <block id="9c419334983210e051ee2cf0145c087e" category="paragraph">要使用BlueXP勒索软件保护、您需要满足以下前提条件：</block>
-  <block id="312807b53081d16ad86b2481ad4a2bcd" category="list-text">对于预览版、您需要在NetApp StorageGRID或AWS S3中为备份目标和AWS权限集创建帐户。</block>
   <block id="2c1fee35a0bc194dc9b50ed9fc8a2c7f" category="inline-link">AWS权限列表</block>
   <block id="77e430febc2d19c00e0afbb5c29f25a4" category="paragraph">请参见<block ref="26c1dddc0b8311217c923c501f6e8c4e" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="9e2e2cb4e7926eab3e7e74ddaf55d313" category="list-text">ONTAP 9.11.1及更高版本</block>
   <block id="7226a116fcbbcf04521e1a358b285ccb" category="list-text">集群管理员ONTAP权限</block>
   <block id="13572bbe68fe6ecbb17fb5a38d1313bb" category="inline-link">自主勒索软件保护概述</block>
-  <block id="f57301a326bcd894a3dbbfdba7f4cf52" category="list-text">实例上由BlueXP勒索软件保护使用的NetApp自动勒索软件保护许可证、ONTAP具体取决于您使用的ONTAP版本。请参见<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block>。</block>
   <block id="7fc964519860ed011389afb142e2370e" category="list-text">在BlueXP中：</block>
   <block id="617601bf744d089a872f17b09e5451b5" category="inline-link">BlueXP文档以配置连接器</block>
-  <block id="5969fa4f26265009c72d9843b06abaaf" category="list-text">必须在NetApp BlueXP中为云中或内部区域中的每个区域设置一个BlueXP连接器。所有源环境和工作环境都必须位于同一个BlueXP帐户中。请参见<block ref="1e8f43557ce3193941a1e47864603ca9" category="inline-link-rx"></block>。</block>
   <block id="00c15e6000f2ee7d33421ec117c11c12" category="admonition">如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。</block>
   <block id="c5c84330043d2e887d72c591baa2b9c1" category="list-text">在工作环境中启用了备份的BlueXP备份和恢复服务</block>
-  <block id="e674877356cdb2cee43ab26b58b3e4b2" category="list-text">应设置采用NetApp NAS内部存储的BlueXP工作环境。</block>
   <block id="801e5ac526198ee67b36c61b75c65eab" category="inline-link">标准BlueXP要求</block>
   <block id="5b4e347dbf978618d47c067b87ad3fe2" category="list-text"><block ref="5b4e347dbf978618d47c067b87ad3fe2" category="inline-link-rx"></block></block>
   <block id="4d6682b21a77873fe9ae34d7fc255020" category="summary">只需几个步骤即可开始使用NetApp BlueXP勒索软件保护服务。</block>
@@ -148,7 +143,6 @@
   <block id="8e22c5498680469033ebfa929699936b" category="paragraph">BlueXP勒索软件保护服务可充分利用多种NetApp技术、以便存储管理员、数据安全管理员或安全运营工程师可以实现以下目标：</block>
   <block id="9d853594c14418b8d0b52863e0a28def" category="list-text">*识别*在BlueXP中采用NFS工作环境的NetApp内部NAS中、跨BlueXP帐户、工作空间和BlueXP连接器的所有基于应用程序的工作负载、文件共享工作负载或由VMware管理的工作负载。然后、该服务会对数据优先级进行分类、并为您提供有关改进勒索软件保护的建议。</block>
   <block id="054bc259e9aa68fb8f3bfe542d228b0b" category="list-text">*通过在数据上启用备份和Snapshot副本来保护*工作负载。</block>
-  <block id="6c11e8697d3ab5a813df854504294dee" category="list-text">*检测*可能导致勒索软件攻击的异常。</block>
   <block id="1ab12f307bedb7d5749a279e1a0934fb" category="list-text">*通过自动启动NetApp ONTAP Snapshot副本对潜在的勒索软件攻击做出响应*。</block>
   <block id="833da0c333e295aca4bc69596dd1dd5e" category="list-text">*恢复*您的工作负载、通过编排多种NetApp技术帮助加快工作负载正常运行时间。您可以选择恢复卷、文件夹或特定文件。该服务可提供有关最佳选项的建议。</block>
   <block id="0939045244bbd868a8a6209521a2393b" category="inline-image-macro">显示识别、保护、检测、响应和恢复等BlueXP勒索软件保护策略的示意图</block>
@@ -162,7 +156,6 @@
   <block id="36b4276d015bcc4d4f2b814e00d505a3" category="list-text">保护MySQL、Oracle、VMware数据存储库和文件共享等顶级基于应用程序的工作负载中的数据。</block>
   <block id="c530e1fdcf59b6298208943bc8050282" category="list-text">使用AI技术实时检测对主存储上数据的勒索软件攻击。</block>
   <block id="667ae4a3ddaeba61dcd0dd502f839dd4" category="list-text">通过创建Snapshot副本并启动异常活动警报、针对检测到的潜在攻击启动自动操作。</block>
-  <block id="af90262378ae6a76b534572cdec3141a" category="list-text">应用精选恢复以满足RPO策略要求。BlueXP勒索软件保护功能可使用多种NetApp恢复服务编排从勒索软件事件中恢复的过程、包括BlueXP备份和恢复(原Cloud Backup)以及SnapCenter。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
   <block id="c97a151b4a2a7746384f6169486f1c37" category="paragraph">NetApp不会因使用BlueXP勒索软件保护预览版而向您收费。</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">许可</block>
@@ -182,7 +175,6 @@
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="4171cc11dd4504077ddb2ccdaed2ec52" category="list-text">查找连接到BlueXP的所有客户内部NAS (NFS挂载)数据。</block>
   <block id="bbbbcb8f41827abddd8ec6151fdf9e99" category="inline-link">SnapCenter 软件</block>
-  <block id="0101be00694088a1944bea83a894d482" category="list-text">识别ONTAP和SnapCenter服务API中的客户数据、并将其与工作负载关联起来。了解更多信息<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block> 和<block ref="d4e2312364a2363181c5807750f77d43" category="inline-link-rx"></block>。</block>
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索软件保护</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">BlueXP备份和恢复</block>
   <block id="979c3c6b5244c20c75d5ab60dd8566cb" category="inline-link">BlueXP数字顾问</block>
@@ -192,16 +184,11 @@
   <block id="472b4a66f24a5029874468d609155979" category="list-text">根据自动发现的保护级别为每个工作负载分配业务优先级、并根据工作负载的业务优先级为其建议保护策略。</block>
   <block id="3b07a7551ed4aba9700a33a9931f3be8" category="list-text">勒索软件保护还会了解策略关联、并为类似的工作负载推荐自定义策略。</block>
   <block id="f23d5c00c473a2e87ffcd7a0eedb89b5" category="cell">*保护*</block>
-  <block id="94b9510644005c8e4758c739a98cc85f" category="list-text">主动监控工作负载、并通过将策略应用于每个已识别的工作负载来编排BlueXP备份和恢复、SnapCenter服务和ONTAP API的使用。</block>
   <block id="bd86dbcbafa7a7406429c16dcbb97e30" category="cell">*检测*</block>
-  <block id="d410b0774101ae8af3a5526e278c46bc" category="list-text">使用集成的机器学习(ML)模型检测潜在的攻击、该模型可检测潜在的异常加密和活动。通过使用NetApp高级勒索软件检测来应用勒索软件保护技术、该检测是一种机器学习(ML)模型、用于检测恶意文件加密。</block>
   <block id="c69ab1786234ed8d66d89ba56a6b84ea" category="list-text">提供双层检测、从检测主存储中的潜在勒索软件攻击开始、并通过创建额外的自动Snapshot副本创建最近的数据还原点来响应异常活动。通过该服务、您可以更深入地挖掘、更精确地识别潜在攻击、而不会影响主工作负载的性能。</block>
-  <block id="e9346d2ea694221ca6fabef56bb6e422" category="list-text">使用ONTAP、自动防病毒软件保护、FPolicy和高级防病毒检测确定攻击到关联工作负载的特定可疑文件并将其映射到相关工作负载。</block>
   <block id="14b17e6824f78ccf342b387a603935dc" category="cell">*响应*</block>
   <block id="4dd88eaac510fe3eb4a3ed59e5f8d753" category="list-text">显示相关数据、例如文件活动、用户活动和熵、以帮助您完成有关攻击的取证审查。</block>
-  <block id="ebff656b384375005eb3bdca2929e162" category="list-text">使用NetApp技术和产品(例如ONTAP、自动防软件保护、FPolicy和高级防软件保护)启动快速Snapshot副本。</block>
   <block id="5fefe6c4ada89d95390ae77eba79e7db" category="cell">*恢复*</block>
-  <block id="df6246c81b14098c7e912615a473f42b" category="list-text">使用BlueXP备份和恢复、ONTAP、自主防兰软件保护、FPolicy和高级防兰软件保护技术和服务确定最佳Snapshot或备份并建议最佳实际恢复点(RPA)。</block>
   <block id="f2ebc260c3bb5480d4c44df78fb6efb7" category="list-text">协调工作负载(包括VM、文件共享和数据库)的恢复、确保应用程序一致性。</block>
   <block id="5148a3fb1af9478ff0f5eba22906cb56" category="section-title">支持的备份目标、工作环境和数据源</block>
   <block id="8e8e822d67678fb2aeb7e40ea6441d4d" category="paragraph">使用BlueXP勒索软件保护预览查看数据在以下类型的备份目标、工作环境和数据源遭受网络攻击时的恢复能力：</block>
@@ -221,255 +208,9 @@
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">了解一些与勒索软件保护相关的术语可能会让您受益匪浅。</block>
   <block id="a2818baee9a41e8ce28144cd422f76b5" category="list-text">*保护*：BlueXP勒索软件保护中的保护意味着确保使用保护策略定期向不同的安全域进行Snapshot和不可更改的备份。</block>
   <block id="772d9b937d45471f673b3d635c274f1c" category="list-text">*工作负载*：BlueXP勒索软件保护预览版中的工作负载可以包括MySQL或Oracle数据库、VMware数据存储库或文件共享。</block>
-  <block id="b0cbe5efcc20aee32deb4fe58d0f62aa" category="summary">勒索软件恢复信息板提供了用于恢复可能已被勒索软件感染的数据的选项。这有助于您快速备份和运行系统。</block>
   <block id="f8a7dc43864435cb9b522a28b586e556" category="doc">从勒索软件攻击中恢复</block>
-  <block id="1b017e95a6024c5c0b795599791855e2" category="paragraph">BlueXP勒索软件保护恢复信息板提供了用于恢复可能已被勒索软件感染的数据的选项。这有助于您快速备份和运行系统。</block>
-  <block id="b4786072a496e07406b4ecf014a9b781" category="paragraph">如果BlueXP勒索软件保护信息板中的勒索软件事件面板指示一个或多个卷已受到勒索软件感染、您可以单击*恢复*按钮尝试解决此问题描述。</block>
-  <block id="d85b2cd78eec6c9a32deb0f3cc5bd884" category="paragraph">此时、通过勒索软件恢复信息板、您可以将受感染的卷替换为未受勒索软件影响的Snapshot副本。</block>
-  <block id="3484aab75133e0a1df276eca70de4253" category="list-text">在勒索软件意外事件面板中、单击已受勒索软件感染的卷的*恢复*。</block>
-  <block id="c6eef1a66436b8584344e9ce1a7643ba" category="paragraph">"Ransy要 恢复信息板"将显示卷名称。</block>
-  <block id="e1593986f9bacc9fa8ab546cf33321af" category="inline-image-macro">BlueXP勒索软件保护恢复信息板的屏幕截图。</block>
-  <block id="3eb84558a744672908043710646329fa" category="paragraph"><block ref="3eb84558a744672908043710646329fa" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a247ece129c3bf68fcaf70d281165871" category="list-text">单击*显示快照*可查看该卷的可用Snapshot副本列表。</block>
-  <block id="b3b0acb4492a6d8a5ee1602fadc07197" category="inline-image-macro">可用于恢复损坏卷的可用Snapshot副本的屏幕截图。</block>
-  <block id="24d03173e97c9c58f079dfe7f4965b22" category="paragraph"><block ref="24d03173e97c9c58f079dfe7f4965b22" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3b243af5019c9310da206cc47c2771af" category="list-text">选择没有加密数据的Snapshot、然后单击*恢复*。</block>
-  <block id="483a967df2597da9a5c6ea857e875a9f" category="list-text">在"Recover data from Selected Snapsh图"(从选定快照恢复数据)对话框中、单击*是*以从快照恢复数据。</block>
-  <block id="cf42e98a3682dcec380bde2d96554b9d" category="paragraph">您可以查看快照的恢复状态、以及快照何时还原损坏的卷。</block>
-  <block id="a0d21e115eb4ff2d2917d7b47ed4bd8a" category="inline-image-macro">屏幕截图显示Snapshot已恢复损坏的卷。</block>
-  <block id="787e99d6ae61d7d5b2b454ddaddcb822" category="paragraph"><block ref="787e99d6ae61d7d5b2b454ddaddcb822" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
-  <block id="0ed34f9da17fe0982ec5857b2c044196" category="paragraph">已使用过去创建的Snapshot恢复损坏的卷。</block>
-  <block id="f35deb8f629a463fa7eb5e392bea321e" category="paragraph">如果还原操作是从非最新Snapshot执行的、则还原后、所有较新的Snapshot副本都将从ONTAP系统中删除、因为它们也可能已损坏(如上面的屏幕截图所示)。</block>
-  <block id="7d868bd9240b323d4fa8434926d58091" category="summary">使用BlueXP勒索软件保护信息板简要了解所有BlueXP工作环境和其他数据源的网络弹性。您可以深入查看每个区域，以了解更多详细信息和可能的修复方法。</block>
-  <block id="4598db4be43bf3297366acd4930b0202" category="doc">管理数据源的网络安全建议</block>
-  <block id="3b854a67986961dfef3ff605a35936d9" category="paragraph">使用BlueXP勒索软件保护信息板、可简要了解所有BlueXP (原Cloud Manager)工作环境和其他数据源的网络弹性。您可以深入查看每个区域，以了解更多详细信息和可能的修复方法。</block>
-  <block id="f06a4ba6ca79f996abe9514901c94a4d" category="paragraph">从BlueXP左侧导航菜单中、选择*监管&gt;勒索软件保护*。</block>
-  <block id="2f0abd37d1898da3b2bca11d4173d27b" category="inline-image-macro">BlueXP勒索软件保护信息板的屏幕截图。</block>
-  <block id="59dfd3892b109962d573e0c503f6fe0c" category="paragraph"><block ref="59dfd3892b109962d573e0c503f6fe0c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8e0f84364d9fe671a1c0230eed8bfcbe" category="section-title">勒索软件保护得分和建议的操作</block>
-  <block id="27b6d34af47e0f3ad6a43f524c09dca2" category="paragraph">通过勒索软件保护得分面板、您可以轻松地查看数据对勒索软件攻击的弹性。它汇总了为改善数据安全状况和网络故障恢复能力而建议采取的所有操作。此面板与建议的操作面板配合使用。勒索软件保护得分面板分为两部分：</block>
-  <block id="b8bfbc1d1e44f9eeff0ccfdebda4b63b" category="list-text">数据的整体保护得分(0-100%受保护)。</block>
-  <block id="a16aee88829b47a361ba9bbbbc934a75" category="paragraph">得分基于对所有可能建议的加权计算。</block>
-  <block id="fa7008b023494ac1c569504beecfad64" category="list-text">如果实施建议、可采取多少建议措施将保护级别提高到100%。</block>
-  <block id="533bce3246d037e8420031d7f7887bdf" category="inline-link">NIST网络安全框架</block>
-  <block id="139c30b065cc71bd01be3875a6804604" category="paragraph">这三种类型的建议操作均符合<block ref="991ce1a9b761ae9d095337b2ba7fca6c" category="inline-link-rx"></block>：</block>
-  <block id="97740c0c87b83b324e18993ba93f0617" category="list-text">保护</block>
-  <block id="233e33f8fdca7b4cc98503e42feac9cf" category="list-text">检测</block>
-  <block id="556b050ce914d18480d6ea30308c7790" category="list-text">恢复</block>
-  <block id="f578142a936c7c909b367d49e737c454" category="inline-image-macro">显示"勒索软件保护分数"面板和"建议操作"面板的屏幕截图。</block>
-  <block id="b833f6d330cc0bb97e4fed79128942b7" category="paragraph"><block ref="b833f6d330cc0bb97e4fed79128942b7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e01ff11dd502e204ca3265cfab781ba5" category="paragraph">在此示例页面中、为"保护"类别建议了七项操作。第一项建议与包含的文件数量为58个相关。</block>
-  <block id="816e47dfbe22fdd831e40afa2c827286" category="paragraph">此面板支持已添加到BlueXP分类的工作环境和数据源。</block>
-  <block id="4432bc47ae4bb8e25092e45a1f42f847" category="paragraph">请注意、建议适用于每个数据源。因此、如果同一建议与3个数据源相关、则会计入3个建议。</block>
-  <block id="0231cb971bb3375c29d3f87768ec4489" category="inline-image-macro">下箭头按钮</block>
-  <block id="e39afe0291d2d021230633043b9cb6f5" category="paragraph">您可以单击 <block ref="68009ec8a10651d6de3d648624efb837" category="inline-image-macro-rx" type="image"></block> 展开每个建议操作、如下所示。</block>
-  <block id="a9e52a6c6443e176596ad03f788c58e2" category="inline-image-macro">屏幕截图显示了"建议的操作"面板、该面板已展开、显示了每个数据源的总操作数。</block>
-  <block id="dd34c6cc8bbde7e5f0b662a3ff425fd3" category="paragraph"><block ref="dd34c6cc8bbde7e5f0b662a3ff425fd3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5f161672412dcc8584b11811d0d4f1b6" category="paragraph">要查看已确定采取建议操作的详细数据列表、请单击*调查*按钮、您将被重定向到BlueXP分类调查页面、其中包含符合建议操作标准的所有文件的列表。</block>
-  <block id="577e4e7be985471f75ff9f32a823bd68" category="paragraph">然后、您可以决定是要对所有这些文件应用建议的操作、还是仅对其中某些文件应用建议的操作。</block>
-  <block id="4ce3362ae9ec6eab6899148eb83ce0ad" category="paragraph">修复建议的操作后、下一次刷新勒索软件保护得分面板(每5分钟刷新一次)将调整得分的数量。您也可以单击*重新扫描*按钮立即更新此页面。</block>
-  <block id="aacc9e24b30418421773eaaf9a04dbe6" category="section-title">建议操作列表</block>
-  <block id="111d59c97464a4e15b2206467fc17f87" category="paragraph">这些是当前跟踪的建议操作和建议的解决方案。</block>
-  <block id="edd3503e6acbd23a14e092fcc5663110" category="cell">建议操作</block>
-  <block id="2885150484bd032660e13db7ced8dfa9" category="cell">可能的解决方案</block>
-  <block id="7ca78460fe96ebfa88a5cf50cd6e11de" category="cell">减少具有广泛权限的X个敏感项目的权限</block>
-  <block id="c494b69405aeaa632486c0b17ae21b66" category="cell">根据BlueXP分类、在数据源中发现了具有打开权限的敏感文件。这包括所有具有"对组织开放"或"对公有 开放"权限的敏感数据(个人数据和敏感个人数据)。</block>
-  <block id="6df137dfbbebdd6f8c29d7925a21fdae" category="cell">单击每个数据源的*调查*按钮、您将被重定向到BlueXP分类调查页面、您可以在该页面中查看存在风险的所有敏感文件、并采取进一步措施降低风险。其中包括如何减少对这些文件的广泛权限。</block>
-  <block id="91e64c82f9432551e95cf364c56ce8de" category="cell">将X个敏感项目从Y个未受保护的数据源移动到安全位置</block>
-  <block id="17b0d2cdd775227498f289eee8172525" category="cell">根据BlueXP分类、在未受保护的数据源上发现了敏感数据；这些数据源是勒索软件保护软件无法保护数据的位置。通常、您的IT组织会制定一些策略来限制某些公司位置的敏感数据。通过此建议操作、您可以确定包含敏感数据的文件、并将其移动到更安全的数据源—允许存储敏感数据*是*。</block>
-  <block id="9a139ea0efa1c20c6bd2e67ac0eaa8c7" category="inline-link">将源文件移动到NFS共享</block>
-  <block id="96ad57a83df01283af742d2827b75022" category="cell">您可以使用BlueXP分类快速将这些文件移动到受更好保护的数据源。您将使用BlueXP分类功能<block ref="e2f07480b4351a3cce448e96761970d7" category="inline-link-rx"></block>。</block>
-  <block id="c776adbc3333e3970c8215d656e1eed1" category="cell">修补Y数据源中的X个开放CVE</block>
-  <block id="9bee38d399e255dd9bc649d4f82fb6ee" category="inline-link">产品安全页面</block>
-  <block id="1b3b76c148f43c2bc1a7014df6266faf" category="cell">已在您的内部ONTAP 系统和/或Cloud Volumes ONTAP 系统上找到未修补的CVE (常见漏洞和披露)。只有在BlueXP数字顾问产品(以前称为Active IQ 数字顾问)与存储系统集成后、才会发现这些问题。这些是NetApp存储系统上的已知漏洞、可通过修复来解决CVE。上列出了NetApp CVE<block ref="e28d65473617bfce242ef884688e92f6" category="inline-link-rx"></block>。</block>
-  <block id="8c0b6501ebe9ec1476fe9bca5edf9e3a" category="inline-link">了解有关安全漏洞页面的更多信息</block>
-  <block id="4b8c9c09f1daf7d518da8f396d834ccf" category="cell">单击每个数据源的*Digital Advisor按钮，您将被重定向到BlueXP数字顾问中的_Security漏洞_页面。您可以在此处查看有关打开的CVE的详细信息、以及解决每个CVE的建议操作。通常、解决方法是升级系统上的ONTAP 软件。<block ref="da94878c78936b613d98b2b798a070c8" category="inline-link-rx"></block>。</block>
-  <block id="bb5343a11d0642122707b5c075d09975" category="cell">配置业务关键型数据</block>
-  <block id="7826d28bca92dc4a0b3f1b61d9c251ca" category="cell">您尚未在业务关键型数据配置页面中定义业务关键型数据策略。请务必确定您认为是业务关键型数据的内容、以便引起您的注意。</block>
-  <block id="316109cda0dba05546d59b042dfea400" category="inline-link-macro">了解有关配置和选择业务关键型数据策略的更多信息</block>
-  <block id="9fe6fa684e5161b2c41ee67238cf1252" category="cell">单击 <block ref="68009ec8a10651d6de3d648624efb837" category="inline-image-macro-rx" type="image"></block> 要展开此建议、请单击此链接以打开"业务关键型数据配置"页面。然后、您可以选择用于定义业务关键型数据的策略。 <block ref="4895e16f799fc4e9d7a5e671ef62d80c" category="inline-link-macro-rx"></block>。</block>
-  <block id="c342dcf71335803685c4b14600d257f8" category="cell">备份Y数据源中的X个业务关键型文件</block>
-  <block id="1c25be1d1c90687e2e4957830573eccd" category="cell">这可以确定使用BlueXP备份和恢复将最重要类别的数据备份到公共云或私有云的综合程度。只有在定义了业务关键型数据后、此建议才会显示建议。如果您因勒索软件攻击而需要恢复任何数据、这一点非常重要。此建议仅确定内部ONTAP 和Cloud Volumes ONTAP 工作环境。</block>
-  <block id="f1dbc37910cfdadbc2a30140d8a0ab92" category="cell">单击 <block ref="68009ec8a10651d6de3d648624efb837" category="inline-image-macro-rx" type="image"></block> 展开建议、然后单击每个数据源的*备份*按钮、您将被重定向到BlueXP备份和恢复服务。您可以在其中对所需卷启用备份。</block>
-  <block id="48077a683a79ae697902975fc435a0a5" category="cell">为X个数据源启用网络存储配置</block>
-  <block id="51422c9162882128c45907204085b268" category="paragraph">此建议确定是启用还是禁用了六项有助于保护数据安全的ONTAP 功能。应启用所有项。这些项目包括：</block>
-  <block id="d59048f21fd887ad520398ce677be586" category="inline-link">了解更多信息。</block>
-  <block id="16a47fdd57b71de1b87f3cd58b00467d" category="list-text">Snapshot—您应创建卷的Snapshot副本、以便可以根据需要还原卷数据。<block ref="650870d84c3b259483598b9956d718a1" category="inline-link-rx"></block>。</block>
-  <block id="6cb54d80b5723fc536102947187b0954" category="list-text">FPolicy—您应捕获数据、以便监控文件操作、以防需要了解谁对文件进行了更改。<block ref="aa8f39fd3d8335d2ba2c75725e5c2c16" category="inline-link-rx"></block>。</block>
-  <block id="686bf31368d052c224007c0375d5c01c" category="list-text">SnapMirror—您应在二级存储上创建卷副本、以便可以根据需要还原卷数据。<block ref="5d845c0504d99b49194d27b4106a579c" category="inline-link-rx"></block>。</block>
-  <block id="08c38ad5b85c05630edecb4877739f7e" category="list-text">MAV—您应启用多管理员验证、以便只有在管理员批准后才能运行某些操作、例如删除卷。<block ref="90176c9d923b92f43123c71fa3a9ad45" category="inline-link-rx"></block>。</block>
-  <block id="3c66363f4ceef0d76ac5c23939f566b5" category="list-text">ARP—您应启用自主勒索软件保护(Onbox反勒索软件)、以便系统可以检测勒索软件尝试并自动对其做出响应。<block ref="428972a0f7820af1d91d4d768dc5ca73" category="inline-link-rx"></block>。</block>
-  <block id="39858663dc11c8522d82608ee2895d0e" category="inline-link">内部部署ONTAP 系统</block>
-  <block id="e0264a304819a3f8b186b83ad45f91c5" category="inline-link">Cloud Volumes ONTAP 系统</block>
-  <block id="7bda34e86c4096cd2e289b214a79e7e8" category="list-text">version—为获得最佳性能和安全性、您应运行最新版本的ONTAP 软件。了解更多信息<block ref="9fb00eb12434c2c155b0deadd8b48223" category="inline-link-rx"></block> 和<block ref="5c4ab4631514663c6f5829c763bf673d" category="inline-link-rx"></block>。</block>
-  <block id="e75d4cf71366f3f6d4c465acff47a430" category="cell">有关如何启用这六项ONTAP 功能的详细信息、请参见上一列中的链接。</block>
-  <block id="0548cb97d94f19991153f1d73928b898" category="section-title">网络弹性映射</block>
-  <block id="25386dd31b2de7fb09ac2a3667151f9f" category="paragraph">网络弹性映射是信息板中的主要区域。通过它，您可以直观地查看所有工作环境和数据源，并查看相关的网络弹性信息。</block>
-  <block id="80ab2a6ba92b0510ffdd8c2ef1cc198d" category="inline-image-macro">BlueXP勒索软件保护信息板上的网络弹性图的屏幕截图。</block>
-  <block id="f0926af28e47b0e5cb83c777a0b66ab5" category="paragraph"><block ref="f0926af28e47b0e5cb83c777a0b66ab5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5426730a36cdf51fea1c0eff90392a8d" category="paragraph">该映射由三部分组成：</block>
-  <block id="9128ea07aab4d047ea7db63895f59084" category="list-text">左侧面板</block>
-  <block id="cfe88906c159ba2224259aff51093f2b" category="list-text">显示服务在所有数据源中监控的警报列表。它还指示环境中处于活动状态的每个特定警报的数量。拥有大量一种类型的警报可能是尝试首先解决这些警报的一个很好的原因。</block>
-  <block id="c2e0a4d3f0930bc0f0b564b584030916" category="list-text">中央面板</block>
-  <block id="d1f02ad72bb94fea17c368f0df9691c3" category="list-text">以图形格式显示所有数据源，服务和 Active Directory 。运行状况良好的环境会显示绿色指示符，而发出警报的环境会显示红色指示符。</block>
-  <block id="d8e6245ab3afebc14b303772f1a70a65" category="list-text">右侧面板</block>
-  <block id="965482269fd6830f57f8a78804eff608" category="list-text">单击带有红色指示符的数据源后，此面板将显示该数据源的警报并提供解决警报的建议。对警报进行排序，以便首先列出最新的警报。许多建议都会引导您使用另一个BlueXP服务来解决问题描述 问题。</block>
-  <block id="74aded2ba2d54cc0a1010549762c6894" category="paragraph">这些警报是当前跟踪的警报和建议的修复方法。</block>
-  <block id="b92071d61c88498171928745ca53078b" category="cell">警报</block>
-  <block id="282baca6aef56652f503adce6afa9f07" category="cell">修复</block>
-  <block id="b643ef329f114f3897ccc4e29b66a128" category="cell">检测到高数据加密率</block>
-  <block id="cebd2a5b90846add1fd8575a57762d78" category="cell">数据源中加密文件或损坏文件的百分比异常增加。这意味着过去 7 天加密文件的百分比增加了 20% 以上。例如，如果 50% 的文件已加密，则此数字会在一天之后增加到 60% ，您将看到此警报。</block>
-  <block id="93cf6a6fe0793fdaef68f82e6efcf787" category="inline-link">BlueXP分类调查页面</block>
-  <block id="b24d103d7b88ab12c20065ee354d289a" category="cell">单击链接以启动<block ref="7dd0988c8f3af602ecae0cd47a950d39" category="inline-link-rx"></block>。您可以在此处为特定的 _工作 环境 _ 和 _类别 （加密和损坏） _ 选择筛选器，以查看所有加密和损坏文件的列表。</block>
-  <block id="5d2ff422e39fd3e94e381ee143e990e1" category="cell">发现具有广泛权限的敏感数据</block>
-  <block id="48f8c5115f15ad05b232939d1e419e4e" category="cell">在文件中发现敏感数据，而在数据源中，访问权限级别太高。</block>
-  <block id="56a94d8323cda12a347c15b9c1d87590" category="cell">单击链接以启动<block ref="68232eccb5fd9ab6f8a94af47ebce2bd" category="inline-link-rx"></block>。您可以在此处选择特定 _WorkEnvironment ， _Sensitivity Level （ Sensitive Personal ） _ 和 _Open Permissions_ 的筛选器，以查看具有此问题描述 的文件列表。</block>
-  <block id="42dbba5cb74b33c2a91281d8db12d018" category="cell">一个或多个卷未使用BlueXP备份和恢复进行备份</block>
-  <block id="de4e03f52cb5c16164b5de605bbd058d" category="cell">工作环境中的某些卷未使用进行保护<block ref="238f65d8124d9fce2c3e9e1c7b70b0d8" category="inline-link-rx"></block>。</block>
-  <block id="43372692d27cde33f4f5cd2a25af2762" category="cell">单击链接启动BlueXP备份和恢复、然后您可以确定工作环境中未备份的卷、并确定是否要在这些卷上启用备份。</block>
-  <block id="e431651544241327362f0da6e8749444" category="cell">BlueXP分类未扫描数据源中的一个或多个存储库(卷、分段等)</block>
-  <block id="4cc849f381058f76f6b72a1c4279393d" category="inline-link">BlueXP分类</block>
-  <block id="15df2c2251be9f442cb04f57ae53b5bc" category="cell">您的数据源中的某些数据未使用进行扫描<block ref="9f1ec2087e0d1ce18384b513ed9384ac" category="inline-link-rx"></block> 确定合规性和隐私问题并寻找优化机会。</block>
-  <block id="2a21b0dc55841f9cfb616dd143b4cd17" category="cell">单击此链接可启动BlueXP分类、并为未扫描的项目启用扫描和映射。</block>
-  <block id="5592b65ac68ee08e7e4d72e1db4c8c57" category="cell">并非所有卷都在使用机载反勒索软件</block>
-  <block id="3e4cd8785a12dd4af37c0d4961022f96" category="inline-link">NetApp反勒索软件功能</block>
-  <block id="7aa34ccd4933956082a1db1a1dcb9386" category="cell">内部ONTAP 系统中的某些卷没有<block ref="c430ca7dfd9bb0dbfe1053348a62639f" category="inline-link-rx"></block> 已启用。</block>
-  <block id="f8aa88150742f7039dc7a7ef56fe7ecc" category="inline-xref">强化 ONTAP 环境面板</block>
-  <block id="fda1498fd18521d8c00ada8cf68c0f89" category="cell">单击此链接，您将重定向到 <block ref="e60df9b32c12ff1b69061e150f46f08e" category="inline-xref-macro-rx"></block> 以及使用问题描述 的工作环境。您可以在此处了解如何以最佳方式修复问题描述。</block>
-  <block id="c13d5346bb8b2abfdcb9c4d94c922f1a" category="cell">未更新ONTAP 版本</block>
-  <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">《适用于 ONTAP 系统的 NetApp 安全加固指南》</block>
-  <block id="d001b5ead06b9ede8cbbf86a37adc3ec" category="cell">集群上安装的ONTAP 软件版本不符合中的建议<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block>。</block>
-  <block id="0a7f54737c4406db7936c0b0bffb40ef" category="cell">未为所有卷配置快照</block>
-  <block id="0bc3a3903adf836de2c855cd40611eab" category="cell">工作环境中的某些卷未通过创建卷快照来受到保护。</block>
-  <block id="c4839802587ac50cbe60ffdc49b98465" category="cell">并非所有SVM都启用文件操作审核</block>
-  <block id="112dc676159587048198f85964d6516d" category="cell">工作环境中的某些Storage VM未启用文件系统审核。建议您跟踪用户对文件执行的操作。</block>
-  <block id="2a616a7e873712e5b6e2b2ace9afd42d" category="cell">单击此链接，您将重定向到 <block ref="e60df9b32c12ff1b69061e150f46f08e" category="inline-xref-macro-rx"></block> 以及使用问题描述 的工作环境。您可以在此处调查是否需要在SVM上启用NAS审核。</block>
-  <block id="c28bb24720dd383d7a0b5ae4027369b4" category="section-title">在您的系统上检测到勒索软件意外事件</block>
-  <block id="f6e08eba5ce5d68574b355f5717a86dc" category="paragraph">在受管系统上检测到的勒索软件意外事件将显示为_勒索 软件意外事件_面板中的警报。其中包括加密事件、可疑文件扩展名、勒索软件活动和恶意活动。此面板将显示意外事件的类型以及是否已运行任何自动操作来尝试解决问题描述。例如、可以生成卷Snapshot副本并将其发送到云。</block>
-  <block id="16135acbc32c7e8ab88519d9d0f56666" category="inline-image-macro">勒索软件意外事件面板的屏幕截图。</block>
-  <block id="7ad0aa30c7cf42540304daceefad2ef3" category="paragraph"><block ref="7ad0aa30c7cf42540304daceefad2ef3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9777bf21c9cc4bdea91c52481d6c026f" category="inline-link">了解有关ONTAP 自主勒索软件保护的更多信息</block>
-  <block id="a090375f6841bf922c5f901506e012f5" category="paragraph">目前支持运行自主勒索软件保护(ARP)的内部ONTAP 集群。ARP利用NAS (NFS和SMB)环境中的工作负载分析主动检测并警告可能指示勒索软件攻击的异常活动。<block ref="a2571d828e6659312db9b776c5b6d1cd" category="inline-link-rx"></block>。</block>
-  <block id="9c53a033c0bf8f0d387a7f9d9871b450" category="paragraph">您可以单击 <block ref="68009ec8a10651d6de3d648624efb837" category="inline-image-macro-rx" type="image"></block> 展开意外事件以查看可疑卷中标识的加密文件的数量、文件扩展名的类型以及攻击发生的时间。</block>
-  <block id="e7bcef4efd8d207a462e4d97fa8ee57f" category="inline-image-macro">屏幕截图显示了"勒索软件意外事件"面板、该面板已展开、显示了卷的自动操作。</block>
-  <block id="e330f9a5f861c839db51e2754e041f2b" category="paragraph"><block ref="e330f9a5f861c839db51e2754e041f2b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5ea6fc016e134ec920ec233ec5f0c965" category="inline-link-macro">请参见如何使用恢复信息板</block>
-  <block id="5cfdd5f8dd9846d9c9a17741619846f0" category="paragraph">如果要尝试从勒索软件攻击中恢复、可以单击*恢复*按钮。此时将显示BlueXP勒索软件保护恢复信息板、在此可以将卷替换为未受勒索软件影响的旧Snapshot副本。 <block ref="3575c069fe31befe2dd17f42114abd3e" category="inline-link-macro-rx"></block>。</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="list-title">前提条件</block>
-  <block id="088d3d49032d6dd1afda5114a23e63c3" category="list-text">您必须具有运行ONTAP 9.11或更高版本的内部ONTAP 集群。</block>
-  <block id="46678f366c58742b82911dfe835f42e5" category="list-text">您必须至少在集群中的一个节点上安装*防勒索软件*许可证(ONTAP 9.11.1 +)。</block>
-  <block id="195f5c23d3e8617ca65758cb92ce66bf" category="inline-link">了解如何启用自主勒索软件保护</block>
-  <block id="8bcf1b06d33b6dc50f6128716379fb82" category="list-text">要保护的每个卷都必须启用ARP。<block ref="ecd3946e063b626ce89f43f27685faa1" category="inline-link-rx"></block>。</block>
-  <block id="e8ab5b08c57f3cea21505f46341cea1c" category="list-text">NetApp自主勒索软件保护(ARP)必须已启用30天的初始学习期(也称为"试运行")、然后才能切换到"主动模式"、以便有足够的时间评估工作负载特征并正确报告可疑的勒索软件攻击。</block>
-  <block id="3df50df725ccc280a453b2a4c657ef23" category="section-title">按加密文件列出的数据</block>
-  <block id="103f4c38cb312b04a9ff1c216d60872d" category="paragraph">" 已加密文件 " 面板显示经过加密的文件百分比最高的前 4 个数据源。这些通常是受密码保护的项。为此，它会比较过去 7 天的加密速率，以确定哪些数据源的增长率超过 20% 。增加此数量可能意味着勒索软件已攻击您的系统。</block>
-  <block id="0d66fa6e00b328e108a949c6921023f9" category="inline-image-macro">BlueXP勒索软件保护信息板上的加密文件图表的屏幕截图。</block>
-  <block id="4010a3068ef84c9bf52689166a411e35" category="paragraph"><block ref="4010a3068ef84c9bf52689166a411e35" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b5320519b3467f76bd85c91c6dfb707e" category="paragraph">单击其中一个数据源对应的行、以在中查看筛选的结果<block ref="7dd0988c8f3af602ecae0cd47a950d39" category="inline-link-rx"></block> 以便您可以进一步调查。</block>
-  <block id="64ea11c681029425167cb44bfc5cba6b" category="section-title">按数据敏感度排名前几位的数据存储库</block>
-  <block id="dbf745aed831082f2f3dce55616bd43f" category="paragraph">Top Data Repository by Sensitivity level_ 面板最多可列出包含最敏感项目的前四个数据存储库（工作环境和数据源）。每个工作环境的条形图分为：</block>
-  <block id="c2587967478c7df25fe839d6f619f443" category="list-text">非敏感数据</block>
-  <block id="6370c5a9859b827de2be9d30ec4b997e" category="list-text">个人数据</block>
-  <block id="0f0be2946f647a34d438bb34323fd30e" category="list-text">敏感的个人数据</block>
-  <block id="e98ad18eb8f74609726096faa1de40ad" category="inline-image-macro">BlueXP勒索软件保护信息板上的数据敏感度图表的屏幕截图。</block>
-  <block id="a0e4271f594b77210f25ba31bd3d2b22" category="paragraph"><block ref="a0e4271f594b77210f25ba31bd3d2b22" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="43ec9a8f95b41a9a8648d4df5db2c7f1" category="paragraph">您可以将鼠标悬停在每个部分上以查看每个类别中的项目总数。</block>
-  <block id="99878dff25e4723fe73b171f746e9caf" category="paragraph">单击每个区域以查看中的筛选结果<block ref="7dd0988c8f3af602ecae0cd47a950d39" category="inline-link-rx"></block> 以便您可以进一步调查。</block>
-  <block id="96268b99d03fa48dc821023477953820" category="section-title">域管理组控制</block>
-  <block id="1484c0ae97e3321c4dc842fb559cbdb5" category="inline-link">集成了全局 Active Directory</block>
-  <block id="494e8d6e97ae42b235b147bd64c6f8e7" category="paragraph">域管理组控制面板显示添加到域管理员组中的最新用户，以便您可以查看这些组中是否允许所有用户。您必须拥有<block ref="fe6c5b6fdc78bd658d3a5c2303c6140b" category="inline-link-rx"></block> 将此面板分类为活动状态。</block>
-  <block id="038ef1f7608498ff64e15856aaf186a9" category="inline-image-macro">BlueXP勒索软件保护信息板上添加为域管理员的用户的屏幕截图。</block>
-  <block id="d2957d2c390a048b2051a0a1d1f0b352" category="paragraph"><block ref="d2957d2c390a048b2051a0a1d1f0b352" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="46419f697b5cb46833f440abb15226ec" category="paragraph">默认管理管理组包括 " 管理员 " ， " 域管理员 " ， " 企业管理员 " ， " 企业密钥管理员 " 和 " 密钥管理员 " 。</block>
-  <block id="0a3ec7ebb525a806c10987f8845415f7" category="section-title">按打开权限类型列出的数据</block>
-  <block id="5cee7495b9506e6951cf37dbad40ae2d" category="paragraph">_Open Permissions_panel 会显示正在扫描的所有文件中存在的每种权限的百分比。该图表是根据BlueXP分类提供的、它显示了以下类型的权限：</block>
-  <block id="5eef11b580781f577a31fd66fb5e92bc" category="list-text">无开放访问</block>
-  <block id="a1803d6c124292f91b3806ee4c46b406" category="list-text">对组织开放</block>
-  <block id="8c8bc01ad66acc46ad4db72461de09d9" category="list-text">打开公有</block>
-  <block id="77660481bdb77bcf47202315fe7e0d51" category="list-text">未知访问</block>
-  <block id="e1eddc163505b2d30660e9679f8c8ed9" category="paragraph"><block ref="e1eddc163505b2d30660e9679f8c8ed9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5971cfc235ee56ca96a8b0839861c16d" category="paragraph">您可以将鼠标悬停在每个部分上以查看每个类别中的文件百分比和总数。</block>
-  <block id="405143bfaa110853e4d2f54d441dc966" category="section-title">存储系统漏洞</block>
-  <block id="e5c60b32e2fca5363a7a4eb342da6368" category="paragraph">"_存储系统漏洞_"面板显示BlueXP数字顾问工具在每个ONTAP 集群上发现的高、中和低安全漏洞总数。应立即查看高漏洞、以确保您的系统不会受到攻击。</block>
-  <block id="9b09309c4227afb6699452bf8aa8aa8f" category="list-text">BlueXP Connector必须安装在您的内部环境中、而不是部署在云提供商中。</block>
-  <block id="6396ca38c07f87379dfa3195454dace7" category="list-text">您必须具有内部ONTAP 集群</block>
-  <block id="73e74f8e7e54762e45b60846c0454d7e" category="list-text">集群在BlueXP数字顾问中进行配置</block>
-  <block id="904b69a69d0950ca3ba58c14c2b414f5" category="list-text">您必须已在BlueXP中注册现有NSS帐户、才能查看集群和BlueXP数字顾问UI。</block>
-  <block id="97a7f67e3e6a4bda1454fb2a63d1993f" category="paragraph">请注意，您可以通过从BlueXP菜单中选择*运行状况&gt;数字顾问*来直接查看BlueXP数字顾问。</block>
-  <block id="66da556f69b9ec778bf49ecfe334b601" category="inline-image-macro">显示ONTAP 存储系统中安全漏洞数量的屏幕截图。</block>
-  <block id="47909da8bb7b784e366ab80708be83e4" category="paragraph"><block ref="47909da8bb7b784e366ab80708be83e4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4047eed73fb147faca2a60e49cd11bd3" category="inline-link">BlueXP数字顾问文档</block>
-  <block id="696a3a074fd33780b57fa15bd55a9775" category="paragraph">单击要查看其中一个集群的漏洞类型(高、中、低)、您将重定向到BlueXP数字顾问中的"安全漏洞"页面。(有关此页面的详细信息、请参见<block ref="850100008bc0d8082c88771453e4bd35" category="inline-link-rx"></block>) 您可以查看这些漏洞、然后按照建议的操作解决此问题描述。通常、解决方法是使用单点版本或完整版本升级ONTAP 软件、以解决此漏洞。</block>
-  <block id="ba82eec4834347b5a1b3d627cccfd0a2" category="section-title">ONTAP 系统强化状态</block>
-  <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">ONTAP 防勒索软件功能</block>
-  <block id="1fe51a36e3fc4df250213d0ceec52eb2" category="paragraph">"_加强您的ONTAP环境"面板可提供ONTAP系统中某些设置的状态、这些设置可根据跟踪部署的安全程度<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> 和<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> 主动检测异常活动并发出警告。</block>
-  <block id="d7e8b0e94bc7dcc93f421c7fc79dfffa" category="paragraph">您可以查看这些建议，然后确定希望如何解决潜在问题。您可以按照以下步骤更改集群上的设置，将更改推迟到其他时间或忽略此建议。</block>
-  <block id="bd44e2921ae1a42eb3a5dc08696e7b0e" category="paragraph">此面板目前支持适用于NetApp ONTAP 系统的内部ONTAP 、Cloud Volumes ONTAP 和Amazon FSX。</block>
-  <block id="3698e81f342e7d3114aeddccea477682" category="inline-image-macro">BlueXP勒索软件保护信息板上ONTAP 强化状态的屏幕截图。</block>
-  <block id="56b574565aa3bbf910edde2c8ec317ba" category="paragraph"><block ref="56b574565aa3bbf910edde2c8ec317ba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bc6d33a925140a3460ad6681dc5242bc" category="paragraph">正在跟踪的设置包括：</block>
-  <block id="e9f0aaae56580f9096af03ba526b177c" category="cell">强化目标</block>
-  <block id="1cbf843c3a5a0832d8cf0cdcf1135a78" category="cell">ONTAP 反勒索软件</block>
-  <block id="668049b833f74a4da25e90299e223ec3" category="cell">已激活机载反勒索软件的卷的百分比。仅适用于内部 ONTAP 系统。
-绿色状态图标表示已启用超过 85% 的卷。黄色表示已启用 40-85% 。红色表示已启用 &lt; 40% 。</block>
-  <block id="5548081e3623b5964eda1074b3e71b59" category="inline-link">了解如何在卷上启用反勒索软件</block>
-  <block id="ad488d126384370795bd3187eef1e396" category="cell"><block ref="1a378d16128702117eeef84a905af055" category="inline-link-rx"></block> 使用 System Manager 。</block>
-  <block id="e4a37f02d326b41feca29ff24384dfc1" category="cell">NAS审核</block>
-  <block id="26644e590b6e93e56b7eb402dd7184d7" category="cell">启用了文件系统审核的Storage VM的数量。
-绿色状态图标表示超过85%的SVM已启用NAS文件系统审核。黄色表示已启用 40-85% 。红色表示已启用 &lt; 40% 。</block>
-  <block id="c6310b0082711c2ecff8665c858d4349" category="inline-link">请参见如何在SVM上启用NAS审核</block>
-  <block id="4f1efe1bb089b60d7f12a798fbc657ac" category="cell"><block ref="5008c18083c6348e863173af351120f7" category="inline-link-rx"></block> 使用命令行界面。</block>
-  <block id="e8467e9b509c4924668c01eb7ab2adde" category="cell">ONTAP 版本</block>
-  <block id="31d81eb6324899c415d867559799335f" category="cell">集群上安装的 ONTAP 软件版本。
-绿色状态图标表示此版本为最新版本。黄色图标表示集群在内部系统中落后1或2个修补版本或1个次要版本、在Cloud Volumes ONTAP 中落后1个主要版本。红色图标表示集群后面有3个修补版本、2个次要版本、1个主要版本(内部系统)、后面有2个主要版本(Cloud Volumes ONTAP)。</block>
-  <block id="0798f817dc1443dc9f38ec02333f79aa" category="inline-link">了解升级内部集群的最佳方式</block>
-  <block id="bd049a4521e272ef2c19305d5ce4e5e1" category="inline-link">您的 Cloud Volumes ONTAP 系统</block>
-  <block id="f637bd8bc2ef36a18d73d69411ae6fc8" category="cell"><block ref="ebf13e67cf6307ed02967adbb6711cdb" category="inline-link-rx"></block> 或<block ref="d68fd2176e290d1ac33538b7d1bdf353" category="inline-link-rx"></block>。</block>
-  <block id="92d0a1aef2134a70d5c0f0279dc22ec6" category="cell">Snapshot 副本</block>
-  <block id="57ff531d2a61c16a7a52e0f91d1b12a5" category="cell">是否已在数据卷上激活Snapshot功能、以及有多少百分比的卷具有Snapshot副本。
-绿色状态图标表示超过85%的卷已启用Snapshot。黄色表示已启用 40-85% 。红色表示已启用 &lt; 40% 。</block>
-  <block id="fcb0bd0c7d52a8e69bc675e26e703a23" category="inline-link">请参见如何在内部集群上启用卷快照</block>
-  <block id="fed5603b3da12b224d2c5a4744d84db6" category="inline-link">在 Cloud Volumes ONTAP 系统上</block>
-  <block id="b9de0627ae5b338bc6c5d66e26fd1ebc" category="inline-link">在适用于ONTAP 的FSX系统上</block>
-  <block id="94837ff79f2d6a2c1041995a5e6e07b0" category="cell"><block ref="9217c403e6fe97a9a176c63ac6ba2b68" category="inline-link-rx"></block>或<block ref="db6763eaa5764093f19e9947737ec392" category="inline-link-rx"></block>或<block ref="3e0bc212eebdeeda4fcc1e02630af37a" category="inline-link-rx"></block>。</block>
-  <block id="4d18540b8dc5a99209517762449c6ad1" category="section-title">关键业务数据的权限状态</block>
-  <block id="150d825d149394999d01bf367e452a9d" category="paragraph">"业务关键型数据权限分析"面板显示对您的业务至关重要的数据的权限状态。这样，您就可以快速评估业务关键型数据的保护情况。</block>
-  <block id="ff7ff58f8ddd4b973b2404a056c74f66" category="inline-image-macro">BlueXP勒索软件保护信息板上所管理数据的权限状态的屏幕截图。</block>
-  <block id="09e8a2f44b9b7fbe1a65cce26be40b78" category="paragraph"><block ref="09e8a2f44b9b7fbe1a65cce26be40b78" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e9aa74cb71385313ae28d428e5c1bbc6" category="paragraph">此面板根据您在"业务关键型数据配置"页面中选择的策略显示数据。它显示文件总数最多的两个业务关键型策略中的数据。单击此链接可查看或定义其他策略。 <block ref="4895e16f799fc4e9d7a5e671ef62d80c" category="inline-link-macro-rx"></block>。</block>
-  <block id="d7a430aef362e0674d0e4f46cc4e0826" category="paragraph">此图显示了对符合策略标准的所有数据的权限分析。其中列出了以下项的数量：</block>
-  <block id="b2741d0f10749744f08e2f78e0164ef6" category="list-text">公开许可- BlueXP分类认为对公开的项目</block>
-  <block id="b8efe5fafe7027598a129195039dfb3f" category="list-text">对组织开放权限- BlueXP分类认为对组织开放的项目</block>
-  <block id="1541a6d71a556d55396030e9656038a3" category="list-text">无打开权限- BlueXP分类视为无打开权限的项目</block>
-  <block id="707d21725d0bd2a7a64dfe777966165d" category="list-text">未知权限- BlueXP分类将其视为未知权限的项目</block>
-  <block id="9c33255332fa0e9c519049d8b197716c" category="paragraph">将鼠标悬停在图表中的每个条上可查看每个类别中的结果数。单击栏和<block ref="7dd0988c8f3af602ecae0cd47a950d39" category="inline-link-rx"></block> 显示、以便您可以进一步调查哪些项目具有打开权限、以及是否应对文件权限进行任何调整。</block>
-  <block id="01238444606a763f352d68cd714ac7c9" category="section-title">关键业务数据的备份状态</block>
-  <block id="769daa032669f18f89fa37e853c76b9f" category="paragraph">"_Backup Status"面板显示了如何使用BlueXP备份和恢复来保护不同类别的数据。这可确定在因勒索软件攻击而需要恢复时、最重要的数据类别的备份程度如何全面。此数据直观地显示了工作环境中备份的特定类别项目的数量。</block>
-  <block id="4f01236e3d40b47dc703f96f5f3351d0" category="paragraph">此面板中只会显示已使用BlueXP备份和恢复_和_并使用BlueXP分类进行扫描的内部ONTAP 和Cloud Volumes ONTAP 工作环境。</block>
-  <block id="95d9f520d501259ca6fd36cc60a4687e" category="inline-image-macro">BlueXP勒索软件保护信息板上所管理数据的备份状态的屏幕截图。</block>
-  <block id="5a768a87c71aba7a1b4abed7c99684dc" category="paragraph"><block ref="5a768a87c71aba7a1b4abed7c99684dc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b0b5ccb4a195a07fd3eed14affb8695f" category="inline-link">类别</block>
-  <block id="41b4342a9c25a2a3d7221d15b5ec55f7" category="paragraph">最初、此面板会根据选定的默认类别显示数据。但是、您可以选择要跟踪的数据类别；例如、对文件、合同等进行编码。请参见的完整列表<block ref="83b85bff4589071000609429b23b8ae8" category="inline-link-rx"></block> 适用于您的工作环境的BlueXP分类。然后最多选择4个类别。</block>
-  <block id="d6eb5dc1abeab0ff34111bbaa52c3db3" category="paragraph">填充数据后、将鼠标悬停在图表中的每个方形上、可查看从工作环境中同一类别的所有文件中备份的文件数。绿色方形表示已备份85%或以上的文件。黄色方形表示备份的文件介于40%到85%之间。红色方形表示备份的文件数不超过40%。</block>
-  <block id="285e3a37c50a37efb034410ea77af064" category="paragraph">您可以单击行尾的*备份*按钮转到BlueXP备份和恢复界面、以便在每个工作环境中的更多卷上启用备份。</block>
-  <block id="9b152bad0a8266f91e1636404423e5a5" category="section-title">卷中使用SnapLock 进行保护的数据</block>
-  <block id="c91fef6cc2bc17dd968bbc0f0f5aa90d" category="inline-link">了解有关SnapLock 的更多信息</block>
-  <block id="9a65b9af7cdd7140aa92badfb028d99d" category="paragraph">您可以在ONTAP 卷上使用NetApp SnapLock 技术以未经修改的形式保留文件、以满足监管要求。您可以将文件和Snapshot副本提交到"一次写入、多次读取"(WORM)存储、并为此受WORM保护的数据设置保留期限。<block ref="dcc3f78a7e79522d0c4cab62e1e1a775" category="inline-link-rx"></block>。</block>
-  <block id="10f55e45fca2c3caee6aef471ec2cd59" category="paragraph">"关键数据不可移动性"面板显示了工作环境中使用ONTAP SnapLock 技术在WORM存储上受到保护、不会被修改和删除的项数。这样、您就可以查看有多少数据具有不可变的副本、以便更好地了解针对勒索软件的备份和恢复计划。</block>
-  <block id="4b7bcdfe0ea5faa891175ac4493d96b6" category="list-text">集群中至少一个节点上必须安装* SnapLock *许可证</block>
-  <block id="363a44e83a69120726370926c1f5686b" category="inline-image-macro">ONTAP 存储系统的关键数据不可移动性面板的屏幕截图。</block>
-  <block id="427d38254d8a53ae40c65bd47f5787d8" category="paragraph"><block ref="427d38254d8a53ae40c65bd47f5787d8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="996b1e78d578eb4baf09e78c07211158" category="paragraph">此面板根据您在"业务关键型数据配置"页面中选择的策略显示数据。单击此链接可查看或定义其他策略。 <block ref="4895e16f799fc4e9d7a5e671ef62d80c" category="inline-link-macro-rx"></block>。</block>
-  <block id="4a064b3d929e36aa418be80020ee8639" category="paragraph">此面板将显示与选定策略匹配的数据的以下信息：</block>
-  <block id="06d95d1e209921413752e4f0c6c94cd6" category="list-text">所有扫描工作环境中配置为使用SnapLock 的业务关键型文件的数量。</block>
-  <block id="ab81e10fb8e6c49c700a4403522284ec" category="list-text">所有已扫描工作环境中的业务关键型文件数量、但为SnapLock 配置的文件除外。请注意、其中某些文件可以使用SnapLock 以外的机制进行保护。</block>
-  <block id="00517d33242a297e6f381beb2445c3e3" category="paragraph">包含以下筛选器的BlueXP分类策略在选定策略的下拉列表中不可用、因为它们排除了重要的搜索区域：</block>
-  <block id="e39236d23fb63bab78a9ca2abc0cc5e9" category="list-text">Working environment name</block>
-  <block id="6c63358fa61dbacebcb3b3cabf06b4f3" category="list-text">Working environment type</block>
-  <block id="8e1608d6951087912c426bcb53d12280" category="list-text">存储库</block>
-  <block id="f7585dca02f941492ce2a56cecf7b71f" category="list-text">文件路径</block>
-  <block id="6bc0493d09cc429d2ec14f5a822b5e0a" category="paragraph">因此、在_critical data immuticalability _面板中创建策略以查看关键业务数据时、请务必牢记这一点。</block>
   <block id="8e0410229b2f2463922444e9482ea909" category="summary">在发现期间、BlueXP勒索软件保护功能会分析工作环境中所有BlueXP连接器和帐户中的所有卷和文件。</block>
   <block id="40ed4b70f990ecbd2b29cdd99fe63ea3" category="doc">在BlueXP勒索软件保护中发现工作负载</block>
   <block id="dd8c2f6ce83a7e8f073c2a0dc70477fb" category="paragraph">要使用BlueXP勒索软件保护、该服务需要首先发现数据。在发现期间、BlueXP勒索软件保护功能会分析帐户中所有BlueXP连接器和工作空间中工作环境中的所有卷和文件。</block>
@@ -477,31 +218,6 @@
   <block id="c3eceaec7c4fe81904561526dfaeb25c" category="paragraph">该服务会评估现有保护级别、包括当前备份保护、Snapshot副本和NetApp自动防软件保护选项。然后、该服务会根据评估结果建议如何改进勒索软件保护。</block>
   <block id="6b4241f75c7b162e9914d322d5beb0f9" category="list-text">从初始登录页面中选择*发现工作负载*。</block>
   <block id="675a1549facd94d16faf6e60d17eac34" category="paragraph">此服务会发现工作负载数据、并在信息板中显示数据保护的运行状况。</block>
-  <block id="36b4fa89019f77badc5e8ab198a82a27" category="summary">业务关键型数据策略可确定您认为对公司业务关键型的数据。定义这些策略并在BlueXP勒索软件保护中激活后、信息板和其他勒索软件面板将根据您最重要的数据反映潜在问题。</block>
-  <block id="6dc69765f3b707f1f3537871859d2520" category="doc">管理业务关键型数据策略</block>
-  <block id="d798e453fb090cd21448b50855516d55" category="paragraph">使用您定义为关键的策略的其他面板包括：</block>
-  <block id="7f765616fc0a4af4e7648559e3496e4b" category="list-text">建议的操作</block>
-  <block id="83e1396d093cbc90cf4e26a276fb2594" category="list-text">业务关键型数据不可移动性面板</block>
-  <block id="c35c2efc4f5e47e1f5d3e3a4e0066867" category="list-text">业务关键型数据权限分析面板</block>
-  <block id="ce0d03b4173c0d22f228a2a883fc33f5" category="paragraph">您可以单击*业务关键型数据*选项卡来显示_Business Critical Data Policies_页面。您也可以通过上述其他面板上的链接显示此页面。</block>
-  <block id="25c9247587929eea8076bdddb087457b" category="inline-image-macro">显示"业务关键型数据"页面的屏幕截图、其中一个策略被选择为业务关键型。</block>
-  <block id="c7adc720ffb97b7fd27780935a0da4de" category="paragraph"><block ref="c7adc720ffb97b7fd27780935a0da4de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="111c83bf33030769e75d526f97ef42a0" category="inline-link">详细了解BlueXP分类策略</block>
-  <block id="1763c9d67ca90e19bcb59f94f11f5873" category="paragraph">"业务关键型数据"页面显示了BlueXP分类中定义的所有策略。这包括您的组织创建的所有预定义策略和所有自定义策略。<block ref="f85d5b684a72fd7c990cd06d9e03d434" category="inline-link-rx"></block>。</block>
-  <block id="91ecdc4cf19ed755f973bc8ead0407c5" category="section-title">选择用于确定业务关键型数据的策略</block>
-  <block id="273eb8209767120243ad236b6ab4f43d" category="paragraph">如果您知道某个现有策略提供的结果可确定对您的业务至关重要的数据、则可以选择该策略。只需将"Is critical"列中的滑块移至右侧、如上图中最后一个策略所示。此操作指示BlueXP勒索软件保护服务在某些勒索软件面板中使用此策略返回的数据。</block>
-  <block id="1566820aa9cf492d64f1f5b390b9ee9f" category="paragraph">您可以将滑块移至"关闭"位置、以使策略不被视为"业务关键型"。这不会删除该策略、只是将其从BlueXP勒索软件保护服务中删除。</block>
-  <block id="78ed3bc80f78a464288576d8c404682a" category="paragraph">如果您不确定现有BlueXP分类策略是否返回用于确定组织关键数据的结果、可以单击*调查*按钮以显示用于查询数据的筛选器、并在BlueXP分类调查页面中查看该策略的结果。</block>
-  <block id="521fa9458bc5882697763b23180aa4db" category="paragraph">如果要查找特定策略或特定类型的策略、您可以在此页面上进行排序、筛选和搜索。</block>
-  <block id="e7326f303b8abf78625da7d8f22fa0b4" category="section-title">管理策略</block>
-  <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">了解有关创建策略的更多信息</block>
-  <block id="489769324335be3f3b67b8d14ab6e2fc" category="paragraph">单击*创建策略*以创建新策略来标识业务关键型数据。此操作将转到"BlueXP分类调查"页面、以便您可以创建策略。<block ref="3dcd80fda2dcf611ebd34bad8e4c54ca" category="inline-link-rx"></block>。</block>
-  <block id="bd3c34b06546cc8c1888d6e1ebffa7a8" category="inline-image-macro">三点按钮</block>
-  <block id="aa307c39c0fe3f9472b918d51da0222f" category="inline-link">了解有关编辑策略的更多信息</block>
-  <block id="4de1291403014aaa23e5690c208ce8e2" category="paragraph">单击 <block ref="590ac92176740fa4d6680f17c9712c57" category="inline-image-macro-rx" type="image"></block>如果要编辑现有策略、请选择*编辑查询*。此时将打开"BlueXP分类调查"页面、您可以使用策略的其他筛选器自定义结果。<block ref="59a793bdc5d6496dfa91a3a099a74cdb" category="inline-link-rx"></block>。</block>
-  <block id="d445457c6fba611ad58de2e0d6276134" category="inline-image-macro">显示创建策略按钮和编辑策略按钮的屏幕截图、用于创建和编辑策略。</block>
-  <block id="039244c09f1273abb71827f58a18b01b" category="paragraph"><block ref="039244c09f1273abb71827f58a18b01b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="511f88f976febfb06eea567ff5c12117" category="paragraph">请注意、您只能修改自定义策略-不能编辑BlueXP分类提供的预定义策略。</block>
   <block id="8dcd51e6649f98a61593682647591540" category="summary">您可以通过在BlueXP勒索软件保护中为工作负载分配策略来保护工作负载免受勒索软件攻击。</block>
   <block id="64086e522631840f7f453586e2c9736d" category="doc">保护工作负载免受勒索软件攻击</block>
   <block id="f5a35b7788e82cd729d1bcf30c5e3578" category="paragraph">您可以通过使用BlueXP勒索软件保护完成以下操作来保护工作负载免受勒索软件攻击。</block>
@@ -648,8 +364,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="cf49c80b52a1cb095928d387f3ae47ed" category="section-title">与其他服务的交互</block>
   <block id="59652c3e079176946d97681f24b440c9" category="paragraph">*BlueXP勒索软件保护是否了解NetApp ONTAP中的保护设置？*
 是的、BlueXP勒索软件保护功能可发现ONTAP中设置的Snapshot计划。</block>
-  <block id="2b019985c293edbc6b01c54fc0f13d71" category="paragraph">*如果您使用BlueXP勒索软件保护设置策略，您将来是否只需要对此服务进行更改？*
-不可以、您可以从任何服务进行策略更改。</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作负载</block>
   <block id="a208b0f1b7e813a10eff529ef77de14f" category="paragraph">**工作负载由什么组成？**
 工作负载包括单个应用程序实例使用的所有卷。例如、部署在ora3.host.com上的Oracle数据库实例的数据和日志可以分别使用vol1和vol2。这些卷共同构成该Oracle数据库实例的特定实例的工作负载。</block>
@@ -918,16 +632,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="75174e635e94b33548188078b7b9c2a2" category="paragraph">您可以通过更改工作负载名称来管理工作负载。使用默认名称会面临勒索软件攻击的风险。</block>
   <block id="0c494aaba0bbfa24f1d3a7438930b616" category="list-text">选择一个工作负载，然后选择*Actions*... 图标并选择*编辑工作负载名称*。</block>
   <block id="b7ac3f69f0c0ac25814be4d03ba11c24" category="list-text">输入新工作负载名称并选择*保存*。</block>
-  <block id="c9932149b57d3790fb67d57d3f549d5a" category="summary">您可以在BlueXP通知中心中查看勒索软件警报的状态。您还可以将通知配置为通过电子邮件发送、以便即使未登录到系统、您也能了解重要的系统活动。</block>
-  <block id="a56c2b4aad371470b53b4f44c3d7eaa2" category="doc">监控勒索软件警报的状态</block>
-  <block id="40da6f1400e45d080a97992a6a539894" category="inline-image-macro">通知铃</block>
-  <block id="456d53eac33bb23ff00f9d4ca9ce9937" category="paragraph">通知中心会跟踪勒索软件事件的进度、以便您可以验证这些事件是否已解决。您可以通过单击(<block ref="43f42c88e58852b6ee8c75c986a067e7" category="inline-image-macro-rx" type="image"></block>)。您还可以将BlueXP配置为通过电子邮件发送通知作为警报。</block>
-  <block id="a3f6a061298a9dbeb547d2e213763eee" category="paragraph">目前、有一个事件将触发电子邮件警报：</block>
-  <block id="4df68e0b98ba0691ff46f48eff2a2f3f" category="list-text">在您的系统上检测到潜在的勒索软件攻击</block>
-  <block id="0be25f818a977f6de990876935286400" category="paragraph">默认情况下、BlueXP客户管理员将收到所有"严重"和"建议"警报的电子邮件。默认情况下、所有其他用户和收件人都配置为不接收任何通知电子邮件。您可以将电子邮件发送给您的NetApp云帐户中的任何BlueXP用户或需要了解勒索软件保护事件的任何其他收件人。</block>
-  <block id="6e34df01e14ed4e78f2a6c02fd308cf8" category="paragraph">您需要选择"严重"通知类型才能接收BlueXP勒索软件保护电子邮件警报。</block>
-  <block id="57b65c16b4e713b68f97572b861b02ad" category="inline-link">了解有关通知中心的更多信息</block>
-  <block id="44a0652f7592c52c1258c6b0eb475684" category="paragraph"><block ref="604bd89716d502e7808a2adc35f1d34b" category="inline-link-rx"></block> 以及如何针对勒索软件保护事件发送警报电子邮件。</block>
   <block id="ae52f4c452e65b726d08cf9ddc884b9d" category="summary">您可以在BlueXP勒索软件保护服务中配置多个选项、包括备份目标。</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="doc">配置BlueXP勒索软件保护设置</block>
   <block id="03ca4c02e4a654c59d1076826cbd68b9" category="paragraph">您可以通过查看信息板上的建议来配置备份目标。</block>
@@ -1086,4 +790,22 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="dbc3399491cf278353174a615694d8f2" category="sidebar">BlueXP勒索软件保护文档</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
+  <block id="db9538daf4223bfc37b7351935f76d06" category="paragraph">*如果您使用BlueXP勒索软件保护设置策略，您将来是否只需要对此服务进行更改？*
+我们建议您通过BlueXP勒索软件保护服务更改策略。</block>
+  <block id="ff9f5559340f731afb5ba49547474182" category="list-text">*检测*可能是勒索软件攻击的异常。</block>
+  <block id="d56049a7e3c6b1951c937c2db7aa2601" category="list-text">应用精选恢复以满足RPO策略要求。BlueXP勒索软件保护可使用多种NetApp恢复服务编排从勒索软件事件中恢复的过程、包括BlueXP备份和恢复(原Cloud Backup)。</block>
+  <block id="557bbba3216e8793cf70557faa72054a" category="list-text">识别ONTAP服务API中的客户数据、并将其与工作负载关联起来。了解更多信息<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block> 和<block ref="d4e2312364a2363181c5807750f77d43" category="inline-link-rx"></block>。</block>
+  <block id="6307f01316a897401a5a49dfa1b98dd8" category="list-text">主动监控工作负载、并通过将策略应用于每个已识别的工作负载来编排BlueXP备份和恢复以及ONTAP API的使用。</block>
+  <block id="f90af1ae1e0fb166621b4480576b55ac" category="list-text">使用集成的机器学习(ML)模型检测潜在的攻击、该模型可检测潜在的异常加密和活动。</block>
+  <block id="1cb5f4b5b1383db0b2bfabd8c3cafd79" category="list-text">使用ONTAP、自动防软件保护和FPolicy技术确定攻击关联工作负载的特定可疑文件并映射到相关工作负载。</block>
+  <block id="7114c26cbae366caf9400a8157631c87" category="list-text">使用NetApp技术和产品(例如ONTAP、自动防兰软件保护和FPolicy)启动快速Snapshot副本。</block>
+  <block id="6256fa6f19d66d5dbcf39232799b384d" category="list-text">使用BlueXP备份和恢复、ONTAP、自主防兰软件保护和FPolicy技术和服务确定最佳Snapshot或备份并建议最佳实际恢复点(RPA)。</block>
+  <block id="1379a664ccbc825a76fb525d3449bdc7" category="paragraph">要使用BlueXP勒索软件保护预览版、您需要满足以下前提条件：</block>
+  <block id="3f291b80755e043548b987a2749bb2bb" category="list-text">NetApp StorageGRID或AWS S3中用于备份目标和访问权限集的帐户</block>
+  <block id="0d9cc4385f60a65b4ffd051eddbf122d" category="list-text">NetApp自主勒索软件保护的许可证、由BlueXP勒索软件保护使用、在内部ONTAP实例上启用、具体取决于您使用的ONTAP版本。请参见<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block>。</block>
+  <block id="af63a2ecb3ca5627267870874e6c44a4" category="paragraph">有关更多许可详细信息、请参见 <block ref="f86808e84e1b647abbc44adac84bc8a2" category="inline-link-macro-rx"></block>。</block>
+  <block id="935ac45ec053cbff86ec37813f64ea6e" category="list-text">必须在BlueXP中为每个虚拟私有云(Virtual Private Cloud、VPC)或内部区域设置一个BlueXP Connector。请参见<block ref="1e8f43557ce3193941a1e47864603ca9" category="inline-link-rx"></block>。</block>
+  <block id="9583d75cd4c629fc5e8bc18b167335c7" category="list-text">采用NetApp NAS内部存储的BlueXP工作环境</block>
+  <block id="8bea151378448834f662f674981096f7" category="list-text">至少有一个活动连接器连接到内部ONTAP集群的BlueXP帐户。所有源环境和工作环境都必须位于同一个BlueXP帐户中。</block>
+  <block id="baea1fd040c528a3cf05517592d54383" category="list-text">具有用于发现资源的帐户管理员权限的BlueXP用户帐户</block>
 </blocks>
