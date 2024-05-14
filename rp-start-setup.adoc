@@ -56,23 +56,9 @@ summary: 要使用BlueXP勒索软件保护、请执行几个步骤进行设置�
 
 === 在BlueXP中创建连接器
 
-您应联系NetApp销售代表试用此服务。然后、当您使用BlueXP Connector时、它将包括勒索软件保护服务的相应功能。
+您应联系您的NetApp销售代表试用或使用此服务。然后、当您使用BlueXP Connector时、它将包括勒索软件保护服务的相应功能。
 
 要在使用此服务之前在BlueXP中创建Connector、请参阅所述的BlueXP文档 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何创建BlueXP Connector"^]。
 
 
 NOTE: 如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。此服务将发现与此帐户关联的所有工作空间和所有连接器。
-
-
-
-=== 访问BlueXP勒索软件保护
-
-您可以使用NetApp BlueXP登录到BlueXP勒索软件保护服务。从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
-
-有关详细信息，请参见 link:rp-start-login.html["访问BlueXP勒索软件保护"]。
-
-
-
-=== 在BlueXP勒索软件保护中配置备份目标
-
-使用BlueXP勒索软件保护备份目标选项配置备份目标。有关详细信息，请参见 link:rp-use-settings.html["配置设置选项"]。

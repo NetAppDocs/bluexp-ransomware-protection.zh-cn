@@ -1,14 +1,14 @@
 ---
 indexpage:
   title: BlueXP勒索软件保护文档
-  summary: BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。对于预览版、该服务可保护Oracle、MySQL、VM数据存储库、
-    和文件共享位于内部NAS存储以及Amazon Web Services中的Cloud Volumes ONTAP (使用NFS协议)之间、并可将数据备份到Amazon
+  summary: BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护Oracle、MySQL、VM数据存储库、 和文件共享位于内部NAS存储以及Amazon
+    Web Services中的Cloud Volumes ONTAP (使用NFS和CIFS协议)上、并可在每个BlueXP帐户之间备份数据、同时将数据备份到Amazon
     Web Services (AWS)云存储或NetApp StorageGRID。
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid
-  lead: BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。对于预览版、该服务可保护Oracle、MySQL、VM数据存储库、 和文件共享位于内部NAS存储以及Amazon
-    Web Services中的Cloud Volumes ONTAP (使用NFS协议)之间、并可将数据备份到Amazon Web Services (AWS)云存储或NetApp
-    StorageGRID。
+  lead: BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护Oracle、MySQL、VM数据存储库、 和文件共享位于内部NAS存储以及Amazon
+    Web Services中的Cloud Volumes ONTAP (使用NFS和CIFS协议)上、并可在每个BlueXP帐户之间备份数据、同时将数据备份到Amazon
+    Web Services (AWS)云存储或NetApp StorageGRID。
   tiles:
   - title: 入门
     links:
@@ -24,6 +24,8 @@ indexpage:
       url: "/rp-start-setup.html"
     - title: 访问BlueXP勒索软件保护
       url: "/rp-start-login.html"
+    - title: 配置备份目标并启用威胁检测
+      url: "/rp-use-settings.html"
     - title: 常见问题解答
       url: "/rp-start-faq.html"
   - title: 使用BlueXP勒索软件保护

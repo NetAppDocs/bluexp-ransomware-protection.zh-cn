@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack' 
 summary: 了解BlueXP勒索软件保护的新增功能。 
 ---
-= 发行说明：BlueXP勒索软件保护的新增功能预览版
+= 发行说明：BlueXP勒索软件保护的新增功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,51 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 
 [role="lead"]
-了解BlueXP勒索软件保护预览版中的新增功能。
+了解BlueXP勒索软件保护的新增功能。
+
+
+
+== 2024年5月14日
+
+此版本是BlueXP勒索软件保护的正式发布版本。其中包括以下更新：
+
+* *许可更新*：您可以注册90天免费试用、在Amazon Web Services Marketplace中购买1年、2年或3年的按需购买订阅、或者自带NetApp许可证。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["了解有关设置许可的更多信息"]。
+
+* *CIFS协议*：该服务现在支持在使用NFS和CIFS协议的AWS工作环境中使用内部ONTAP和Cloud Volumes ONTAP。先前版本仅支持NFS协议。
+* *工作负载详细信息*：此版本现在可在"Protection (保护)"页面中的工作负载信息中提供更多详细信息、以改进工作负载保护评估。通过工作负载详细信息、您可以更改工作负载名称、更改工作负载重要性、查看当前分配的策略以及查看已配置的备份目标。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["有关查看工作负载详细信息的更多信息、请参见保护页面"]。
+
+* *应用程序一致和VM一致的保护和恢复*：现在、您可以使用NetApp SnapCenter软件执行应用程序一致的保护、并使用适用于VMware vSphere的SnapCenter插件执行VM一致的保护、从而实现稳定一致的状态、以避免日后需要恢复时可能丢失数据。如果需要恢复、您可以将应用程序或VM还原到其先前状态和上次事务。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载的更多信息"]。
+
+* *勒索软件保护策略*：如果工作负载上不存在Snapshot或备份策略、您可以创建勒索软件保护策略、其中可包括在此服务中创建的以下策略：
++
+** 快照策略
+** 备份策略
+** 检测策略
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载的更多信息"]。
+
+
+
+* *启用威胁检测*现在可使用第三方安全和事件管理(SIEM)系统。现在、信息板会显示一个新的"启用威胁检测"建议、您可以在"设置"页面上配置该建议。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置设置选项的更多信息"]。
+
+* *新检测状态*将显示在"保护"页面上、其中显示应用于工作负载的勒索软件检测的状态。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载和查看保护状态的更多信息"]。
+
+* *从信息板、保护、警报和恢复页面下载CSV文件*。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["了解有关从信息板和其他页面下载CSV文件的更多信息"]。
+
+* 现在，用户界面中包含*查看文档*链接。您可以从Dasbhoard垂直*操作*访问此文档 image:button-actions-vertical.png["垂直操作选项"] 选项选择*新增功能*以查看发行说明中的详细信息、或者选择*文档*以查看BlueXP勒索软件保护文档主页。
+
 
 
 
@@ -24,8 +68,6 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 * *保护策略管理*：除了使用预定义策略之外，您现在还可以创建、更改和删除策略。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关管理策略的更多信息"]。
 * *二级存储上的不可更改性(DataLock)*：现在、您可以在对象存储中使用NetApp DataLock技术使备份在二级存储上不可更改。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关创建保护策略的更多信息"]。
-
-
 * *自动备份到AWS*：除了使用NetApp StorageGRID之外、您现在还可以选择StorageGRID作为备份目标。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置备份目标的更多信息"]。
 * *用于调查潜在攻击的其他功能*：您现在可以查看更多取证详细信息来调查检测到的潜在攻击。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["详细了解如何响应检测到的勒索软件警报"]。
 * *恢复过程*。恢复过程得到了改进。现在、您可以在一个工作流中逐个卷、恢复工作负载的所有卷、甚至恢复卷中的几个文件。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["详细了解如何从勒索软件攻击中恢复(在消除意外事件后)"]。

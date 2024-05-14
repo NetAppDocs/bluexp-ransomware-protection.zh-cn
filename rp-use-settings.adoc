@@ -12,7 +12,9 @@ summary: 您可以在BlueXP勒索软件保护服务中配置多个选项、包�
 
 
 [role="lead"]
-您可以通过查看信息板上的建议来配置备份目标。
+您可以通过查看信息板上的建议来配置备份目标或启用威胁检测。
+
+启用威胁检测会自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。
 
 
 
@@ -38,7 +40,7 @@ BlueXP勒索软件保护可以识别尚未进行任何备份的工作负载以�
 . 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
 . 查看信息板的"建议操作"窗格。
 +
-image:screen-dashboard-recommended-actions-configure-backup-destinations.png["信息板页面"]
+image:screen-dashboard.png["信息板页面"]
 
 . 从信息板中，选择*Review and fix*以获取“配置备份目标”的建议。
 . 根据备份提供程序继续执行说明。
@@ -46,7 +48,7 @@ image:screen-dashboard-recommended-actions-configure-backup-destinations.png["�
 
 
 
-== 将StorageGRID添加为备份目标
+=== 将StorageGRID添加为备份目标
 
 要将NetApp StorageGRID设置为备份目标、请输入以下信息。
 
@@ -90,7 +92,7 @@ image:screen-settings-backup-destinations-list-storagegrid.png["备份目标页�
 
 
 
-== 将Amazon Web Services添加为备份目标
+=== 将Amazon Web Services添加为备份目标
 
 要将AWS设置为备份目标、请输入以下信息。
 
@@ -145,3 +147,29 @@ CAUTION: 如果您现在配置备份锁定设置、则在配置备份目标后�
 新备份目标将添加到备份目标列表中。
 
 image:screen-settings-backup-destinations-list-aws.png["备份目标页面上的设置选项"]
+
+
+
+== 启用威胁检测
+
+您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。
+
+. 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
+. 查看信息板的"建议操作"窗格。
+. 从信息板中，选择*Review and fix*以获得“启用威胁检测”的建议。
++
+出现“Settings (设置)”页面。
+
++
+image:screen-settings-threat-detection2.png["设置页面"]
+
+. 在“设置”页面中，选择威胁检测窗格中的*Connect*。
++
+image:screen-settings-threat-detection-details.png["启用威胁检测详细信息页面"]
+
+. 输入暹粒服务器详细信息以启用威胁检测。
+. 选择 * 启用 * 。
++
+"设置"页面上的威胁检测窗格显示"已连接"。
+
+

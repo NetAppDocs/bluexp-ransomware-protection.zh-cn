@@ -27,9 +27,11 @@ sidebar:
       url: "/rp-start-setup.html"
     - title: 访问BlueXP勒索软件保护
       url: "/rp-start-login.html"
+    - title: 设置许可
+      url: "/rp-start-licenses.html"
     - title: 发现工作负载
       url: "/rp-start-discover.html"
-    - title: 配置备份目标
+    - title: 配置备份目标并启用威胁检测
       url: "/rp-use-settings.html"
     - title: 常见问题解答
       url: "/rp-start-faq.html"
@@ -45,6 +47,8 @@ sidebar:
       url: "/rp-use-alert.html"
     - title: 从勒索软件攻击中恢复
       url: "/rp-use-recover.html"
+    - title: 下载报告
+      url: "/rp-use-reports.html"
   - section: support
   - title: 法律声明
     url: "/legal-notices.html"

@@ -14,8 +14,10 @@ summary: 在发现期间、BlueXP勒索软件保护功能会分析工作环境�
 [role="lead"]
 要使用BlueXP勒索软件保护、该服务需要首先发现数据。在发现期间、BlueXP勒索软件保护功能会分析帐户中所有BlueXP连接器和工作空间中工作环境中的所有卷和文件。
 
+BlueXP勒索软件保护可评估MySQL应用程序、Oracle应用程序、VMware数据存储库和文件共享。
 
-NOTE: 对于预览版、BlueXP勒索软件保护可评估MySQL应用程序、Oracle应用程序、VMware数据存储库和文件共享。
+
+NOTE: 不会发现卷使用FlexGroup或iSCSI的工作负载。
 
 该服务会评估现有保护级别、包括当前备份保护、Snapshot副本和NetApp自动防软件保护选项。然后、该服务会根据评估结果建议如何改进勒索软件保护。
 
