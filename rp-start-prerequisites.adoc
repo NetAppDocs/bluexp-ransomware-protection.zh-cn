@@ -40,11 +40,13 @@ NOTE: 与预览版不同、BlueXP勒索软件保护的常规版本包括NetApp�
 
 NOTE: 如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。
 
-** 在工作环境中启用了备份的BlueXP备份和恢复服务
-** 采用NetApp内部存储的BlueXP工作环境(使用NAS或CIFS协议)
 ** 至少有一个活动连接器连接到内部ONTAP集群的BlueXP帐户。所有源环境和工作环境都必须位于同一个BlueXP帐户中。
 ** 具有用于发现资源的帐户管理员权限的BlueXP用户帐户
+** 采用NetApp内部存储的BlueXP工作环境(使用NAS或CIFS协议)
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准BlueXP要求"^]
 
 
 
+
+
+NOTE: 工作环境中不再需要启用BlueXP备份和恢复服务。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 link:rp-use-settings.html["配置设置"]。

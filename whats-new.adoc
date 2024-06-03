@@ -58,6 +58,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["了解有关从信息板和其他页面下载CSV文件的更多信息"]。
 
 * 现在，用户界面中包含*查看文档*链接。您可以从Dasbhoard垂直*操作*访问此文档 image:button-actions-vertical.png["垂直操作选项"] 选项选择*新增功能*以查看发行说明中的详细信息、或者选择*文档*以查看BlueXP勒索软件保护文档主页。
+* *BlueXP备份和恢复*：不再需要在工作环境中启用BlueXP备份和恢复服务。请参见 link:rp-start-prerequisites.html["前提条件"]。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 link:rp-use-settings.html["配置设置"]。
 
 
 

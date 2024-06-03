@@ -29,7 +29,6 @@
   <block id="7fc964519860ed011389afb142e2370e" category="list-text">在BlueXP中：</block>
   <block id="617601bf744d089a872f17b09e5451b5" category="inline-link">BlueXP文档以配置连接器</block>
   <block id="00c15e6000f2ee7d33421ec117c11c12" category="admonition">如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。</block>
-  <block id="c5c84330043d2e887d72c591baa2b9c1" category="list-text">在工作环境中启用了备份的BlueXP备份和恢复服务</block>
   <block id="801e5ac526198ee67b36c61b75c65eab" category="inline-link">标准BlueXP要求</block>
   <block id="5b4e347dbf978618d47c067b87ad3fe2" category="list-text"><block ref="5b4e347dbf978618d47c067b87ad3fe2" category="inline-link-rx"></block></block>
   <block id="4d6682b21a77873fe9ae34d7fc255020" category="summary">只需几个步骤即可开始使用NetApp BlueXP勒索软件保护服务。</block>
@@ -1041,4 +1040,7 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="7c332d8c3498456553e971642a5142fc" category="paragraph">您应联系您的NetApp销售代表试用或使用此服务。然后、当您使用BlueXP Connector时、它将包括勒索软件保护服务的相应功能。</block>
   <block id="077eb8dcf08a34370634fa284781fbf5" category="sidebar">BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护Oracle、MySQL、VM数据存储库、 和文件共享位于内部NAS存储以及Amazon Web Services中的Cloud Volumes ONTAP (使用NFS和CIFS协议)上、并可在每个BlueXP帐户之间备份数据、同时将数据备份到Amazon Web Services (AWS)云存储或NetApp StorageGRID。</block>
   <block id="03a0606ea5e305ef55dd39ee839003fd" category="sidebar">配置备份目标并启用威胁检测</block>
+  <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">配置设置</block>
+  <block id="56ff02f12c9bfc12762be5191b6a6ce5" category="admonition">工作环境中不再需要启用BlueXP备份和恢复服务。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>。</block>
+  <block id="8b003b58b4532bbf9f07c58827819319" category="list-text">*BlueXP备份和恢复*：不再需要在工作环境中启用BlueXP备份和恢复服务。请参见 <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>。</block>
 </blocks>
