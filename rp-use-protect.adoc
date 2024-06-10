@@ -15,16 +15,10 @@ summary: 您可以通过在BlueXP勒索软件保护中为工作负载分配策�
 您可以通过使用BlueXP勒索软件保护完成以下操作来保护工作负载免受勒索软件攻击。
 
 * 更改现有工作负载保护详细信息。
-+
-** 更改不在SnapCenter中管理的工作负载(例如应用程序和VM数据存储库)的名称。
-** 更改工作负载的优先级或重要性。
-
-
 * 启用工作负载一致的保护、此功能可与适用于VMware vSphere的SnapCenter软件或SnapCenter插件结合使用。
 * 创建或管理勒索软件保护策略、其中包括您为Snapshot、备份和勒索软件检测创建的策略。
 +
 ** 导入策略并进行调整。
-** 编辑或删除检测策略(仅限您创建的策略)。
 
 
 
@@ -69,7 +63,7 @@ summary: 您可以通过在BlueXP勒索软件保护中为工作负载分配策�
 在发现期间、BlueXP勒索软件保护会根据对每个工作负载的分析为每个工作负载分配一个重要性或优先级。工作负载的重要性取决于以下Snapshot频率：
 
 * *严重*：每小时创建1个以上的Snapshot副本(主动保护计划)
-* *高*：每小时创建的Snapshot副本少于1个、但每天创建的Snapshot副本多于1个
+* *重要*：每小时创建的Snapshot副本少于1个、但每天创建的Snapshot副本多于1个
 * *标准*：每天创建1个以上的Snapshot副本
 
 
@@ -104,7 +98,7 @@ summary: 您可以通过在BlueXP勒索软件保护中为工作负载分配策�
 | 60 | 2. | 309 
 
 
-.4+| *高工作负载策略*  a| 
+.4+| *重要的工作负载策略*  a| 
 每季度
 | 每30分钟 | 3. | 144. | 165 
 
@@ -126,7 +120,7 @@ summary: 您可以通过在BlueXP勒索软件保护中为工作负载分配策�
 
 .4+| *标准工作负载策略*  a| 
 每季度
-| 每60分钟 | 3. | 72. | 93 
+| 每30分钟 | 3. | 72. | 93 
 
 
 | 每天  a| 
@@ -161,7 +155,7 @@ summary: 您可以通过在BlueXP勒索软件保护中为工作负载分配策�
 ** 从信息板上的"Data Protection (数据保护)"窗格中、选择*查看全部*。
 ** 从菜单中，选择*Protection。
 +
-image:screen-protection-sc-columns.png["保护页面"]
+image:screen-protection-sc-columns2.png["保护页面"]
 
 
 
@@ -169,22 +163,25 @@ image:screen-protection-sc-columns.png["保护页面"]
 
 
 
+NOTE: 对于已使用SnapCenter或BlueXP备份和恢复服务制定保护策略的工作负载、您无法编辑此保护。对于这些工作负载、如果已在其他服务中激活、则BlueXP勒索软件可启用自动勒索软件保护和/或FPolicy保护。了解更多信息 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护"^] 和 https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP备份和恢复"^]，和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 
-== 更改工作负载保护详细信息
 
-如果工作负载不是由SnapCenter或BlueXP备份和恢复管理的、则可以更改保护详细信息、例如工作负载优先级和名称。
+
+== 查看工作负载保护详细信息
+
+您可以查看保护详细信息、例如工作负载优先级、保护策略和存储信息。
 
 .步骤
 . 从BlueXP勒索软件保护菜单中、选择*保护*。
 . 从保护页面中、选择一个工作负载。
 +
-image:screen-protection-details2.png["保护页面中的工作负载详细信息"]
+image:screen-protection-details3.png["保护页面中的工作负载详细信息"]
 
 +
-在工作负载详细信息页面中、您可以为工作负载分配策略、更改工作负载名称或优先级、查看警报、查看备份目标以及查看恢复信息。
+在工作负载详细信息页面中、您可以为工作负载分配策略、查看警报、查看备份目标以及查看恢复信息。
 
-. 要更改工作负载的名称，请单击*Pencil* image:button_pencil.png["铅笔"] 图标并更改此名称。
-. 要从分配的优先级更改工作负载的重要性，请单击*Pencil* image:button_pencil.png["铅笔"] 图标并进行更改。
+
+
 . 要查看与工作负载关联的策略、请在工作负载详细信息页面的"Protection (保护)"窗格中、单击*查看策略*。
 . 要查看工作负载备份目标、请在工作负载详细信息页面的保护窗格中、单击*查看备份目标*。
 +
@@ -276,6 +273,13 @@ NOTE: 如果选择复制和修改现有策略、则该服务会在原始名称�
 ** *Snapshot策略*:
 +
 *** *Snapshot policy name*：输入Snapshot策略的名称。
+*** *Snapshot锁定*：启用此选项可锁定主存储上的Snapshot副本、以便在一段时间内无法修改或删除这些副本、即使勒索软件攻击设法到达备份存储目标也是如此。这也称为_immutable storage_。这样可以缩短恢复时间。
++
+锁定Snapshot后、卷到期时间将设置为Snapshot副本的到期时间。
+
++
+ONTAP 9.12.1及更高版本提供了Snapshot副本锁定功能。要了解有关SnapLock的更多信息、请参见 https://docs.netapp.com/us-en/ontap/snaplock/index.html["ONTAP中的SnapLock"^]。
+
 *** *Snapshot计划*：选择计划选项、要保留的Snapshot副本数、然后选择以启用计划。
 
 
@@ -333,7 +337,7 @@ image:screen-protect-br-policies.png["显示BlueXP备份和恢复策略的保护
 
 
 
-=== 分配其他策略
+== 分配其他策略
 
 您可以分配不同的保护策略来替换当前保护策略。
 
@@ -350,31 +354,3 @@ image:screen-protect-br-policies.png["显示BlueXP备份和恢复策略的保护
 == 管理勒索软件保护策略
 
 您可以编辑或删除勒索软件策略。
-
-
-
-=== 编辑勒索软件保护策略
-
-您可以通过选择其他预配置的检测策略策略来编辑保护策略。
-
-.步骤
-. 从BlueXP勒索软件保护菜单中、选择*保护*。
-. 在保护页面中，选择*管理勒索软件策略*。
-. 在管理策略页面中，选择*Actions* image:screenshot_horizontal_more_button.gif["操作按钮"] 选项。
-. 从操作菜单中，选择*Edit straction*。
-. 更改详细信息。
-. 选择*保存*以完成更改。
-
-
-
-
-=== 删除勒索软件保护策略
-
-您可以删除当前未与任何工作负载关联的保护策略。
-
-.步骤
-. 从BlueXP勒索软件保护菜单中、选择*保护*。
-. 在保护页面中，选择*管理勒索软件策略*。
-. 在管理策略页面中，选择*Actions* image:screenshot_horizontal_more_button.gif["操作按钮"] 选项。
-. 从“操作”菜单中，选择*Delete straction*。
-

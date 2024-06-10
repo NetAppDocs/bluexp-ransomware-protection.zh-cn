@@ -18,20 +18,45 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 
 
+== 2024年6月10日
+
+此版本的BlueXP勒索软件保护包括以下更新：
+
+* *主存储上的Snapshot副本锁定*：启用此选项可锁定主存储上的Snapshot副本、以便在一段时间内无法修改或删除这些副本、即使勒索软件攻击设法到达备份存储目标也是如此。
++
+link:rp-use-protect.html["详细了解如何在勒索软件保护策略中保护工作负载和启用备份锁定"]。
+
+* *此版本除了支持适用于AWS的Cloud Volumes ONTAP和内部ONTAP NAS之外、还支持将适用于Microsoft Azure"的Cloud Volumes ONTAP用作工作环境。
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html["在 Azure 中快速启动 Cloud Volumes ONTAP"^]
+
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP勒索软件保护"]。
+
+
+
+* *已将Microsoft Azure添加为备份目标*。现在、您可以将Microsoft Azure与AWS和NetApp StorageGRID一起添加为备份目标。
++
+link:rp-use-settings.html["请参阅配置保护设置"]。
+
+
+
+
+
 == 2024年5月14日
 
 此版本是BlueXP勒索软件保护的正式发布版本。其中包括以下更新：
 
-* *许可更新*：您可以注册90天免费试用、在Amazon Web Services Marketplace中购买1年、2年或3年的按需购买订阅、或者自带NetApp许可证。
+* *许可更新*：您可以注册90天免费试用。很快、您将能够通过亚马逊网络服务商城购买按需购买订阅或自带NetApp许可证。
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["了解有关设置许可的更多信息"]。
 
 * *CIFS协议*：该服务现在支持在使用NFS和CIFS协议的AWS工作环境中使用内部ONTAP和Cloud Volumes ONTAP。先前版本仅支持NFS协议。
-* *工作负载详细信息*：此版本现在可在"Protection (保护)"页面中的工作负载信息中提供更多详细信息、以改进工作负载保护评估。通过工作负载详细信息、您可以更改工作负载名称、更改工作负载重要性、查看当前分配的策略以及查看已配置的备份目标。
+* *工作负载详细信息*：此版本现在可在"保护"和"其他"页面中的工作负载信息中提供更多详细信息、以改进工作负载保护评估。您可以通过工作负载详细信息查看当前分配的策略以及配置的备份目标。
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["有关查看工作负载详细信息的更多信息、请参见保护页面"]。
 
-* *应用程序一致和VM一致的保护和恢复*：现在、您可以使用NetApp SnapCenter软件执行应用程序一致的保护、并使用适用于VMware vSphere的SnapCenter插件执行VM一致的保护、从而实现稳定一致的状态、以避免日后需要恢复时可能丢失数据。如果需要恢复、您可以将应用程序或VM还原到其先前状态和上次事务。
+* *应用程序一致和VM一致的保护和恢复*：现在、您可以使用NetApp SnapCenter软件执行应用程序一致的保护、并使用适用于VMware vSphere的SnapCenter插件执行VM一致的保护、从而实现稳定一致的状态、以避免日后需要恢复时可能丢失数据。如果需要恢复、您可以将应用程序或VM还原回先前可用的任何状态。
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载的更多信息"]。
 
@@ -53,7 +78,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载和查看保护状态的更多信息"]。
 
-* *从信息板、保护、警报和恢复页面下载CSV文件*。
+* *从保护、警报和恢复页面下载CSV文件*。
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["了解有关从信息板和其他页面下载CSV文件的更多信息"]。
 

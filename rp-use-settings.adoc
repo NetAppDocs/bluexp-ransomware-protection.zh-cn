@@ -26,6 +26,7 @@ BlueXP勒索软件保护可以识别尚未进行任何备份的工作负载以�
 
 * NetApp StorageGRID
 * Amazon Web Services （ AWS ）
+* Microsoft Azure
 
 
 您可以根据信息板中的建议操作添加备份目标。
@@ -42,8 +43,19 @@ BlueXP勒索软件保护可以识别尚未进行任何备份的工作负载以�
 +
 image:screen-dashboard.png["信息板页面"]
 
-. 从信息板中，选择*Review and fix*以获取“配置备份目标”的建议。
+. 从信息板中，选择*Review and fix*以获得“准备<backup provider>作为备份目标”的建议。
 . 根据备份提供程序继续执行说明。
+
+
+
+
+=== 从菜单访问设置页面
+
+您可以从菜单轻松访问设置页面。
+
+. 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
+. 从菜单中选择*Settings*。
+. 要添加备份目的地，请选择*Add*。
 
 
 
@@ -55,7 +67,7 @@ image:screen-dashboard.png["信息板页面"]
 . 在*设置>备份目的地*页面中，选择*添加*。
 . 输入备份目标的名称。
 +
-image:screen-settings-backup-destination-storagegrid.png["备份目标页面"]
+image:screen-settings-backup-destination-azure.png["备份目标页面"]
 
 . 选择* StorageGRID *。
 . 选择每个设置旁边的向下箭头、然后输入或选择值：
@@ -88,7 +100,7 @@ CAUTION: 如果您现在配置备份锁定设置、则在配置备份目标后�
 .结果
 新备份目标将添加到备份目标列表中。
 
-image:screen-settings-backup-destinations-list-storagegrid.png["备份目标页面上的设置选项"]
+image:screen-settings-backup-destinations-list-azure.png["备份目标页面上的设置选项"]
 
 
 
@@ -101,7 +113,7 @@ image:screen-settings-backup-destinations-list-storagegrid.png["备份目标页�
 . 在*设置>备份目的地*页面中，选择*添加*。
 . 输入备份目标的名称。
 +
-image:screen-settings-backup-destination-storagegrid.png["备份目标页面"]
+image:screen-settings-backup-destination-azure.png["备份目标页面"]
 
 . 选择* Amazon Web Services*。
 . 选择每个设置旁边的向下箭头、然后输入或选择值：
@@ -146,7 +158,65 @@ CAUTION: 如果您现在配置备份锁定设置、则在配置备份目标后�
 .结果
 新备份目标将添加到备份目标列表中。
 
-image:screen-settings-backup-destinations-list-aws.png["备份目标页面上的设置选项"]
+image:screen-settings-backup-destinations-list-azure.png["备份目标页面上的设置选项"]
+
+
+
+=== 将Microsoft Azure添加为备份目标
+
+要将Azure设置为备份目标、请输入以下信息。
+
+有关在BlueXP中管理Azure凭据和市场订阅的详细信息、请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["管理您的Azure凭据和市场订阅"^]。
+
+. 在*设置>备份目的地*页面中，选择*添加*。
+. 输入备份目标的名称。
++
+image:screen-settings-backup-destination-azure.png["备份目标页面"]
+
+. 选择 * Azure * 。
+. 选择每个设置旁边的向下箭头、然后输入或选择值：
++
+** *提供者设置*：
++
+*** 创建新的存储帐户、如果BlueXP中已存在现有存储帐户、请选择一个、或者自带用于存储备份的存储帐户。
+*** Azure凭据的Azure订阅、区域和资源组
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["如果要自带存储帐户、请参阅添加Azure Blb存储帐户"^]。
+
+
+
+** *加密*：如果要创建新的存储帐户，请输入提供商提供给您的加密密钥信息。如果您选择了现有帐户、则加密信息已可用。
++
+默认情况下、帐户中的数据使用Microsoft管理的密钥进行加密。您可以继续使用Microsoft管理的密钥、也可以使用自己的密钥管理数据加密。
+
+** *联网*：选择IP空间以及是否使用专用端点。
++
+*** IP空间是要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站 Internet 访问权限。
+*** (可选)选择是否使用先前配置的Azure私有端点。
++
+如果要使用Azure PrivateLink、请参见 https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^]。
+
+
+
+** *Backup lock*:选择您希望服务保护备份不被修改或删除。此选项使用NetApp数据锁技术。每个备份都将在保留期限内锁定、或者至少锁定30天、再加上长达14天的缓冲期。
++
+
+CAUTION: 如果您现在配置备份锁定设置、则在配置备份目标后、您将无法稍后更改该设置。
+
++
+*** *已解除锁定*：特定用户可以在保留期限内覆盖或删除受保护的文件。
+*** *锁定*：用户在保留期间无法覆盖或删除受保护的备份文件。此选项可满足完全合规性要求。
+
+
+
+
+. 选择 * 添加 * 。
+
+
+.结果
+新备份目标将添加到备份目标列表中。
+
+image:screen-settings-backup-destinations-list-azure.png["备份目标页面上的设置选项"]
 
 
 
@@ -155,21 +225,18 @@ image:screen-settings-backup-destinations-list-aws.png["备份目标页面上的
 您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。
 
 . 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
-. 查看信息板的"建议操作"窗格。
-. 从信息板中，选择*Review and fix*以获得“启用威胁检测”的建议。
+. 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
+. 选择*Settings*。
 +
 出现“Settings (设置)”页面。
 
 +
-image:screen-settings-threat-detection2.png["设置页面"]
+image:screen-settings-threat-detection3.png["设置页面"]
 
-. 在“设置”页面中，选择威胁检测窗格中的*Connect*。
-+
-image:screen-settings-threat-detection-details.png["启用威胁检测详细信息页面"]
-
+. 在设置页面中，选择“暹粒连接”窗格中的*Connect*。
 . 输入暹粒服务器详细信息以启用威胁检测。
 . 选择 * 启用 * 。
 +
-"设置"页面上的威胁检测窗格显示"已连接"。
+"设置"页面将显示"已连接"。
 
 

@@ -12,13 +12,13 @@ summary: 通过设置许可开始使用BlueXP勒索软件保护。
 
 
 [role="lead"]
-借助BlueXP勒索软件保护、您可以使用不同的许可计划、包括免费试用版、按需购买订阅或自带许可证。
+借助BlueXP勒索软件保护、您可以使用不同的许可计划。
 
 您可以使用以下许可证类型：
 
 * 注册90天免费试用。
-* 通过Amazon Web Services (AWS) Marketplace购买按需购买(PAYGO)订阅。
-* 自带许可证(BYOL)、这是您从NetApp销售代表处获得的NetApp许可证文件(NLL)您可以使用许可证序列号在BlueXP电子钱包中激活BYOL。
+* 通过Amazon Web Services (AWS) Marketplace购买按需购买(PAYGO)订阅。  此版本将很快推出。
+* 自带许可证(BYOL)、这是您从NetApp销售代表处获得的NetApp许可证文件(NLL)您可以使用许可证序列号在BlueXP电子钱包中激活BYOL。此版本将很快推出。
 
 
 在AWS中设置BYOL或购买PAYGO订阅后、您可以在BlueXP数字钱包*数据服务许可证*选项卡中查看许可证、或者在BlueXP数字钱包*订阅*选项卡中查看活动的AWS订阅。
@@ -57,8 +57,8 @@ image:screen-rp-landing.png["BlueXP勒索软件保护的登录页面屏幕截图
 +
 要添加接头、请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解连接器"^]。
 
-. 设置Connector后、在BlueXP勒索软件保护登录页面中、用于添加Connector的按钮会更改为用于开始免费试用的按钮。选择*开始免费试用*。
-. 查看免费试用信息并选择*Let's Go。
+. 设置Connector后、在BlueXP勒索软件保护登录页面中、用于添加Connector的按钮会更改为用于发现工作负载的按钮。选择*从发现工作负载开始*。
+. 要查看免费试用信息、请选择右上角的下拉选项。
 
 
 *试用结束后，请获取订阅或许可证*
@@ -80,7 +80,7 @@ image:screen-rp-landing.png["BlueXP勒索软件保护的登录页面屏幕截图
 ** 您会看到一条消息、指出免费试用即将到期。在消息中，选择*查看付款方式*。
 ** 单击右上角的*免费试用*通知并选择*查看付款方式*。
 +
-image:screen-license-payment-methods.png["BlueXP勒索软件保护支付方法页面"]
+image:screen-license-payment-methods2.png["BlueXP勒索软件保护支付方法页面"]
 
 
 
@@ -102,9 +102,61 @@ image:screen-license-dw-add-license.png["BlueXP数字钱包添加许可证页面
 
 . 在BlueXP数字钱包的添加许可证页面中，选择*Enter Serial Number*，输入发送给您的电子邮件中包含的序列号，然后选择*Add License*。
 . 要在BlueXP数字钱包中查看许可证详细信息、请从BlueXP左侧导航栏中选择*监管*>*数字钱包*。
-. 要查看订阅信息，请选择*订阅*。要查看BYOL许可证，请选择*数据服务许可证*。
++
+** 要查看订阅信息，请选择*订阅*。
+** 要查看BYOL许可证，请选择*数据服务许可证*。
 +
 image:screen-dw-data-services-license.png["BlueXP数字钱包数据服务许可证页面"]
+
+
+
+. 返回到BlueXP勒索软件保护。从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
++
+此时将显示一条消息、指示已添加许可证。
+
+
+
+
+
+== 通过Microsoft Azure Marketplace订阅
+
+本操作步骤简要概述了如何直接在Azure Marketplace中订阅。
+
+.步骤
+. 在BlueXP勒索软件保护中、执行以下操作之一：
++
+** 您会看到一条消息、指出免费试用即将到期。在消息中，选择*查看付款方式*。
+** 单击右上角的*免费试用*通知并选择*查看付款方式*。
++
+image:screen-license-payment-methods2.png["BlueXP勒索软件保护支付方法页面"]
+
+
+
+. 在"付款方式"页面中、选择*在Azure Marketplace中订阅*。
+. 在Azure Marketplace中、选择*查看购买选项*。
+. 使用Azure Marketplace订阅BlueXP勒索软件保护。
+. 当您返回到BlueXP勒索软件保护时、会显示一条消息、指出您已订阅。
++
+
+NOTE: 我们会向您发送一封电子邮件、其中包含BlueXP勒索软件保护序列号、并指示已在Azure Marketplace中订阅BlueXP勒索软件保护。
+
+. 返回到BlueXP勒索软件保护支付方法页面。
+. 选择*将许可证添加到BlueXP*，将许可证添加到BlueXP。
++
+BlueXP数字钱包服务显示"添加许可证"页面。
+
++
+image:screen-license-dw-add-license.png["BlueXP数字钱包添加许可证页面"]
+
+. 在BlueXP数字钱包的添加许可证页面中，选择*Enter Serial Number*，输入发送给您的电子邮件中包含的序列号，然后选择*Add License*。
+. 要在BlueXP数字钱包中查看许可证详细信息、请从BlueXP左侧导航栏中选择*监管*>*数字钱包*。
++
+** 要查看订阅信息，请选择*订阅*。
+** 要查看BYOL许可证，请选择*数据服务许可证*。
++
+image:screen-dw-data-services-license.png["BlueXP数字钱包数据服务许可证页面"]
+
+
 
 . 返回到BlueXP勒索软件保护。从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
 +
@@ -181,28 +233,4 @@ TIP: 此消息也会显示在BlueXP数字钱包和中 https://docs.netapp.com/us
 .. 选择*数据服务许可证*选项卡，选择要更新的服务序列号的*操作...*图标，然后选择*更新许可证*。
 
 
-
-
-
-
-== 结束免费试用
-
-您可以随时停止免费试用、也可以等到免费试用过期。
-
-.步骤
-. 在BlueXP勒索软件保护中、选择右上角的*免费试用-查看详细信息*。
-. 在下拉详细信息中，选择*结束免费试用*。
-+
-image:screen-license-trial-end.png["结束免费试用页面"]
-
-. 如果要删除所有数据，请选中“*在免费试用结束后删除数据*”选项。
-+
-此操作将删除所有计划、复制计划、资源组、vCenter和站点。审核数据、操作日志和作业历史记录会保留到产品使用寿命结束为止。
-
-+
-
-NOTE: 如果您结束免费试用、并且未要求删除数据、并且未购买许可证或订阅、则在免费试用结束60天后、BlueXP勒索软件保护功能将删除您的所有数据。
-
-. 在文本框中键入"结束试用"。
-. 选择*end*。
 

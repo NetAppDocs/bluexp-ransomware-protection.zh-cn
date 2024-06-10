@@ -35,6 +35,7 @@ NOTE: 与预览版不同、BlueXP勒索软件保护的常规版本包括NetApp�
 
 * 在BlueXP中：
 +
+** 采用NetApp内部存储的BlueXP工作环境(使用NAS或CIFS协议)
 ** 必须在BlueXP中为每个虚拟私有云(Virtual Private Cloud、VPC)或内部区域设置一个BlueXP Connector。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["BlueXP文档以配置连接器"^]。
 +
 

@@ -16,7 +16,7 @@ summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。通�
 [role="lead"]
 勒索软件攻击可能会阻止对系统和数据的访问、攻击者可能会索要赎金以换取数据释放或解密。据IDC调查、勒索软件受害者遭受多次勒索软件攻击的情况并不少见。攻击可能会中断一天到几周的数据访问。
 
-BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可跨BlueXP帐户保护内部NAS存储(使用NFS和CIFS协议)上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享以及Amazon Web Services中的Cloud Volumes ONTAP工作负载、并将数据备份到Amazon Web Services云存储和NetApp StorageGRID。
+BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可跨BlueXP帐户保护内部NAS存储(使用NFS和CIFS协议)以及Cloud Volumes ONTAP for Amazon Web Services和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载。该服务可将数据备份到Amazon Web Services、Microsoft Azure云存储和NetApp StorageGRID。
 
 
 
@@ -29,9 +29,10 @@ BlueXP勒索软件保护服务可充分利用多种NetApp技术、以便存储�
 * *检测*可能是勒索软件攻击的异常。
 * *通过自动启动已锁定的防篡改NetApp ONTAP快照，以便不会意外或恶意删除副本，对潜在的勒索软件攻击做出响应*。您的备份数据将保持不可移动、并端到端受到保护、免受源和目标位置的勒索软件攻击。
 * *恢复*您的工作负载、通过编排多种NetApp技术帮助加快工作负载正常运行时间。您可以选择恢复卷、文件夹或特定文件。该服务可提供有关最佳选项的建议。
+* *监管*：实施勒索软件保护策略并监控结果。
 
 
-image:diagram-rp-features-phases2.png["显示识别、保护、检测、响应和恢复等BlueXP勒索软件保护策略的示意图"]
+image:diagram-rp-features-phases3.png["显示识别、保护、检测、响应和恢复等BlueXP勒索软件保护策略的示意图"]
 
 
 
@@ -39,7 +40,7 @@ image:diagram-rp-features-phases2.png["显示识别、保护、检测、响应�
 
 BlueXP勒索软件保护具有以下优势：
 
-* 发现工作负载和数据集、根据使用情况索引分析优先级并对其相对重要性进行排名。
+* 发现工作负载及其现有快照和备份计划、并对其相对重要性进行排名。
 * 评估您的勒索软件保护态势、并将其显示在易于理解的信息板中。
 * 根据发现和保护状况分析、提供有关后续步骤的建议。
 * 通过一键访问应用AI/ML驱动的数据保护建议。
@@ -53,18 +54,15 @@ BlueXP勒索软件保护具有以下优势：
 
 == 成本
 
-NetApp不会因使用BlueXP勒索软件保护的试用版而向您收费。完整版本的BlueXP勒索软件保护可与NetApp许可证或AWS订阅结合使用。
+NetApp不会因使用BlueXP勒索软件保护的试用版而向您收费。
 
 
 
 == 许可
 
-借助BlueXP勒索软件保护、您可以使用不同的许可计划、包括免费试用版、按需购买订阅或自带许可证。
+借助BlueXP勒索软件保护、您可以使用不同的许可计划、包括免费试用版、即付即用订阅或自带许可证。
 
-BlueXP勒索软件保护需要NetApp ONTAP许可证。
-
-
-NOTE: 与预览版不同、BlueXP勒索软件保护的常规版本包括NetApp自主勒索软件保护技术的许可证。请参见 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护概述"^] 了解详细信息。
+BlueXP勒索软件保护服务需要NetApp ONTAP许可证。
 
 有关详细信息，请参见 link:rp-start-licenses.html["设置许可"]。
 
@@ -82,10 +80,10 @@ image:diagram-rp-architecture-preview3.png["显示BlueXP勒索软件保护架构
 
 
 | *识别*  a| 
-* 查找连接到BlueXP的所有客户内部NAS (NFS和CIFS协议)数据。
+* 查找连接到BlueXP的所有客户内部NAS (NFS和CIFS协议)和Cloud Volumes ONTAP数据。
 * 识别ONTAP和SnapCenter服务API中的客户数据、并将其与工作负载关联起来。了解更多信息 https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] 和 https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter 软件"^]。
-* 发现每个卷的NetApp Snapshot副本和备份策略的当前保护级别以及任何机载检测功能。然后、该服务会使用BlueXP备份和恢复、BlueXP数字顾问、ONTAP服务和NetApp技术(例如、自动防软件保护、FPolicy、备份策略和Snapshot策略)将此保护状态与工作负载关联起来。
-了解更多信息 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护"^] 和 https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP备份和恢复"^]， https://docs.netapp.com/us-en/active-iq/index.html["BlueXP数字顾问"^]，和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+* 发现每个卷的NetApp Snapshot副本和备份策略的当前保护级别以及任何机载检测功能。然后、该服务会使用BlueXP备份和恢复、ONTAP服务以及NetApp技术(例如、自动防兰软件保护、FPolicy、备份策略和Snapshot策略)将此保护状态与工作负载关联起来。
+了解更多信息 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护"^] 和 https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP备份和恢复"^]，和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 * 根据自动发现的保护级别为每个工作负载分配业务优先级、并根据工作负载的业务优先级为其建议保护策略。
 * 勒索软件保护还会了解策略关联、并为类似的工作负载推荐自定义策略。
 
@@ -118,6 +116,13 @@ image:diagram-rp-architecture-preview3.png["显示BlueXP勒索软件保护架构
 * 协调工作负载(包括VM、文件共享和数据库)的恢复、确保应用程序一致性。
 
 
+
+
+| *监管*  a| 
+* 分配勒索软件保护策略
+* 帮助您监控结果。
+
+
 |===
 
 
@@ -128,25 +133,28 @@ image:diagram-rp-architecture-preview3.png["显示BlueXP勒索软件保护架构
 *支持的备份目标*
 
 * Amazon Web Services (AWS) S3
+* Microsoft Azure Blob
 * NetApp StorageGRID
 
 
 *支持的工作环境*
 
 * 内部ONTAP NAS (使用NFS和CIFS协议)
-+
-不支持FlexGroup。
-
-* AWS中的Cloud Volumes ONTAP (使用NFS和CIFS协议)
+* Cloud Volumes ONTAP for AWS (使用NFS和CIFS协议)
+* Cloud Volumes ONTAP for Azure (使用NFS和CIFS协议)
 
 
-*数据源*
+
+NOTE: 不支持以下操作：FlexGroup卷、9.11.1之前的ONTAP版本、iSCSI卷和数据保护(DP)卷。
+
+*支持的数据源*
 
 该服务可保护主数据卷上的以下基于应用程序的工作负载：
 
 * NetApp文件共享
 * VMware 数据存储库
 * 数据库(MySQL和Oracle)
+* 更多内容即将推出
 
 
 
