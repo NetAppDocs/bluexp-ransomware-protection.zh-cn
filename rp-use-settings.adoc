@@ -67,7 +67,7 @@ image:screen-dashboard.png["信息板页面"]
 . 在*设置>备份目的地*页面中，选择*添加*。
 . 输入备份目标的名称。
 +
-image:screen-settings-backup-destination-azure.png["备份目标页面"]
+image:screen-settings-backup-destination.png["备份目标页面"]
 
 . 选择* StorageGRID *。
 . 选择每个设置旁边的向下箭头、然后输入或选择值：
@@ -113,7 +113,7 @@ image:screen-settings-backup-destinations-list-azure.png["备份目标页面上�
 . 在*设置>备份目的地*页面中，选择*添加*。
 . 输入备份目标的名称。
 +
-image:screen-settings-backup-destination-azure.png["备份目标页面"]
+image:screen-settings-backup-destination.png["备份目标页面"]
 
 . 选择* Amazon Web Services*。
 . 选择每个设置旁边的向下箭头、然后输入或选择值：
@@ -171,7 +171,7 @@ image:screen-settings-backup-destinations-list-azure.png["备份目标页面上�
 . 在*设置>备份目的地*页面中，选择*添加*。
 . 输入备份目标的名称。
 +
-image:screen-settings-backup-destination-azure.png["备份目标页面"]
+image:screen-settings-backup-destination.png["备份目标页面"]
 
 . 选择 * Azure * 。
 . 选择每个设置旁边的向下箭头、然后输入或选择值：

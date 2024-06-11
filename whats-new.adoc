@@ -24,7 +24,7 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 * *主存储上的Snapshot副本锁定*：启用此选项可锁定主存储上的Snapshot副本、以便在一段时间内无法修改或删除这些副本、即使勒索软件攻击设法到达备份存储目标也是如此。
 +
-link:rp-use-protect.html["详细了解如何在勒索软件保护策略中保护工作负载和启用备份锁定"]。
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["详细了解如何在勒索软件保护策略中保护工作负载和启用备份锁定"]。
 
 * *此版本除了支持适用于AWS的Cloud Volumes ONTAP和内部ONTAP NAS之外、还支持将适用于Microsoft Azure"的Cloud Volumes ONTAP用作工作环境。
 +
@@ -37,7 +37,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 
 * *已将Microsoft Azure添加为备份目标*。现在、您可以将Microsoft Azure与AWS和NetApp StorageGRID一起添加为备份目标。
 +
-link:rp-use-settings.html["请参阅配置保护设置"]。
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["详细了解如何配置保护设置"]。
 
 
 
@@ -82,7 +82,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["了解有关从信息板和其他页面下载CSV文件的更多信息"]。
 
-* 现在，用户界面中包含*查看文档*链接。您可以从Dasbhoard垂直*操作*访问此文档 image:button-actions-vertical.png["垂直操作选项"] 选项选择*新增功能*以查看发行说明中的详细信息、或者选择*文档*以查看BlueXP勒索软件保护文档主页。
+* 现在，用户界面中包含*查看文档*链接。您可以从信息板垂直*操作*访问此文档 image:button-actions-vertical.png["垂直操作选项"] 选项选择*新增功能*以查看发行说明中的详细信息、或者选择*文档*以查看BlueXP勒索软件保护文档主页。
 * *BlueXP备份和恢复*：不再需要在工作环境中启用BlueXP备份和恢复服务。请参见 link:rp-start-prerequisites.html["前提条件"]。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 link:rp-use-settings.html["配置设置"]。
 
 
@@ -92,11 +92,11 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["
 
 此预览版BlueXP勒索软件保护包括以下更新：
 
-* *保护策略管理*：除了使用预定义策略之外，您现在还可以创建、更改和删除策略。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关管理策略的更多信息"]。
+* *保护策略管理*：除了使用预定义策略之外，您现在还可以创建策略。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关管理策略的更多信息"]。
 * *二级存储上的不可更改性(DataLock)*：现在、您可以在对象存储中使用NetApp DataLock技术使备份在二级存储上不可更改。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关创建保护策略的更多信息"]。
 * *自动备份到AWS*：除了使用NetApp StorageGRID之外、您现在还可以选择StorageGRID作为备份目标。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置备份目标的更多信息"]。
 * *用于调查潜在攻击的其他功能*：您现在可以查看更多取证详细信息来调查检测到的潜在攻击。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["详细了解如何响应检测到的勒索软件警报"]。
-* *恢复过程*。恢复过程得到了改进。现在、您可以在一个工作流中逐个卷、恢复工作负载的所有卷、甚至恢复卷中的几个文件。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["详细了解如何从勒索软件攻击中恢复(在消除意外事件后)"]。
+* *恢复过程*。恢复过程得到了改进。现在、您可以逐个卷或为一个工作负载恢复所有卷。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["详细了解如何从勒索软件攻击中恢复(在消除意外事件后)"]。
 
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP勒索软件保护"]。
