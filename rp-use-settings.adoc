@@ -83,15 +83,6 @@ image:screen-settings-backup-destination.png["备份目标页面"]
 *** IP空间是要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站 Internet 访问权限。
 
 
-** *Backup lock*:选择您希望服务保护备份不被修改或删除。此选项使用NetApp数据锁技术。每个备份都将在保留期限内锁定、或者至少锁定30天、再加上长达14天的缓冲期。
-+
-
-CAUTION: 如果您现在配置备份锁定设置、则在配置备份目标后、您将无法稍后更改该设置。
-
-+
-*** *合规模式*：用户在保留期间无法覆盖或删除受保护的备份文件。
-
-
 
 
 . 选择 * 添加 * 。
@@ -196,16 +187,6 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["�
 +
 如果要使用Azure PrivateLink、请参见 https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^]。
 
-
-
-** *Backup lock*:选择您希望服务保护备份不被修改或删除。此选项使用NetApp数据锁技术。每个备份都将在保留期限内锁定、或者至少锁定30天、再加上长达14天的缓冲期。
-+
-
-CAUTION: 如果您现在配置备份锁定设置、则在配置备份目标后、您将无法稍后更改该设置。
-
-+
-*** *已解除锁定*：特定用户可以在保留期限内覆盖或删除受保护的文件。
-*** *锁定*：用户在保留期间无法覆盖或删除受保护的备份文件。此选项可满足完全合规性要求。
 
 
 

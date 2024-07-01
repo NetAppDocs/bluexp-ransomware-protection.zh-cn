@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, detection, ARP' 
 summary: 了解BlueXP勒索软件保护的新增功能。 
 ---
 = 发行说明：BlueXP勒索软件保护的新增功能
@@ -15,6 +15,32 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 [role="lead"]
 了解BlueXP勒索软件保护的新增功能。
+
+
+
+== 2024年7月1日
+
+* *自带许可证(BYOL)*：在此版本中，您可以使用BYOL许可证，这是您从NetApp销售代表处获得的NetApp许可证文件(NLF)
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["了解有关设置许可的更多信息"]。
+
+* *在文件级别恢复应用程序工作负载*：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。
++
+
+NOTE: 在此版本中、如果帐户中的所有BlueXP连接器均未使用Podman、则会启用单个文件还原功能。否则、该帐户将被禁用。
+
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["详细了解如何从勒索软件攻击中恢复"](英文)
+
+* *在文件级别恢复应用程序工作负载之前，请下载受影响文件的列表*。现在、您可以访问警报页面以下载CSV文件中受影响文件的列表、然后使用恢复页面上传CSV文件。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["了解有关在还原应用程序之前下载受影响文件的更多信息"](英文)
+
+* *删除保护计划*：在此版本中、您现在可以删除勒索软件保护策略。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载和管理勒索软件保护策略的更多信息"](英文)
+
+
 
 
 
@@ -74,6 +100,10 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置设置选项的更多信息"]。
 
+* *消除误报警报*：从"警报"选项卡中、您现在可以消除误报或决定立即恢复数据。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["了解有关响应勒索软件警报的更多信息"](英文)
+
 * *新检测状态*将显示在"保护"页面上、其中显示应用于工作负载的勒索软件检测的状态。
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载和查看保护状态的更多信息"]。
@@ -84,6 +114,10 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["
 
 * 现在，用户界面中包含*查看文档*链接。您可以从信息板垂直*操作*访问此文档 image:button-actions-vertical.png["垂直操作选项"] 选项选择*新增功能*以查看发行说明中的详细信息、或者选择*文档*以查看BlueXP勒索软件保护文档主页。
 * *BlueXP备份和恢复*：不再需要在工作环境中启用BlueXP备份和恢复服务。请参见 link:rp-start-prerequisites.html["前提条件"]。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 link:rp-use-settings.html["配置设置"]。
+* *设置选项*：您现在可以在BlueXP勒索软件保护设置中设置备份目标。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置设置选项的更多信息"]。
+
 
 
 

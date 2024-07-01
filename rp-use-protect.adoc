@@ -18,6 +18,7 @@ summary: 您可以通过在BlueXP勒索软件保护中为工作负载分配策�
 * 启用工作负载一致的保护、此功能可与适用于VMware vSphere的SnapCenter软件或SnapCenter插件结合使用。
 * 创建或管理勒索软件保护策略、其中包括您为Snapshot、备份和勒索软件检测创建的策略。
 * 导入策略并进行调整。
+* 删除保护策略。
 
 
 
@@ -160,7 +161,7 @@ image:screen-protection-sc-columns2.png["保护页面"]
 
 
 
-NOTE: 对于已使用SnapCenter或BlueXP备份和恢复服务制定保护策略的工作负载、您无法编辑此保护。对于这些工作负载、如果已在其他服务中激活、则BlueXP勒索软件可启用自动勒索软件保护和/或FPolicy保护。了解更多信息 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护"^] 和 https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP备份和恢复"^]，和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+NOTE: 对于已使用SnapCenter或BlueXP备份和恢复服务制定保护策略的工作负载、您无法编辑此保护。对于这些工作负载、如果已在其他服务中激活、则BlueXP勒索软件可启用自动勒索软件保护和/或FPolicy保护。了解有关、和的更多信息 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护"^] https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP备份和恢复"^] https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 
 
 
@@ -177,8 +178,6 @@ image:screen-protection-details3.png["保护页面中的工作负载详细信息
 +
 在工作负载详细信息页面中、您可以为工作负载分配策略、查看警报、查看备份目标以及查看恢复信息。
 
-
-
 . 要查看与工作负载关联的策略、请在工作负载详细信息页面的"Protection (保护)"窗格中、单击*查看策略*。
 . 要查看工作负载备份目标、请在工作负载详细信息页面的保护窗格中、单击*查看备份目标*。
 +
@@ -193,39 +192,28 @@ image:screen-protection-details3.png["保护页面中的工作负载详细信息
 
 启用应用程序或VM一致的保护有助于您以一致的方式保护应用程序或VM工作负载、从而实现稳定一致的状态、以避免日后需要恢复时可能丢失数据。
 
-此过程将开始安装适用于应用程序的SnapCenter软件或适用于VMware vSphere for VM的SnapCenter插件。
+此过程将开始使用BlueXP备份和恢复为应用程序注册SnapCenter软件服务器或为VM注册适用于VMware vSphere的SnapCenter插件。
 
 启用工作负载一致的保护后、您可以在BlueXP勒索软件保护中管理保护策略。保护策略包括在其他位置管理的Snapshot和备份策略以及在BlueXP勒索软件保护中管理的勒索软件检测策略。
 
-要了解有关SnapCenter的信息、请参阅以下信息：
+要了解有关使用BlueXP备份和恢复注册适用于VMware vSphere的SnapCenter或SnapCenter插件的信息、请参阅以下信息：
 
-* https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter 软件"^]
-* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html["适用于 VMware vSphere 的 SnapCenter 插件"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapcenter-server.html["注册SnapCenter服务器软件"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["注册适用于VMware vSphere的SnapCenter 插件"^]
 
 
 .步骤
-. 从BlueXP勒索软件保护菜单中、选择*保护*。
-. 从保护页面中、选择一个工作负载。
+. 从BlueXP勒索软件保护菜单中、选择*信息板*。
+. 从“建议”窗格中，找到以下建议之一，然后选择*复查并修复*：
 +
-image:screen-protection-sc-columns.png["保护页面"]
-
-. 在保护页面上，选择*Actions* image:screenshot_horizontal_more_button.gif["操作按钮"] 选项，然后在下拉菜单中选择*启用工作负载一致的保护*以启用SnapCenter。
-+
-
-TIP: 如果您选择基于VM的工作负载、则会显示用于安装适用于VMware vSphere的SnapCenter插件的链接、而不是Install SnapCenter。
-
-+
-image:screen-protection-enable-sc.png["启用工作负载一致的保护页面"]
-
-. 在工作负载位置字段中，选择*复制*将工作负载位置复制到剪贴板中，以便在SnapCenter安装中使用。向下滚动以查看其余工作负载详细信息。
-. 选择*安装SnapCenter *。
-+
-** 如果选择了基于应用程序的工作负载、则会显示SnapCenter软件信息。
-** 如果选择基于VM的工作负载、则会显示适用于VMware vSphere的SnapCenter插件信息。
+** 向BlueXP注册可用的SnapCenter服务器
+** 向BlueXP注册适用于VMware vSphere的SnapCenter插件(SCV)
 
 
-. 按照信息安装SnapCenter。
-. 返回到BlueXP勒索软件保护。选择*保护*以查看保护页面。
+. 按照信息使用BlueXP备份和恢复注册适用于VMware vSphere的SnapCenter或SnapCenter插件主机。
+. 返回到BlueXP勒索软件保护。
+. 从BlueXP勒索软件保护中、转到信息板并重新启动发现过程。
+. 从BlueXP勒索软件保护中选择*保护*以查看保护页面。
 . 查看保护页面上的Snapshot和备份策略列中的详细信息、以查看这些策略是否在其他位置进行管理。
 
 
@@ -242,14 +230,14 @@ image:screen-protection-enable-sc.png["启用工作负载一致的保护页面"]
 
 .制定勒索软件保护策略的步骤
 . 从BlueXP勒索软件保护菜单中、选择*保护*。
+. 在保护页面中，选择*管理保护策略*。
 +
-image:screen-protection-sc-columns.png["保护页面"]
-
-. 在保护页面中，选择*管理勒索软件保护策略*。
-+
-image:screen-protection-strategy-manage2.png["管理策略页面"]
+image:screen-protection-strategy-manage3.png["管理策略页面"]
 
 . 从"RansU要 软件保护策略"页面中、选择*添加*。
++
+image:screen-protection-strategy-add.png["添加策略页面、显示Snapshot部分"]
+
 . 输入新的策略名称、或者输入现有名称进行复制。如果输入现有名称，请选择要复制的名称，然后选择*Copy*。
 +
 
@@ -269,7 +257,7 @@ NOTE: 如果选择复制和修改现有策略、则该服务会在原始名称�
 
 ** *Snapshot策略*:
 +
-*** *Snapshot policy name*：输入Snapshot策略的名称。
+*** *Snapshot policy base ame*：选择一个策略或选择*Create*并输入Snapshot策略的名称。
 *** *Snapshot锁定*：启用此选项可锁定主存储上的Snapshot副本、以便在一段时间内无法修改或删除这些副本、即使勒索软件攻击设法到达备份存储目标也是如此。这也称为_immutable storage_。这样可以缩短恢复时间。
 +
 锁定Snapshot后、卷到期时间将设置为Snapshot副本的到期时间。
@@ -282,12 +270,15 @@ ONTAP 9.12.1及更高版本提供了Snapshot副本锁定功能。要了解有关
 
 ** *备份策略*：
 +
-*** *备份策略名称*：输入新名称或现有名称。
-*** *备份锁定*：选择此选项可防止二级存储上的备份在一段时间内被修改或删除。这也称为_immutable storage_。
+*** *备份策略基本名称*：输入新名称或选择现有名称。
 *** *备份计划*：为二级存储选择计划选项并启用计划。
 
 
 
+
++
+
+TIP: 要在二级存储上启用备份锁定，请使用*Settings*选项配置备份目标。有关详细信息，请参见 link:rp-use-settings.html["配置设置"]。
 
 . 选择 * 添加 * 。
 
@@ -308,7 +299,7 @@ BlueXP备份和恢复以及SnapCenter等其他服务使用以下类型的策略�
 .步骤
 . 从BlueXP勒索软件保护菜单中、选择*保护*。
 +
-image:screen-protection-sc-columns.png["保护页面"]
+image:screen-protection-strategy-manage3.png["管理策略页面"]
 
 . 从保护页面中、选择一个工作负载、然后选择*保护*。
 +
@@ -344,4 +335,17 @@ image:screen-protect-br-policies.png["显示BlueXP备份和恢复策略的保护
 . 在策略页面中、单击要分配的策略对应的向下箭头以查看详细信息。
 . 选择要分配的策略。
 . 选择*保护*以完成更改。
+
+
+
+
+=== 删除勒索软件保护策略
+
+您可以删除当前未与任何工作负载关联的保护策略。
+
+.步骤
+. 从BlueXP勒索软件保护菜单中、选择*保护*。
+. 在保护页面中，选择*管理勒索软件策略*。
+. 在管理策略页面中，为要删除的策略选择*Actions* image:screenshot_horizontal_more_button.gif["操作按钮"] 选项。
+. 从“操作”菜单中，选择*Delete straction*。
 

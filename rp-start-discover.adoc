@@ -23,11 +23,20 @@ NOTE: 不会发现卷使用FlexGroup或iSCSI的工作负载。
 
 .步骤
 . 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
-. 从初始登录页面中选择*发现工作负载*。
++
+如果这是您首次登录此服务、则会显示登录页面。
+
++
+image:screen-landing.png["BlueXP勒索软件保护的登录页面屏幕截图"]
+
+. 从初始登录页面中，选择*通过发现工作负载开始*。
 +
 此服务会发现工作负载数据、并在信息板中显示数据保护的运行状况。
 
 +
 image:screen-dashboard.png["BlueXP勒索软件保护信息板"]
+
++
+link:rp-use-dashboard.html["了解信息板为您显示的内容。"]
 
 

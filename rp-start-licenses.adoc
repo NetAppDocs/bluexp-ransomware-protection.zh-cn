@@ -18,7 +18,7 @@ summary: 通过设置许可开始使用BlueXP勒索软件保护。
 
 * 注册90天免费试用。
 * 通过Amazon Web Services (AWS) Marketplace购买按需购买(PAYGO)订阅。  此版本将很快推出。
-* 自带许可证(BYOL)、这是您从NetApp销售代表处获得的NetApp许可证文件(NLL)您可以使用许可证序列号在BlueXP电子钱包中激活BYOL。此版本将很快推出。
+* 自带许可证(BYOL)、这是您从NetApp销售代表处获得的NetApp许可证文件(NLL)您可以使用许可证序列号在BlueXP电子钱包中激活BYOL。
 
 
 在AWS中设置BYOL或购买PAYGO订阅后、您可以在BlueXP数字钱包*数据服务许可证*选项卡中查看许可证、或者在BlueXP数字钱包*订阅*选项卡中查看活动的AWS订阅。
