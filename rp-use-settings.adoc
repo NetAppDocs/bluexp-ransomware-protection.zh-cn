@@ -12,9 +12,25 @@ summary: 您可以在BlueXP勒索软件保护服务中配置多个选项、包�
 
 
 [role="lead"]
-您可以通过查看信息板上的建议来配置备份目标或启用威胁检测。
+您可以通过查看信息板上的建议或访问*Settings*选项来配置备份目标或启用威胁检测。
 
-启用威胁检测会自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。
+启用威胁检测会自动将数据发送到安全和事件管理系统(SIEM)以进行威胁分析。
+
+
+
+== 直接访问设置页面
+
+您可以从顶部菜单附近的操作选项轻松访问设置页面。
+
+. 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
+. 从下拉菜单中选择*Settings*。
+. 在设置页面中、您可以执行以下操作：
++
+** 添加备份目标。
+** 连接您的安全和事件管理系统(SIEM)以进行威胁分析和检测。
+
+
+
 
 
 
@@ -49,12 +65,12 @@ image:screen-dashboard.png["信息板页面"]
 
 
 
-=== 从菜单访问设置页面
+=== 从操作下拉菜单访问备份目标选项
 
-您可以从菜单轻松访问设置页面。
+您可以从顶部菜单附近的操作选项轻松访问设置页面。
 
 . 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
-. 从菜单中选择*Settings*。
+. 从下拉菜单中选择*Settings*。
 . 要添加备份目的地，请选择*Add*。
 
 
@@ -203,9 +219,83 @@ image:screen-settings-backup-destinations-list-azure.png["备份目标页面上�
 
 == 启用威胁检测
 
-您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。
+您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。您可以选择AWS Security Hub或Splunk Cloud作为您的SIEM。
 
-. 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
+在BlueXP  勒索软件保护中启用SIEM之前、您需要配置AWS安全中心或Splunk Cloud。
+
+
+
+=== 配置AWS Security Hub以进行威胁检测
+
+在BlueXP  勒索软件保护中启用AWS安全中心之前、您需要在AWS安全中心中执行以下高级步骤：
+
+* 在AWS Security Hub中设置权限。
+* 在AWS Security Hub中设置身份验证访问密钥和机密密钥。(此处不提供这些步骤。)
+
+
+.在AWS Security Hub中设置权限的步骤
+. 转到*AWS IAM console*。
+. 选择*Policies*。
+. 使用以下代码以JSON格式创建策略：
++
+[listing]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+
+=== 配置Splunk Cloud以进行威胁检测
+
+在BlueXP  勒索软件保护中启用Splunk Cloud之前、您需要在Splunk Enterprise中执行以下高级步骤：
+
+* 在Splunk Cloud中启用HTTP事件收集器、以便通过HTTP或HTTPS从BlueXP  接收事件数据。
+* 在Splunk Cloud中创建事件收集器令牌。
+
+
+.在Splunk中启用HTTP事件收集器的步骤
+. 转到Splunk Cloud。
+. 选择*Settings*>*Data Inputs*。
+. 选择*HTTP事件收集器*>*Global Settings*。
+. 在“All Toens”(所有令牌)切换中，选择“*Enabled"(已启用)*。
+. 要使事件收集器通过HTTPS而不是HTTP进行侦听和通信，请选择*Enable SSL*。
+. 在*HTTP端口号*中输入HTTP事件收集器的端口。
+
+
+.在Splunk中创建事件收集器令牌的步骤
+. 转到Splunk Cloud。
+. 选择*Settings*>*Add Data*。
+. 选择*Monitor*>*HTTP事件收集器*。
+. 输入令牌的名称，然后选择*Next*。
+. 选择要推送事件的*Default Index*，然后选择*Review。
+. 确认端点的所有设置均正确无误，然后选择*Submit*。
+. 复制令牌并将其粘贴到另一个文档中、以便为身份验证步骤做好准备。
+
+
+
+
+=== 在BlueXP  勒索软件防护中连接SIEM
+
+启用SIEM可将BlueXP  勒索软件保护中的数据发送到您的SIEM服务器、以进行威胁分析和报告。
+
+. 从BlueXP  菜单中，选择*保护*>*防软件保护*。
 . 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
 . 选择*Settings*。
 +
@@ -215,9 +305,27 @@ image:screen-settings-backup-destinations-list-azure.png["备份目标页面上�
 image:screen-settings-threat-detection3.png["设置页面"]
 
 . 在设置页面中，选择“暹粒连接”窗格中的*Connect*。
-. 输入暹粒服务器详细信息以启用威胁检测。
+. 输入您在AWS Security Hub或Splunk Cloud中配置的令牌和身份验证详细信息。
++
+
+NOTE: 您输入的信息取决于您选择的暹粒。
+
 . 选择 * 启用 * 。
 +
 "设置"页面将显示"已连接"。
 
+
+
+
+
+=== 断开SIEM
+
+断开暹粒连接将停止服务向暹粒服务器发送数据。
+
+.步骤
+. 从BlueXP  菜单中，选择*保护*>*防软件保护*。
+. 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
+. 选择*Settings*。
+. 在暹粒连接窗格中，选择*Disconnect*。
+. 在确认页面中，选择*Disconnect*。
 

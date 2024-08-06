@@ -18,16 +18,7 @@
   <block id="b06d1e4e0aac4390491efcd348fe1b69" category="summary">通过验证对您的环境、网络访问、登录和Web浏览器的支持、开始使用BlueXP勒索软件保护。</block>
   <block id="1e4e512c953bb68c6492ac3e8c1ea138" category="doc">BlueXP勒索软件保护前提条件</block>
   <block id="14bae19e71c925a784053d4c31411220" category="paragraph">通过验证您的操作环境、登录、网络访问和Web浏览器是否已准备就绪、开始实施BlueXP勒索软件保护。</block>
-  <block id="2c1fee35a0bc194dc9b50ed9fc8a2c7f" category="inline-link">AWS权限列表</block>
-  <block id="77e430febc2d19c00e0afbb5c29f25a4" category="paragraph">请参见<block ref="26c1dddc0b8311217c923c501f6e8c4e" category="inline-link-rx"></block> 了解详细信息。</block>
-  <block id="9e2e2cb4e7926eab3e7e74ddaf55d313" category="list-text">ONTAP 9.11.1及更高版本</block>
-  <block id="7226a116fcbbcf04521e1a358b285ccb" category="list-text">集群管理员ONTAP权限</block>
   <block id="13572bbe68fe6ecbb17fb5a38d1313bb" category="inline-link">自主勒索软件保护概述</block>
-  <block id="7fc964519860ed011389afb142e2370e" category="list-text">在BlueXP中：</block>
-  <block id="617601bf744d089a872f17b09e5451b5" category="inline-link">BlueXP文档以配置连接器</block>
-  <block id="00c15e6000f2ee7d33421ec117c11c12" category="admonition">如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。</block>
-  <block id="801e5ac526198ee67b36c61b75c65eab" category="inline-link">标准BlueXP要求</block>
-  <block id="5b4e347dbf978618d47c067b87ad3fe2" category="list-text"><block ref="5b4e347dbf978618d47c067b87ad3fe2" category="inline-link-rx"></block></block>
   <block id="4d6682b21a77873fe9ae34d7fc255020" category="summary">只需几个步骤即可开始使用NetApp BlueXP勒索软件保护服务。</block>
   <block id="0ffbecf850bd1a5bc17aa22ea9598bec" category="doc">BlueXP勒索软件保护快速入门</block>
   <block id="3bb343bb7401975812828cdee41a7657" category="paragraph">下面概述了开始使用BlueXP勒索软件保护所需的步骤。每个步骤中的链接将转到一个页面，其中提供了更多详细信息。</block>
@@ -144,7 +135,6 @@
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索软件保护</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">BlueXP备份和恢复</block>
   <block id="2dd00507ca85eec8a3465506e478e45f" category="inline-link">ONTAP FPolicy</block>
-  <block id="472b4a66f24a5029874468d609155979" category="list-text">根据自动发现的保护级别为每个工作负载分配业务优先级、并根据工作负载的业务优先级为其建议保护策略。</block>
   <block id="f23d5c00c473a2e87ffcd7a0eedb89b5" category="cell">*保护*</block>
   <block id="bd86dbcbafa7a7406429c16dcbb97e30" category="cell">*检测*</block>
   <block id="c69ab1786234ed8d66d89ba56a6b84ea" category="list-text">提供双层检测、从检测主存储中的潜在勒索软件攻击开始、并通过创建额外的自动Snapshot副本创建最近的数据还原点来响应异常活动。通过该服务、您可以更深入地挖掘、更精确地识别潜在攻击、而不会影响主工作负载的性能。</block>
@@ -152,7 +142,6 @@
   <block id="4dd88eaac510fe3eb4a3ed59e5f8d753" category="list-text">显示相关数据、例如文件活动、用户活动和熵、以帮助您完成有关攻击的取证审查。</block>
   <block id="5fefe6c4ada89d95390ae77eba79e7db" category="cell">*恢复*</block>
   <block id="f2ebc260c3bb5480d4c44df78fb6efb7" category="list-text">协调工作负载(包括VM、文件共享和数据库)的恢复、确保应用程序一致性。</block>
-  <block id="5148a3fb1af9478ff0f5eba22906cb56" category="section-title">支持的备份目标、工作环境和数据源</block>
   <block id="b6d7d516856554dea8fd74390c36ea82" category="paragraph">*支持的备份目标*</block>
   <block id="736ca911d7d143d01bd8cbfe0d4afbca" category="list-text">Amazon Web Services (AWS) S3</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetApp StorageGRID</block>
@@ -174,8 +163,6 @@
   <block id="f5a35b7788e82cd729d1bcf30c5e3578" category="paragraph">您可以通过使用BlueXP勒索软件保护完成以下操作来保护工作负载免受勒索软件攻击。</block>
   <block id="e12f58d91eed1a4a160b184cc1b10ebf" category="list-text">*标准*：每天创建1个以上的Snapshot副本</block>
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*保护状态*：工作负载可以显示以下保护状态之一、以指示是否已应用策略：</block>
-  <block id="426e2def6cfb137d7739a6b7bb27a2c6" category="list-text">*受保护*：应用策略。</block>
-  <block id="82eec407afc54c154e711dce29b6d5ea" category="list-text">*存在风险*：未应用任何策略。</block>
   <block id="d8b2d86957c187231adaeb328cc57adb" category="list-text">*进行中*：正在应用策略、但尚未完成。</block>
   <block id="a6539f11a6b87c60fecf3f4d34dfb4d1" category="list-text">*failed *：已应用策略，但策略不起作用。</block>
   <block id="a6f7464fa2fed88291aecd220709e4c3" category="paragraph">保护工作负载的第一步是查看当前工作负载及其保护状态。您可以看到以下类型的工作负载：</block>
@@ -225,24 +212,12 @@
 对于URL、在浏览器中输入：<block ref="6db7b50bf17b27cbede9f07c4fbc973e" category="inline-link-rx"></block> 以访问BlueXP控制台。</block>
   <block id="d89fc98d5105c68a5fa1ddec42ae05bd" category="paragraph">*如何启用BlueXP勒索软件保护？*
 BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动启用勒索软件保护选项。</block>
-  <block id="607aa1611608cf7a7c453edaafc74eca" category="paragraph">** BlueXP勒索软件保护是否可在标准模式、受限模式和专用模式下使用？**
-目前、BlueXP勒索软件保护仅在标准模式下可用。敬请关注更多信息。</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="inline-link">BlueXP部署模式</block>
   <block id="d29231e4316da436d079d40f2271015e" category="paragraph">有关所有BlueXP服务中这些模式的说明、请参阅<block ref="333027f5702e4d8adf36d6f2355422dc" category="inline-link-rx"></block>。</block>
-  <block id="58ca8d543ca7689fcd55ab815e29c140" category="paragraph">**如何处理访问权限？**
-只有帐户管理员才能启动服务并发现工作负载(因为这涉及到承诺使用资源)。后续交互可由任何角色完成。</block>
-  <block id="e1f5370155dfe8b74ffb5dda7569b98e" category="paragraph">**哪种设备分辨率是最佳的？**
-BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
-  <block id="036b094f4c535bf7c0faf82885715824" category="paragraph">**我应该使用哪种浏览器？**
-任何现代浏览器都能正常工作。</block>
   <block id="cf49c80b52a1cb095928d387f3ae47ed" category="section-title">与其他服务的交互</block>
   <block id="59652c3e079176946d97681f24b440c9" category="paragraph">*BlueXP勒索软件保护是否了解NetApp ONTAP中的保护设置？*
 是的、BlueXP勒索软件保护功能可发现ONTAP中设置的Snapshot计划。</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作负载</block>
-  <block id="a208b0f1b7e813a10eff529ef77de14f" category="paragraph">**工作负载由什么组成？**
-工作负载包括单个应用程序实例使用的所有卷。例如、部署在ora3.host.com上的Oracle数据库实例的数据和日志可以分别使用vol1和vol2。这些卷共同构成该Oracle数据库实例的特定实例的工作负载。</block>
-  <block id="30760a5988f532c8ada89b62da4aacaf" category="paragraph">**已添加新卷，但尚未显示**
-如果向环境添加了新卷、请重新启动发现并应用保护策略来保护此新卷。</block>
   <block id="5d1184f76781faaf229c6b885314bcd3" category="section-title">保护策略</block>
   <block id="964fc564d9a81cd1a93afd27dd73ba8d" category="paragraph">* BlueXP勒索软件策略是否与其他类型的工作负载策略共存？*
 目前、BlueXP备份和恢复(Cloud Backup)支持每个卷一个备份策略。因此、BlueXP备份和恢复以及BlueXP勒索软件保护共享备份策略。</block>
@@ -537,7 +512,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="ede5d1fa7f308f980719aaa42f891de3" category="paragraph">BlueXP勒索软件保护信息板可提供有关工作负载保护运行状况的概览信息。您可以快速确定存在风险或受保护的工作负载、识别受意外事件影响或处于恢复状态的工作负载、并通过查看受保护或存在风险的存储量来衡量保护程度。</block>
   <block id="b5695a87e857b3dfe980329900e2d5c8" category="section-title">使用信息板查看工作负载运行状况</block>
   <block id="0258c0095079d2c663d5e80a68227692" category="paragraph">发现后、信息板将显示工作负载数据保护的运行状况。</block>
-  <block id="1e417288031422fc727e2ab5915592fc" category="list-text">在信息板中、您可以在每个窗格中查看和执行以下任一操作：</block>
   <block id="2952c1e2a4a3bd6122d4b3f2efdffaeb" category="list-text">*工作负载数据保护*：单击*查看全部*可在保护页面上查看所有存在风险或受保护的工作负载。如果保护级别与保护策略不匹配、则工作负载将面临风险。请参见 <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block>。</block>
   <block id="7946ca9134fecb1e363f88a194b4e259" category="inline-link-macro">响应检测到的警报</block>
   <block id="3aedfdbc12c705760fde4f9c539d02d7" category="list-text">*警报和工作负载数据恢复*：单击*查看全部*可查看已影响工作负载、在消除意外事件后已做好恢复准备或正在恢复的活动意外事件。请参见 <block ref="a57b82018dcad508c33f5a5c54351028" category="inline-link-macro-rx"></block>。</block>
@@ -629,12 +603,8 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="1cb5f4b5b1383db0b2bfabd8c3cafd79" category="list-text">使用ONTAP、自动防软件保护和FPolicy技术确定攻击关联工作负载的特定可疑文件并映射到相关工作负载。</block>
   <block id="7114c26cbae366caf9400a8157631c87" category="list-text">使用NetApp技术和产品(例如ONTAP、自动防兰软件保护和FPolicy)启动快速Snapshot副本。</block>
   <block id="6256fa6f19d66d5dbcf39232799b384d" category="list-text">使用BlueXP备份和恢复、ONTAP、自主防兰软件保护和FPolicy技术和服务确定最佳Snapshot或备份并建议最佳实际恢复点(RPA)。</block>
-  <block id="3f291b80755e043548b987a2749bb2bb" category="list-text">NetApp StorageGRID或AWS S3中用于备份目标和访问权限集的帐户</block>
   <block id="0d9cc4385f60a65b4ffd051eddbf122d" category="list-text">NetApp自主勒索软件保护的许可证、由BlueXP勒索软件保护使用、在内部ONTAP实例上启用、具体取决于您使用的ONTAP版本。请参见<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block>。</block>
   <block id="af63a2ecb3ca5627267870874e6c44a4" category="paragraph">有关更多许可详细信息、请参见 <block ref="f86808e84e1b647abbc44adac84bc8a2" category="inline-link-macro-rx"></block>。</block>
-  <block id="935ac45ec053cbff86ec37813f64ea6e" category="list-text">必须在BlueXP中为每个虚拟私有云(Virtual Private Cloud、VPC)或内部区域设置一个BlueXP Connector。请参见<block ref="1e8f43557ce3193941a1e47864603ca9" category="inline-link-rx"></block>。</block>
-  <block id="8bea151378448834f662f674981096f7" category="list-text">至少有一个活动连接器连接到内部ONTAP集群的BlueXP帐户。所有源环境和工作环境都必须位于同一个BlueXP帐户中。</block>
-  <block id="baea1fd040c528a3cf05517592d54383" category="list-text">具有用于发现资源的帐户管理员权限的BlueXP用户帐户</block>
   <block id="1ad5d2b1df5750779a9e10432b0d7a7b" category="list-text">*严重*：每小时创建1个以上的Snapshot副本(主动保护计划)</block>
   <block id="423d6f72a058a73e0111323e01e91fbb" category="list-text">如果尚未选择*Discover Workloads*选项，请选择此选项。</block>
   <block id="effd67b82c5e86ef069736c6f439328e" category="paragraph">请参见 <block ref="ab9e6aa8cb0ccab44206b8872f1470c4" category="inline-link-macro-rx"></block>。</block>
@@ -646,7 +616,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="a32a4ff09bd226323b3477bc70b5effe" category="paragraph">有关详细信息，请参见 <block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block>。</block>
   <block id="0101be00694088a1944bea83a894d482" category="list-text">识别ONTAP和SnapCenter服务API中的客户数据、并将其与工作负载关联起来。了解更多信息<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block> 和<block ref="d4e2312364a2363181c5807750f77d43" category="inline-link-rx"></block>。</block>
   <block id="116c331399b20c1dde2c20d7a0f1116b" category="list-text">主动监控工作负载、并通过将策略应用于每个已识别的工作负载来编排BlueXP备份和恢复、SnapCenter和ONTAP API的使用。</block>
-  <block id="959eb758375bab19e06d24bc3cf21528" category="paragraph">使用BlueXP勒索软件保护功能查看数据在以下类型的备份目标、工作环境和数据源遭受网络攻击时的恢复能力：</block>
   <block id="a6196bcffcb3dd9e7a558b359145ecc3" category="paragraph">该服务可保护主数据卷上的以下基于应用程序的工作负载：</block>
   <block id="3560990ee46f2f17d59094ab9e308c5e" category="list-text">数据库(MySQL和Oracle)</block>
   <block id="9854786e6453f63d9549281586b11092" category="list-text">*工作负载*：BlueXP勒索软件保护中的工作负载可以包括MySQL或Oracle数据库、VMware数据存储库或文件共享。</block>
@@ -675,9 +644,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="476c2e1a5efbef67d0e9ca7a6bf574ff" category="paragraph">您还可以使用信息板查看保护建议并采取相应措施、访问全局设置、下载报告以及访问此技术文档。</block>
   <block id="0d9d7270a47d859e5eb89fd0e5ea1994" category="cell">启用威胁检测</block>
   <block id="189c4ff0677fc252921dcedc653aa720" category="cell">将数据发送到安全和事件管理系统(SIEM)以进行威胁分析和检测。</block>
-  <block id="9d0175bb9dfb4144fb8e893cba94028f" category="cell">输入SIEM/XDR服务器详细信息以启用威胁检测。
-请参见 <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>。
-请参见 <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>。</block>
   <block id="c9cf11dae3413da2395f3c9102153a2f" category="cell">这些工作负载不受适用于VMware vSphere的SnapCenter软件或SnapCenter插件管理。</block>
   <block id="67f57f861a379dead16cb189597a369c" category="inline-link-macro">保护工作负载免受勒索软件攻击</block>
   <block id="e3807143575a294b5c98b4786f7cb179" category="cell">要让SnapCenter对其进行管理、请启用工作负载一致的保护。
@@ -690,11 +656,9 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="baa62fd9411df2ee7b4bf7a3fcdeb9c4" category="section-title">访问技术文档</block>
   <block id="858c0eb001d380e6c1276da7ebebbd32" category="inline-image-macro">垂直操作选项</block>
   <block id="8d50761a01ad46cdf490d2b5652e5a19" category="list-text">从信息板中，选择垂直的*Actions* <block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> 选项</block>
-  <block id="b1d7aabfcefbd532aacad2c3c9107ac0" category="list-text">更改现有工作负载保护详细信息。</block>
   <block id="413b4c22ab2c40818a71fe8112e4d991" category="list-text">启用工作负载一致的保护、此功能可与适用于VMware vSphere的SnapCenter软件或SnapCenter插件结合使用。</block>
   <block id="c9ffc0073001c2f61bcae33a10e3142c" category="list-text">创建或管理勒索软件保护策略、其中包括您为Snapshot、备份和勒索软件检测创建的策略。</block>
   <block id="dd1e598107a9b5e3a198a53a091c3553" category="list-text">导入策略并进行调整。</block>
-  <block id="bfcd0a50bdffa32757d6a88dde595eab" category="section-title">保护信息</block>
   <block id="48b06ad4392e9d571814713a4c79666f" category="paragraph">"Protection (保护)"页面显示了有关工作负载保护的以下信息：</block>
   <block id="2b93c51f3f6f625d3c03d48ec19d78ea" category="paragraph">*检测状态*：工作负载可以具有以下勒索软件检测状态之一：</block>
   <block id="8daa232cd60a589e598f654bde7eeb16" category="list-text">*正在学习*：最近为工作负载分配了勒索软件检测策略、服务正在扫描工作负载。</block>
@@ -768,8 +732,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="b9e02bfe9506fcf186ee622509a30847" category="list-text">在策略页面中、单击要分配的策略对应的向下箭头以查看详细信息。</block>
   <block id="bb5447070c795a6e8d29fa9cd98a5127" category="list-text">选择要分配的策略。</block>
   <block id="427a5dfbb09ab1cc6737506e06431570" category="list-text">选择*保护*以完成更改。</block>
-  <block id="9c419334983210e051ee2cf0145c087e" category="paragraph">要使用BlueXP勒索软件保护、您需要满足以下前提条件：</block>
-  <block id="2f20a7fd799c5d7115c448ff505763ce" category="list-text">采用NetApp内部存储的BlueXP工作环境(使用NAS或CIFS协议)</block>
   <block id="ffc0b4bc890e2f8eb6eccccf7295e80e" category="doc">发行说明：BlueXP勒索软件保护的新增功能</block>
   <block id="5e76a23879d0e6f7325f31678e623972" category="section-title">2024年5月14日</block>
   <block id="8607002d4574854ad87d556bd31731f4" category="paragraph">此版本是BlueXP勒索软件保护的正式发布版本。其中包括以下更新：</block>
@@ -800,26 +762,19 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="ad7fb327f4193be83424f1fc4c25d4fd" category="list-text">选择原始位置或备用位置。</block>
   <block id="accfbb7c139fd416a120a640d6c1590a" category="list-text">如果原始目标没有足够的空间来还原工作负载、则会显示一个"临时存储"行。您可以选择临时存储来还原工作负载数据。还原的数据将从临时存储复制到原始位置。单击临时存储行中的*向下箭头*并设置目标集群、Storage VM和本地层。</block>
   <block id="f0266c70abac9ef71bb56a1eb183c0b0" category="section-title">还原不受SnapCenter管理的工作负载</block>
-  <block id="79278cee556b0d17fea04a0fcf1bd761" category="paragraph">您可以通过查看信息板上的建议来配置备份目标或启用威胁检测。</block>
-  <block id="95b3c5c7bf00e3023abdf81f992e1ac0" category="paragraph">启用威胁检测会自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。</block>
-  <block id="21ac48d249c1ab1c27c4b3d2da7dae12" category="paragraph">您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。</block>
   <block id="76e6564d7dbedb2803c452520ca3cd02" category="paragraph">出现“Settings (设置)”页面。</block>
   <block id="cb212c0e367b7e5f6090b19e7f1473eb" category="inline-image-macro">设置页面</block>
-  <block id="f02056682f2d64f0b174d1d0df4b974c" category="list-text">输入暹粒服务器详细信息以启用威胁检测。</block>
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">选择 * 启用 * 。</block>
   <block id="696d4d90d851ee4fe336a4b1827d52d7" category="summary">通过设置许可开始使用BlueXP勒索软件保护。</block>
   <block id="f8caca15ab9e55b2643391493d5c81c7" category="doc">为BlueXP勒索软件保护设置许可</block>
   <block id="924cc6eaf82618251de609e2689ed733" category="paragraph">您可以使用以下许可证类型：</block>
   <block id="06cda8527230b64a09b1c568fbd2a80e" category="list-text">注册90天免费试用。</block>
-  <block id="7e4fd0dd304459c1d328ded53fdc9845" category="paragraph">在AWS中设置BYOL或购买PAYGO订阅后、您可以在BlueXP数字钱包*数据服务许可证*选项卡中查看许可证、或者在BlueXP数字钱包*订阅*选项卡中查看活动的AWS订阅。</block>
-  <block id="038d93ce13a2896c1d35fb3fc2f5fd57" category="paragraph">在免费试用结束或许可证或AWS订阅到期后、您仍可在服务中执行以下操作：</block>
   <block id="9f5e79cce3ac3e1b3962cddaef91e4e0" category="list-text">查看工作负载和工作负载运行状况。</block>
   <block id="feaff2de8b00885a4b2350b990a32d40" category="list-text">删除任何资源、例如工作负载或策略。</block>
   <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">运行在试用期内或在许可证下创建的所有计划操作。</block>
   <block id="d687b9bb1fc0385150b07b1a9aaae7d3" category="section-title">试用90天免费试用</block>
   <block id="bc022ca8d62ad7e7578fb992618c0546" category="paragraph">您可以使用90天免费试用版试用BlueXP勒索软件保护。您必须是帐户管理员才能开始免费试用。</block>
   <block id="88c474e49a0cbbc7ef17d052040cd008" category="admonition">试用期间不会强制实施容量限制。</block>
-  <block id="48147384453590f1039b45c52cc9eca5" category="paragraph">您可以随时获得许可证或订阅、90天试用期结束前不会向您收费。要在90天试用之后继续、您需要购买BYOL许可证或PAYGO AWS订阅。</block>
   <block id="f37d436fdc8600ce24709a8f4435ec79" category="paragraph">在试用期间、您将拥有全部功能。</block>
   <block id="39c87728ab108f5ab751a40319f03bc8" category="list-text">访问<block ref="4d9841a08a6f1c082f5ba73c5d87fcc1" category="inline-link-rx"></block>。</block>
   <block id="014fb2de7ad43071880953f6fe524a00" category="inline-image-macro">BlueXP勒索软件保护的登录页面屏幕截图</block>
@@ -829,8 +784,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="7530875db6f7eceea689fdfeb6a12778" category="paragraph">要添加接头、请参见<block ref="d6df7dcc2fc3105e10967a9194806ce5" category="inline-link-rx"></block>。</block>
   <block id="07b00cce8ecdc9955eb27940a652e625" category="paragraph">*试用结束后，请获取订阅或许可证*</block>
   <block id="ea2f560ec82f01411a2a47fd221d66ad" category="paragraph">免费试用结束后、您可以通过AWS Marketplace订阅、也可以从NetApp购买许可证。</block>
-  <block id="142f542e4ec67be1a57bc2c8f4a20916" category="paragraph"><block ref="eed70f716809a92cb07d13e4e8249b92" category="inline-xref-macro-rx"></block>
-<block ref="a7d4f4192837622a5e792bb08a0fc11c" category="inline-xref-macro-rx"></block></block>
   <block id="286857925b326719163f0acf5623cc04" category="section-title">通过AWS Marketplace订阅</block>
   <block id="7045a735dc2c2e1b96e77d22deb74463" category="paragraph">本操作步骤简要概述了如何直接在AWS Marketplace中订阅。</block>
   <block id="7ae5589e6843c692b56795fe057b0e37" category="list-text">在BlueXP勒索软件保护中、执行以下操作之一：</block>
@@ -888,24 +841,17 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="532ffb2f3fab7d7b22de1e6940021707" category="paragraph">要开始使用此服务、您需要注册或联系NetApp销售代表、以试用此服务。然后、当您使用BlueXP Connector时、它将包括适用于此服务的功能。</block>
   <block id="20eb14e3efc9d3b8d15c4bd2e8c9ea10" category="paragraph">*BlueXP勒索软件保护如何划分工作负载数据的优先级？*
 数据优先级由创建的Snapshot副本和计划的备份决定。</block>
-  <block id="6aa28be9e770446cb2d14c0099cf79c0" category="paragraph">工作负载优先级由Snapshot频率决定。</block>
   <block id="1f60c8769abcb4f9589fae4ad1831a19" category="inline-link-macro">了解工作负载优先级或重要性</block>
   <block id="581ad716354744440ad65ff13c86ca1e" category="paragraph"><block ref="1ba24f606c1b9584a2674b4003d5830a" category="inline-link-macro-rx"></block>。</block>
-  <block id="acd9280b845f29b8c87c5859ad2f363c" category="paragraph">**信息板未显示我的所有工作负载。可能会出什么问题？**
-目前仅支持NFS和CIFS卷。系统会筛选出iSCSI卷和其他不受支持的配置、这些配置不会显示在信息板上。</block>
   <block id="7c332d8c3498456553e971642a5142fc" category="paragraph">您应联系您的NetApp销售代表试用或使用此服务。然后、当您使用BlueXP Connector时、它将包括勒索软件保护服务的相应功能。</block>
   <block id="077eb8dcf08a34370634fa284781fbf5" category="sidebar">BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护Oracle、MySQL、VM数据存储库、 和文件共享位于内部NAS存储以及Amazon Web Services中的Cloud Volumes ONTAP (使用NFS和CIFS协议)上、并可在每个BlueXP帐户之间备份数据、同时将数据备份到Amazon Web Services (AWS)云存储或NetApp StorageGRID。</block>
   <block id="03a0606ea5e305ef55dd39ee839003fd" category="sidebar">配置备份目标并启用威胁检测</block>
   <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">配置设置</block>
-  <block id="56ff02f12c9bfc12762be5191b6a6ce5" category="admonition">工作环境中不再需要启用BlueXP备份和恢复服务。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>。</block>
   <block id="8b003b58b4532bbf9f07c58827819319" category="list-text">*BlueXP备份和恢复*：不再需要在工作环境中启用BlueXP备份和恢复服务。请参见 <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>。</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
   <block id="81f9a9a695bd7ffbb88f9bd9cfd7d836" category="list-text">从信息板中，选择*Review and fix*以获得“准备&lt;backup provider&gt;作为备份目标”的建议。</block>
-  <block id="29f38834d2f3cef8e4fefc80223d400f" category="section-title">从菜单访问设置页面</block>
-  <block id="2163971a9c55fd4d8ab085445c8ed63b" category="paragraph">您可以从菜单轻松访问设置页面。</block>
   <block id="12138171b6ceeb4bdc45d66e55bebe1c" category="inline-image-macro">纵向操作</block>
   <block id="f57adceb51c997eacafcca8e75cffdeb" category="list-text">从BlueXP勒索软件保护菜单中、选择垂直市场 <block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>...选项。</block>
-  <block id="cef97f26739390b86216c115ee7b7cbb" category="list-text">从菜单中选择*Settings*。</block>
   <block id="cd4cb523b15d5f9c009df1bf65987434" category="list-text">要添加备份目的地，请选择*Add*。</block>
   <block id="0616a207fc5ca7b12d52f652afab488b" category="paragraph"><block ref="0616a207fc5ca7b12d52f652afab488b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d12d2643aef9b1e9c87feb8221ada2b4" category="section-title">将Microsoft Azure添加为备份目标</block>
@@ -932,10 +878,7 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="f543761d662a5051911ae04c98a64d2a" category="cell">*重要的工作负载策略*</block>
   <block id="f4e76e01f80db61a6180d7fa5d9656c3" category="cell">每30分钟</block>
   <block id="fb6b1dc56e2496ef3292658ce35a3d3a" category="paragraph"><block ref="fb6b1dc56e2496ef3292658ce35a3d3a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a25b448eaf9cb75510668e7b35ff5f32" category="section-title">查看工作负载保护详细信息</block>
-  <block id="5dca9f15484f0a68f38a48af57cb6098" category="paragraph">您可以查看保护详细信息、例如工作负载优先级、保护策略和存储信息。</block>
   <block id="6516d85a459e942594b2633776aac322" category="paragraph"><block ref="6516d85a459e942594b2633776aac322" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1595a8d34704d7ed0f399b3b15d2dbce" category="paragraph">在工作负载详细信息页面中、您可以为工作负载分配策略、查看警报、查看备份目标以及查看恢复信息。</block>
   <block id="a65c32b0857c84ff664a2f9c667a0af1" category="list-text">*Snapshot锁定*：启用此选项可锁定主存储上的Snapshot副本、以便在一段时间内无法修改或删除这些副本、即使勒索软件攻击设法到达备份存储目标也是如此。这也称为_immutable storage_。这样可以缩短恢复时间。</block>
   <block id="dce252566b4e7e168d3a89062968398f" category="paragraph">锁定Snapshot后、卷到期时间将设置为Snapshot副本的到期时间。</block>
   <block id="2a81a6cd6ac2a1bf9226055bf00ceada" category="inline-link">ONTAP中的SnapLock</block>
@@ -943,7 +886,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="8b12b54f06668167b4aadce6c0400414" category="list-text">很快、您将能够通过Amazon Web Services (AWS) Marketplace购买按需购买(PAYGO)订阅。</block>
   <block id="e7375f9ce866d5c2bd923a1f2382635d" category="list-text">很快、您将能够自带许可证(BYOL)、这是您从NetApp销售代表处获得的NetApp许可证文件(NLL)您可以使用许可证序列号在BlueXP电子钱包中激活BYOL。</block>
   <block id="f338cd7c055f777422d1369d7cd7e16f" category="paragraph">借助BlueXP勒索软件保护、您可以使用不同的许可计划。</block>
-  <block id="5534ee4e6e2df32f8b3fd4bb6f77fc7d" category="list-text">通过Amazon Web Services (AWS) Marketplace购买按需购买(PAYGO)订阅。  此版本将很快推出。</block>
   <block id="b5749d1384caedc71e5b2ec43e7afab4" category="list-text">设置Connector后、在BlueXP勒索软件保护登录页面中、用于添加Connector的按钮会更改为用于发现工作负载的按钮。选择*从发现工作负载开始*。</block>
   <block id="7fd2f910bce182f3bed45cb0ffe3f2b7" category="list-text">要查看免费试用信息、请选择右上角的下拉选项。</block>
   <block id="7a53e8b3f925c0bda3a00402c18b0881" category="paragraph"><block ref="7a53e8b3f925c0bda3a00402c18b0881" category="inline-image-macro-rx" type="image"></block></block>
@@ -957,7 +899,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="1bb6c5e87f81a4dfb176e1e6591f70fd" category="admonition">我们会向您发送一封电子邮件、其中包含BlueXP勒索软件保护序列号、并指示已在Azure Marketplace中订阅BlueXP勒索软件保护。</block>
   <block id="d40bb36908e07a46fbc5880def372b77" category="cell">添加勒索软件保护策略。</block>
   <block id="a3b50e444d5d5789130de78ddb2b3e45" category="cell">准备&lt;backup provider&gt;作为备份目标以备份工作负载数据。</block>
-  <block id="3dcdd70b853293a2f5c189af583013d7" category="cell">启用威胁检测。</block>
   <block id="87179dfbe133b0e5bec8d13398695148" category="cell">为应用程序或VMware提供工作负载一致的保护。</block>
   <block id="98ec50a82f77bf6d52cb0d41cd36eb6e" category="cell">查看新警报。</block>
   <block id="49ee612be1eb5fc0b9025dee4d09fafe" category="paragraph">BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可跨BlueXP帐户保护内部NAS存储(使用NFS和CIFS协议)以及Cloud Volumes ONTAP for Amazon Web Services和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载。该服务可将数据备份到Amazon Web Services、Microsoft Azure云存储和NetApp StorageGRID。</block>
@@ -976,8 +917,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="aeb2662989e88ee6d23e4231af6bb329" category="paragraph">*支持的工作环境*</block>
   <block id="ac55b5191d3d0247c5a3c79640930573" category="list-text">Cloud Volumes ONTAP for AWS (使用NFS和CIFS协议)</block>
   <block id="086953e782d4b744725113dbbfb91c72" category="list-text">Cloud Volumes ONTAP for Azure (使用NFS和CIFS协议)</block>
-  <block id="cab8f0b95f1bf279f1b6381906bb38b9" category="admonition">不支持以下操作：FlexGroup卷、9.11.1之前的ONTAP版本、iSCSI卷和数据保护(DP)卷。</block>
-  <block id="7133c14b211d52731ad6f21655c0ec9b" category="paragraph">*支持的数据源*</block>
   <block id="713cbd93b2ba47b4561b53a841624b51" category="list-text">更多内容即将推出</block>
   <block id="1838c493149bcc86ae16284d5e7b6f0a" category="section-title">准备Azure以成为备份目标</block>
   <block id="a3458aa9685290fbb32b9d46167373e3" category="list-text">在Azure中设置帐户。</block>
@@ -1108,7 +1047,6 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="02fe451dde6aa884097ca3b7c67707a5" category="admonition">要在二级存储上启用备份锁定，请使用*Settings*选项配置备份目标。有关详细信息，请参见 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>。</block>
   <block id="ccf23ad1bfca8f3c51caa8c9d8745378" category="section-title">删除勒索软件保护策略</block>
   <block id="1eade84fa2646ea13dc54a4b35f61c1c" category="paragraph">您可以删除当前未与任何工作负载关联的保护策略。</block>
-  <block id="c8cd789e206e54a63057fa842fd87d4b" category="list-text">在保护页面中，选择*管理勒索软件策略*。</block>
   <block id="571f33f6eea9a8d4cbc40d9ea733c1e9" category="list-text">在管理策略页面中，为要删除的策略选择*Actions* <block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block> 选项。</block>
   <block id="8a53049a356954d41eabcdf210f44bf3" category="list-text">从“操作”菜单中，选择*Delete straction*。</block>
   <block id="71725737d3cbd97049f21319ef51a4e3" category="paragraph">工作负载标记为"需要还原"后、BlueXP勒索软件保护会建议使用实际恢复点(Recovery Point、RPA)、并编排工作流以实现防崩溃恢复。</block>
@@ -1159,4 +1097,177 @@ BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="b439d3ca10048f7d11cd05477ca961a7" category="inline-link">了解有关响应勒索软件警报的更多信息</block>
   <block id="e7e38bb442294e991be246059534377b" category="paragraph"><block ref="b68da660865dc415a1fefb8516e82d73" category="inline-link-rx"></block>(英文)</block>
   <block id="ea8652a0fce10e4424e5611e6298f09b" category="list-text">*设置选项*：您现在可以在BlueXP勒索软件保护设置中设置备份目标。</block>
+  <block id="16ea8ec4227c8499ec40700bab8662a0" category="paragraph">如果您同时拥有BlueXP  备份和恢复以及BlueXP  勒索软件保护功能、则受这两种产品保护的任何常见数据将仅由BlueXP  勒索软件保护功能付费。</block>
+  <block id="ab7e350836ab3f3789bee6b5603f0b58" category="paragraph">购买许可证或PayGo订阅后、任何已启用勒索软件检测策略(自主勒索软件保护)(由BlueXP  勒索软件保护发现或设置)的工作负载、 BlueXP  勒索软件保护至少会将一个快照或备份策略归类为"受保护"、并计入已购买容量或PayGo订阅。如果在没有检测策略(ARP)的情况下发现某个工作负载、即使该工作负载具有备份或快照策略、也会将其归类为"存在风险"、并且不会根据已购买容量进行_NOT _计数。</block>
+  <block id="fcf48eb5c1148885f8ad102e707baa07" category="paragraph">90天试用期结束后、受保护的工作负载将计入已购买容量或订阅。在提高效率之前、与受保护工作负载关联的数据将按GB计费BlueXP  勒索软件保护。</block>
+  <block id="ee0be683b67076eb7125d9ca487f8d28" category="paragraph">BlueXP  勒索软件保护许可证不包括其他NetApp产品。BlueXP  勒索软件防护可以使用BlueXP  备份和恢复、即使您没有此功能的许可证也是如此。</block>
+  <block id="79b74457c154f490e3b7fa5a0e9552e5" category="paragraph">BlueXP  勒索软件保护功能使用BlueXP  备份和恢复来发现和设置文件共享工作负载的快照和备份策略、并使用SnapCenter或SnapCenter for VMware来发现和设置应用程序和VM工作负载的快照和备份策略。此外、BlueXP  勒索软件保护功能使用BlueXP  备份和恢复以及适用于VMware的SnapCenter / SnapCenter执行文件和工作负载一致的恢复。</block>
+  <block id="688275a6e47fbefe9ceface54f95de8f" category="list-text">根据自动发现的保护级别为每个工作负载分配业务优先级、并根据工作负载的业务优先级为其建议保护策略。工作负载优先级取决于已应用于与工作负载关联的每个卷的Snapshot频率。</block>
+  <block id="76794f7a61abb15de470fc2d1f863064" category="section-title">支持的备份目标、工作环境和工作负载数据源</block>
+  <block id="82df58c34a1661b9823ba5014f2938d1" category="paragraph">使用BlueXP  勒索软件保护功能查看数据在以下类型的备份目标、工作环境和工作负载数据源遭受网络攻击时的弹性：</block>
+  <block id="7b2ac1caa1c899683a384c1808575847" category="admonition">不支持以下操作：FlexGroup卷、9.11.1之前的ONTAP版本、iSCSI卷、挂载点卷、挂载路径卷、脱机卷、 和数据保护(DP)卷。</block>
+  <block id="77c629a59dc2544fbc0a071f880e6dec" category="paragraph">*支持的工作负载数据源*</block>
+  <block id="ba5ad7803ec94a7574390ade1154e462" category="paragraph">此外、如果您使用的是SnapCenter或SnapCenter for VMware、则这些产品支持的所有工作负载也会通过BlueXP  勒索软件保护进行标识。BlueXP  勒索软件防护可以以工作负载一致的方式保护和恢复这些数据。</block>
+  <block id="9e13464b45174329de24194d85aff824" category="summary">如果您不想再使用BlueXP  勒索软件保护服务、可以让许可证过期。</block>
+  <block id="15b83494294c1b3aabd08ae9ed6737a3" category="doc">禁用BlueXP  勒索软件保护</block>
+  <block id="1ec94d6b980299bfb71ac207cf01907d" category="paragraph">如果您不想再使用BlueXP  勒索软件保护服务、可以让许可证过期。您还可以禁用不再需要使用的策略。</block>
+  <block id="0c650c12d46d5ab4ab8e6cd9cb5c5cc9" category="section-title">禁用BlueXP  勒索软件保护服务</block>
+  <block id="9064d4b1273e682f4d4de91c234e8e0a" category="paragraph">订阅或许可证过期后、服务会自动禁用需要订阅或许可证的功能。</block>
+  <block id="3afc97bebb98ac07b2c609a8bd295890" category="inline-link-macro">设置BlueXP  勒索软件保护许可</block>
+  <block id="623c873e838a4e44e16a3b3051a99e41" category="paragraph">有关许可证过期后仍可执行的操作的详细信息，请参见 <block ref="4dbe94fc9f6a08665ae1b9b8eb9d0315" category="inline-link-macro-rx"></block>。</block>
+  <block id="c724e39bb0a48a947cd8004592d90338" category="section-title">禁用保护策略</block>
+  <block id="1312742e007207f60e4a52af11c06567" category="paragraph">如果要停止使用应用于工作负载的保护策略、可以使用System Manager、API调用或命令行界面将其禁用。</block>
+  <block id="e1d0975f4996adf057a495683cc38236" category="paragraph">您可以通过应用不包含FPolicy和备份策略的其他策略来禁用BlueXP  勒索软件保护中的FPolicy和备份策略。有关设置保护策略的说明，请参阅 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。</block>
+  <block id="76722f595147e9e40ab79fef549441a4" category="admonition">建议您不要禁用Snapshot策略。</block>
+  <block id="ea355214fd4bc7c57f471bd92918879b" category="section-title">部署</block>
+  <block id="72346e3829df980ee84f3586c08e1c73" category="paragraph">要开始使用BlueXP  勒索软件保护、请单击初始登录页面中的"开始发现工作负载"。</block>
+  <block id="c425c2d1d56441ad45546778fd3b1859" category="paragraph">* BlueXP  勒索软件保护是否可在标准模式、受限模式和专用模式下使用？*目前、BlueXP勒索软件保护仅在标准模式下可用。敬请关注更多信息。</block>
+  <block id="a220e5524e88ca4eb7adfba0df35e51f" category="paragraph">*如何处理访问权限？*只有帐户管理员才能启动服务并发现工作负载(因为这涉及到承诺使用资源)。后续交互可由任何角色完成。</block>
+  <block id="e8841ae1773b27a52c2f1f101474d8f0" category="paragraph">*什么设备分辨率是最佳的？*BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
+  <block id="3462920d936c74204339015d2f24872a" category="paragraph">*我应该使用哪种浏览器？*任何现代浏览器都能正常工作。</block>
+  <block id="cce2d0a4d9c9fd08fb80c75428dfd612" category="paragraph">* BlueXP  勒索软件保护如何与BlueXP  备份和恢复以及SnapCenter进行交互？*</block>
+  <block id="eaa63380a99fa26d748a4864ad71a14d" category="paragraph">BlueXP  勒索软件防护使用以下产品和服务：</block>
+  <block id="648b0ce1911ee90e4316709d4eba2a09" category="list-text">BlueXP  备份和恢复、用于发现和设置文件共享工作负载的快照和备份策略</block>
+  <block id="4e26d5c484cb7e3f966ce2c3cea227da" category="list-text">SnapCenter或SnapCenter for VMware、用于发现和设置应用程序和VM工作负载的快照和备份策略。</block>
+  <block id="4b0f985fb2ce8eb70d786ac8ec6c4618" category="paragraph">此外、BlueXP  勒索软件保护功能使用BlueXP  备份和恢复以及适用于VMware的SnapCenter / SnapCenter执行文件和工作负载一致的恢复。</block>
+  <block id="51a55206b7a52955b0a31059706b3eb5" category="paragraph">*工作负载由哪些组成？*工作负载是指应用程序、虚拟机或文件共享。工作负载包括单个应用程序实例使用的所有卷。例如、部署在ora3.host.com上的Oracle数据库实例的数据和日志可以分别使用vol1和vol2。这些卷共同构成该Oracle数据库实例的特定实例的工作负载。</block>
+  <block id="d75faeccbccbf50eeb3db0a5908042fa" category="paragraph">工作负载优先级(严重、标准、重要)由已应用于与工作负载关联的每个卷的Snapshot频率决定。</block>
+  <block id="c7611c5f6655b760285d69228531818a" category="paragraph">* BlueXP  勒索软件保护支持哪些工作负载？*</block>
+  <block id="7d43971166bc9984c9a52eed2796f5fa" category="paragraph">BlueXP  勒索软件保护可识别以下工作负载：Oracle、MySQL、文件共享、VM和VM数据存储库。</block>
+  <block id="babb68bfea1f0b533883f1c651628f93" category="paragraph">此外、如果客户使用的是SnapCenter或SnapCenter for VMware、则这些产品支持的所有工作负载也会通过BlueXP  勒索软件保护进行标识、BlueXP  勒索软件保护可以以工作负载一致的方式保护和恢复这些工作负载。</block>
+  <block id="f0cc4b9fad963de99a7aa42aabde7243" category="paragraph">*如何将数据与工作负载关联起来？*</block>
+  <block id="09d77ad68346f49eac9f61a6bd649172" category="paragraph">BlueXP  勒索软件保护可通过以下方式将数据与工作负载关联起来：</block>
+  <block id="7d2b6d6ad021f007de2cb3d1e181e023" category="list-text">BlueXP  勒索软件保护功能可发现卷和文件扩展名、并将其与相应的工作负载相关联。</block>
+  <block id="3254efde672d4d18ad118af5aa152934" category="list-text">此外、如果您拥有适用于VMware的SnapCenter或SnapCenter、并且已在BlueXP  备份和恢复中配置了工作负载、则BlueXP  勒索软件保护会发现由适用于VMware的SnapCenter和SnapCenter管理的工作负载及其关联卷。</block>
+  <block id="750e308955dde6d388078ddcebf42761" category="paragraph">*什么是"受保护"工作负载？*在BlueXP  勒索软件保护中、如果启用了主检测策略、则工作负载会显示"受保护"状态。目前、这意味着已在与工作负载相关的所有卷上启用ARP。</block>
+  <block id="4909b811fdf0fea4db96f92f4f78a663" category="paragraph">*什么是"面临风险"的工作负载？*如果工作负载未启用主检测策略、则即使启用了备份和快照策略、它也会处于"风险"状态。</block>
+  <block id="d392c29669bb00e39e150b48a9658870" category="paragraph">*新卷已添加、但尚未显示*如果已向环境中添加新卷、请重新启动发现并应用保护策略来保护此新卷。</block>
+  <block id="2a9a649caf4693e9c22548406af935a9" category="paragraph">*信息板不会显示我的所有工作负载。可能是什么问题？*目前仅支持NFS和CIFS卷。 系统会筛选出iSCSI卷和其他不受支持的配置、这些配置不会显示在信息板上。</block>
+  <block id="077a87403fd7fb9db61f9c9df6d2f4cf" category="paragraph">*勒索软件保护策略需要哪些策略？*</block>
+  <block id="2c79851b67a6a4c6f49e977c30c7e88e" category="paragraph">勒索软件保护策略需要以下策略：</block>
+  <block id="9184cdbbfbcf15ba414f7d2b5b3f505c" category="paragraph">BlueXP  勒索软件保护策略不需要备份策略。</block>
+  <block id="eee6949d27fde855da62ae8335844550" category="paragraph">*BlueXP勒索软件保护是否了解NetApp ONTAP中的保护设置？*</block>
+  <block id="991786fd67093d699396a0e6e7a53efa" category="paragraph">是的、BlueXP  勒索软件保护功能可发现在ONTAP中设置的快照计划、以及是否在发现的工作负载中的所有卷上启用了ARP和FPolicy。您最初在信息板中看到的信息是从其他NetApp解决方案和产品中汇总的。</block>
+  <block id="bd70bf5cf0c5ef3a2af17da310449524" category="paragraph">* BlueXP  勒索软件防护是否了解BlueXP  备份和恢复以及SnapCenter中已制定的策略？*</block>
+  <block id="be1f5bbcc7a53bbd8d4895c9506d53a8" category="paragraph">是的、如果您在BlueXP  备份和恢复或SnapCenter中管理工作负载、则这些产品管理的策略将引入BlueXP  勒索软件保护。</block>
+  <block id="7c724514f6c2e34191e7eed01dd3986b" category="paragraph">*是否可以修改从BlueXP  备份和恢复和/或SnapCenter转移的策略？*</block>
+  <block id="df1f668824bbc74a0ad230c436d395a7" category="paragraph">不能、您不能在BlueXP  勒索软件保护中修改由BlueXP  备份和恢复或SnapCenter管理的策略。您可以在BlueXP  备份和恢复或SnapCenter中管理对这些策略所做的任何更改。</block>
+  <block id="c6a1bb6eca60274d8069cf7c80477756" category="paragraph">*如果ONTAP中存在策略(已在系统管理器中启用，如ARP、FPolicy和快照)，BlueXP  勒索软件保护中是否更改了这些策略？*</block>
+  <block id="0b8283c9273e40ae8a8f95bd1595f420" category="paragraph">否 BlueXP  勒索软件保护不会修改ONTAP中的任何现有检测策略(ARP、FPolicy设置)。</block>
+  <block id="7ef627296b1d6a680d91a284e16390b7" category="paragraph">*注册BlueXP  勒索软件保护后，如果您在BlueXP  备份和恢复或SnapCenter中添加新策略，会发生什么情况？*</block>
+  <block id="15c5d6e1f07d4ce19a3aabe3ac6a683e" category="paragraph">BlueXP  勒索软件保护可识别在BlueXP  备份和恢复或SnapCenter中创建的任何新策略。</block>
+  <block id="518f0b9f41f0f038466364ab7781803f" category="paragraph">*是否可以从ONTAP更改策略？*</block>
+  <block id="33ed0f18e9fe197e38cc3205d4822035" category="paragraph">可以、您可以在BlueXP  勒索软件保护中从ONTAP更改策略。您还可以在BlueXP  勒索软件保护中创建新策略并将其应用于工作负载。此操作会将现有ONTAP策略替换为在BlueXP  勒索软件保护中创建的策略。</block>
+  <block id="1f25ef09ab6fce0b56c79cd4246453be" category="paragraph">*是否可以禁用策略？*</block>
+  <block id="16bb1f43c7ea8d0bd89ed893a517b2de" category="paragraph">您可以使用System Manager UI、API或CLI在检测策略中禁用ARP。</block>
+  <block id="389b413db649d1d5d2854fd3e4faf2e6" category="paragraph">您可以通过应用不包含FPolicy和备份策略的其他策略来禁用它们。</block>
+  <block id="62fb50478db33581091bab0f2142bc5b" category="list-text">通过Amazon Web Services (AWS) Marketplace或Azure Marketplace (即将推出)购买按需购买(PAYGO)订阅。</block>
+  <block id="65b0401d3f724e2259009131f8634056" category="paragraph">设置BYOL或购买PAYGO订阅后，您可以在BlueXP  数字钱包*数据服务许可证*选项卡中查看许可证，或在BlueXP  数字钱包*订阅*选项卡中查看活动订阅。</block>
+  <block id="81ecb148314373b6868cc327725a5c74" category="paragraph">在免费试用结束或许可证或订阅到期后、您仍可在服务中执行以下操作：</block>
+  <block id="5b99f4bc86b1a4aefa4f1321fdae0c69" category="paragraph">您可以随时获得许可证或订阅、90天试用期结束前不会向您收费。要在90天试用之后继续、您需要购买BYOL许可证或PAYGO订阅。</block>
+  <block id="11227f8fef8f27540c3c439b9bdc197d" category="paragraph"><block ref="eed70f716809a92cb07d13e4e8249b92" category="inline-xref-macro-rx"></block> <block ref="6c4a5bded5527a87f7d2259882488db9" category="inline-xref-macro-rx"></block> <block ref="a7d4f4192837622a5e792bb08a0fc11c" category="inline-xref-macro-rx"></block></block>
+  <block id="15ac9f54f9fb2140c2336e6aa6dfc7c0" category="paragraph">要使用BlueXP  勒索软件保护、您需要满足以下前提条件。</block>
+  <block id="a83f1ed3639378d8a5c8766fc08ab842" category="section-title">在BlueXP  中</block>
+  <block id="e79e38ccfbb74e0d961ff972979ed635" category="list-text">使用Account Admin Privileges发现资源的BlueXP  用户帐户。</block>
+  <block id="6f0eed74827975e8f80db47d9a50f8c2" category="list-text">至少有一个活动BlueXP  连接器连接到内部ONTAP集群或连接到AWS或Azure中的Cloud Volumes ONTAP的BlueXP  帐户。</block>
+  <block id="d373cf4cd1bda4abc274d13ad2831391" category="list-text">至少一个BlueXP  工作环境、其中AWS或Azure中具有NetApp内部ONTAP集群或Cloud Volume ONTAP (使用NAS或CIFS协议)。</block>
+  <block id="437052b46bb04e16e3617994a6dc3e3b" category="list-text">支持使用ONTAP OS 9.11.1或更高版本的ONTAP或Cloud Volume ONTAP集群。</block>
+  <block id="1c65e968a7f40931fc801e74436f80f4" category="list-text">如果您的内部ONTAP集群或AWS或Azure云中的Cloud Volume ONTAP尚未在BlueXP  中启用、则需要BlueXP  连接器。</block>
+  <block id="2859350d666beccb5f7f3adcb55da72a" category="inline-link">了解如何配置BlueXP  连接器</block>
+  <block id="d6533074153f439dd193d8acd5343357" category="paragraph">请参阅<block ref="56433f466b3d2b557361e0cd67da19f4" category="inline-link-rx"></block> 和<block ref="2954ccba2c34ed9319cfb7bdfb096d90" category="inline-link-rx"></block>。</block>
+  <block id="e5015cacadd79769df9bbde6dbe92f70" category="admonition">如果一个BlueXP  帐户中有多个BlueXP  连接器、则BlueXP  勒索软件保护服务将扫描BlueXP  UI中当前选定连接器以外所有连接器上的ONTAP资源。</block>
+  <block id="2501cbb4187a9a6c7f42f035596578a4" category="section-title">在ONTAP 9.11.1及更高版本中</block>
+  <block id="0c62671cec4cc1d20210f98a3f9fc05f" category="list-text">要应用保护配置(例如启用自动勒索软件保护等)、BlueXP  勒索软件保护需要对ONTAP集群具有管理员权限。ONTAP集群应仅使用ONTAP集群管理员用户凭据进行登录。</block>
+  <block id="1af62e464c9d7b123ffec7775c4c5385" category="list-text">如果已使用非管理员用户凭据在BlueXP  中加入ONTAP集群、则必须按照本页面所述登录到ONTAP集群、以必要的权限更新非管理员用户权限。</block>
+  <block id="ed5ce0cb12bbc7e366d04460145d59f3" category="section-title">用于数据备份</block>
+  <block id="c9a3ad38b8e178a9206f6010b5029c98" category="list-text">NetApp StorageGRID、AWS S3或Azure Blb中用于备份目标和访问权限集的帐户。</block>
+  <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">AWS、Azure或S3权限列表</block>
+  <block id="ac4fdc4198bc2cc800bf5c56ef9956c6" category="paragraph">有关详细信息、请参见<block ref="bd599500598cefd5a0de11f99f2bd899" category="inline-link-rx"></block> 。</block>
+  <block id="6ad42ccda7c2a073bfd383bb76ce7c88" category="list-text">无需在工作环境中启用BlueXP  备份和恢复服务。</block>
+  <block id="d5c0c9e742bf6d635bc3574f0d00ffe7" category="paragraph">BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参阅。 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block></block>
+  <block id="f41322f9f14cdcdf41a427fbee652476" category="section-title">在ONTAP工作环境中更新非管理员用户权限</block>
+  <block id="8297305d42008c5892a2f344fb12572c" category="paragraph">如果您需要更新特定工作环境的非管理员用户权限、请完成以下步骤。</block>
+  <block id="0e861400d2c472d780e513defaec7463" category="list-text">登录到BlueXP  帐户并查找需要更新其ONTAP用户权限的工作环境。</block>
+  <block id="64e55ed1c9910b83fdba604d01c14d94" category="list-text">双击工作环境可查看详细信息。</block>
+  <block id="fd9987b033d105239454a8b09bbfc1d7" category="list-text">单击显示用户名的*查看其他信息*。</block>
+  <block id="9fe71dce626bd006ff641fd38ed29790" category="list-text">使用admin用户登录到ONTAP集群命令行界面。</block>
+  <block id="af2fd7f57e628b460dd2978fa6cf0a79" category="list-text">显示该用户的现有角色。输入 ...</block>
+  <block id="ec2732dacf33a5e90fbcf1cf42cb9ef7" category="list-text">更改用户的角色。输入 ...</block>
+  <block id="2d5422701fe060f1b4df91101404e4ba" category="list-text">返回到BlueXP  勒索软件保护UI以使用它。</block>
+  <block id="bbb730a044e88545c3476ffea030b9f1" category="list-text">在信息板中、您可以在每个窗格中执行以下操作：</block>
+  <block id="10111a2393d16789c78a9cdaedd4e858" category="admonition">单击"我要注意"以查看有关此数据的提示。要增加工作负载限制，请单击此我注意到的*增加工作负载限制*。单击此选项将转到BlueXP  支持页面、您可以在此处创建案例服务单。</block>
+  <block id="a0d3acda8b40798d6b03c633ead12276" category="cell">连接到"安全"以报告威胁。</block>
+  <block id="c00b830d377d62d0c3d20c11bcd0ce1e" category="cell">输入SIEM/XDR服务器详细信息以启用威胁检测。请参阅 <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>。</block>
+  <block id="1a90a8d532523b17b98c91821e2871c0" category="section-title">您可以根据现有覆盖范围更改保护策略</block>
+  <block id="31d09a40fac7ed173c873af34fa091e3" category="paragraph">您可以根据所拥有的工作负载保护更改保护策略：</block>
+  <block id="62f5dde62c0a3fd5031230003e689f50" category="list-text">*不受NetApp应用程序保护的工作负载*：这些工作负载不受SnapCenter、适用于VMware vSphere的SnapCenter插件或BlueXP  备份和恢复管理。这些工作负载可能会在ONTAP或其他产品中创建快照。如果已启用ONTAP FPolicy保护、则可以使用ONTAP更改FPolicy保护。</block>
+  <block id="2dc2810cd1eba83b7cb91a8a6ce61d1e" category="list-text">*受NetApp应用程序保护的工作负载*：这些工作负载的备份或快照策略由SnapCenter、适用于VMware vSphere的SnapCenter或BlueXP  备份和恢复管理。</block>
+  <block id="9a1036392cc3d55afa9e408c6f0f55db" category="list-text">如果Snapshot或备份策略由SnapCenter、SnapCenter for VMware或BlueXP  备份和恢复管理、则这些策略将继续由这些应用程序管理。通过使用BlueXP  勒索软件保护、您还可以对这些工作负载应用勒索软件检测策略。</block>
+  <block id="8e946b2cd55387fade995cb7358c7c47" category="list-text">如果ONTAP中的勒索软件检测策略由自动勒索软件保护(ARP)和FPolicy管理、则这些工作负载将受到保护、并将继续由ARP和FPolicy管理。</block>
+  <block id="8a31321cca2cf2857546a9d721eb4f00" category="section-title">勒索软件保护策略需要哪些策略？</block>
+  <block id="8b4535b61df88d36c1c7fe4fa465a975" category="section-title">保护页面上的保护详细信息</block>
+  <block id="77ee40a66947b7375a410a1f2168b3ec" category="list-text">*受保护*：应用策略。已在与工作负载相关的所有卷上启用ARP。</block>
+  <block id="2849b9294b844719ab6e63ff0e8d64a0" category="list-text">*存在风险*：未应用任何策略。如果工作负载未启用主检测策略、则即使启用了快照和备份策略、它也会处于"风险"状态。</block>
+  <block id="af7c29ca6782b7ae5d91d2eb4d1c1dbd" category="admonition">在BlueXP  勒索软件保护中启用保护后、在勒索软件检测策略状态从"学习"模式更改为"活动"模式后、将开始进行警报检测和报告。</block>
+  <block id="ff2eabbee9bcce8f2bafce467fa30b45" category="section-title">查看和更新工作负载详细信息</block>
+  <block id="70af1f5abe29ba661a7f2adcbe150285" category="paragraph">您可以查看工作负载详细信息、例如工作负载名称、保护策略和存储信息。</block>
+  <block id="104c89617212a822a79ae27ae7f7786d" category="paragraph">如果工作负载不受SnapCenter或BlueXP  备份和恢复管理、则可以更改该工作负载的名称。</block>
+  <block id="ba3472461c21d14f4c3f4bd3cb76d5b1" category="list-title">步骤</block>
+  <block id="8cfde59da6f211d8969a52ddacd1ef15" category="list-text">从保护页面中，为要更新的工作负载选择*操作* <block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block> 选项。</block>
+  <block id="7dcdef6ecf47ef51d09a346fdd6c0a8c" category="list-text">从操作菜单中，选择*编辑工作负载名称*。</block>
+  <block id="217298273ef7830c252a6f1f080d3b19" category="list-text">输入新的工作负载名称。</block>
+  <block id="4838bc9691459c331cbc1ce2c2a5a4ac" category="list-title">工作负载详细信息页面中的步骤</block>
+  <block id="b1e2171bb6be58c408f58debe611ee0f" category="inline-image-macro">铅笔</block>
+  <block id="70e800c6bc22db5b52b001d10ea162a7" category="list-text">要更改工作负载的名称，请单击工作负载名称旁边的*Pencil* <block ref="21e0526120161a6f1ed01780217ea87a" category="inline-image-macro-rx" type="image"></block> 图标并更改名称。</block>
+  <block id="e430ade04b9385f9a2374530ace8f522" category="list-text">在保护页面中，选择*管理勒索软件保护策略*。</block>
+  <block id="c3e1bb58158cecbe933786ef28873165" category="paragraph">您可以通过查看信息板上的建议或访问*Settings*选项来配置备份目标或启用威胁检测。</block>
+  <block id="110a67ab5c5f2c3f8c4d31974a383280" category="paragraph">启用威胁检测会自动将数据发送到安全和事件管理系统(SIEM)以进行威胁分析。</block>
+  <block id="f6de47008760d29836d5758a5a06bf0f" category="section-title">直接访问设置页面</block>
+  <block id="47ee39f07973e19ecd9ed033f5faabb1" category="paragraph">您可以从顶部菜单附近的操作选项轻松访问设置页面。</block>
+  <block id="812cd95f23a06cb24d767a5152f3fda4" category="list-text">从下拉菜单中选择*Settings*。</block>
+  <block id="da2fbabdbd3825fa7db60fd0aad60099" category="list-text">在设置页面中、您可以执行以下操作：</block>
+  <block id="d9e0cef30d1fd79b64dd0675b6e2eb12" category="list-text">添加备份目标。</block>
+  <block id="276d02dfbae672be9018a2aa5bc7082a" category="list-text">连接您的安全和事件管理系统(SIEM)以进行威胁分析和检测。</block>
+  <block id="d0c5496915b421a80c4626839a26d2fe" category="section-title">从操作下拉菜单访问备份目标选项</block>
+  <block id="3c3e8105202d21c6c519dee0d89a8f57" category="paragraph">您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。您可以选择AWS Security Hub或Splunk Cloud作为您的SIEM。</block>
+  <block id="2340856c74a7fde47230e6046b346962" category="paragraph">在BlueXP  勒索软件保护中启用SIEM之前、您需要配置AWS安全中心或Splunk Cloud。</block>
+  <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">配置AWS Security Hub以进行威胁检测</block>
+  <block id="77eeb06d35de32fc726c13778206bae1" category="paragraph">在BlueXP  勒索软件保护中启用AWS安全中心之前、您需要在AWS安全中心中执行以下高级步骤：</block>
+  <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">在AWS Security Hub中设置权限。</block>
+  <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">在AWS Security Hub中设置身份验证访问密钥和机密密钥。(此处不提供这些步骤。)</block>
+  <block id="12eef9b6a125a82d69978241dca88c07" category="list-title">在AWS Security Hub中设置权限的步骤</block>
+  <block id="66d20ba773065dfc079ca6feb04ef773" category="list-text">转到*AWS IAM console*。</block>
+  <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">选择*Policies*。</block>
+  <block id="2228b7980f61d80481608141744ecee0" category="list-text">使用以下代码以JSON格式创建策略：</block>
+  <block id="9ccf45c8190b08c78e0be70f31ab71c4" category="section-title">配置Splunk Cloud以进行威胁检测</block>
+  <block id="e215e0c1eb10681907a819d2fd1344c9" category="paragraph">在BlueXP  勒索软件保护中启用Splunk Cloud之前、您需要在Splunk Enterprise中执行以下高级步骤：</block>
+  <block id="2023b8ec64adfca5ffadf54679575f52" category="list-text">在Splunk Cloud中启用HTTP事件收集器、以便通过HTTP或HTTPS从BlueXP  接收事件数据。</block>
+  <block id="a0df7816503d32b52e0b8eaf94868e56" category="list-text">在Splunk Cloud中创建事件收集器令牌。</block>
+  <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">在Splunk中启用HTTP事件收集器的步骤</block>
+  <block id="a99a07d12915c1a94a26205b4a84ba20" category="list-text">转到Splunk Cloud。</block>
+  <block id="ce0362998bb10251a5412bcabd9b833c" category="list-text">选择*Settings*&gt;*Data Inputs*。</block>
+  <block id="069c7509480a5fbadda560c7376dca8a" category="list-text">选择*HTTP事件收集器*&gt;*Global Settings*。</block>
+  <block id="b42b974604014d593eace2a8678716ed" category="list-text">在“All Toens”(所有令牌)切换中，选择“*Enabled"(已启用)*。</block>
+  <block id="1f07cda18625f2e87b3b485165c2fde6" category="list-text">要使事件收集器通过HTTPS而不是HTTP进行侦听和通信，请选择*Enable SSL*。</block>
+  <block id="f0f064c9e7c481532480bef9466ae445" category="list-text">在*HTTP端口号*中输入HTTP事件收集器的端口。</block>
+  <block id="c660c961cf09ba8531cdfd3369af008b" category="list-title">在Splunk中创建事件收集器令牌的步骤</block>
+  <block id="23e1d5a70208de028ca12ba8bef552d9" category="list-text">选择*Settings*&gt;*Add Data*。</block>
+  <block id="5c4a26d0a7ecde2f25b0a5d7c482ab87" category="list-text">选择*Monitor*&gt;*HTTP事件收集器*。</block>
+  <block id="7afbca3b4e9f4fb695134baafcac5c4d" category="list-text">输入令牌的名称，然后选择*Next*。</block>
+  <block id="69675529fc04a5656485b982a05f2582" category="list-text">选择要推送事件的*Default Index*，然后选择*Review。</block>
+  <block id="68c568fcca74ba3d038d4f9401649265" category="list-text">确认端点的所有设置均正确无误，然后选择*Submit*。</block>
+  <block id="629e41fb0338811b619a94a1e584ef5b" category="list-text">复制令牌并将其粘贴到另一个文档中、以便为身份验证步骤做好准备。</block>
+  <block id="ce9cedb5075269e312e0304c86a970df" category="section-title">在BlueXP  勒索软件防护中连接SIEM</block>
+  <block id="5fe2835152113f685a65ab4bd52bd7c1" category="paragraph">启用SIEM可将BlueXP  勒索软件保护中的数据发送到您的SIEM服务器、以进行威胁分析和报告。</block>
+  <block id="530a14e5d66c979129b8b96f40e39621" category="list-text">从BlueXP  菜单中，选择*保护*&gt;*防软件保护*。</block>
+  <block id="ddd88799d4d161be240144da368dfa4a" category="list-text">输入您在AWS Security Hub或Splunk Cloud中配置的令牌和身份验证详细信息。</block>
+  <block id="4cb0caa7f0c97dd44ed525e6237432d2" category="admonition">您输入的信息取决于您选择的暹粒。</block>
+  <block id="67dd2fb75aaf6f4e4cf301da1e6bf57d" category="section-title">断开SIEM</block>
+  <block id="5416ecda9cca6ac997c429c87a30b3b3" category="paragraph">断开暹粒连接将停止服务向暹粒服务器发送数据。</block>
+  <block id="5fae13a9dd9ba66645dd05d45f43e40c" category="list-text">在暹粒连接窗格中，选择*Disconnect*。</block>
+  <block id="d05ff3dd43ab8c5bdfe212d6f607099c" category="list-text">在确认页面中，选择*Disconnect*。</block>
+  <block id="dd6b8bf5a56c8beb81b173991906c83e" category="section-title">2024 年 8 月 5 日</block>
+  <block id="3660cbb805c1bf63e1967ed1339a3bbd" category="paragraph">此版本的BlueXP  勒索软件保护包括以下更新。</block>
+  <block id="11f5c2b9557e3c8b41afc65159260e17" category="list-text">*使用Splunk Cloud进行威胁检测*：您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。对于先前版本、您只能选择AWS安全中心作为您的SIEM。在此版本中、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
+  <block id="3a7cd5901f60d9fe1ad078b90ed19aa9" category="paragraph">有关详细信息，请参见 <block ref="5870fcfbb57d837071c2ed4a31f53401" category="inline-link-macro-rx"></block>。</block>
 </blocks>

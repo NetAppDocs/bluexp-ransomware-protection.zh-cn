@@ -20,10 +20,6 @@ indexpage:
       url: "/rp-start-prerequisites.html"
     - title: 快速入门
       url: "/rp-start-quick-start.html"
-    - title: 设置BlueXP勒索软件保护
-      url: "/rp-start-setup.html"
-    - title: 访问BlueXP勒索软件保护
-      url: "/rp-start-login.html"
     - title: 配置备份目标并启用威胁检测
       url: "/rp-use-settings.html"
     - title: 常见问题解答

@@ -14,16 +14,34 @@ summary: 通过验证对您的环境、网络访问、登录和Web浏览器的�
 [role="lead"]
 通过验证您的操作环境、登录、网络访问和Web浏览器是否已准备就绪、开始实施BlueXP勒索软件保护。
 
-要使用BlueXP勒索软件保护、您需要满足以下前提条件：
+要使用BlueXP  勒索软件保护、您需要满足以下前提条件。
 
-* NetApp StorageGRID或AWS S3中用于备份目标和访问权限集的帐户
-+
-请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS权限列表"^] 了解详细信息。
 
-* ONTAP 9.11.1及更高版本
+
+== 在BlueXP  中
+
+* 使用Account Admin Privileges发现资源的BlueXP  用户帐户。
+* 至少有一个活动BlueXP  连接器连接到内部ONTAP集群或连接到AWS或Azure中的Cloud Volumes ONTAP的BlueXP  帐户。
+* 至少一个BlueXP  工作环境、其中AWS或Azure中具有NetApp内部ONTAP集群或Cloud Volume ONTAP (使用NAS或CIFS协议)。
 +
-** 集群管理员ONTAP权限
-** NetApp自主勒索软件保护的许可证、由BlueXP勒索软件保护使用、在内部ONTAP实例上启用、具体取决于您使用的ONTAP版本。请参见 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护概述"^]。
+** 支持使用ONTAP OS 9.11.1或更高版本的ONTAP或Cloud Volume ONTAP集群。
+** 如果您的内部ONTAP集群或AWS或Azure云中的Cloud Volume ONTAP尚未在BlueXP  中启用、则需要BlueXP  连接器。
++
+请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解如何配置BlueXP  连接器"] 和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准BlueXP要求"^]。
+
++
+
+NOTE: 如果一个BlueXP  帐户中有多个BlueXP  连接器、则BlueXP  勒索软件保护服务将扫描BlueXP  UI中当前选定连接器以外所有连接器上的ONTAP资源。
+
+
+
+
+
+
+
+== 在ONTAP 9.11.1及更高版本中
+
+* NetApp自主勒索软件保护的许可证、由BlueXP勒索软件保护使用、在内部ONTAP实例上启用、具体取决于您使用的ONTAP版本。请参见 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护概述"^]。
 +
 
 NOTE: 与预览版不同、BlueXP勒索软件保护的常规版本包括NetApp自主勒索软件保护技术的许可证。请参见 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护概述"^] 了解详细信息。
@@ -31,23 +49,45 @@ NOTE: 与预览版不同、BlueXP勒索软件保护的常规版本包括NetApp�
 +
 有关更多许可详细信息、请参见 link:concept-ransomware-protection.html["了解BlueXP勒索软件保护"]。
 
+* 要应用保护配置(例如启用自动勒索软件保护等)、BlueXP  勒索软件保护需要对ONTAP集群具有管理员权限。ONTAP集群应仅使用ONTAP集群管理员用户凭据进行登录。
+* 如果已使用非管理员用户凭据在BlueXP  中加入ONTAP集群、则必须按照本页面所述登录到ONTAP集群、以必要的权限更新非管理员用户权限。
 
 
-* 在BlueXP中：
+
+
+== 用于数据备份
+
+* NetApp StorageGRID、AWS S3或Azure Blb中用于备份目标和访问权限集的帐户。
 +
-** 采用NetApp内部存储的BlueXP工作环境(使用NAS或CIFS协议)
-** 必须在BlueXP中为每个虚拟私有云(Virtual Private Cloud、VPC)或内部区域设置一个BlueXP Connector。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["BlueXP文档以配置连接器"^]。
+有关详细信息、请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS、Azure或S3权限列表"^] 。
+
+* 无需在工作环境中启用BlueXP  备份和恢复服务。
 +
-
-NOTE: 如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。
-
-** 至少有一个活动连接器连接到内部ONTAP集群的BlueXP帐户。所有源环境和工作环境都必须位于同一个BlueXP帐户中。
-** 具有用于发现资源的帐户管理员权限的BlueXP用户帐户
-** 采用NetApp内部存储的BlueXP工作环境(使用NAS或CIFS协议)
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准BlueXP要求"^]
+BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参阅。 link:rp-use-settings.html["配置设置"]
 
 
 
 
 
-NOTE: 工作环境中不再需要启用BlueXP备份和恢复服务。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 link:rp-use-settings.html["配置设置"]。
+== 在ONTAP工作环境中更新非管理员用户权限
+
+如果您需要更新特定工作环境的非管理员用户权限、请完成以下步骤。
+
+. 登录到BlueXP  帐户并查找需要更新其ONTAP用户权限的工作环境。
+. 双击工作环境可查看详细信息。
+. 单击显示用户名的*查看其他信息*。
+. 使用admin用户登录到ONTAP集群命令行界面。
+. 显示该用户的现有角色。输入 ...
++
+[listing]
+----
+security login show -user-or-group-name <username>
+----
+. 更改用户的角色。输入 ...
++
+[listing]
+----
+security login modify -user-or-group-name <username> -application console|http|ontapi|ssh|telnet -authentication-method password -role admin
+----
+. 返回到BlueXP  勒索软件保护UI以使用它。
+

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, detection, ARP' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP' 
 summary: 了解BlueXP勒索软件保护的新增功能。 
 ---
 = 发行说明：BlueXP勒索软件保护的新增功能
@@ -18,7 +18,21 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 
 
+== 2024 年 8 月 5 日
+
+此版本的BlueXP  勒索软件保护包括以下更新。
+
+* *使用Splunk Cloud进行威胁检测*：您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。对于先前版本、您只能选择AWS安全中心作为您的SIEM。在此版本中、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。
++
+有关详细信息，请参见 link:rp-use-settings.html["配置BlueXP勒索软件保护设置"]。
+
+
+
+
+
 == 2024年7月1日
+
+此版本的BlueXP勒索软件保护包括以下更新：
 
 * *自带许可证(BYOL)*：在此版本中，您可以使用BYOL许可证，这是您从NetApp销售代表处获得的NetApp许可证文件(NLF)
 +
