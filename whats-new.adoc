@@ -24,7 +24,7 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 * *使用Splunk Cloud进行威胁检测*：您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。对于先前版本、您只能选择AWS安全中心作为您的SIEM。在此版本中、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。
 +
-有关详细信息，请参见 link:rp-use-settings.html["配置BlueXP勒索软件保护设置"]。
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
 
 
 
