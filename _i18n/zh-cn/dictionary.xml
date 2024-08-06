@@ -1240,7 +1240,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">选择*Policies*。</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">使用以下代码以JSON格式创建策略：</block>
   <block id="9ccf45c8190b08c78e0be70f31ab71c4" category="section-title">配置Splunk Cloud以进行威胁检测</block>
-  <block id="e215e0c1eb10681907a819d2fd1344c9" category="paragraph">在BlueXP  勒索软件保护中启用Splunk Cloud之前、您需要在Splunk Enterprise中执行以下高级步骤：</block>
   <block id="2023b8ec64adfca5ffadf54679575f52" category="list-text">在Splunk Cloud中启用HTTP事件收集器、以便通过HTTP或HTTPS从BlueXP  接收事件数据。</block>
   <block id="a0df7816503d32b52e0b8eaf94868e56" category="list-text">在Splunk Cloud中创建事件收集器令牌。</block>
   <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">在Splunk中启用HTTP事件收集器的步骤</block>
@@ -1271,4 +1270,5 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="11f5c2b9557e3c8b41afc65159260e17" category="list-text">*使用Splunk Cloud进行威胁检测*：您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。对于先前版本、您只能选择AWS安全中心作为您的SIEM。在此版本中、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
   <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">了解有关配置BlueXP  勒索软件保护设置的更多信息</block>
   <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>(英文)</block>
+  <block id="38f076b49309ac077a903c6521bcf590" category="paragraph">在BlueXP  勒索软件保护中启用Splunk Cloud之前、您需要在Splunk Cloud中执行以下高级步骤：</block>
 </blocks>

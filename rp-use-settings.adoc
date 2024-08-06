@@ -264,7 +264,7 @@ image:screen-settings-backup-destinations-list-azure.png["备份目标页面上�
 
 === 配置Splunk Cloud以进行威胁检测
 
-在BlueXP  勒索软件保护中启用Splunk Cloud之前、您需要在Splunk Enterprise中执行以下高级步骤：
+在BlueXP  勒索软件保护中启用Splunk Cloud之前、您需要在Splunk Cloud中执行以下高级步骤：
 
 * 在Splunk Cloud中启用HTTP事件收集器、以便通过HTTP或HTTPS从BlueXP  接收事件数据。
 * 在Splunk Cloud中创建事件收集器令牌。
