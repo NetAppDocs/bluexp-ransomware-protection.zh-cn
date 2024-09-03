@@ -103,6 +103,9 @@ BlueXP勒索软件保护可评估工作负载的保护情况、并建议采取�
 请参见 link:rp-use-protect.html["保护工作负载免受勒索软件攻击"]。 
 
 
+| 改善工作环境的安全防护 | NetApp数字顾问已确定至少存在一个高风险或严重安全风险。 | 在NetApp数字顾问中查看所有安全风险。请参阅 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]。 
+
+
 | 加强策略。 | 某些工作负载可能没有足够的保护。通过策略加强对工作负载的保护。 | 提高保留率、添加备份、强制执行不可配置的备份、阻止可疑文件扩展名、在二级存储上启用检测等。
 请参见 link:rp-use-protect.html["保护工作负载免受勒索软件攻击"]。 
 

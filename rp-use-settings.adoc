@@ -42,6 +42,7 @@ BlueXP勒索软件保护可以识别尚未进行任何备份的工作负载以�
 
 * NetApp StorageGRID
 * Amazon Web Services （ AWS ）
+* Google Cloud Platform
 * Microsoft Azure
 
 
@@ -107,7 +108,7 @@ image:screen-settings-backup-destination.png["备份目标页面"]
 .结果
 新备份目标将添加到备份目标列表中。
 
-image:screen-settings-backup-destinations-list-azure.png["备份目标页面上的设置选项"]
+image:screen-settings-backup-destinations-list2.png["备份目标页面上的设置选项"]
 
 
 
@@ -165,7 +166,47 @@ CAUTION: 如果您现在配置备份锁定设置、则在配置备份目标后�
 .结果
 新备份目标将添加到备份目标列表中。
 
-image:screen-settings-backup-destinations-list-azure.png["备份目标页面上的设置选项"]
+image:screen-settings-backup-destinations-list2.png["备份目标页面上的设置选项"]
+
+
+
+=== 将Google Cloud Platform添加为备份目标
+
+要将Google Cloud Platform (GCP)设置为备份目标、请输入以下信息。
+
+有关在BlueXP  中管理GCP存储的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Google Cloud中的连接器安装选项"^]。
+
+. 在*设置>备份目的地*页面中，选择*添加*。
+. 输入备份目标的名称。
++
+image:screen-settings-backup-destination-gcp.png["备份目标页面"]
+
+. 选择* Google Cloud Platform*。
+. 选择每个设置旁边的向下箭头、然后输入或选择值：
++
+** *提供者设置*：
++
+*** 创建新存储分段。输入访问密钥和机密密钥。
+*** 输入或选择您的Google Cloud Platform项目和区域。
+
+
+** *加密*：如果要创建新存储分段，请输入提供程序提供给您的加密密钥信息。如果您选择了现有存储分段、则加密信息已可用。
++
+默认情况下、存储分段中的数据使用Google管理的密钥进行加密。您可以继续使用Google管理的密钥。
+
+** *联网*：选择IP空间以及是否使用专用端点。
++
+*** IP空间是要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站 Internet 访问权限。
+*** (可选)选择是否使用先前配置的GCP专用端点(PrivateLink)。
+
+
+
+
+. 选择 * 添加 * 。
+
+
+.结果
+新备份目标将添加到备份目标列表中。
 
 
 
@@ -213,7 +254,7 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["�
 .结果
 新备份目标将添加到备份目标列表中。
 
-image:screen-settings-backup-destinations-list-azure.png["备份目标页面上的设置选项"]
+image:screen-settings-backup-destinations-list2.png["备份目标页面上的设置选项"]
 
 
 

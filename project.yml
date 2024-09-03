@@ -50,6 +50,10 @@ sidebar:
     - title: 下载报告
       url: "/rp-use-reports.html"
   - section: support
+  - title: 参考
+    entries:
+    - title: 基于角色的访问控制Privileges
+      url: "/rp-reference-roles.html"
   - title: 法律声明
     url: "/legal-notices.html"
 product-family:

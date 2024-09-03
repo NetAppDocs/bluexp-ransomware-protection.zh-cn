@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-ransomware-protection.html 
-keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, protection, bluexp, netapp 
+keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, ransomware attack, detect, recover, cyberstorage, cyber attack, cybersecurity, protection, bluexp, netapp, role-based access control, rbac 
 summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。通过BlueXP勒索软件保护服务、您可以查看有关网络安全的相关信息、并评估您的组织抵御网络攻击的能力。此外，它还会为您提供一系列警报和修复措施，帮助您提高数据的安全性。 
 ---
 = 了解BlueXP勒索软件保护
@@ -16,7 +16,22 @@ summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。通�
 [role="lead"]
 勒索软件攻击可能会阻止对数据的访问、攻击者可能会索要赎金以换取数据释放或解密。据IDC调查、勒索软件受害者遭受多次勒索软件攻击的情况并不少见。攻击可能会中断一天到几周的数据访问。
 
-BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可跨BlueXP帐户保护内部NAS存储(使用NFS和CIFS协议)以及Cloud Volumes ONTAP for Amazon Web Services和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载。该服务可将数据备份到Amazon Web Services、Microsoft Azure云存储和NetApp StorageGRID。
+BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可保护内部NAS存储(使用NFS和CIFS协议)以及BlueXP  for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud Platform和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载(跨Cloud Volumes ONTAP帐户)。该服务可将数据备份到Amazon Web Services、Google云平台、Microsoft Azure云存储和NetApp StorageGRID。
+
+
+
+== 在数据层提供勒索软件保护
+
+您的安全防护通常包括多层防御、以抵御各种网络威胁。
+
+* 最外层*：这是您使用防火墙、入侵检测系统和虚拟专用网络来保护网络边界的第一道防线。
+* *网络安全*：这一层建立在网络分段、流量监控和加密的基础之上。
+* *身份安全*：使用身份验证方法、访问控制和身份管理来确保只有授权用户才能访问敏感资源。
+* *应用程序安全性*：通过安全编码实践、安全测试和运行时应用程序自我保护来保护软件应用程序。
+* *数据安全性*：通过数据保护、备份和恢复策略保护数据。BlueXP  勒索软件防护在此层上运行。
+
+
+image:concept-security-layer-diagram.png["安全层图"]
 
 
 
@@ -48,6 +63,7 @@ BlueXP勒索软件保护具有以下优势：
 * 使用AI技术实时检测对主存储上数据的勒索软件攻击。
 * 通过创建Snapshot副本并启动异常活动警报、针对检测到的潜在攻击启动自动操作。
 * 应用精选恢复以满足RPO策略要求。BlueXP勒索软件保护功能可使用多种NetApp恢复服务编排从勒索软件事件中恢复的过程、包括BlueXP备份和恢复(原Cloud Backup)以及SnapCenter。
+* 使用基于角色的访问控制(Role-Based Access Control、RBAC)来控制对服务中功能和操作的访问、从而增强安全性。
 
 
 
@@ -142,6 +158,7 @@ image:diagram-rp-architecture-preview3.png["显示BlueXP勒索软件保护架构
 *支持的备份目标*
 
 * Amazon Web Services (AWS) S3
+* Google Cloud Platform
 * Microsoft Azure Blob
 * NetApp StorageGRID
 
@@ -149,8 +166,9 @@ image:diagram-rp-architecture-preview3.png["显示BlueXP勒索软件保护架构
 *支持的工作环境*
 
 * 使用ONTAP 9.11.1及更高版本的内部ONTAP NAS (使用NFS和CIFS协议)
-* Cloud Volumes ONTAP for AWS (使用NFS和CIFS协议)
-* Cloud Volumes ONTAP for Azure (使用NFS和CIFS协议)
+* 适用于AWS的Cloud Volumes ONTAP 9.11.1或更高版本(使用NFS和CIFS协议)
+* 适用于Google云平台的Cloud Volumes ONTAP 9.11.1或更高版本(使用NFS和CIFS协议)
+* 适用于Microsoft Azure的Cloud Volumes ONTAP 9.11.1或更高版本(使用NFS和CIFS协议)
 
 
 
