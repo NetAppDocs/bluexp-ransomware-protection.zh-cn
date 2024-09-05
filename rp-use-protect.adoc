@@ -17,8 +17,8 @@ summary: 您可以通过在BlueXP勒索软件保护中为工作负载分配策�
 * 启用工作负载一致的保护、此功能可与适用于VMware vSphere的SnapCenter软件或SnapCenter插件结合使用。
 * 创建或管理勒索软件保护策略、其中包括您为快照、备份和勒索软件检测创建的策略。
 * 导入策略并进行调整。
-* 编辑保护策略。
-* 删除保护策略。
+* 编辑勒索软件保护策略。
+* 删除勒索软件保护策略。
 
 
 
@@ -253,77 +253,6 @@ image:screen-protection-details3.png["保护页面中的工作负载详细信息
 . 从BlueXP勒索软件保护中选择*保护*以查看保护页面。
 . 查看保护页面上的快照和备份策略列中的详细信息、以查看这些策略是否在其他位置进行管理。
 
-
-
-
-== 使用BlueXP  分类扫描个人身份信息
-
-在BlueXP  勒索软件保护服务中、您可以使用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载上的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。
-
-
-
-=== 启用BlueXP  分类
-
-在BlueXP  勒索软件保护服务中使用BlueXP  分类之前、您需要启用BlueXP  分类来扫描数据。
-
-.步骤
-. 从BlueXP勒索软件保护菜单中、选择*保护*。
-. 在保护页面中、在工作负载列中找到文件共享工作负载。
-+
-image:screen-protection-exposure-link.png["保护屏幕、其中显示隐私曝光列"]
-
-. 在隐私曝光列中，选择*识别曝光*。
-+
-image:screen-protection-sensitive-data.png["识别敏感数据屏幕"]
-
-. 查看有关BlueXP  分类的信息。
-. 选择*识别*。
-
-
-.结果
-BlueXP  分类可远程连接到您的工作负载数据、并在NetApp云中进行扫描。NetApp云中只保留已确定的洞察力和指标、而您的数据则不保留。
-
-"保护"页面显示BlueXP  分类正在识别文件、并指示它正在扫描的文件数量。
-
-
-
-=== 查看隐私风险
-
-在BlueXP  分类扫描个人身份信息(个人身份信息、个人身份信息)后、您可以查看个人身份信息(个人身份信息、
-
-个人信息数据可能具有以下风险状态之一：
-
-* *高*：包含可执行文件信息的xnumber或更多文件
-* *低*：
-
-
-.步骤
-. 从BlueXP勒索软件保护菜单中、选择*保护*。
-. 在保护页面中、在工作负载列中找到文件共享工作负载、该工作负载在隐私风险列中显示状态。
-+
-image:screen-protection-exposure-link.png["保护屏幕、其中显示隐私曝光列"]
-
-. 选择工作负载列中的工作负载链接以查看工作负载详细信息。
-+
-image:screen-protection-workload-details-privacy-exposure.png["显示隐私曝光窗格的工作负载详细信息屏幕"]
-
-. 在工作负载详细信息页面中、查看隐私曝光窗格中的信息。
-. 要调查BlueXP  分类中的曝光，请选择*Investige*。
-. 发生什么事了？是否立即转到分类？档位选项的用途是什么？
-
-
-有关BlueXP  分类的详细信息、请参阅以下BlueXP  分类主题：
-
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私有数据的类别"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["调查存储在组织中的数据"^]
-
-
-
-
-=== 根据敏感度数据查看对工作负载优先级的更改
-
-待定
 
 
 
