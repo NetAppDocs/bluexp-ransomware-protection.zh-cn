@@ -149,7 +149,6 @@
   <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">VMware 数据存储库</block>
   <block id="02f360fe822afa82c0f600943169df7e" category="section-title">可能有助于您进行勒索软件保护的术语</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">了解一些与勒索软件保护相关的术语可能会让您受益匪浅。</block>
-  <block id="a2818baee9a41e8ce28144cd422f76b5" category="list-text">*保护*：BlueXP勒索软件保护中的保护意味着确保使用保护策略定期向不同的安全域进行Snapshot和不可更改的备份。</block>
   <block id="f8a7dc43864435cb9b522a28b586e556" category="doc">从勒索软件攻击中恢复</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="list-title">前提条件</block>
@@ -670,12 +669,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="1178945c6ac5c3d230f56a7ae6f7233f" category="list-text">应用程序工作负载</block>
   <block id="78c48c7c6239e944a5c23274f2e1a24b" category="list-text">从信息板上的"Data Protection (数据保护)"窗格中、选择*查看全部*。</block>
   <block id="4dc51b8615944f599801153cc7777840" category="list-text">在此页面中、您可以查看和更改工作负载的保护详细信息。</block>
-  <block id="7a9c7b649217c1b088e23c8199ebddb5" category="list-text">从保护页面中、选择一个工作负载。</block>
-  <block id="589b98ae625f87f0bf06d1fdd5cc6ef6" category="inline-image-macro">保护页面中的工作负载详细信息</block>
-  <block id="d0d14e2430d198903f151dfdcd163ba4" category="list-text">要查看与工作负载关联的策略、请在工作负载详细信息页面的"Protection (保护)"窗格中、单击*查看策略*。</block>
-  <block id="147dde32043b45cd66b67d3550e4dacd" category="list-text">要查看工作负载备份目标、请在工作负载详细信息页面的保护窗格中、单击*查看备份目标*。</block>
-  <block id="e7f81673c6d27cb32846c9939e0df1da" category="paragraph">此时将显示已配置备份目标的列表。
-有关详细信息，请参见 <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>。</block>
   <block id="39b649553c2deef3d750057602cfacdb" category="section-title">利用SnapCenter实现应用程序或VM一致的保护</block>
   <block id="50140fc820086d654fdd4e90a5104aef" category="paragraph">启用应用程序或VM一致的保护有助于您以一致的方式保护应用程序或VM工作负载、从而实现稳定一致的状态、以避免日后需要恢复时可能丢失数据。</block>
   <block id="3b38fb1cff0115f63e5d56c7c77aa619" category="inline-image-macro">操作按钮</block>
@@ -856,8 +849,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="1adc4b459e7f50d96280424fb7e06709" category="list-text">*重要*：每小时创建的Snapshot副本少于1个、但每天创建的Snapshot副本多于1个</block>
   <block id="f543761d662a5051911ae04c98a64d2a" category="cell">*重要的工作负载策略*</block>
   <block id="f4e76e01f80db61a6180d7fa5d9656c3" category="cell">每30分钟</block>
-  <block id="fb6b1dc56e2496ef3292658ce35a3d3a" category="paragraph"><block ref="fb6b1dc56e2496ef3292658ce35a3d3a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6516d85a459e942594b2633776aac322" category="paragraph"><block ref="6516d85a459e942594b2633776aac322" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2a81a6cd6ac2a1bf9226055bf00ceada" category="inline-link">ONTAP中的SnapLock</block>
   <block id="df0d3afa881e0dbd0a73d2a79b4d08de" category="paragraph">ONTAP 9.12.1及更高版本提供了Snapshot副本锁定功能。要了解有关SnapLock的更多信息、请参见<block ref="4a9cf5e778f625195d7ada1c294fe592" category="inline-link-rx"></block>。</block>
   <block id="8b12b54f06668167b4aadce6c0400414" category="list-text">很快、您将能够通过Amazon Web Services (AWS) Marketplace购买按需购买(PAYGO)订阅。</block>
@@ -1012,13 +1003,11 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="a0bcd228903cff8ca5c5de971f78b647" category="list-text">从BlueXP勒索软件保护中、转到信息板并重新启动发现过程。</block>
   <block id="733f41aae97f52087b0ed39ff3235bb1" category="list-text">从BlueXP勒索软件保护中选择*保护*以查看保护页面。</block>
   <block id="90f081941b9ec4d54a22065d524e3c77" category="list-text">在保护页面中，选择*管理保护策略*。</block>
-  <block id="b31c0b0f3924529ae8c58dded54c65d9" category="paragraph"><block ref="b31c0b0f3924529ae8c58dded54c65d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4c2335d5c61b4722f3bc7508bd4a0ada" category="list-text">*备份策略基本名称*：输入新名称或选择现有名称。</block>
   <block id="02fe451dde6aa884097ca3b7c67707a5" category="admonition">要在二级存储上启用备份锁定，请使用*Settings*选项配置备份目标。有关详细信息，请参见 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>。</block>
   <block id="ccf23ad1bfca8f3c51caa8c9d8745378" category="section-title">删除勒索软件保护策略</block>
   <block id="1eade84fa2646ea13dc54a4b35f61c1c" category="paragraph">您可以删除当前未与任何工作负载关联的保护策略。</block>
   <block id="571f33f6eea9a8d4cbc40d9ea733c1e9" category="list-text">在管理策略页面中，为要删除的策略选择*Actions* <block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block> 选项。</block>
-  <block id="8a53049a356954d41eabcdf210f44bf3" category="list-text">从“操作”菜单中，选择*Delete straction*。</block>
   <block id="71725737d3cbd97049f21319ef51a4e3" category="paragraph">工作负载标记为"需要还原"后、BlueXP勒索软件保护会建议使用实际恢复点(Recovery Point、RPA)、并编排工作流以实现防崩溃恢复。</block>
   <block id="1434644b6ed79a6c6ecce3fea9f32af5" category="list-text">如果应用程序或VM由SnapCenter管理、则BlueXP勒索软件保护会使用应用程序一致或VM一致的过程将应用程序或VM还原到其先前状态和最后一个事务。应用程序或VM一致的还原会将未将其添加到存储中的任何数据(例如、缓存或I/O操作中的数据)添加到卷中的数据。</block>
   <block id="3319a63068300e3eb6664e17dfdc3016" category="list-text">如果应用程序或VM由SnapCenter管理、并由BlueXP备份和恢复或BlueXP勒索软件保护进行管理、则BlueXP勒索软件保护将执行崩溃状态一致的还原、在此还原同一时间点卷中的所有数据、例如、 如果系统崩溃。</block>
@@ -1176,16 +1165,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="77ee40a66947b7375a410a1f2168b3ec" category="list-text">*受保护*：应用策略。已在与工作负载相关的所有卷上启用ARP。</block>
   <block id="2849b9294b844719ab6e63ff0e8d64a0" category="list-text">*存在风险*：未应用任何策略。如果工作负载未启用主检测策略、则即使启用了快照和备份策略、它也会处于"风险"状态。</block>
   <block id="af7c29ca6782b7ae5d91d2eb4d1c1dbd" category="admonition">在BlueXP  勒索软件保护中启用保护后、在勒索软件检测策略状态从"学习"模式更改为"活动"模式后、将开始进行警报检测和报告。</block>
-  <block id="70af1f5abe29ba661a7f2adcbe150285" category="paragraph">您可以查看工作负载详细信息、例如工作负载名称、保护策略和存储信息。</block>
-  <block id="104c89617212a822a79ae27ae7f7786d" category="paragraph">如果工作负载不受SnapCenter或BlueXP  备份和恢复管理、则可以更改该工作负载的名称。</block>
-  <block id="ba3472461c21d14f4c3f4bd3cb76d5b1" category="list-title">步骤</block>
-  <block id="8cfde59da6f211d8969a52ddacd1ef15" category="list-text">从保护页面中，为要更新的工作负载选择*操作* <block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block> 选项。</block>
-  <block id="7dcdef6ecf47ef51d09a346fdd6c0a8c" category="list-text">从操作菜单中，选择*编辑工作负载名称*。</block>
-  <block id="217298273ef7830c252a6f1f080d3b19" category="list-text">输入新的工作负载名称。</block>
-  <block id="4838bc9691459c331cbc1ce2c2a5a4ac" category="list-title">工作负载详细信息页面中的步骤</block>
-  <block id="b1e2171bb6be58c408f58debe611ee0f" category="inline-image-macro">铅笔</block>
-  <block id="70e800c6bc22db5b52b001d10ea162a7" category="list-text">要更改工作负载的名称，请单击工作负载名称旁边的*Pencil* <block ref="21e0526120161a6f1ed01780217ea87a" category="inline-image-macro-rx" type="image"></block> 图标并更改名称。</block>
-  <block id="e430ade04b9385f9a2374530ace8f522" category="list-text">在保护页面中，选择*管理勒索软件保护策略*。</block>
   <block id="c3e1bb58158cecbe933786ef28873165" category="paragraph">您可以通过查看信息板上的建议或访问*Settings*选项来配置备份目标或启用威胁检测。</block>
   <block id="110a67ab5c5f2c3f8c4d31974a383280" category="paragraph">启用威胁检测会自动将数据发送到安全和事件管理系统(SIEM)以进行威胁分析。</block>
   <block id="f6de47008760d29836d5758a5a06bf0f" category="section-title">直接访问设置页面</block>
@@ -1196,7 +1175,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="276d02dfbae672be9018a2aa5bc7082a" category="list-text">连接您的安全和事件管理系统(SIEM)以进行威胁分析和检测。</block>
   <block id="d0c5496915b421a80c4626839a26d2fe" category="section-title">从操作下拉菜单访问备份目标选项</block>
   <block id="3c3e8105202d21c6c519dee0d89a8f57" category="paragraph">您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。您可以选择AWS Security Hub或Splunk Cloud作为您的SIEM。</block>
-  <block id="2340856c74a7fde47230e6046b346962" category="paragraph">在BlueXP  勒索软件保护中启用SIEM之前、您需要配置AWS安全中心或Splunk Cloud。</block>
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">配置AWS Security Hub以进行威胁检测</block>
   <block id="77eeb06d35de32fc726c13778206bae1" category="paragraph">在BlueXP  勒索软件保护中启用AWS安全中心之前、您需要在AWS安全中心中执行以下高级步骤：</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">在AWS Security Hub中设置权限。</block>
@@ -1225,7 +1203,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="ce9cedb5075269e312e0304c86a970df" category="section-title">在BlueXP  勒索软件防护中连接SIEM</block>
   <block id="5fe2835152113f685a65ab4bd52bd7c1" category="paragraph">启用SIEM可将BlueXP  勒索软件保护中的数据发送到您的SIEM服务器、以进行威胁分析和报告。</block>
   <block id="530a14e5d66c979129b8b96f40e39621" category="list-text">从BlueXP  菜单中，选择*保护*&gt;*防软件保护*。</block>
-  <block id="ddd88799d4d161be240144da368dfa4a" category="list-text">输入您在AWS Security Hub或Splunk Cloud中配置的令牌和身份验证详细信息。</block>
   <block id="4cb0caa7f0c97dd44ed525e6237432d2" category="admonition">您输入的信息取决于您选择的暹粒。</block>
   <block id="67dd2fb75aaf6f4e4cf301da1e6bf57d" category="section-title">断开SIEM</block>
   <block id="5416ecda9cca6ac997c429c87a30b3b3" category="paragraph">断开暹粒连接将停止服务向暹粒服务器发送数据。</block>
@@ -1294,7 +1271,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="ed1df3b69f10d586e5712ba9ce41d501" category="cell">NetApp数字顾问已确定至少存在一个高风险或严重安全风险。</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisor文档</block>
   <block id="c422252635de9cce46903202ef695202" category="cell">在NetApp数字顾问中查看所有安全风险。请参阅<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block>。</block>
-  <block id="569cb6f4f9666a29ec02382988684778" category="list-text">创建或管理勒索软件保护策略、其中包括您为快照、备份和勒索软件检测创建的策略。</block>
   <block id="fce50e2060d77397ad723b03afeed2c1" category="paragraph">您可能会发现、查看有关可以更改的保护策略以及保护策略中的策略类型的信息会很有帮助。</block>
   <block id="e38a78b6f8fec891a76f3e95f74a807d" category="paragraph">*您可以更改哪些保护策略？*</block>
   <block id="683e243f289e56afa9f8815dcba452b6" category="list-text">如果快照或备份策略由SnapCenter、SnapCenter for VMware或BlueXP  备份和恢复管理、则这些策略将继续由这些应用程序管理。通过使用BlueXP  勒索软件保护、您还可以对这些工作负载应用勒索软件检测策略。</block>
@@ -1307,7 +1283,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="3483881dbe027d2b6694af9c606b5075" category="paragraph">您可以根据工作负载的重要性选择以下BlueXP  勒索软件保护预定义策略之一：</block>
   <block id="39531fdceaea662abd6669cba8f989fc" category="cell">Snapshot副本数</block>
   <block id="c6b8cedaee837159aadd999ac609755e" category="cell">Snapshot副本的最大总数</block>
-  <block id="0ee473db21133faa7ce270707728209c" category="section-title">更改工作负载详细信息</block>
   <block id="fe661c5d6ba0af0ece684143c7da827e" category="paragraph">启用工作负载一致的保护后、您可以在BlueXP勒索软件保护中管理保护策略。保护策略包括在其他位置管理的快照和备份策略、以及在BlueXP  勒索软件保护中管理的勒索软件检测策略。</block>
   <block id="cebfa4409b0603554b2d559a348328f3" category="list-text">查看保护页面上的快照和备份策略列中的详细信息、以查看这些策略是否在其他位置进行管理。</block>
   <block id="cf077fd7afe54e3a0c2d1f4f171b9592" category="section-title">添加勒索软件保护策略</block>
@@ -1330,30 +1305,12 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="77b389df5a36dfb9672167bb6f9adfa6" category="list-text">要应用检测策略以及在其他位置管理的快照和备份策略、请选择检测策略。</block>
   <block id="33fe9dbf95e38dedb3c8458045ea1cc5" category="list-text">在保护页面上、查看检测策略列以查看分配的检测策略。此外、快照和备份策略列会显示管理策略的产品或服务的名称。</block>
   <block id="f3d0cde08790f065a5bc8c494e512b95" category="section-title">管理勒索软件保护策略</block>
-  <block id="48701b73898e137282fdd2544d5e559e" category="paragraph">您可以编辑或删除勒索软件策略。</block>
   <block id="b7c78f5e474c6b8d64bb9440e0c2207c" category="section-title">查看受勒索软件保护策略保护的工作负载</block>
-  <block id="57e7a8b4f31924c0d3a2dc59ca2659ac" category="paragraph">在编辑或删除勒索软件保护策略之前、您可能需要查看哪些工作负载受该策略保护。</block>
   <block id="ce1be6d505f661c5110f1445e0bf19ba" category="paragraph">您可以从策略列表中查看工作负载、也可以在编辑特定策略时查看这些工作负载。</block>
   <block id="295dd599e58bed61c814cf2cc588d597" category="list-title">查看策略列表的步骤</block>
   <block id="5c5c4c2893639638b243a5ebcf096a91" category="paragraph">"Rans要 程序保护策略"页面将显示策略列表。</block>
   <block id="b4591df76e4afaf6201f5ab62904e7c9" category="inline-image-macro">显示策略列表的勒索软件保护策略屏幕</block>
   <block id="41bd5eb706037d556691ac8ba68c41a4" category="paragraph"><block ref="41bd5eb706037d556691ac8ba68c41a4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f387cb3c015f83ee60d85b826e09a2e0" category="list-text">在"Ranson要 保护策略"页面上的"受保护的工作负载"列中、单击受保护工作负载数量旁边的*查看*。</block>
-  <block id="efd488ab0a3b08135a9d187218bf1fbf" category="list-title">编辑策略的步骤</block>
-  <block id="ae1bde129ad91b35e84bfba6081926f3" category="inline-image-macro">显示"操作"菜单的勒索软件保护策略屏幕</block>
-  <block id="b97435ddd228dd82ae655d1cde7c212b" category="paragraph"><block ref="b97435ddd228dd82ae655d1cde7c212b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9460290379a9702a4deab4e51f85ba12" category="list-text">在管理策略页面中，<block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block>为要更改的策略选择*Actions*选项。</block>
-  <block id="65259cbbf25731a9608f1f309eb5df0c" category="list-text">从操作菜单中，选择 * 编辑 * 。</block>
-  <block id="df61d91b40da01f22b08c115d81bb709" category="inline-image-macro">编辑勒索软件保护策略页面</block>
-  <block id="8a6003a6bcb61e7a91cf88b3adadd884" category="paragraph"><block ref="8a6003a6bcb61e7a91cf88b3adadd884" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f89743ab690c59f49d758a0648e593bd" category="list-text">通过选择页面顶部工作负载数量旁边的*查看*、查看受此策略保护的工作负载。</block>
-  <block id="2ab9b3c3499f1451731f1438e6692815" category="section-title">编辑勒索软件保护策略</block>
-  <block id="70909727d54294a72c76897784ed89ed" category="paragraph">您可以通过选择其他预配置的检测策略策略、选择其他策略或添加新备份策略来编辑保护策略。</block>
-  <block id="6ba39b52c8eac3309bf097519d6d9e2d" category="list-text">从现有战略复制。</block>
-  <block id="cb89b660da88b70365ddd63bd0fcbc72" category="list-text">请选择其他快照或备份策略。</block>
-  <block id="d75c3b5063be4c6818d52b27db80280a" category="list-text">添加新的快照或备份策略。</block>
-  <block id="c6ad220c6d62a1620ede4fc843c60d01" category="list-text">更改详细信息。</block>
-  <block id="6e1c3d577fb7deb58f0e7195646f0c5e" category="list-text">选择*保存*以完成更改。</block>
   <block id="48ec042ee3d955cb8d6510557dbe11e6" category="paragraph"><block ref="48ec042ee3d955cb8d6510557dbe11e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc124b8a418fd7c870b3a36e771113d7" category="section-title">将Google Cloud Platform添加为备份目标</block>
   <block id="1fc66948429912c7b9127474aca26244" category="paragraph">要将Google Cloud Platform (GCP)设置为备份目标、请输入以下信息。</block>
@@ -1378,6 +1335,131 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">基于角色的访问控制Privileges</block>
   <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">有关每个角色可以执行的操作的详细信息，请参见<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>。</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考</block>
-  <block id="35d7231cd1e70d9d7e80f676960dadc7" category="list-text">编辑勒索软件保护策略。</block>
   <block id="f408bca27d184a4c16751c8a466fdbd5" category="list-text">删除勒索软件保护策略。</block>
+  <block id="317bbac6055df0ef617acb0406fbde5b" category="list-text">*保护*：BlueXP  勒索软件保护中的保护意味着确保使用保护策略定期向不同的安全域创建快照和不可更改的备份。</block>
+  <block id="372d7b38ffd58ebd707f5eed3daebfe5" category="summary">在BlueXP  勒索软件保护服务中、您可以使用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载上的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。</block>
+  <block id="e7d05f872780d58e08011a44ce4be77b" category="doc">使用BlueXP  分类扫描个人身份敏感数据</block>
+  <block id="076729a2004741ee7d92b63f5cb3fe9a" category="section-title">启用BlueXP  分类</block>
+  <block id="a43036419058d2ad4ca5da0ce6b97873" category="paragraph">在BlueXP  勒索软件保护服务中使用BlueXP  分类之前、您需要启用BlueXP  分类来扫描数据。</block>
+  <block id="a5d2c33289393df749cbf18c3be271dd" category="paragraph">有关开始使用此服务之前BlueXP  分类的详细信息、查看这些资源可能会很有帮助。</block>
+  <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link">了解BlueXP分类</block>
+  <block id="799ed37205c29a076a84d3694d53c585" category="list-text"><block ref="799ed37205c29a076a84d3694d53c585" category="inline-link-rx"></block></block>
+  <block id="93f515959ce6187b986c42fa6959168b" category="inline-link">私有数据的类别</block>
+  <block id="d66481d703fafde739dabfd3c44d96bc" category="list-text"><block ref="d66481d703fafde739dabfd3c44d96bc" category="inline-link-rx"></block></block>
+  <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link">调查存储在组织中的数据</block>
+  <block id="08e880effe206106422b9043908d11e9" category="list-text"><block ref="08e880effe206106422b9043908d11e9" category="inline-link-rx"></block></block>
+  <block id="22da148f02a4f9df3c95fa55ebe1f0e4" category="list-text">在保护页面中、在工作负载列中找到文件共享工作负载。</block>
+  <block id="6edc605896d7822d0b10ddc7d324d464" category="paragraph"><block ref="6edc605896d7822d0b10ddc7d324d464" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d2cc179d4b9e7ee123b6032133a9e75" category="list-text">要启用BlueXP  分类以扫描您的数据中的敏感数据，请在隐私风险列中选择*ENARY曝光*。</block>
+  <block id="04c2fdcb53dc660f7267061f2996a772" category="inline-image-macro">识别敏感数据屏幕</block>
+  <block id="64af7ad3ab046769c51f4f24a86b7cf4" category="paragraph"><block ref="64af7ad3ab046769c51f4f24a86b7cf4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="969f986150648403974cc122eae60ccf" category="list-text">查看有关BlueXP  分类的信息。</block>
+  <block id="858cc0364fb5e649249551c7ef4f979a" category="list-text">选择*识别*。</block>
+  <block id="fe5c2f0a29dd6636cb2f1284a040407b" category="paragraph">BlueXP  分类可安装BlueXP  连接器、远程连接到您的工作负载数据、并扫描NetApp云中的数据。NetApp云中只保留已确定的洞察力和指标、而您的数据则不保留。</block>
+  <block id="9878a7973fa7782f8c21d56eb79d0aad" category="admonition">扫描可能需要几分钟时间、具体取决于数据量。"保护"页面显示BlueXP  分类正在识别文件、并指示它正在扫描的文件数量。</block>
+  <block id="a97106b04b1d7103b628393e4710e564" category="paragraph">扫描完成后、隐私曝光列会显示曝光级别、例如高。</block>
+  <block id="70f91b9311063ebb918671e1632eea94" category="section-title">查看隐私风险</block>
+  <block id="69fb8dfc3b2247a2a33825a8a26cde0a" category="paragraph">在BlueXP  分类扫描个人身份信息(个人身份信息、个人身份信息)后、您可以查看个人身份信息(个人身份信息、</block>
+  <block id="520cb83e421cf68c99eac9eb36fd6b63" category="paragraph">您的个人信息数据可能具有以下隐私风险状态之一。</block>
+  <block id="b95422bc34b35ddd671979e5775b2179" category="list-text">*高*：超过70%的文件具有可执行文件信息</block>
+  <block id="0bf36ba3c3aa07c4db543aecd256123f" category="list-text">*中*：超过30%且低于70%的文件具有可执行文件信息</block>
+  <block id="55d325ae2625ba4269051bf5ac42b2af" category="list-text">*低*：大于0且小于30%的文件具有可执行文件信息</block>
+  <block id="743c833ae848226cd938cbcdec4813e8" category="list-text">在保护页面中、在工作负载列中找到文件共享工作负载、该工作负载在隐私风险列中显示状态。</block>
+  <block id="684ef7f908cedf00c137942b202a9317" category="inline-image-macro">保护屏幕、其中显示隐私曝光列</block>
+  <block id="3ef9ba34c48a980c46a8615a0d075539" category="paragraph"><block ref="3ef9ba34c48a980c46a8615a0d075539" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="648eb89d24fbd412ac4e5191ba6b3cfc" category="list-text">选择工作负载列中的工作负载链接以查看工作负载详细信息。</block>
+  <block id="fbb3a837089f0da9e0cebd46602a970a" category="inline-image-macro">显示隐私曝光窗格的工作负载详细信息屏幕</block>
+  <block id="49c64cfb6f35d57ce67294767ff57c01" category="paragraph"><block ref="49c64cfb6f35d57ce67294767ff57c01" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="409501ac122ff644e6764e778fb7dbd8" category="list-text">在工作负载详细信息页面中、查看隐私曝光窗格中的信息。</block>
+  <block id="dffb203aa27226e3750f92c5c60829df" category="section-title">隐私风险对工作负载重要性的影响</block>
+  <block id="61915adac4ce0b36ecdb70a5e446a80b" category="paragraph">隐私风险更改可能会影响工作负载的重要性。</block>
+  <block id="a201dfb7539c6083e641a0bc8121201b" category="cell">当隐私暴露：</block>
+  <block id="74ddd4c0b88f06f95621270e77b9b74c" category="cell">来自此隐私披露</block>
+  <block id="155b3b9cdf276603a429bb78f500f4cf" category="cell">隐私风险</block>
+  <block id="9a70ecaf65d678d97afe7382a0197469" category="cell">然后，工作负载重要性将实现这一点：。</block>
+  <block id="e999cd086de455a56c2f7d169210876b" category="cell">*减少*</block>
+  <block id="a479d5f7790c7e99c1c56e63d46a8d05" category="paragraph">高、中或低</block>
+  <block id="bd05a001892856f4f5d6aa48b0879798" category="cell">中、低或无</block>
+  <block id="7a7f1256ff2571319ba7d555a554d7e3" category="cell">保持不变</block>
+  <block id="8e5a545364e5c35660ee78df02b350d1" category="cell">*增加*</block>
+  <block id="28d0edd045e05cf5af64e35ae0c4c6ef" category="cell">低</block>
+  <block id="ac9d1fd85299649e3a8c4f2dc8ec956e" category="cell">仍保持标准状态</block>
+  <block id="87f8a6ab85c9ced3702b4ea641ad4bb5" category="paragraph">中</block>
+  <block id="91d3d10858917d979356c5e2160913bb" category="cell">从"标准"更改为"重要"</block>
+  <block id="f8307a8be7170a599a441165be60a2d7" category="cell">低或中</block>
+  <block id="655d20c1ca69519ca647684edbb2db35" category="paragraph">高</block>
+  <block id="f5bfc54a73042ca571add47438fea77e" category="cell">从"标准"或"重要"更改为"关键"</block>
+  <block id="8563d008cf2d982b5b75f98ebec1a56f" category="section-title">直接调查BlueXP  分类中的敏感数据</block>
+  <block id="520b356f51c07225dd16424209ff656e" category="list-text">在工作负载列中选择工作负载以查看其详细信息。</block>
+  <block id="eab784efeec8f5c6a6edd9d398ba81ff" category="list-text">要调查BlueXP  分类中的曝光，请选择*Investige*。</block>
+  <block id="22ee3679f1c789036e229111945642ef" category="paragraph">此时将打开BlueXP  分类服务以显示调查选项卡。</block>
+  <block id="15e674d84786450a9efe801faaf91922" category="paragraph">有关BlueXP  分类的详细信息、请参阅以下BlueXP  分类主题：</block>
+  <block id="598d2be50cda45e73d61b0277fd8fe5b" category="doc">利用勒索软件策略保护工作负载</block>
+  <block id="c39a37a7df296279dc521553fc906d98" category="list-text">创建或管理勒索软件保护策略、其中包括您为快照、备份和勒索软件保护创建的策略(称为_detection policies_)。</block>
+  <block id="1eadddc9d91e496dbb866d7f860980b3" category="list-text">对文件共享进行分组、使您可以更轻松地保护工作负载、而不是逐个进行保护。</block>
+  <block id="311eb3db2bcf5936c110b8f424329f53" category="paragraph">*哪些服务用于保护？*以下服务可用于管理保护策略。来自这些服务的保护信息显示在BlueXP  勒索软件保护中：</block>
+  <block id="e73ca9305dfbbe468d9b5345bda92144" category="list-text">为文件共享、VM文件共享提供BlueXP  备份和恢复</block>
+  <block id="e10a2e4ef1f3cc661e89aa47c1655787" category="list-text">适用于VMware的VM数据存储库SnapCenter</block>
+  <block id="4a7e813ec2cbdfc4d32fb9d8fe51caf8" category="list-text">适用于Oracle和MySQL的SnapCenter</block>
+  <block id="672e6f752baa39051ecd60dabd6f03e9" category="paragraph"><block ref="672e6f752baa39051ecd60dabd6f03e9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c00777a5fc73931b43c8deab8cfa46e" category="inline-image-macro">管理策略</block>
+  <block id="8c3e123759e77036cb4a9cc98934b5d5" category="paragraph"><block ref="8c3e123759e77036cb4a9cc98934b5d5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9ecdceb343294a7a296ceead052c3db6" category="section-title">对文件共享进行分组、以简化保护</block>
+  <block id="bde9948cee62f58e6a82d706989af01c" category="paragraph">通过对文件共享进行分组、可以更轻松地保护数据资产。该服务可以同时保护组中的所有卷、而不是单独保护每个卷。</block>
+  <block id="c0083e031f0cf112f85b91ba1e7e9ede" category="list-text">从保护页面中，选择*保护组*选项卡。</block>
+  <block id="eff1f461a10b29d3af110ea7c19ed170" category="inline-image-macro">保护组页面</block>
+  <block id="eafdfecbaead6d931ea739364927dcc6" category="paragraph"><block ref="eafdfecbaead6d931ea739364927dcc6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6960d725adb16550e514e4fb6fa7e00c" category="inline-image-macro">添加保护组页面</block>
+  <block id="1aa2481b1a95ca9395aacf6b9a30a1c7" category="paragraph"><block ref="1aa2481b1a95ca9395aacf6b9a30a1c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c00eea78dd35d73950f20580d2786ff1" category="list-text">输入保护组的名称。</block>
+  <block id="d5645bdd26cb1c7cd7fc2462048eb19a" category="list-text">完成以下步骤之一：</block>
+  <block id="7891f8e2bd3fd5e5cd953a6b10727df3" category="list-text">如果您已制定保护策略、请选择是否要根据工作负载是否受以下策略之一管理对其进行分组：</block>
+  <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">BlueXP勒索软件保护</block>
+  <block id="1b490212b32a4c3caf639731d1a92e0f" category="list-text">SnapCenter或BlueXP  备份和恢复</block>
+  <block id="42de93f4e92831b4197dfe887f1fa120" category="list-text">如果您尚未制定保护策略、此页面将显示预配置的勒索软件保护策略。</block>
+  <block id="2bfee3b4d31b6232853be7465ac69a0e" category="list-text">选择一个以保护您的组，然后选择*下一步*。</block>
+  <block id="c458f9efc96a3ab102f69f54f437302b" category="list-text">如果您选择的工作负载的卷位于多个工作环境中、请为多个工作环境选择备份目标、以便将其备份到云。</block>
+  <block id="376a69ac55505c1a623e25b54f405c37" category="list-text">选择要添加到组中的工作负载。</block>
+  <block id="a20680ff0c06974c898decf51eb23a95" category="admonition">要查看有关工作负载的更多详细信息、请滚动到右侧。</block>
+  <block id="f7ba12bb96df2ae9d69ffbf1bc2af6bb" category="inline-image-macro">添加保护组-策略页面</block>
+  <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eeb66cc642f94e09fb2fea35f4da620a" category="list-text">选择要管理此组的保护的策略。</block>
+  <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">查看为保护组选择的内容。</block>
+  <block id="ce14e32da8690b6aadac16a04c6ef9f8" category="section-title">向组添加更多工作负载</block>
+  <block id="f1e753754f87afcc8354df163185c886" category="paragraph">您稍后可能需要向现有组添加更多工作负载。</block>
+  <block id="4a723b1c2d6879d15945564ffc50eab3" category="paragraph">如果该组中的工作负载仅由BlueXP  勒索软件保护管理(而不是由SnapCenter或BlueXP  备份和恢复管理)、则应对仅由BlueXP  勒索软件保护管理的工作负载使用单独的组、而对由其他服务管理的工作负载使用另一组。</block>
+  <block id="0f13c48ebf53ed79e220526451e83f02" category="list-text">选择要添加更多工作负载的组。</block>
+  <block id="44264335870d783d6e7b840b5015b4b8" category="inline-image-macro">保护组详细信息页面</block>
+  <block id="b65981674e374f9759dbdb3ca4f23faf" category="paragraph"><block ref="b65981674e374f9759dbdb3ca4f23faf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a4f2c775292efe43eebe8c3bf6f564d3" category="list-text">从"Selected protection group"(选定保护组)页面中、选择*Add*。</block>
+  <block id="77133ed1baa7fc4be1bdc40d2d5f713c" category="paragraph">BlueXP  勒索软件保护仅会显示组中尚未使用与组相同的快照和备份策略的工作负载。</block>
+  <block id="bc86a41b855d7a61a9560e7f775c577b" category="admonition">页面顶部显示了维护快照、备份和检测策略的服务。</block>
+  <block id="cea4d748b791b6986b259dcab871a0de" category="list-text">选择应添加到组中的其他工作负载。</block>
+  <block id="eda3b9c0a863dbdeae5ac8cceaa9106b" category="section-title">编辑组保护</block>
+  <block id="5ddc803fe9d698c46c210dd0441abf29" category="paragraph">您可以更改现有组上的检测策略。如果检测策略尚未添加到此组、则可以立即添加它。</block>
+  <block id="fcf57a51d508de6200d15dd2c378dac8" category="inline-image-macro">显示"编辑"选项的"保护组"页面</block>
+  <block id="807a22e08a23017f2765108a69a7df6b" category="paragraph"><block ref="807a22e08a23017f2765108a69a7df6b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="77a65d75bb3b07997a6f71929addaf13" category="list-text">从保护窗格中，选择*编辑保护*。</block>
+  <block id="b051e0ab5030cac21c7b7158159edcc4" category="list-text">选择检测策略或将其添加到此组。</block>
+  <block id="53522fa53710da57ddc6e0452516732b" category="section-title">从组中删除工作负载</block>
+  <block id="7fac60e8c61e94cf97a02abd83048b7d" category="paragraph">您稍后可能需要从现有组中删除工作负载。</block>
+  <block id="35a8cf13ce382c8fdf2a7f51c0b2b8cc" category="list-text">选择要从中删除一个或多个工作负载的组。</block>
+  <block id="c2117b7e370bdb148d6d321b9f97e6a2" category="list-text">从"Selected protection group"(选定保护组)页面中、选择要从组中删除的工作负载、然后选择*操作*<block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block>选项。</block>
+  <block id="a700fd9c40104e68960fb6ca2311ac54" category="list-text">从操作菜单中，选择*Remove Workload*。</block>
+  <block id="05d9024c9e1747e3e7428ac3d6598aec" category="list-text">确认要删除此工作负载，然后选择*Remove*。</block>
+  <block id="c03e7f3047e8c0787fdc020e7de058ad" category="section-title">删除此保护组</block>
+  <block id="9fd377e1ddf4914e67d43d07590f6fd7" category="paragraph">删除保护组将删除该组及其保护、但不会删除各个工作负载。</block>
+  <block id="45a84df973de2cf5ebebbbb483cfdc19" category="list-text">从选定保护组页面的右上角选择*删除保护组*。</block>
+  <block id="923d9e45e363794e64a67b73838142ac" category="list-text">确认要删除该组，然后选择*Delete*。</block>
+  <block id="e299818a27e1f0221ee8f26b09166030" category="paragraph">您可以删除勒索软件策略。</block>
+  <block id="74c3d5e9f3c5f4a3eb1732ac96ae76d8" category="paragraph">在删除勒索软件保护策略之前、您可能需要查看哪些工作负载受该策略保护。</block>
+  <block id="bbc537f055749cfce71735203f0f8fdb" category="list-text">在"反向器保护策略"页面上的"受保护的工作负载"列中、单击行尾的向下箭头。</block>
+  <block id="b850d388555da9da0c8036cffa6c6951" category="list-text">从操作菜单中，选择*Delete policy*。</block>
+  <block id="60dd850afcb2a2d844806b3503dc20b0" category="paragraph">在BlueXP  勒索软件保护中启用SIEM之前、您需要配置您的SIEM系统。</block>
+  <block id="53ff0c832c14f6bc98decd93490e2576" category="list-text">选择一个暹粒系统。</block>
+  <block id="8b2302df496c7e3838b65f0dfaee3ab4" category="list-text">输入您在AWS Security Hub或Splunk Cloud中配置的令牌和身份验证详细信息。</block>
+  <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024年9月30日</block>
+  <block id="a1c75029051cebc5ca5ea85a84cfc065" category="inline-link">详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组</block>
+  <block id="1784b8aa983497f6e69069b3b862287f" category="list-text">*自定义文件共享工作负载分组*：在此版本中、您现在可以将文件共享分组为组、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。<block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>(英文)</block>
+  <block id="d67482bbf82ef9c339e44809ea9873b1" category="sidebar">利用勒索软件保护策略保护工作负载</block>
 </blocks>

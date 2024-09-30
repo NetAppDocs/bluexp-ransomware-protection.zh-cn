@@ -42,7 +42,9 @@ sidebar:
     - title: 使用信息板查看工作负载运行状况
       url: "/rp-use-dashboard.html"
     - title: 保护工作负载
-      url: "/rp-use-protect.html"
+      entries:
+      - title: 利用勒索软件保护策略保护工作负载
+        url: "/rp-use-protect.html"
     - title: 响应检测到的警报
       url: "/rp-use-alert.html"
     - title: 从勒索软件攻击中恢复

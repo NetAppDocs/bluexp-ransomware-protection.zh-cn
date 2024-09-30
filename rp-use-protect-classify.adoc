@@ -1,0 +1,134 @@
+---
+sidebar: sidebar 
+permalink: rp-use-protect-classify.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
+summary: '在BlueXP  勒索软件保护服务中、您可以使用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载上的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。' 
+---
+= 使用BlueXP  分类扫描个人身份敏感数据
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+在BlueXP  勒索软件保护服务中、您可以使用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载上的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。
+
+
+
+=== 启用BlueXP  分类
+
+在BlueXP  勒索软件保护服务中使用BlueXP  分类之前、您需要启用BlueXP  分类来扫描数据。
+
+有关开始使用此服务之前BlueXP  分类的详细信息、查看这些资源可能会很有帮助。
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私有数据的类别"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["调查存储在组织中的数据"^]
+
+
+.步骤
+. 从BlueXP勒索软件保护菜单中、选择*保护*。
+. 在保护页面中、在工作负载列中找到文件共享工作负载。
++
+image:screen-protection3.png["保护页面"]
+
+. 要启用BlueXP  分类以扫描您的数据中的敏感数据，请在隐私风险列中选择*ENARY曝光*。
++
+image:screen-protection-sensitive-data.png["识别敏感数据屏幕"]
+
+. 查看有关BlueXP  分类的信息。
+. 选择*识别*。
+
+
+.结果
+BlueXP  分类可安装BlueXP  连接器、远程连接到您的工作负载数据、并扫描NetApp云中的数据。NetApp云中只保留已确定的洞察力和指标、而您的数据则不保留。
+
+
+NOTE: 扫描可能需要几分钟时间、具体取决于数据量。"保护"页面显示BlueXP  分类正在识别文件、并指示它正在扫描的文件数量。
+
+扫描完成后、隐私曝光列会显示曝光级别、例如高。
+
+
+
+=== 查看隐私风险
+
+在BlueXP  分类扫描个人身份信息(个人身份信息、个人身份信息)后、您可以查看个人身份信息(个人身份信息、
+
+您的个人信息数据可能具有以下隐私风险状态之一。
+
+* *高*：超过70%的文件具有可执行文件信息
+* *中*：超过30%且低于70%的文件具有可执行文件信息
+* *低*：大于0且小于30%的文件具有可执行文件信息
+
+
+.步骤
+. 从BlueXP勒索软件保护菜单中、选择*保护*。
+. 在保护页面中、在工作负载列中找到文件共享工作负载、该工作负载在隐私风险列中显示状态。
++
+image:screen-protection3.png["保护屏幕、其中显示隐私曝光列"]
+
+. 选择工作负载列中的工作负载链接以查看工作负载详细信息。
++
+image:screen-protection-workload-details-privacy-exposure.png["显示隐私曝光窗格的工作负载详细信息屏幕"]
+
+. 在工作负载详细信息页面中、查看隐私曝光窗格中的信息。
+
+
+
+
+=== 隐私风险对工作负载重要性的影响
+
+隐私风险更改可能会影响工作负载的重要性。
+
+[cols="15,20a,20,20"]
+|===
+| 当隐私暴露： | 来自此隐私披露 | 隐私风险 | 然后，工作负载重要性将实现这一点：。 
+
+
+| *减少*  a| 
+高、中或低
+| 中、低或无 | 保持不变 
+
+
+.3+| *增加*  a| 
+无
+| 低 | 仍保持标准状态 
+
+
+| 低  a| 
+中
+| 从"标准"更改为"重要" 
+
+
+| 低或中  a| 
+高
+| 从"标准"或"重要"更改为"关键" 
+|===
+
+
+== 直接调查BlueXP  分类中的敏感数据
+
+.步骤
+. 从BlueXP勒索软件保护菜单中、选择*保护*。
+. 在保护页面中、在工作负载列中找到文件共享工作负载、该工作负载在隐私风险列中显示状态。
++
+image:screen-protection3.png["保护屏幕、其中显示隐私曝光列"]
+
+. 在工作负载列中选择工作负载以查看其详细信息。
++
+image:screen-protection-workload-details-privacy-exposure.png["显示隐私曝光窗格的工作负载详细信息屏幕"]
+
+. 在工作负载详细信息页面中、查看隐私曝光窗格中的信息。
+. 要调查BlueXP  分类中的曝光，请选择*Investige*。
++
+此时将打开BlueXP  分类服务以显示调查选项卡。
+
+
+
+有关BlueXP  分类的详细信息、请参阅以下BlueXP  分类主题：
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私有数据的类别"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["调查存储在组织中的数据"^]
+
