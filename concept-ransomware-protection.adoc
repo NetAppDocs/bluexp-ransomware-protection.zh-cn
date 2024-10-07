@@ -16,7 +16,7 @@ summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。通�
 [role="lead"]
 勒索软件攻击可能会阻止对数据的访问、攻击者可能会索要赎金以换取数据释放或解密。据IDC调查、勒索软件受害者遭受多次勒索软件攻击的情况并不少见。攻击可能会中断一天到几周的数据访问。
 
-BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可保护内部NAS存储(使用NFS和CIFS协议)以及BlueXP  for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud Platform和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载(跨Cloud Volumes ONTAP帐户)。该服务可将数据备份到Amazon Web Services、Google云平台、Microsoft Azure云存储和NetApp StorageGRID。
+BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可保护内部NAS存储(使用NFS和CIFS协议)以及Cloud Volumes ONTAP BlueXP  for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载。该服务可将数据备份到Amazon Web Services、Google Cloud、Microsoft Azure云存储和NetApp StorageGRID。
 
 
 
@@ -39,7 +39,7 @@ image:concept-security-layer-diagram.png["安全层图"]
 
 BlueXP勒索软件保护服务可充分利用多种NetApp技术、以便存储管理员、数据安全管理员或安全运营工程师可以实现以下目标：
 
-* *识别*在BlueXP中采用NFS或CIFS工作环境的NetApp内部NAS中、跨BlueXP帐户、工作空间和BlueXP连接器的所有基于应用程序的工作负载、文件共享工作负载或VMware管理的工作负载。然后、该服务会对数据优先级进行分类、并为您提供有关改进勒索软件保护的建议。
+* *识别*在BlueXP  中采用NFS或CIFS工作环境的NetApp内部NAS中、BlueXP  组织、项目和BlueXP  连接器中所有基于应用程序的工作负载、文件共享工作负载或VMware管理的工作负载。然后、该服务会对数据优先级进行分类、并为您提供有关改进勒索软件保护的建议。
 * *通过对数据启用备份、Snapshot副本和勒索软件保护策略来保护*工作负载。
 * *检测*可能是勒索软件攻击的异常。脚注：[任何勒索软件检测或预防系统都无法完全保证免受勒索软件攻击的安全。虽然攻击可能无法被检测到、但NetApp技术是重要的额外防御层。]
 * *通过自动启动已锁定的防篡改NetApp ONTAP快照，以便不会意外或恶意删除副本，对潜在的勒索软件攻击做出响应*。您的备份数据将保持不可移动、并端到端受到保护、免受源和目标位置的勒索软件攻击。

@@ -154,7 +154,6 @@
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="list-title">前提条件</block>
   <block id="8e0410229b2f2463922444e9482ea909" category="summary">在发现期间、BlueXP勒索软件保护功能会分析工作环境中所有BlueXP连接器和帐户中的所有卷和文件。</block>
   <block id="40ed4b70f990ecbd2b29cdd99fe63ea3" category="doc">在BlueXP勒索软件保护中发现工作负载</block>
-  <block id="dd8c2f6ce83a7e8f073c2a0dc70477fb" category="paragraph">要使用BlueXP勒索软件保护、该服务需要首先发现数据。在发现期间、BlueXP勒索软件保护功能会分析帐户中所有BlueXP连接器和工作空间中工作环境中的所有卷和文件。</block>
   <block id="c3eceaec7c4fe81904561526dfaeb25c" category="paragraph">该服务会评估现有保护级别、包括当前备份保护、Snapshot副本和NetApp自动防软件保护选项。然后、该服务会根据评估结果建议如何改进勒索软件保护。</block>
   <block id="675a1549facd94d16faf6e60d17eac34" category="paragraph">此服务会发现工作负载数据、并在信息板中显示数据保护的运行状况。</block>
   <block id="8dcd51e6649f98a61593682647591540" category="summary">您可以通过在BlueXP勒索软件保护中为工作负载分配策略来保护工作负载免受勒索软件攻击。</block>
@@ -230,23 +229,18 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支持注册概述</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">激活支持授权有两种形式的注册：</block>
-  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">注册您的BlueXP帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于BlueXP的支持资源页面上)。</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">这是您在BlueXP中使用的任何服务的单一支持订阅ID。必须注册每个BlueXP帐户级别的支持订阅。</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在云提供商的市场中注册与订阅关联的Cloud Volumes ONTAP 序列号(即20位909201xxxxxxxx序列号)。</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">这些序列号通常称为_PAYGO序列号、并由BlueXP在部署Cloud Volumes ONTAP 时生成。</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">注册这两种类型的序列号可实现打开支持服务单和自动生成案例等功能。要完成注册、请按如下所述将NetApp 支持站点(NSS)帐户添加到BlueXP中。</block>
-  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">注册BlueXP帐户以获得NetApp支持</block>
-  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">要注册支持并激活支持授权、BlueXP帐户中的一个用户必须将NetApp 支持站点 帐户与其BlueXP登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">具有NSS帐户的现有客户</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">选择*用户凭据*。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">要确认注册过程是否成功，请选择帮助图标，然后选择*Support*。</block>
-  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">“资源”页面应显示您的帐户已注册支持。</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">屏幕截图、显示帐户序列号、绿色复选框以及注册支持的文本。</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP帐户未注册支持。只要帐户中有一个用户执行了这些步骤、您的帐户即已注册。</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">现有客户、但无NSS帐户</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是现有许可证和序列号但拥有_no_ nss帐户的现有NetApp客户、则需要创建一个NSS帐户并将其与BlueXP登录关联。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 支持站点 用户注册表</block>
@@ -269,19 +263,15 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">系统会立即向提供的邮箱发送一封电子邮件、以完成此安全事务。如果验证电子邮件未在几分钟内收到、请务必检查您的垃圾邮件文件夹。</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">在电子邮件中确认操作。</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">确认将向NetApp提交您的请求、并建议您创建NetApp 支持站点 帐户。</block>
-  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成后</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">拥有NetApp 支持站点 帐户后、通过完成下的步骤将帐户与BlueXP登录关联起来 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">关联Cloud Volumes ONTAP支持的NSS凭据</block>
-  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">要为Cloud Volumes ONTAP启用以下关键工作流、需要将NetApp 支持站点 凭据与BlueXP帐户相关联：</block>
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">注册按需购买Cloud Volumes ONTAP系统以获得支持</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">要激活对系统的支持并访问 NetApp 技术支持资源，需要提供 NSS 帐户。</block>
   <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">自带许可证时部署Cloud Volumes ONTAP (BYOL)</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">需要提供您的NSS帐户、以便BlueXP可以上传您的许可证密钥并为您购买的期限启用订阅。这包括自动更新期限续订。</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">将Cloud Volumes ONTAP 软件升级到最新版本</block>
-  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">将NSS凭据与BlueXP帐户关联与与与BlueXP用户登录关联的NSS帐户不同。</block>
-  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">这些NSS凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">选择* NSS管理&gt;添加NSS帐户*。</block>
@@ -359,7 +349,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">选择*创建案例*向NetApp支持专家开立TT：</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服务*：选择与问题描述 关联的服务。例如、当特定于技术支持问题描述 时、如果服务中包含工作流或功能、则为BlueXP。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作环境*：如果适用于存储、请选择* Cloud Volumes ONTAP *或* on-Prem*、然后选择关联的工作环境。</block>
-  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作环境列表属于您在服务顶部横幅中选择的BlueXP帐户、工作空间和Connector的范围。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例优先级*：选择案例的优先级、可以是"低"、"中"、"高"或"严重"。</block>
   <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">要了解有关这些优先级的更多详细信息、请将鼠标悬停在字段名称旁边的信息图标上。</block>
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*问题描述 *：提供问题的详细问题描述 、包括任何适用的错误消息或您执行的故障排除步骤。</block>
@@ -421,7 +410,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="41e5a42a8cc2023ceb0f8dd06cce7a27" category="paragraph"><block ref="5a80707c96309e25f4c73aee7d2327b1" category="inline-link-rx"></block>。</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
   <block id="ae98c30c78f5642e201d040b9e0b468c" category="paragraph">BlueXP勒索软件保护服务是一种SaaS解决方案、用于保护数据、检测潜在攻击以及从勒索软件攻击中恢复数据。</block>
-  <block id="4c77961875ba555ef50d5063c1b6fad0" category="paragraph">对于预览版、该服务可保护各个BlueXP帐户之间基于应用程序的Oracle、MySQL、VM数据存储库和内部NAS存储上的文件共享以及AWS上的Cloud Volumes ONTAP (使用NFS协议)工作负载、并将数据备份到Amazon Web Services云存储。</block>
   <block id="75b67029f102f7aa5f52d85fbaeb59b1" category="paragraph">BlueXP勒索软件保护服务可充分利用多种NetApp技术、以便您的数据安全管理员或安全运营工程师可以实现以下目标：</block>
   <block id="c97c8c1adb5529a50db916535c46fa2b" category="list-text">一目了然地查看所有工作负载上的勒索软件保护。</block>
   <block id="b6f8dc0dd7c16df94c4c9e61ea4c4dcf" category="list-text">深入了解勒索软件保护建议</block>
@@ -454,7 +442,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="ccaaa0b1fdb9afd84865d38039f74d41" category="section-title">在BlueXP中创建连接器</block>
   <block id="780faaa43a4865ecb4711d9dd7329a52" category="inline-link">如何创建BlueXP Connector</block>
   <block id="41c2dbad4db714d9e8ccd5fdc1897747" category="paragraph">要在使用此服务之前在BlueXP中创建Connector、请参阅所述的BlueXP文档<block ref="32b465f89042a610ea5ceeabf276817a" category="inline-link-rx"></block>。</block>
-  <block id="779fc20b12e9e1861a89e1cfc6e249e7" category="admonition">如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。此服务将发现与此帐户关联的所有工作空间和所有连接器。</block>
   <block id="e3f610327d2879ec3e402da38d102535" category="summary">您可以通过更改工作负载名称来管理工作负载、而不是使用风险更高的默认名称。</block>
   <block id="6f2a93bfea2a7a4f5489fce0d0a7a2e2" category="doc">管理工作负载</block>
   <block id="75174e635e94b33548188078b7b9c2a2" category="paragraph">您可以通过更改工作负载名称来管理工作负载。使用默认名称会面临勒索软件攻击的风险。</block>
@@ -604,7 +591,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="1ad5d2b1df5750779a9e10432b0d7a7b" category="list-text">*严重*：每小时创建1个以上的Snapshot副本(主动保护计划)</block>
   <block id="423d6f72a058a73e0111323e01e91fbb" category="list-text">如果尚未选择*Discover Workloads*选项，请选择此选项。</block>
   <block id="effd67b82c5e86ef069736c6f439328e" category="paragraph">请参见 <block ref="ab9e6aa8cb0ccab44206b8872f1470c4" category="inline-link-macro-rx"></block>。</block>
-  <block id="e40c6195bfb20b1926d79708fe600d95" category="list-text">*识别*在BlueXP中采用NFS或CIFS工作环境的NetApp内部NAS中、跨BlueXP帐户、工作空间和BlueXP连接器的所有基于应用程序的工作负载、文件共享工作负载或VMware管理的工作负载。然后、该服务会对数据优先级进行分类、并为您提供有关改进勒索软件保护的建议。</block>
   <block id="8715608a29a66307d518df37ac1aa548" category="list-text">*通过自动启动已锁定的防篡改NetApp ONTAP快照，以便不会意外或恶意删除副本，对潜在的勒索软件攻击做出响应*。您的备份数据将保持不可移动、并端到端受到保护、免受源和目标位置的勒索软件攻击。</block>
   <block id="a0ffd27aaf0c391fcaf18565cfdcff5c" category="list-text">应用精选恢复以满足RPO策略要求。BlueXP勒索软件保护功能可使用多种NetApp恢复服务编排从勒索软件事件中恢复的过程、包括BlueXP备份和恢复(原Cloud Backup)以及SnapCenter。</block>
   <block id="d0694d7f380a94bab7aae320f005b7a8" category="admonition">与预览版不同、BlueXP勒索软件保护的常规版本包括NetApp自主勒索软件保护技术的许可证。请参见<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block> 了解详细信息。</block>
@@ -746,7 +732,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="feaff2de8b00885a4b2350b990a32d40" category="list-text">删除任何资源、例如工作负载或策略。</block>
   <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">运行在试用期内或在许可证下创建的所有计划操作。</block>
   <block id="d687b9bb1fc0385150b07b1a9aaae7d3" category="section-title">试用90天免费试用</block>
-  <block id="bc022ca8d62ad7e7578fb992618c0546" category="paragraph">您可以使用90天免费试用版试用BlueXP勒索软件保护。您必须是帐户管理员才能开始免费试用。</block>
   <block id="88c474e49a0cbbc7ef17d052040cd008" category="admonition">试用期间不会强制实施容量限制。</block>
   <block id="f37d436fdc8600ce24709a8f4435ec79" category="paragraph">在试用期间、您将拥有全部功能。</block>
   <block id="39c87728ab108f5ab751a40319f03bc8" category="list-text">访问<block ref="4d9841a08a6f1c082f5ba73c5d87fcc1" category="inline-link-rx"></block>。</block>
@@ -784,11 +769,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="cd429827b8589ab6bed0e5855dbbfb4d" category="paragraph">*将许可证文件添加到BlueXP数字钱包*</block>
   <block id="3d18eb613f1cc0e78f71cdb65f05af00" category="paragraph">从NetApp销售代表处购买BlueXP勒索软件保护许可证后、您可以通过输入BlueXP勒索软件保护序列号和NetApp 支持站点(NSS)帐户信息来激活该许可证。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">开始之前</block>
-  <block id="e3286b69a705d4ed944e904722ab7c8f" category="paragraph">开始之前、您需要了解以下信息：</block>
-  <block id="577048713d78842fa9a5be2124ec22a6" category="list-text">BlueXP勒索软件保护序列号</block>
-  <block id="079aeecf06b109e4316b0a68ea943f2b" category="paragraph">从您的销售订单中找到此号码、或者联系客户团队了解此信息。</block>
-  <block id="bcbbd9a155e07caa8b31001adc835c79" category="list-text">BlueXP帐户ID</block>
-  <block id="19a9d224e357593876fd44c3faede4ab" category="paragraph">您可以通过选择BlueXP顶部的*帐户*下拉列表、然后选择帐户旁边的*管理帐户*来查找BlueXP帐户ID。您的帐户 ID 位于概述选项卡中。</block>
   <block id="514aa14459d7637de1827492db5bfa9a" category="list-text">获得许可证后、返回到BlueXP勒索软件保护。选择右上角的*查看付款方式*选项。或者，在免费试用即将到期的消息中，选择*订阅或购买许可证*。</block>
   <block id="adb29c497bad7d9605dc8b9d069648c2" category="list-text">选择*向BlueXP*添加许可证。</block>
   <block id="6a72f286dc86a0c2122b1086a858405a" category="paragraph">您将转到BlueXP电子钱包。</block>
@@ -817,7 +797,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="1f60c8769abcb4f9589fae4ad1831a19" category="inline-link-macro">了解工作负载优先级或重要性</block>
   <block id="581ad716354744440ad65ff13c86ca1e" category="paragraph"><block ref="1ba24f606c1b9584a2674b4003d5830a" category="inline-link-macro-rx"></block>。</block>
   <block id="7c332d8c3498456553e971642a5142fc" category="paragraph">您应联系您的NetApp销售代表试用或使用此服务。然后、当您使用BlueXP Connector时、它将包括勒索软件保护服务的相应功能。</block>
-  <block id="077eb8dcf08a34370634fa284781fbf5" category="sidebar">BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护Oracle、MySQL、VM数据存储库、 和文件共享位于内部NAS存储以及Amazon Web Services中的Cloud Volumes ONTAP (使用NFS和CIFS协议)上、并可在每个BlueXP帐户之间备份数据、同时将数据备份到Amazon Web Services (AWS)云存储或NetApp StorageGRID。</block>
   <block id="03a0606ea5e305ef55dd39ee839003fd" category="sidebar">配置备份目标并启用威胁检测</block>
   <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">配置设置</block>
   <block id="8b003b58b4532bbf9f07c58827819319" category="list-text">*BlueXP备份和恢复*：不再需要在工作环境中启用BlueXP备份和恢复服务。请参见 <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>。</block>
@@ -1081,7 +1060,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="ea355214fd4bc7c57f471bd92918879b" category="section-title">部署</block>
   <block id="72346e3829df980ee84f3586c08e1c73" category="paragraph">要开始使用BlueXP  勒索软件保护、请单击初始登录页面中的"开始发现工作负载"。</block>
   <block id="c425c2d1d56441ad45546778fd3b1859" category="paragraph">* BlueXP  勒索软件保护是否可在标准模式、受限模式和专用模式下使用？*目前、BlueXP勒索软件保护仅在标准模式下可用。敬请关注更多信息。</block>
-  <block id="a220e5524e88ca4eb7adfba0df35e51f" category="paragraph">*如何处理访问权限？*只有帐户管理员才能启动服务并发现工作负载(因为这涉及到承诺使用资源)。后续交互可由任何角色完成。</block>
   <block id="e8841ae1773b27a52c2f1f101474d8f0" category="paragraph">*什么设备分辨率是最佳的？*BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。</block>
   <block id="3462920d936c74204339015d2f24872a" category="paragraph">*我应该使用哪种浏览器？*任何现代浏览器都能正常工作。</block>
   <block id="cce2d0a4d9c9fd08fb80c75428dfd612" category="paragraph">* BlueXP  勒索软件保护如何与BlueXP  备份和恢复以及SnapCenter进行交互？*</block>
@@ -1127,14 +1105,11 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="11227f8fef8f27540c3c439b9bdc197d" category="paragraph"><block ref="eed70f716809a92cb07d13e4e8249b92" category="inline-xref-macro-rx"></block> <block ref="6c4a5bded5527a87f7d2259882488db9" category="inline-xref-macro-rx"></block> <block ref="a7d4f4192837622a5e792bb08a0fc11c" category="inline-xref-macro-rx"></block></block>
   <block id="15ac9f54f9fb2140c2336e6aa6dfc7c0" category="paragraph">要使用BlueXP  勒索软件保护、您需要满足以下前提条件。</block>
   <block id="a83f1ed3639378d8a5c8766fc08ab842" category="section-title">在BlueXP  中</block>
-  <block id="e79e38ccfbb74e0d961ff972979ed635" category="list-text">使用Account Admin Privileges发现资源的BlueXP  用户帐户。</block>
-  <block id="6f0eed74827975e8f80db47d9a50f8c2" category="list-text">至少有一个活动BlueXP  连接器连接到内部ONTAP集群或连接到AWS或Azure中的Cloud Volumes ONTAP的BlueXP  帐户。</block>
   <block id="d373cf4cd1bda4abc274d13ad2831391" category="list-text">至少一个BlueXP  工作环境、其中AWS或Azure中具有NetApp内部ONTAP集群或Cloud Volume ONTAP (使用NAS或CIFS协议)。</block>
   <block id="437052b46bb04e16e3617994a6dc3e3b" category="list-text">支持使用ONTAP OS 9.11.1或更高版本的ONTAP或Cloud Volume ONTAP集群。</block>
   <block id="1c65e968a7f40931fc801e74436f80f4" category="list-text">如果您的内部ONTAP集群或AWS或Azure云中的Cloud Volume ONTAP尚未在BlueXP  中启用、则需要BlueXP  连接器。</block>
   <block id="2859350d666beccb5f7f3adcb55da72a" category="inline-link">了解如何配置BlueXP  连接器</block>
   <block id="d6533074153f439dd193d8acd5343357" category="paragraph">请参阅<block ref="56433f466b3d2b557361e0cd67da19f4" category="inline-link-rx"></block> 和<block ref="2954ccba2c34ed9319cfb7bdfb096d90" category="inline-link-rx"></block>。</block>
-  <block id="e5015cacadd79769df9bbde6dbe92f70" category="admonition">如果一个BlueXP  帐户中有多个BlueXP  连接器、则BlueXP  勒索软件保护服务将扫描BlueXP  UI中当前选定连接器以外所有连接器上的ONTAP资源。</block>
   <block id="2501cbb4187a9a6c7f42f035596578a4" category="section-title">在ONTAP 9.11.1及更高版本中</block>
   <block id="0c62671cec4cc1d20210f98a3f9fc05f" category="list-text">要应用保护配置(例如启用自动勒索软件保护等)、BlueXP  勒索软件保护需要对ONTAP集群具有管理员权限。ONTAP集群应仅使用ONTAP集群管理员用户凭据进行登录。</block>
   <block id="1af62e464c9d7b123ffec7775c4c5385" category="list-text">如果已使用非管理员用户凭据在BlueXP  中加入ONTAP集群、则必须按照本页面所述登录到ONTAP集群、以必要的权限更新非管理员用户权限。</block>
@@ -1146,7 +1121,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="d5c0c9e742bf6d635bc3574f0d00ffe7" category="paragraph">BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参阅。 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block></block>
   <block id="f41322f9f14cdcdf41a427fbee652476" category="section-title">在ONTAP工作环境中更新非管理员用户权限</block>
   <block id="8297305d42008c5892a2f344fb12572c" category="paragraph">如果您需要更新特定工作环境的非管理员用户权限、请完成以下步骤。</block>
-  <block id="0e861400d2c472d780e513defaec7463" category="list-text">登录到BlueXP  帐户并查找需要更新其ONTAP用户权限的工作环境。</block>
   <block id="64e55ed1c9910b83fdba604d01c14d94" category="list-text">双击工作环境可查看详细信息。</block>
   <block id="fd9987b033d105239454a8b09bbfc1d7" category="list-text">单击显示用户名的*查看其他信息*。</block>
   <block id="9fe71dce626bd006ff641fd38ed29790" category="list-text">使用admin用户登录到ONTAP集群命令行界面。</block>
@@ -1214,7 +1188,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">了解有关配置BlueXP  勒索软件保护设置的更多信息</block>
   <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>(英文)</block>
   <block id="38f076b49309ac077a903c6521bcf590" category="paragraph">在BlueXP  勒索软件保护中启用Splunk Cloud之前、您需要在Splunk Cloud中执行以下高级步骤：</block>
-  <block id="23399b80812af3201eee57d7b21730dd" category="paragraph">BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可保护内部NAS存储(使用NFS和CIFS协议)以及BlueXP  for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud Platform和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载(跨Cloud Volumes ONTAP帐户)。该服务可将数据备份到Amazon Web Services、Google云平台、Microsoft Azure云存储和NetApp StorageGRID。</block>
   <block id="c7eac6d9cd86eb05300d52e52a13413f" category="section-title">在数据层提供勒索软件保护</block>
   <block id="1b5ac7659c93361ff5fa00f9dc0878ff" category="paragraph">您的安全防护通常包括多层防御、以抵御各种网络威胁。</block>
   <block id="e1e21525512158b10d87c17fe3eb8be1" category="list-text">最外层*：这是您使用防火墙、入侵检测系统和虚拟专用网络来保护网络边界的第一道防线。</block>
@@ -1462,4 +1435,27 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="a1c75029051cebc5ca5ea85a84cfc065" category="inline-link">详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组</block>
   <block id="1784b8aa983497f6e69069b3b862287f" category="list-text">*自定义文件共享工作负载分组*：在此版本中、您现在可以将文件共享分组为组、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。<block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>(英文)</block>
   <block id="d67482bbf82ef9c339e44809ea9873b1" category="sidebar">利用勒索软件保护策略保护工作负载</block>
+  <block id="8f438477df4db40c8b526acbcdce5937" category="paragraph">BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可保护内部NAS存储(使用NFS和CIFS协议)以及Cloud Volumes ONTAP BlueXP  for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载。该服务可将数据备份到Amazon Web Services、Google Cloud、Microsoft Azure云存储和NetApp StorageGRID。</block>
+  <block id="7d491636abfe1c22299d387cd25b5297" category="list-text">*识别*在BlueXP  中采用NFS或CIFS工作环境的NetApp内部NAS中、BlueXP  组织、项目和BlueXP  连接器中所有基于应用程序的工作负载、文件共享工作负载或VMware管理的工作负载。然后、该服务会对数据优先级进行分类、并为您提供有关改进勒索软件保护的建议。</block>
+  <block id="28017f63775595195f8bc7296bf383df" category="paragraph">要使用BlueXP勒索软件保护、该服务需要首先发现数据。在发现期间、BlueXP  勒索软件保护会分析组织内所有BlueXP  连接器和项目中工作环境中的所有卷和文件。</block>
+  <block id="6b95918551f87e6ece870e17dd0bb85f" category="paragraph">*如何处理访问权限？*只有组织管理员才能启动服务并发现工作负载(因为这涉及到对资源的使用)。后续交互可由任何角色完成。</block>
+  <block id="deb3fe36dfe08c28dddf280186cdd385" category="paragraph">您可以使用90天免费试用版试用BlueXP勒索软件保护。您必须是BlueXP  组织管理员才能开始免费试用。</block>
+  <block id="581365c1705cc0acc9951fa2431b194f" category="paragraph">您需要BlueXP  勒索软件保护序列号。从您的销售订单中找到此号码、或者联系客户团队了解此信息。</block>
+  <block id="03449b1d058ce8c279f7011c479deb0b" category="list-text">使用组织管理Privileges发现资源的BlueXP  用户帐户。</block>
+  <block id="6674b495a5c26c68ef2278fe3c1da714" category="list-text">至少有一个活动BlueXP  连接器连接到内部ONTAP集群或连接到AWS或Azure中的Cloud Volumes ONTAP的BlueXP  组织。</block>
+  <block id="ca455f87aae9ad05b9b56c1b2323a2c0" category="admonition">如果您在一个BlueXP  组织中有多个BlueXP  连接器、则BlueXP  勒索软件保护服务将扫描BlueXP  UI中当前选定连接器以外所有连接器上的ONTAP资源。</block>
+  <block id="a2522bc84ab4c15eaa356f762fb3afc8" category="list-text">登录到BlueXP  并查找需要更新其ONTAP用户权限的工作环境。</block>
+  <block id="157728f4599cc3ddabf4c2d8076aa8c0" category="admonition">如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。此服务将发现与此组织关联的所有项目和所有连接器。</block>
+  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">工作环境列表位于您在服务顶部横幅中选择的BlueXP  组织(或帐户)、项目(或工作空间)和连接器的范围内。</block>
+  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">注册BlueXP  帐户序列号(20位960xxxxxxxxx序列号位于BlueXP  的支持资源页面)。</block>
+  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">注册BlueXP  以获得NetApp支持</block>
+  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">要注册支持并激活支持授权、您的BlueXP  组织中的一个用户(或帐户)必须将NetApp支持站点帐户与其BlueXP  登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
+  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">“资源”页面应显示您的BlueXP  组织已注册支持。</block>
+  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP  组织未注册支持。只要组织中有一个用户执行了这些步骤、您的组织就已注册。</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这将加快处理速度。</block>
+  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">要为Cloud Volumes ONTAP启用以下关键工作流、需要将NetApp支持站点凭据与您的BlueXP  组织相关联：</block>
+  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">将NSS凭据与您的BlueXP  组织相关联与与与BlueXP  用户登录相关联的NSS帐户不同。</block>
+  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">这些NSS凭据与您的特定BlueXP  组织ID相关联。属于BlueXP  组织的用户可以从*Support &gt; NSS Management*访问这些凭据。</block>
+  <block id="978aa39e867fbe7badda46cb2834d11f" category="paragraph">对于预览版、该服务可保护内部NAS存储以及AWS上的Cloud Volumes ONTAP (使用NFS协议)上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享的各个BlueXP  组织工作负载、并将数据备份到Amazon Web Services云存储。</block>
+  <block id="72066c262bc44f1ada77598ec3915f18" category="sidebar">BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护内部NAS存储以及Amazon Web Services中的Cloud Volumes ONTAP (使用NFS和CIFS协议)上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载BlueXP 、并将数据备份到Amazon Web Services (AWS)云存储或NetApp StorageGRID。</block>
 </blocks>

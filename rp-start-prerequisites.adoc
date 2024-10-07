@@ -20,8 +20,8 @@ summary: 通过验证对您的环境、网络访问、登录和Web浏览器的�
 
 == 在BlueXP  中
 
-* 使用Account Admin Privileges发现资源的BlueXP  用户帐户。
-* 至少有一个活动BlueXP  连接器连接到内部ONTAP集群或连接到AWS或Azure中的Cloud Volumes ONTAP的BlueXP  帐户。
+* 使用组织管理Privileges发现资源的BlueXP  用户帐户。
+* 至少有一个活动BlueXP  连接器连接到内部ONTAP集群或连接到AWS或Azure中的Cloud Volumes ONTAP的BlueXP  组织。
 * 至少一个BlueXP  工作环境、其中AWS或Azure中具有NetApp内部ONTAP集群或Cloud Volume ONTAP (使用NAS或CIFS协议)。
 +
 ** 支持使用ONTAP OS 9.11.1或更高版本的ONTAP或Cloud Volume ONTAP集群。
@@ -31,7 +31,7 @@ summary: 通过验证对您的环境、网络访问、登录和Web浏览器的�
 
 +
 
-NOTE: 如果一个BlueXP  帐户中有多个BlueXP  连接器、则BlueXP  勒索软件保护服务将扫描BlueXP  UI中当前选定连接器以外所有连接器上的ONTAP资源。
+NOTE: 如果您在一个BlueXP  组织中有多个BlueXP  连接器、则BlueXP  勒索软件保护服务将扫描BlueXP  UI中当前选定连接器以外所有连接器上的ONTAP资源。
 
 
 
@@ -73,7 +73,7 @@ BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。�
 
 如果您需要更新特定工作环境的非管理员用户权限、请完成以下步骤。
 
-. 登录到BlueXP  帐户并查找需要更新其ONTAP用户权限的工作环境。
+. 登录到BlueXP  并查找需要更新其ONTAP用户权限的工作环境。
 . 双击工作环境可查看详细信息。
 . 单击显示用户名的*查看其他信息*。
 . 使用admin用户登录到ONTAP集群命令行界面。

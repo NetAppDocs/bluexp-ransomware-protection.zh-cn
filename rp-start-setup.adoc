@@ -72,4 +72,4 @@ summary: 要使用BlueXP勒索软件保护、请执行几个步骤进行设置�
 要在使用此服务之前在BlueXP中创建Connector、请参阅所述的BlueXP文档 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何创建BlueXP Connector"^]。
 
 
-NOTE: 如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。此服务将发现与此帐户关联的所有工作空间和所有连接器。
+NOTE: 如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。此服务将发现与此组织关联的所有项目和所有连接器。

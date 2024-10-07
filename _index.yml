@@ -1,13 +1,13 @@
 ---
 indexpage:
   title: BlueXP勒索软件保护文档
-  summary: BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护Oracle、MySQL、VM数据存储库、 和文件共享位于内部NAS存储以及Amazon
-    Web Services中的Cloud Volumes ONTAP (使用NFS和CIFS协议)上、并可在每个BlueXP帐户之间备份数据、同时将数据备份到Amazon
+  summary: BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护内部NAS存储以及Amazon Web Services中的Cloud
+    Volumes ONTAP (使用NFS和CIFS协议)上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载BlueXP 、并将数据备份到Amazon
     Web Services (AWS)云存储或NetApp StorageGRID。
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid
-  lead: BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护Oracle、MySQL、VM数据存储库、 和文件共享位于内部NAS存储以及Amazon
-    Web Services中的Cloud Volumes ONTAP (使用NFS和CIFS协议)上、并可在每个BlueXP帐户之间备份数据、同时将数据备份到Amazon
+  lead: BlueXP勒索软件保护是一种用于勒索软件保护、检测和恢复的业务流程服务。该服务可保护内部NAS存储以及Amazon Web Services中的Cloud
+    Volumes ONTAP (使用NFS和CIFS协议)上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载BlueXP 、并将数据备份到Amazon
     Web Services (AWS)云存储或NetApp StorageGRID。
   tiles:
   - title: 入门

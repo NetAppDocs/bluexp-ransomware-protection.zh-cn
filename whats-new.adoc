@@ -188,7 +188,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 
 BlueXP勒索软件保护服务是一种SaaS解决方案、用于保护数据、检测潜在攻击以及从勒索软件攻击中恢复数据。
 
-对于预览版、该服务可保护各个BlueXP帐户之间基于应用程序的Oracle、MySQL、VM数据存储库和内部NAS存储上的文件共享以及AWS上的Cloud Volumes ONTAP (使用NFS协议)工作负载、并将数据备份到Amazon Web Services云存储。
+对于预览版、该服务可保护内部NAS存储以及AWS上的Cloud Volumes ONTAP (使用NFS协议)上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享的各个BlueXP  组织工作负载、并将数据备份到Amazon Web Services云存储。
 
 BlueXP勒索软件保护服务可充分利用多种NetApp技术、以便您的数据安全管理员或安全运营工程师可以实现以下目标：
 
