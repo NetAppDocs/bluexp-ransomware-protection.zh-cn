@@ -1524,7 +1524,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="1355ef6342e870ff08b7ae39b0126c7c" category="list-text">输入密钥。</block>
   <block id="70c1d1656e0180e79913295ab5c3c06a" category="list-text">选择*显示*。</block>
   <block id="bf43cf14a72445401d6804bee094443e" category="doc">BlueXP  勒索软件防护中的新增功能</block>
-  <block id="07c8845dbdef949b860ebfc99bd558ac" category="section-title">2024年11月6日</block>
   <block id="7d02192f3436d747f16f0854f54cd837" category="list-text">*启用数据分类和扫描个人身份信息(Pi)*：在此版本中，您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。</block>
   <block id="f3da95789fee3d76f39c270803b7c7df" category="paragraph">部署BlueX分类的客户通常可以在BlueXP  勒索软件保护中扫描可用于此类数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。</block>
   <block id="c2cb37c5316be80c5de2706c50799610" category="paragraph">BlueXP  分类也可以作为SaaS模式部署、作为技术预览的一部分。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。如果启用预览、"保护"页面上的*隐私曝光*列旁边将显示一个"预览"标签以及其他位置。</block>
@@ -1536,4 +1535,5 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="9d163bfc4f18cfe82e5ab58246fe3e03" category="list-text">*立即免费试用30天*：在此版本中、全新部署的BlueXP  勒索软件保护现在有30天免费试用。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。</block>
   <block id="2f5cba8ef7e3d3ce9ca484acfa021d1e" category="list-text">*在文件级别恢复Podman*的应用程序工作负载：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
   <block id="4b55af6e5a9948a11e84a0809a34edfb" category="sidebar">扫描个人身份数据</block>
+  <block id="21e938043b4ef6be41f16e95f7f5aaaa" category="section-title">2024年11月7日</block>
 </blocks>
