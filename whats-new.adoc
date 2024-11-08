@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP' 
 summary: 了解BlueXP勒索软件保护的新增功能。 
 ---
-= 发行说明：BlueXP勒索软件保护的新增功能
+= BlueXP  勒索软件防护中的新增功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -15,6 +15,45 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 [role="lead"]
 了解BlueXP勒索软件保护的新增功能。
+
+
+
+== 2024年11月6日
+
+此版本的BlueXP  勒索软件保护包括以下更新。
+
+* *启用数据分类和扫描个人身份信息(Pi)*：在此版本中，您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。
++
+部署BlueX分类的客户通常可以在BlueXP  勒索软件保护中扫描可用于此类数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。
+
++
+BlueXP  分类也可以作为SaaS模式部署、作为技术预览的一部分。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。如果启用预览、"保护"页面上的*隐私曝光*列旁边将显示一个"预览"标签以及其他位置。
+
++
+请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP勒索软件保护设置"]。
+
++
+要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的*识别曝光*。
+
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["使用BlueXP  分类扫描个人身份敏感数据"](英文)
+
+* *在即将推出的预览功能发布前试用*：现在您可以在发布前试用一些标记为"预览"的功能。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
+
+* *SIEM与Microsoft Sentinel*的集成：您现在可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
+
+
+
+* *立即免费试用30天*：在此版本中、全新部署的BlueXP  勒索软件保护现在有30天免费试用。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。
+* *在文件级别恢复Podman*的应用程序工作负载：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["详细了解如何从勒索软件攻击中恢复"](英文)
+
+
 
 
 
@@ -105,8 +144,6 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-az
 
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP勒索软件保护"]。
-
-
 
 * *已将Microsoft Azure添加为备份目标*。现在、您可以将Microsoft Azure与AWS和NetApp StorageGRID一起添加为备份目标。
 +

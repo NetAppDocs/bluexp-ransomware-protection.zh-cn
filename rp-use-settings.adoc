@@ -8,11 +8,11 @@ summary: 您可以在BlueXP勒索软件保护服务中配置多个选项、包�
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
-您可以通过查看信息板上的建议或访问*Settings*选项来配置备份目标或启用威胁检测。
+您可以通过查看信息板上的建议或访问*Settings*选项来配置备份目标或启用威胁检测。您还可以显示未来的预览功能。
 
 启用威胁检测会自动将数据发送到安全和事件管理系统(SIEM)以进行威胁分析。
 
@@ -28,6 +28,7 @@ summary: 您可以在BlueXP勒索软件保护服务中配置多个选项、包�
 +
 ** 添加备份目标。
 ** 连接您的安全和事件管理系统(SIEM)以进行威胁分析和检测。
+** 显示即将推出的预览功能。
 
 
 
@@ -70,6 +71,7 @@ image:screen-dashboard.png["信息板页面"]
 
 您可以从顶部菜单附近的操作选项轻松访问设置页面。
 
+.步骤
 . 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
 . 从下拉菜单中选择*Settings*。
 . 要添加备份目的地，请选择*Add*。
@@ -81,6 +83,7 @@ image:screen-dashboard.png["信息板页面"]
 
 要将NetApp StorageGRID设置为备份目标、请输入以下信息。
 
+.步骤
 . 在*设置>备份目的地*页面中，选择*添加*。
 . 输入备份目标的名称。
 +
@@ -118,6 +121,7 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面上的设
 
 有关在BlueXP中管理AWS存储的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["管理Amazon S3存储分段"^]。
 
+.步骤
 . 在*设置>备份目的地*页面中，选择*添加*。
 . 输入备份目标的名称。
 +
@@ -176,6 +180,7 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面上的设
 
 有关在BlueXP  中管理GCP存储的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Google Cloud中的连接器安装选项"^]。
 
+.步骤
 . 在*设置>备份目的地*页面中，选择*添加*。
 . 输入备份目标的名称。
 +
@@ -216,6 +221,7 @@ image:screen-settings-backup-destination-gcp.png["备份目标页面"]
 
 有关在BlueXP中管理Azure凭据和市场订阅的详细信息、请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["管理您的Azure凭据和市场订阅"^]。
 
+.步骤
 . 在*设置>备份目的地*页面中，选择*添加*。
 . 输入备份目标的名称。
 +
@@ -260,7 +266,7 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面上的设
 
 == 启用威胁检测
 
-您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。您可以选择AWS Security Hub或Splunk Cloud作为您的SIEM。
+您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。您可以选择AWS Security Hub、Microsoft Sentinel或Splunk Cloud作为您的SIEM。
 
 在BlueXP  勒索软件保护中启用SIEM之前、您需要配置您的SIEM系统。
 
@@ -303,6 +309,117 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面上的设
 
 
 
+=== 配置Microsoft Sentinel以进行威胁检测
+
+在BlueXP  勒索软件保护中启用Microsoft Sentinel之前、您需要在Microsoft Sentinel中执行以下高级步骤：
+
+* * 前提条件 *
++
+** 启用Microsoft Sentinel。
+** 在Microsoft Sentinel中创建自定义角色。
+
+
+* *注册*
++
+** 注册BlueXP  勒索软件保护以接收来自Microsoft Sentinel的事件。
+** 创建注册密钥。
+
+
+* *权限*：为应用程序分配权限。
+* *身份验证*：输入应用程序的身份验证凭据。
+
+
+.启用Microsoft Sentinel的步骤
+. 转到Microsoft Sentinel。
+. 创建*日志分析工作空间*。
+. 启用Microsoft Sentinel以使用刚刚创建的日志分析工作空间。
+
+
+.在Microsoft Sentinel中创建自定义角色的步骤
+. 转到Microsoft Sentinel。
+. 选择*订阅*>*访问控制(IAM)*。
+. 输入自定义角色名称。使用名称* BlueXP  防软件保护Sentinel配置程序*。
+. 复制以下JSON并将其粘贴到*JSX*选项卡中。
++
+[listing]
+----
+{
+  "roleName": "BlueXP Ransomware Protection Sentinel Configurator",
+  "description": "",
+  "assignableScopes":["/subscriptions/{subscription_id}"],
+  "permissions": [
+
+  ]
+}
+----
+. 查看并保存设置。
+
+
+.注册BlueXP  勒索软件保护以接收来自Microsoft Sentinel的事件的步骤
+. 转到Microsoft Sentinel。
+. 选择*Enttra ID*>*应用程序*>*应用程序注册*。
+. 对于应用程序的*显示名称*，输入“* BlueXP  勒索软件保护*”。
+. 在*支持的帐户类型*字段中，选择*仅此组织目录中的帐户*。
+. 选择要推送事件的*Default Index*。
+. 选择 * 审阅 * 。
+. 选择*注册*以保存您的设置。
++
+注册后、Microsoft Entra管理中心将显示应用程序概述窗格。
+
+
+
+.创建注册密钥的步骤
+. 转到Microsoft Sentinel。
+. 选择*证书和机密*>*客户机密*>*新客户机密*。
+. 添加应用程序密钥的说明。
+. 为密钥选择*Expiration*或指定自定义生命周期。
++
+
+TIP: 客户端密钥的有效期不得超过两年(24个月)。Microsoft建议您将到期值设置为小于12个月。
+
+. 选择*Add*以创建密钥。
+. 记录要在身份验证步骤中使用的密钥。退出此页面后、此密钥将不再显示。
+
+
+.为应用程序分配权限的步骤
+. 转到Microsoft Sentinel。
+. 选择*订阅*>*访问控制(IAM)*。
+. 选择*Add*>*Add Role assign*.
+. 对于*特权管理员角色*字段，选择* BlueXP  防软件保护Sentinel配置程序*。
++
+
+TIP: 这是您先前创建的自定义角色。
+
+. 选择 * 下一步 * 。
+. 在*Assign access to *字段中，选择*User、group或service主体*。
+. 选择*选择成员*。然后，选择* BlueXP  防软件保护Sentinel配置程序*。
+. 选择 * 下一步 * 。
+. 在“*用户可以执行的操作”框中，选择“允许用户分配除特权管理员角色所有者、UAA、RBAC (建议)”以外的所有角色”。
+. 选择 * 下一步 * 。
+. 选择*Review and assign*以分配权限。
+
+
+.输入应用程序身份验证凭据的步骤
+. 转到Microsoft Sentinel。
+. 输入凭据：
++
+.. 输入租户ID、客户端应用程序ID和客户端应用程序密钥。
+.. 单击 * 身份验证 * 。
++
+
+NOTE: 身份验证成功后、将显示一条"authentication (身份验证)"消息。
+
+
+
+. 输入应用程序的日志分析工作区详细信息。
++
+.. 选择订阅ID、资源组和日志分析工作区。
+
+
+
+
+
+
 === 配置Splunk Cloud以进行威胁检测
 
 在BlueXP  勒索软件保护中启用Splunk Cloud之前、您需要在Splunk Cloud中执行以下高级步骤：
@@ -336,6 +453,7 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面上的设
 
 启用SIEM可将BlueXP  勒索软件保护中的数据发送到您的SIEM服务器、以进行威胁分析和报告。
 
+.步骤
 . 从BlueXP  菜单中，选择*保护*>*防软件保护*。
 . 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
 . 选择*Settings*。
@@ -343,9 +461,12 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面上的设
 出现“Settings (设置)”页面。
 
 +
-image:screen-settings-threat-detection3.png["设置页面"]
+image:screen-settings2.png["设置页面"]
 
-. 在设置页面中，选择“暹粒连接”窗格中的*Connect*。
+. 在设置页面中、选择SIEM连接磁贴中的*连接*。
++
+image:screen-settings-threat-detection-3options.png["启用威胁检测详细信息页面"]
+
 . 选择一个暹粒系统。
 . 输入您在AWS Security Hub或Splunk Cloud中配置的令牌和身份验证详细信息。
 +
@@ -360,14 +481,20 @@ NOTE: 您输入的信息取决于您选择的暹粒。
 
 
 
-=== 断开SIEM
+== 显示预览特征
 
-断开暹粒连接将停止服务向暹粒服务器发送数据。
+您可以在即将推出的功能发布之前试用标记为"预览"的功能。这些功能在用户界面中显示时带有"预览"标签。
+
+.开始之前
+您需要BlueXP  勒索软件保护产品团队提供的密钥才能显示预览功能。要获取密钥、请发送电子邮件至mailto：ng) rps-key@NetApp．com。
 
 .步骤
-. 从BlueXP  菜单中，选择*保护*>*防软件保护*。
 . 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
 . 选择*Settings*。
-. 在暹粒连接窗格中，选择*Disconnect*。
-. 在确认页面中，选择*Disconnect*。
++
+image:screen-settings2.png["设置页面"]
+
+. 在*预览功能*图块中，选择*显示*。
+. 输入密钥。
+. 选择*显示*。
 

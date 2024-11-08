@@ -8,7 +8,7 @@ summary: 您可以通过在BlueXP勒索软件保护中为工作负载分配策�
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -75,7 +75,7 @@ BlueXP  勒索软件保护策略不需要备份策略。
 ** 从信息板上的"Data Protection (数据保护)"窗格中、选择*查看全部*。
 ** 从菜单中，选择*Protection。
 +
-image:screen-protection3.png["保护页面"]
+image:screen-protection.png["保护页面"]
 
 
 
@@ -260,7 +260,7 @@ TIP: 在BlueXP  勒索软件保护中启用保护后、在勒索软件检测策
 .制定勒索软件保护策略的步骤
 . 从BlueXP勒索软件保护菜单中、选择*保护*。
 +
-image:screen-protection3.png["管理策略页面"]
+image:screen-protection.png["管理策略页面"]
 
 . 在保护页面中，选择*管理保护策略*。
 +
@@ -331,7 +331,7 @@ BlueXP备份和恢复以及SnapCenter等其他服务使用以下类型的策略�
 .步骤
 . 从BlueXP勒索软件保护菜单中、选择*保护*。
 +
-image:screen-protection3.png["管理策略页面"]
+image:screen-protection.png["管理策略页面"]
 
 . 从保护页面中、选择一个工作负载、然后选择*保护*。
 +
@@ -378,7 +378,7 @@ image:screen-protect-br-policies.png["显示BlueXP备份和恢复策略的保护
 .步骤
 . 从BlueXP勒索软件保护菜单中、选择*保护*。
 +
-image:screen-protection3.png["管理策略页面"]
+image:screen-protection.png["管理策略页面"]
 
 . 从保护页面中，选择*保护组*选项卡。
 +
@@ -418,52 +418,6 @@ image:screen-protection-groups-policy.png["添加保护组-策略页面"]
 . 选择 * 下一步 * 。
 . 查看为保护组选择的内容。
 . 选择 * 添加 * 。
-
-
-
-
-=== 向组添加更多工作负载
-
-您稍后可能需要向现有组添加更多工作负载。
-
-如果该组中的工作负载仅由BlueXP  勒索软件保护管理(而不是由SnapCenter或BlueXP  备份和恢复管理)、则应对仅由BlueXP  勒索软件保护管理的工作负载使用单独的组、而对由其他服务管理的工作负载使用另一组。
-
-.步骤
-. 从BlueXP勒索软件保护菜单中、选择*保护*。
-. 从保护页面中，选择*保护组*选项卡。
-+
-image:screen-protection-groups.png["保护组页面"]
-
-. 选择要添加更多工作负载的组。
-+
-image:screen-protection-groups-more-workloads.png["保护组详细信息页面"]
-
-. 从"Selected protection group"(选定保护组)页面中、选择*Add*。
-+
-BlueXP  勒索软件保护仅会显示组中尚未使用与组相同的快照和备份策略的工作负载。
-
-+
-
-TIP: 页面顶部显示了维护快照、备份和检测策略的服务。
-
-. 选择应添加到组中的其他工作负载。
-. 选择 * 保存 * 。
-
-
-
-
-=== 编辑组保护
-
-您可以更改现有组上的检测策略。如果检测策略尚未添加到此组、则可以立即添加它。
-
-.步骤
-. 从BlueXP勒索软件保护菜单中、选择*保护*。
-. 从保护页面中，选择*保护组*选项卡。
-+
-image:screen-protection-groups-edit.png["显示\"编辑\"选项的\"保护组\"页面"]
-
-. 从保护窗格中，选择*编辑保护*。
-. 选择检测策略或将其添加到此组。
 
 
 

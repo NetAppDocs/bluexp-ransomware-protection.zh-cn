@@ -1,24 +1,24 @@
 ---
 sidebar: sidebar 
 permalink: rp-reference-roles.html 
-keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights 
-summary: 您可以在BlueXP勒索软件保护服务中配置多个选项、包括备份目标。 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
+summary: 'BlueXP  勒索软件保护使用基于角色的访问控制(Role-Based Access Control、RBAC)来控制每个用户对特定功能和操作的访问权限。此服务使用组织管理员和查看器(非组织管理员)的核心BlueXP  角色。' 
 ---
 = BlueXP  勒索软件保护基于角色的访问控制Privileges
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  勒索软件保护使用基于角色的访问控制(Role-Based Access Control、RBAC)来控制每个用户对特定功能和操作的访问权限。此服务使用帐户管理员和查看器(非帐户管理员0)的核心BlueXP  角色。
+BlueXP  勒索软件保护使用基于角色的访问控制(Role-Based Access Control、RBAC)来控制每个用户对特定功能和操作的访问权限。此服务使用组织管理员和查看器(非组织管理员)的核心BlueXP  角色。
 
 下表显示了每个角色可以执行的操作。
 
 [cols="40,20a,20a"]
 |===
-| 功能和操作 | BlueXP  帐户管理员 | 非管理员(查看器) 
+| 功能和操作 | BlueXP  组织管理员 | 非管理员(查看器) 
 
 
 | 开始免费试用  a| 

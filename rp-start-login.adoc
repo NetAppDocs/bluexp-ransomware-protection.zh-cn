@@ -8,7 +8,7 @@ summary: 通过访问BlueXP中的服务开始使用BlueXP勒索软件保护。
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

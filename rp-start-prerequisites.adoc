@@ -22,6 +22,7 @@ summary: 通过验证对您的环境、网络访问、登录和Web浏览器的�
 
 * 使用组织管理Privileges发现资源的BlueXP  用户帐户。
 * 至少有一个活动BlueXP  连接器连接到内部ONTAP集群或连接到AWS或Azure中的Cloud Volumes ONTAP的BlueXP  组织。
+* BlueXP  连接器必须使 `cloudmanager-ransomware-protection`容器处于活动状态。
 * 至少一个BlueXP  工作环境、其中AWS或Azure中具有NetApp内部ONTAP集群或Cloud Volume ONTAP (使用NAS或CIFS协议)。
 +
 ** 支持使用ONTAP OS 9.11.1或更高版本的ONTAP或Cloud Volume ONTAP集群。
@@ -41,6 +42,7 @@ NOTE: 如果您在一个BlueXP  组织中有多个BlueXP  连接器、则BlueX
 
 == 在ONTAP 9.11.1及更高版本中
 
+* 已在内部ONTAP实例上启用ONTAP One许可证。
 * NetApp自主勒索软件保护的许可证、由BlueXP勒索软件保护使用、在内部ONTAP实例上启用、具体取决于您使用的ONTAP版本。请参见 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护概述"^]。
 +
 

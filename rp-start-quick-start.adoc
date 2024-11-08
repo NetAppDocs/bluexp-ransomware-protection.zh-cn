@@ -8,7 +8,7 @@ summary: 只需几个步骤即可开始使用NetApp BlueXP勒索软件保护服�
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

@@ -8,7 +8,7 @@ summary: 要使用BlueXP勒索软件保护、请执行几个步骤进行设置�
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: /media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -24,10 +24,11 @@ summary: 要使用BlueXP勒索软件保护、请执行几个步骤进行设置�
 
 * NetApp StorageGRID
 * Amazon Web Services
+* Google Cloud Platform
 * Microsoft Azure
 
 
-在备份目标本身中配置选项后、您可以稍后在BlueXP勒索软件保护服务中将其配置为备份目标。
+在备份目标本身中配置选项后、您可以稍后在BlueXP勒索软件保护服务中将其配置为备份目标。有关如何在BlueXP  勒索软件保护中配置备份目标的详细信息，请参阅link:rp-use-settings.html["配置备份目标"]。
 
 
 

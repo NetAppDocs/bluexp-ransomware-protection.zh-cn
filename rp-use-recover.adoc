@@ -8,7 +8,7 @@ summary: '攻击发生后、BlueXP勒索软件保护功能会验证二级存储�
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
