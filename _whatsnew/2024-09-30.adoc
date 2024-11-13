@@ -1,0 +1,11 @@
+= 自定义文件共享工作负载分组
+:allow-uri-read: 
+
+
+
+
+=== 自定义文件共享工作负载分组
+
+在此版本中、您现在可以将文件共享分组到多个组中、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组"](英文)

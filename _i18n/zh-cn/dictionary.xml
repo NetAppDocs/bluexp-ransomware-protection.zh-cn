@@ -394,14 +394,10 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4cab5dc38edd4eb434559fa769c1d9ec" category="summary">了解BlueXP勒索软件保护的新增功能。</block>
   <block id="592997dde366d5775e7e052816854f74" category="section-title">2024年3月5日</block>
-  <block id="5a62a1aba4b0b7df087f145049f2b71f" category="paragraph">此预览版BlueXP勒索软件保护包括以下更新：</block>
   <block id="cf69a03aa5287886f0e8d3de1a6334cc" category="inline-link">了解有关管理策略的更多信息</block>
   <block id="ac623dda99022aa586562b6804c2f1b8" category="inline-link">了解有关创建保护策略的更多信息</block>
-  <block id="0fd4c934346a4b20a9b03012b080912b" category="list-text">*二级存储上的不可更改性(DataLock)*：现在、您可以在对象存储中使用NetApp DataLock技术使备份在二级存储上不可更改。<block ref="a216e61ae0b0740b7be8287c615fa066" category="inline-link-rx"></block>。</block>
   <block id="732b7b17a4dd9ae4a4359cee4b9b391d" category="inline-link">了解有关配置备份目标的更多信息</block>
-  <block id="6baf05b01e83bd3d4b8a2024f16a20f6" category="list-text">*自动备份到AWS*：除了使用NetApp StorageGRID之外、您现在还可以选择StorageGRID作为备份目标。<block ref="563323d59981c5d050897f7686a7f9d8" category="inline-link-rx"></block>。</block>
   <block id="9e599e81fbf58f35a4e8ea8d4d14b0f6" category="inline-link">详细了解如何响应检测到的勒索软件警报</block>
-  <block id="e3647ee6d2bf29ee74ee9f4e9ff4e201" category="list-text">*用于调查潜在攻击的其他功能*：您现在可以查看更多取证详细信息来调查检测到的潜在攻击。<block ref="707fb9c7332f6aa933e8445c28830d7a" category="inline-link-rx"></block>。</block>
   <block id="bda01efb679b0ca92bc4e76a23294328" category="inline-link">详细了解如何从勒索软件攻击中恢复(在消除意外事件后)</block>
   <block id="8aea370efa0da7f8c985a03488d3b9a7" category="inline-link">了解BlueXP勒索软件保护</block>
   <block id="41e5a42a8cc2023ceb0f8dd06cce7a27" category="paragraph"><block ref="5a80707c96309e25f4c73aee7d2327b1" category="inline-link-rx"></block>。</block>
@@ -688,20 +684,15 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="bb5447070c795a6e8d29fa9cd98a5127" category="list-text">选择要分配的策略。</block>
   <block id="427a5dfbb09ab1cc6737506e06431570" category="list-text">选择*保护*以完成更改。</block>
   <block id="5e76a23879d0e6f7325f31678e623972" category="section-title">2024年5月14日</block>
-  <block id="8607002d4574854ad87d556bd31731f4" category="paragraph">此版本是BlueXP勒索软件保护的正式发布版本。其中包括以下更新：</block>
   <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">了解有关设置许可的更多信息</block>
   <block id="17f6ba003825118fb67d19c8c26be794" category="paragraph"><block ref="36f38233d2460bc4dacb6b4bd4fd46ab" category="inline-link-rx"></block>。</block>
-  <block id="66d53b21a4f1cbecf308bbb38b047ea6" category="list-text">*CIFS协议*：该服务现在支持在使用NFS和CIFS协议的AWS工作环境中使用内部ONTAP和Cloud Volumes ONTAP。先前版本仅支持NFS协议。</block>
   <block id="e959f6b23824b1ea02ac36779938412d" category="inline-link">有关查看工作负载详细信息的更多信息、请参见保护页面</block>
   <block id="f51a97d186491b354b8046c13692a070" category="paragraph"><block ref="59ecb8b9925d0039512c75c461b0b86c" category="inline-link-rx"></block>。</block>
   <block id="ee689c35077ba98079c7b0a4f05a6dc5" category="inline-link">了解有关保护工作负载的更多信息</block>
   <block id="928fea0953d8c6c88422d673f9e9c5e3" category="paragraph"><block ref="140488255a280124a6e845e64767d54f" category="inline-link-rx"></block>。</block>
-  <block id="d041207e4dcdfed1283b155492e91f0e" category="list-text">*勒索软件保护策略*：如果工作负载上不存在Snapshot或备份策略、您可以创建勒索软件保护策略、其中可包括在此服务中创建的以下策略：</block>
   <block id="bdadcbba411cf56b92967e5b0248cc77" category="list-text">检测策略</block>
-  <block id="f536bb08e409e96a3949c3f12e8e392b" category="list-text">*启用威胁检测*现在可使用第三方安全和事件管理(SIEM)系统。现在、信息板会显示一个新的"启用威胁检测"建议、您可以在"设置"页面上配置该建议。</block>
   <block id="10bc4591a9635a8100fbcf18a580cc29" category="inline-link">了解有关配置设置选项的更多信息</block>
   <block id="119863034bfc7ae6b0e2d324ec3da549" category="paragraph"><block ref="fa172403ab7c635a07324b1168d8ce19" category="inline-link-rx"></block>。</block>
-  <block id="81a40dc02620f19a1a34a9edcd87f471" category="list-text">*新检测状态*将显示在"保护"页面上、其中显示应用于工作负载的勒索软件检测的状态。</block>
   <block id="af255af71067c5961f87ea2321b69295" category="inline-link">了解有关保护工作负载和查看保护状态的更多信息</block>
   <block id="df142910ec0f256cf3fe94834edd616c" category="paragraph"><block ref="2db9e604787e93c0ca53ebeb4c1a3e79" category="inline-link-rx"></block>。</block>
   <block id="ca8c09727e8b36d15981c9455d697516" category="inline-link">了解有关从信息板和其他页面下载CSV文件的更多信息</block>
@@ -790,7 +781,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="7c332d8c3498456553e971642a5142fc" category="paragraph">您应联系您的NetApp销售代表试用或使用此服务。然后、当您使用BlueXP Connector时、它将包括勒索软件保护服务的相应功能。</block>
   <block id="03a0606ea5e305ef55dd39ee839003fd" category="sidebar">配置备份目标并启用威胁检测</block>
   <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">配置设置</block>
-  <block id="8b003b58b4532bbf9f07c58827819319" category="list-text">*BlueXP备份和恢复*：不再需要在工作环境中启用BlueXP备份和恢复服务。请参见 <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>。</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
   <block id="81f9a9a695bd7ffbb88f9bd9cfd7d836" category="list-text">从信息板中，选择*Review and fix*以获得“准备&lt;backup provider&gt;作为备份目标”的建议。</block>
   <block id="12138171b6ceeb4bdc45d66e55bebe1c" category="inline-image-macro">纵向操作</block>
@@ -855,16 +845,8 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="e54f696c13e53f1f1c0731dbdadf9344" category="inline-link">管理Azure存储帐户</block>
   <block id="b89959c3c57acfa9560338ecc2692433" category="paragraph">有关在BlueXP中管理Azure存储的详细信息、请参阅<block ref="d5fb5f2072dcbae3b3a252726c6e52ee" category="inline-link-rx"></block>。</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">2024年6月10日</block>
-  <block id="4c57408166809e028adf9be27b861c0a" category="paragraph">此版本的BlueXP勒索软件保护包括以下更新：</block>
-  <block id="a88e0dc5892d64e5e1293fb97d10e870" category="list-text">*主存储上的Snapshot副本锁定*：启用此选项可锁定主存储上的Snapshot副本、以便在一段时间内无法修改或删除这些副本、即使勒索软件攻击设法到达备份存储目标也是如此。</block>
-  <block id="1c73f6fee4ed4d02eabef99de35666d2" category="list-text">*此版本除了支持适用于AWS的Cloud Volumes ONTAP和内部ONTAP NAS之外、还支持将适用于Microsoft Azure"的Cloud Volumes ONTAP用作工作环境。</block>
   <block id="6b9ec885733dcee16db8c4d8dde6312a" category="inline-link">在 Azure 中快速启动 Cloud Volumes ONTAP</block>
   <block id="17223b00f9d3a714622f5df95956564b" category="paragraph"><block ref="17223b00f9d3a714622f5df95956564b" category="inline-link-rx"></block></block>
-  <block id="2803032e22b35c4bdcf58b92d42735f5" category="list-text">*已将Microsoft Azure添加为备份目标*。现在、您可以将Microsoft Azure与AWS和NetApp StorageGRID一起添加为备份目标。</block>
-  <block id="17b97e69da6dd47e7550f1c8138bab17" category="list-text">*许可更新*：您可以注册90天免费试用。很快、您将能够通过亚马逊网络服务商城购买按需购买订阅或自带NetApp许可证。</block>
-  <block id="8bd256649eef4e917975b7d21e407eee" category="list-text">*工作负载详细信息*：此版本现在可在"保护"和"其他"页面中的工作负载信息中提供更多详细信息、以改进工作负载保护评估。您可以通过工作负载详细信息查看当前分配的策略以及配置的备份目标。</block>
-  <block id="3c52b5fdb588d57160ac52c4248fa3c0" category="list-text">*应用程序一致和VM一致的保护和恢复*：现在、您可以使用NetApp SnapCenter软件执行应用程序一致的保护、并使用适用于VMware vSphere的SnapCenter插件执行VM一致的保护、从而实现稳定一致的状态、以避免日后需要恢复时可能丢失数据。如果需要恢复、您可以将应用程序或VM还原回先前可用的任何状态。</block>
-  <block id="b40d9759dcac80d0440a4f4b7e2d3f1a" category="list-text">*从保护、警报和恢复页面下载CSV文件*。</block>
   <block id="fe3f4461c233a8ac4062f3d5f2af86f7" category="paragraph"><block ref="fe3f4461c233a8ac4062f3d5f2af86f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="42af6072d9f6b15575af87c244abaa0a" category="section-title">还原文件共享或数据存储库</block>
   <block id="1dd6a4919bb3486348521d221ec659ba" category="list-text">选择要还原的文件共享或数据存储库后、在还原页面的还原范围中、选择*按卷*。</block>
@@ -877,9 +859,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="d9e97b4dacf8789a452df06f4739d3b7" category="paragraph"><block ref="691f168695c0ebf6c9e1bf6093933aac" category="inline-link-rx"></block>。</block>
   <block id="8e84b1daf78912b246a0f51f49a81be6" category="inline-link">详细了解如何配置保护设置</block>
   <block id="a5074ce00bd12388aded816f7d17bc0b" category="paragraph"><block ref="8490e5084c846c3f615579ffada71b2e" category="inline-link-rx"></block>。</block>
-  <block id="9863ce048fc9f300b1fbc248aa66783e" category="list-text">现在，用户界面中包含*查看文档*链接。您可以从信息板垂直*操作*访问此文档 <block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> 选项选择*新增功能*以查看发行说明中的详细信息、或者选择*文档*以查看BlueXP勒索软件保护文档主页。</block>
-  <block id="56b38de12238825d4032ca408bf71807" category="list-text">*保护策略管理*：除了使用预定义策略之外，您现在还可以创建策略。<block ref="b9442a8e5462552f8e91e8150e2b9935" category="inline-link-rx"></block>。</block>
-  <block id="bdf0c88a77cd9c31482e0fe8ce0cfb56" category="list-text">*恢复过程*。恢复过程得到了改进。现在、您可以逐个卷或为一个工作负载恢复所有卷。<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>。</block>
   <block id="bb492c0cc0bbb54e0a73ab4e5dfcd476" category="list-text">*检测*可能是勒索软件攻击的异常。脚注：[任何勒索软件检测或预防系统都无法完全保证免受勒索软件攻击的安全。虽然攻击可能无法被检测到、但NetApp技术是重要的额外防御层。]</block>
   <block id="25e8dea7aabddf32a7ff28410bb492f4" category="paragraph">借助BlueXP勒索软件保护、您可以使用不同的许可计划、包括免费试用版、即付即用订阅或自带许可证。</block>
   <block id="5f35d0b4a7930f14f1022ee1f942ee64" category="list-text">使用ONTAP 9.11.1及更高版本的内部ONTAP NAS (使用NFS和CIFS协议)</block>
@@ -1006,21 +985,15 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="df7d398faf1de90a0c101fbc7640a2fe" category="paragraph">您可以从任一主菜单选项下载文件：</block>
   <block id="a36d9f25fe7ecafe45db2fd45823c6e7" category="list-text">*报告*：您可以从任何页面导出数据并下载文件。</block>
   <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">2024年7月1日</block>
-  <block id="fdb1f5ab91dd63ebda3ff72247aa7b2b" category="list-text">*自带许可证(BYOL)*：在此版本中，您可以使用BYOL许可证，这是您从NetApp销售代表处获得的NetApp许可证文件(NLF)</block>
-  <block id="0c379e4399020bc48ac7da5510998e1a" category="list-text">*在文件级别恢复应用程序工作负载*：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
   <block id="f117dfa6c0387d743ec4a20f0d5de0bc" category="admonition">在此版本中、如果帐户中的所有BlueXP连接器均未使用Podman、则会启用单个文件还原功能。否则、该帐户将被禁用。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">详细了解如何从勒索软件攻击中恢复</block>
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>(英文)</block>
-  <block id="47882b8bc0a2b23d26218cd1691e4099" category="list-text">*在文件级别恢复应用程序工作负载之前，请下载受影响文件的列表*。现在、您可以访问警报页面以下载CSV文件中受影响文件的列表、然后使用恢复页面上传CSV文件。</block>
   <block id="eb7455ff51d7f3745fb801aa3ad0fb2a" category="inline-link">了解有关在还原应用程序之前下载受影响文件的更多信息</block>
   <block id="2b133b12308ff6cab26bdc5342a3372d" category="paragraph"><block ref="008791716c908b75ddd12a1a3f620fa8" category="inline-link-rx"></block>(英文)</block>
-  <block id="1acc112f7ac5f0e2374f0e20883a6c5a" category="list-text">*删除保护计划*：在此版本中、您现在可以删除勒索软件保护策略。</block>
   <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">了解有关保护工作负载和管理勒索软件保护策略的更多信息</block>
   <block id="20eb1918e9de308789133c5a0b0cc2c4" category="paragraph"><block ref="88ddee768f79e382777baf84277fe57c" category="inline-link-rx"></block>(英文)</block>
-  <block id="c51b576406612c0f56215101f8705f83" category="list-text">*消除误报警报*：从"警报"选项卡中、您现在可以消除误报或决定立即恢复数据。</block>
   <block id="b439d3ca10048f7d11cd05477ca961a7" category="inline-link">了解有关响应勒索软件警报的更多信息</block>
   <block id="e7e38bb442294e991be246059534377b" category="paragraph"><block ref="b68da660865dc415a1fefb8516e82d73" category="inline-link-rx"></block>(英文)</block>
-  <block id="ea8652a0fce10e4424e5611e6298f09b" category="list-text">*设置选项*：您现在可以在BlueXP勒索软件保护设置中设置备份目标。</block>
   <block id="16ea8ec4227c8499ec40700bab8662a0" category="paragraph">如果您同时拥有BlueXP  备份和恢复以及BlueXP  勒索软件保护功能、则受这两种产品保护的任何常见数据将仅由BlueXP  勒索软件保护功能付费。</block>
   <block id="ab7e350836ab3f3789bee6b5603f0b58" category="paragraph">购买许可证或PayGo订阅后、任何已启用勒索软件检测策略(自主勒索软件保护)(由BlueXP  勒索软件保护发现或设置)的工作负载、 BlueXP  勒索软件保护至少会将一个快照或备份策略归类为"受保护"、并计入已购买容量或PayGo订阅。如果在没有检测策略(ARP)的情况下发现某个工作负载、即使该工作负载具有备份或快照策略、也会将其归类为"存在风险"、并且不会根据已购买容量进行_NOT _计数。</block>
   <block id="fcf48eb5c1148885f8ad102e707baa07" category="paragraph">90天试用期结束后、受保护的工作负载将计入已购买容量或订阅。在提高效率之前、与受保护工作负载关联的数据将按GB计费BlueXP  勒索软件保护。</block>
@@ -1159,8 +1132,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="530a14e5d66c979129b8b96f40e39621" category="list-text">从BlueXP  菜单中，选择*保护*&gt;*防软件保护*。</block>
   <block id="4cb0caa7f0c97dd44ed525e6237432d2" category="admonition">您输入的信息取决于您选择的暹粒。</block>
   <block id="dd6b8bf5a56c8beb81b173991906c83e" category="section-title">2024 年 8 月 5 日</block>
-  <block id="3660cbb805c1bf63e1967ed1339a3bbd" category="paragraph">此版本的BlueXP  勒索软件保护包括以下更新。</block>
-  <block id="11f5c2b9557e3c8b41afc65159260e17" category="list-text">*使用Splunk Cloud进行威胁检测*：您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。对于先前版本、您只能选择AWS安全中心作为您的SIEM。在此版本中、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
   <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">了解有关配置BlueXP  勒索软件保护设置的更多信息</block>
   <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>(英文)</block>
   <block id="38f076b49309ac077a903c6521bcf590" category="paragraph">在BlueXP  勒索软件保护中启用Splunk Cloud之前、您需要在Splunk Cloud中执行以下高级步骤：</block>
@@ -1269,14 +1240,9 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="f01a112fe29fe81372d14171703671ce" category="paragraph">默认情况下、存储分段中的数据使用Google管理的密钥进行加密。您可以继续使用Google管理的密钥。</block>
   <block id="f378325fc971c8e4253dd4f1662dec3b" category="list-text">(可选)选择是否使用先前配置的GCP专用端点(PrivateLink)。</block>
   <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2024年9月2日</block>
-  <block id="dddaa1ce44a2d4bbebf20d3f4563c0a4" category="paragraph">此版本的BlueXP  勒索软件保护包括以下更新。</block>
-  <block id="8817c21accd9fdcb9207397834af08f6" category="list-text">*数字顾问提供的安全风险评估*：BlueXP  勒索软件防护现在可从NetApp数字顾问收集与集群相关的高安全风险和严重安全风险的信息。如果发现任何风险、BlueXP  勒索软件保护会在信息板的*建议操作*窗格中提供建议："修复集群&lt;name&gt;上的已知安全漏洞。"根据信息板上的建议，单击“*查看并修复”，建议查看Digital Advisor和“常见漏洞与披露”(Common漏洞与披露，CVA)文章以解决安全风险。如果存在多个安全风险、请查看Digital Advisor中的信息。</block>
   <block id="9a42efab941e78c35ff03d2f3de7f294" category="paragraph">请参阅<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block>。</block>
-  <block id="db99b952c4a66f69627f5f328e20f9d1" category="list-text">*备份到Google Cloud Platform*：在此版本中、您可以将备份目标位置设置为Google Cloud Platform存储分段。以前、您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services和Microsoft Azure。</block>
-  <block id="6296ba9154f4dc4d4403121335c812c9" category="list-text">*支持Google Cloud Platform*：该服务现在支持Cloud Volumes ONTAP for Google Cloud Platform以实现存储保护。以前、该服务仅支持适用于Amazon Web Services和Microsoft Azure的Cloud Volumes ONTAP以及内部NAS。</block>
   <block id="571e1080641fe631491306478d4572a1" category="inline-link">了解BlueXP  勒索软件保护以及支持的数据源、备份目标和工作环境</block>
   <block id="5c6a145c454aef23e256b2459f8c4c75" category="paragraph"><block ref="e1153028bb0f55bf33080551a5d7f6f3" category="inline-link-rx"></block>(英文)</block>
-  <block id="98f1cb1ebd09ccf6e678d5bae1920213" category="list-text">*基于角色的访问控制*：您现在可以使用基于角色的访问控制(Role-Based Access Control、RBAC)限制对特定活动的访问。BlueXP  勒索软件保护使用BlueXP  中的两个角色：BlueXP  帐户管理员和非帐户管理员(查看者)。</block>
   <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">基于角色的访问控制Privileges</block>
   <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">有关每个角色可以执行的操作的详细信息，请参见<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>。</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考</block>
@@ -1380,7 +1346,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="8b2302df496c7e3838b65f0dfaee3ab4" category="list-text">输入您在AWS Security Hub或Splunk Cloud中配置的令牌和身份验证详细信息。</block>
   <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024年9月30日</block>
   <block id="a1c75029051cebc5ca5ea85a84cfc065" category="inline-link">详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组</block>
-  <block id="1784b8aa983497f6e69069b3b862287f" category="list-text">*自定义文件共享工作负载分组*：在此版本中、您现在可以将文件共享分组为组、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。<block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>(英文)</block>
   <block id="d67482bbf82ef9c339e44809ea9873b1" category="sidebar">利用勒索软件保护策略保护工作负载</block>
   <block id="8f438477df4db40c8b526acbcdce5937" category="paragraph">BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可保护内部NAS存储(使用NFS和CIFS协议)以及Cloud Volumes ONTAP BlueXP  for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载。该服务可将数据备份到Amazon Web Services、Google Cloud、Microsoft Azure云存储和NetApp StorageGRID。</block>
   <block id="7d491636abfe1c22299d387cd25b5297" category="list-text">*识别*在BlueXP  中采用NFS或CIFS工作环境的NetApp内部NAS中、BlueXP  组织、项目和BlueXP  连接器中所有基于应用程序的工作负载、文件共享工作负载或VMware管理的工作负载。然后、该服务会对数据优先级进行分类、并为您提供有关改进勒索软件保护的建议。</block>
@@ -1524,16 +1489,80 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="1355ef6342e870ff08b7ae39b0126c7c" category="list-text">输入密钥。</block>
   <block id="70c1d1656e0180e79913295ab5c3c06a" category="list-text">选择*显示*。</block>
   <block id="bf43cf14a72445401d6804bee094443e" category="doc">BlueXP  勒索软件防护中的新增功能</block>
-  <block id="7d02192f3436d747f16f0854f54cd837" category="list-text">*启用数据分类和扫描个人身份信息(Pi)*：在此版本中，您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。</block>
   <block id="f3da95789fee3d76f39c270803b7c7df" category="paragraph">部署BlueX分类的客户通常可以在BlueXP  勒索软件保护中扫描可用于此类数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。</block>
   <block id="c2cb37c5316be80c5de2706c50799610" category="paragraph">BlueXP  分类也可以作为SaaS模式部署、作为技术预览的一部分。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。如果启用预览、"保护"页面上的*隐私曝光*列旁边将显示一个"预览"标签以及其他位置。</block>
   <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">请参阅<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block>。</block>
   <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的*识别曝光*。</block>
   <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block>(英文)</block>
-  <block id="41e1ecfc5a85ff11563226784ee15ba6" category="list-text">*在即将推出的预览功能发布前试用*：现在您可以在发布前试用一些标记为"预览"的功能。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。</block>
-  <block id="7a5ad35792efc88c3a5c05a313202699" category="list-text">*SIEM与Microsoft Sentinel*的集成：您现在可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
-  <block id="9d163bfc4f18cfe82e5ab58246fe3e03" category="list-text">*立即免费试用30天*：在此版本中、全新部署的BlueXP  勒索软件保护现在有30天免费试用。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。</block>
-  <block id="2f5cba8ef7e3d3ce9ca484acfa021d1e" category="list-text">*在文件级别恢复Podman*的应用程序工作负载：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
   <block id="4b55af6e5a9948a11e84a0809a34edfb" category="sidebar">扫描个人身份数据</block>
   <block id="21e938043b4ef6be41f16e95f7f5aaaa" category="section-title">2024年11月7日</block>
+  <block id="997bcd377ced78770953e6e3775b8ef8" category="doc">Digital Advisor的安全风险评估</block>
+  <block id="ca38b24749c1b379aa526166d650709c" category="paragraph">BlueXP  勒索软件防护现在可从NetApp数字顾问收集与集群相关的高安全风险和严重安全风险的信息。如果发现任何风险、BlueXP  勒索软件保护会在信息板的*建议操作*窗格中提供建议："修复集群&lt;name&gt;上的已知安全漏洞。"根据信息板上的建议，单击“*查看并修复”，建议查看Digital Advisor和“常见漏洞与披露”(Common漏洞与披露，CVA)文章以解决安全风险。如果存在多个安全风险、请查看Digital Advisor中的信息。</block>
+  <block id="d6e1df3f33358ae7e917c338cf462ca0" category="section-title">备份到Google Cloud Platform</block>
+  <block id="a789dfb53f35524e96878624b0f44be1" category="paragraph">在此版本中、您可以将备份目标设置为Google Cloud Platform存储分段。以前、您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services和Microsoft Azure。</block>
+  <block id="be2bdfb658850d167c76f763879faa2f" category="section-title">支持Google Cloud Platform</block>
+  <block id="1a5bbf622fa944b888ced1dd36e43b20" category="paragraph">该服务现在支持Cloud Volumes ONTAP for Google Cloud Platform以实现存储保护。以前、该服务仅支持适用于Amazon Web Services和Microsoft Azure的Cloud Volumes ONTAP以及内部NAS。</block>
+  <block id="01ab8fe0565c01eb93456b579d969d66" category="section-title">基于角色的访问控制</block>
+  <block id="1431c64521322df79808c76466af3b70" category="paragraph">现在、您可以使用基于角色的访问控制(Role-Based Access Control、RBAC)限制对特定活动的访问。BlueXP  勒索软件保护使用BlueXP  中的两个角色：BlueXP  帐户管理员和非帐户管理员(查看者)。</block>
+  <block id="4d330e714e6183f0c61932d7c00a8ff3" category="doc">自定义文件共享工作负载分组</block>
+  <block id="52a2bb712de6112a9a5d29a047f3a073" category="paragraph">在此版本中、您现在可以将文件共享分组到多个组中、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。</block>
+  <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>(英文)</block>
+  <block id="86510b95a05ce4c22c6d48d2fd9228a9" category="doc">启用数据分类并扫描个人身份信息(个人身份信息、个人身份信息)</block>
+  <block id="d599e3d1b6a5137e404ea89f314a22e4" category="paragraph">在此版本中、您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。</block>
+  <block id="4d4b17a43409a8c299995a21ddaef39b" category="section-title">在即将推出的预览功能发布之前、请尝试这些功能</block>
+  <block id="c86f9a52cdb00d7109bfa8ee10b48074" category="paragraph">现在、您可以在发布某些标记为"预览"的功能之前试用它们。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。</block>
+  <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">与Microsoft Sentinel的暹粒集成</block>
+  <block id="5148a0988dead45b54188f22121bb178" category="paragraph">现在、您可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
+  <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">现在30天免费试用</block>
+  <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">在此版本中、全新部署的BlueXP  勒索软件保护现在有30天的免费试用时间。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。</block>
+  <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">在文件级别恢复Podman的应用程序工作负载</block>
+  <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">现在、在文件级别还原应用程序工作负载之前、您可以查看可能受攻击影响的文件列表、并确定要还原的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
+  <block id="d87d7ee64c0c4e6b9769c640d8889cd0" category="section-title">使用Splunk Cloud进行威胁检测</block>
+  <block id="40c15e54846f2454a459bb0ef7ba9faa" category="paragraph">您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。对于先前版本、您只能选择AWS安全中心作为您的SIEM。在此版本中、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
+  <block id="3ad6a80bb44b13a7ad34ad835b0166d5" category="paragraph">在此版本中、您可以使用BYOL许可证、这是一个可从NetApp销售代表处获取的NetApp许可证文件(NLL)</block>
+  <block id="731d998f19bf5dc5e302b024a5e269ae" category="section-title">在文件级别还原应用程序工作负载</block>
+  <block id="3ca66b2ea6d0090926c6ed42102cd321" category="paragraph">现在、在文件级别还原应用程序工作负载之前、您可以查看可能受攻击影响的文件列表、并确定要还原的文件。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
+  <block id="a73c37f93df66de7bad711d109e97dec" category="section-title">下载受影响文件的列表</block>
+  <block id="2054cf1c5fa9dc941ee8bea29d93f66c" category="paragraph">现在、在文件级还原应用程序工作负载之前、您可以访问警报页面以下载CSV文件中受影响文件的列表、然后使用恢复页面上传CSV文件。</block>
+  <block id="16a3ef0c0012d6ecafe00aeaff08d20c" category="section-title">删除保护计划</block>
+  <block id="0e7f928ba1ebfe3d5652a71f58c576d8" category="paragraph">在此版本中、您现在可以删除勒索软件保护策略。</block>
+  <block id="c9b85bdf743e168e0a60d3d8ceade783" category="section-title">主存储上的Snapshot副本锁定</block>
+  <block id="c5e12132648bd299cac195c7b86022e1" category="paragraph">启用此选项可锁定主存储上的Snapshot副本、以便在一段时间内无法修改或删除这些副本、即使勒索软件攻击设法到达备份存储目标也是如此。</block>
+  <block id="4b5a2b3b60f0e79d9138e24b2d5f4f01" category="section-title">支持适用于Microsoft Azure的Cloud Volumes ONTAP</block>
+  <block id="d968f99b0c3335ed1e6f49c728b452af" category="paragraph">此版本除了支持适用于AWS的Cloud Volumes ONTAP和内部ONTAP NAS之外、还支持将适用于Microsoft Azure的Cloud Volumes ONTAP用作工作环境。</block>
+  <block id="24fe52a2365d38c875f0bcf11a7463c6" category="section-title">已将Microsoft Azure添加为备份目标</block>
+  <block id="cd9970a99d092fa49bfe0f1cf5ee4b7c" category="paragraph">现在、您可以将Microsoft Azure与AWS和NetApp StorageGRID一起添加为备份目标。</block>
+  <block id="c03b667390566320b1f84fd433ac2cb0" category="section-title">许可更新</block>
+  <block id="fd480049706571e64359cf4351f9fcbc" category="paragraph">您可以注册90天免费试用。很快、您将能够通过亚马逊网络服务商城购买按需购买订阅或自带NetApp许可证。</block>
+  <block id="4216ad1e709a7634134e14c2170d7512" category="section-title">CIFS协议</block>
+  <block id="408367cea8a278c3888a17e2d554228a" category="paragraph">现在、该服务支持在使用NFS和CIFS协议的AWS工作环境中使用内部ONTAP和Cloud Volumes ONTAP。先前版本仅支持NFS协议。</block>
+  <block id="0b1d09e292577ba6653f7e9933b4bc18" category="section-title">工作负载详细信息</block>
+  <block id="ea68074e88ed0ee034f46a22da4207e3" category="paragraph">现在、此版本可在"Protection (保护)"和"Other (其他)"页面中的工作负载信息中提供更多详细信息、以改进工作负载保护评估。您可以通过工作负载详细信息查看当前分配的策略以及配置的备份目标。</block>
+  <block id="8d99eb044387ccaf47ae81f4bc0e655c" category="section-title">应用程序一致和VM一致的保护和恢复</block>
+  <block id="2d27a1cb1cddcea603af3821a038c473" category="paragraph">现在、您可以使用NetApp SnapCenter软件执行应用程序一致的保护、并使用适用于VMware vSphere的SnapCenter插件执行VM一致的保护、从而实现稳定一致的状态、以避免日后需要恢复时可能丢失数据。如果需要恢复、您可以将应用程序或VM还原回先前可用的任何状态。</block>
+  <block id="2ffdf2b6c5684e4c6c9a1519e96a8cdd" category="section-title">勒索软件保护策略</block>
+  <block id="3c774805756c6bcbb7246614c16ac783" category="paragraph">如果工作负载上不存在Snapshot或备份策略、您可以创建勒索软件保护策略、其中可包括在此服务中创建的以下策略：</block>
+  <block id="a25458513b834667ae92c65418ac8918" category="section-title">威胁检测</block>
+  <block id="6f39a651bab312935acf07a9f7b3905c" category="paragraph">现在、可使用第三方安全和事件管理(SIEM)系统进行威胁检测。现在、信息板会显示一个新的"启用威胁检测"建议、您可以在"设置"页面上配置该建议。</block>
+  <block id="f5e987cac9511e003e20769dfebfed7c" category="section-title">消除误报警报</block>
+  <block id="6131af6894f63b64bad9d4dabbbfd577" category="paragraph">现在、您可以从"Alerts"(警报)选项卡中消除误报或决定立即恢复数据。</block>
+  <block id="91d938cdf573e3f658140e8b3c5ee2c3" category="section-title">检测状态</block>
+  <block id="a45430437759fefd9c1fc57f741d6de7" category="paragraph">新的检测状态将显示在"保护"页面上、其中显示应用于工作负载的勒索软件检测的状态。</block>
+  <block id="fce32b147d3fc1e111905c3a3bf6fd69" category="section-title">下载CSV文件</block>
+  <block id="d614bc77098be49e16d933a345b13c92" category="paragraph">您可以从保护、警报和恢复页面下载CSV文件*。</block>
+  <block id="6758a0bf77df1c4e4729d20133a2e170" category="section-title">文档链接</block>
+  <block id="ca0357e519e49764e6ebe9d52a39e2cd" category="paragraph">查看文档链接现在包含在用户界面中。您可以从信息板垂直*操作*选项访问此文档 <block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> 。选择*新增功能*以查看发行说明中的详细信息、或者选择*文档*以查看BlueXP勒索软件保护文档主页。</block>
+  <block id="2cc8041b51d1809f75f8d4cf6355ae01" category="paragraph">工作环境中不再需要启用BlueXP备份和恢复服务。请参阅。 <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参阅。 <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block></block>
+  <block id="609943abdcf36e6b01b6e1bd91561708" category="section-title">设置选项</block>
+  <block id="dca5a35d56928cb7458a60a545581862" category="paragraph">现在、您可以在BlueXP  勒索软件保护设置中设置备份目标。</block>
+  <block id="43ce8197249a120a136331aaa3e00c1d" category="section-title">保护策略管理</block>
+  <block id="8e8468693b168546acf5c9462495f83d" category="paragraph">除了使用预定义策略之外、您现在还可以创建策略。<block ref="b9442a8e5462552f8e91e8150e2b9935" category="inline-link-rx"></block>(英文)。</block>
+  <block id="e10d5c21c44525f1b19a48dfb4a89445" category="section-title">二级存储上的不可破坏性(DataLock)</block>
+  <block id="54621bce5c5edbad82ad98711766da7e" category="paragraph">现在、您可以在对象存储中使用NetApp DataLock技术使备份在二级存储中不可更改。<block ref="a216e61ae0b0740b7be8287c615fa066" category="inline-link-rx"></block>(英文)。</block>
+  <block id="643b17dc026d0c0147a8a815056a5f49" category="section-title">自动备份到NetApp StorageGRID</block>
+  <block id="523d7f963aa74548c8ce926b15835e7d" category="paragraph">除了使用AWS之外、您现在还可以选择StorageGRID作为备份目标。<block ref="563323d59981c5d050897f7686a7f9d8" category="inline-link-rx"></block>(英文)。</block>
+  <block id="62214a27f426a0d88db3ab38949106b2" category="section-title">用于调查潜在攻击的其他功能</block>
+  <block id="f6d0e776adfe1ac52ce17e76a4f5e7a4" category="paragraph">现在、您可以查看更多取证详细信息、以调查检测到的潜在攻击。<block ref="707fb9c7332f6aa933e8445c28830d7a" category="inline-link-rx"></block>(英文)。</block>
+  <block id="1308d0f084fdb39839541aaf971b23ff" category="section-title">恢复过程</block>
+  <block id="44d292cf2891eaa1e67cfa3d9504b58b" category="paragraph">恢复过程得到了改进。现在、您可以逐个卷或为一个工作负载恢复所有卷。<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>(英文)。</block>
 </blocks>
