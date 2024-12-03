@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: rp-start-discover.html 
-keywords: bluexp, ransomware protection, protection, risk, cyber attack, security 
+keywords: bluexp, ransomware protection, protection, risk, cyber attack, security,data security, data protection, data recovery, data discovery 
 summary: 在发现期间、BlueXP勒索软件保护功能会分析工作环境中所有BlueXP连接器和帐户中的所有卷和文件。 
 ---
 = 在BlueXP勒索软件保护中发现工作负载

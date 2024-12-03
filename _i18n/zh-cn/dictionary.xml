@@ -1083,7 +1083,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="ec2732dacf33a5e90fbcf1cf42cb9ef7" category="list-text">更改用户的角色。输入 ...</block>
   <block id="2d5422701fe060f1b4df91101404e4ba" category="list-text">返回到BlueXP  勒索软件保护UI以使用它。</block>
   <block id="bbb730a044e88545c3476ffea030b9f1" category="list-text">在信息板中、您可以在每个窗格中执行以下操作：</block>
-  <block id="10111a2393d16789c78a9cdaedd4e858" category="admonition">单击"我要注意"以查看有关此数据的提示。要增加工作负载限制，请单击此我注意到的*增加工作负载限制*。单击此选项将转到BlueXP  支持页面、您可以在此处创建案例服务单。</block>
   <block id="a0d3acda8b40798d6b03c633ead12276" category="cell">连接到"安全"以报告威胁。</block>
   <block id="c00b830d377d62d0c3d20c11bcd0ce1e" category="cell">输入SIEM/XDR服务器详细信息以启用威胁检测。请参阅 <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>。</block>
   <block id="31d09a40fac7ed173c873af34fa091e3" category="paragraph">您可以根据所拥有的工作负载保护更改保护策略：</block>
@@ -1252,7 +1251,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="e7d05f872780d58e08011a44ce4be77b" category="doc">使用BlueXP  分类扫描个人身份敏感数据</block>
   <block id="076729a2004741ee7d92b63f5cb3fe9a" category="section-title">启用BlueXP  分类</block>
   <block id="a43036419058d2ad4ca5da0ce6b97873" category="paragraph">在BlueXP  勒索软件保护服务中使用BlueXP  分类之前、您需要启用BlueXP  分类来扫描数据。</block>
-  <block id="a5d2c33289393df749cbf18c3be271dd" category="paragraph">有关开始使用此服务之前BlueXP  分类的详细信息、查看这些资源可能会很有帮助。</block>
   <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link">了解BlueXP分类</block>
   <block id="799ed37205c29a076a84d3694d53c585" category="list-text"><block ref="799ed37205c29a076a84d3694d53c585" category="inline-link-rx"></block></block>
   <block id="93f515959ce6187b986c42fa6959168b" category="inline-link">私有数据的类别</block>
@@ -1260,10 +1258,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link">调查存储在组织中的数据</block>
   <block id="08e880effe206106422b9043908d11e9" category="list-text"><block ref="08e880effe206106422b9043908d11e9" category="inline-link-rx"></block></block>
   <block id="22da148f02a4f9df3c95fa55ebe1f0e4" category="list-text">在保护页面中、在工作负载列中找到文件共享工作负载。</block>
-  <block id="04c2fdcb53dc660f7267061f2996a772" category="inline-image-macro">识别敏感数据屏幕</block>
-  <block id="64af7ad3ab046769c51f4f24a86b7cf4" category="paragraph"><block ref="64af7ad3ab046769c51f4f24a86b7cf4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="969f986150648403974cc122eae60ccf" category="list-text">查看有关BlueXP  分类的信息。</block>
-  <block id="858cc0364fb5e649249551c7ef4f979a" category="list-text">选择*识别*。</block>
   <block id="9878a7973fa7782f8c21d56eb79d0aad" category="admonition">扫描可能需要几分钟时间、具体取决于数据量。"保护"页面显示BlueXP  分类正在识别文件、并指示它正在扫描的文件数量。</block>
   <block id="70f91b9311063ebb918671e1632eea94" category="section-title">查看隐私风险</block>
   <block id="520cb83e421cf68c99eac9eb36fd6b63" category="paragraph">您的个人信息数据可能具有以下隐私风险状态之一。</block>
@@ -1272,13 +1266,9 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="55d325ae2625ba4269051bf5ac42b2af" category="list-text">*低*：大于0且小于30%的文件具有可执行文件信息</block>
   <block id="743c833ae848226cd938cbcdec4813e8" category="list-text">在保护页面中、在工作负载列中找到文件共享工作负载、该工作负载在隐私风险列中显示状态。</block>
   <block id="648eb89d24fbd412ac4e5191ba6b3cfc" category="list-text">选择工作负载列中的工作负载链接以查看工作负载详细信息。</block>
-  <block id="fbb3a837089f0da9e0cebd46602a970a" category="inline-image-macro">显示隐私曝光窗格的工作负载详细信息屏幕</block>
-  <block id="49c64cfb6f35d57ce67294767ff57c01" category="paragraph"><block ref="49c64cfb6f35d57ce67294767ff57c01" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dffb203aa27226e3750f92c5c60829df" category="section-title">隐私风险对工作负载重要性的影响</block>
   <block id="61915adac4ce0b36ecdb70a5e446a80b" category="paragraph">隐私风险更改可能会影响工作负载的重要性。</block>
   <block id="a201dfb7539c6083e641a0bc8121201b" category="cell">当隐私暴露：</block>
-  <block id="74ddd4c0b88f06f95621270e77b9b74c" category="cell">来自此隐私披露</block>
-  <block id="155b3b9cdf276603a429bb78f500f4cf" category="cell">隐私风险</block>
   <block id="9a70ecaf65d678d97afe7382a0197469" category="cell">然后，工作负载重要性将实现这一点：。</block>
   <block id="e999cd086de455a56c2f7d169210876b" category="cell">*减少*</block>
   <block id="a479d5f7790c7e99c1c56e63d46a8d05" category="paragraph">高、中或低</block>
@@ -1292,8 +1282,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="f8307a8be7170a599a441165be60a2d7" category="cell">低或中</block>
   <block id="655d20c1ca69519ca647684edbb2db35" category="paragraph">高</block>
   <block id="f5bfc54a73042ca571add47438fea77e" category="cell">从"标准"或"重要"更改为"关键"</block>
-  <block id="520b356f51c07225dd16424209ff656e" category="list-text">在工作负载列中选择工作负载以查看其详细信息。</block>
-  <block id="eab784efeec8f5c6a6edd9d398ba81ff" category="list-text">要调查BlueXP  分类中的曝光，请选择*Investige*。</block>
   <block id="15e674d84786450a9efe801faaf91922" category="paragraph">有关BlueXP  分类的详细信息、请参阅以下BlueXP  分类主题：</block>
   <block id="598d2be50cda45e73d61b0277fd8fe5b" category="doc">利用勒索软件策略保护工作负载</block>
   <block id="c39a37a7df296279dc521553fc906d98" category="list-text">创建或管理勒索软件保护策略、其中包括您为快照、备份和勒索软件保护创建的策略(称为_detection policies_)。</block>
@@ -1400,34 +1388,20 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="14b35f939fcc508bbbe9bbcc95c9d281" category="paragraph">在备份目标本身中配置选项后、您可以稍后在BlueXP勒索软件保护服务中将其配置为备份目标。有关如何在BlueXP  勒索软件保护中配置备份目标的详细信息，请参阅<block ref="d7283f05508223892c3d4b2693d5a6af" category="inline-link-macro-rx"></block>。</block>
   <block id="6b0e91bb98e8a9394dda94307f3217d0" category="doc">扫描具有BlueXP  分类的个人身份信息</block>
   <block id="753b6b8856f736c4d2bafca31e68a6ef" category="paragraph">在BlueXP  勒索软件保护服务中、您可以使用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载上的数据并对其进行分类。对数据进行分类有助于确定您的数据是否包含个人身份信息(个人身份信息、个人身份信息)、这会增加安全风险。</block>
-  <block id="f812376fe75506b0d28c7b58d3b279f0" category="admonition">BlueXP  分类可以部署在内部环境、云中(非SaaS部署)、也可以在技术预览版中作为SaaS模式进行部署。在使用非SaaS部署或现有部署时、在BlueXP  勒索软件保护中扫描数据通常可用、而不是预览版。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。请参阅 <block ref="71b7fcd43dad68a28f1c1ae3bbb6f526" category="inline-link-macro-rx"></block>。</block>
   <block id="5526010a5b298ea10d9a56b593ab9bce" category="admonition">此过程可能会影响工作负载的重要性、以帮助您确保获得适当的保护。</block>
-  <block id="8b34ad1076790f662c3b4dd16a74cfc2" category="admonition">您只需执行一次此操作；如果您选择另一个文件共享工作负载来确定风险、则不必再次启用BlueXP  分类。</block>
   <block id="ae4cd989261438ef1ac70ec8ce13114e" category="paragraph">通过使用BlueXP  分类UI作为备用方法、管理员可以在BlueXP  勒索软件保护中启用BlueXP  分类。</block>
   <block id="ae026bf5e2ca5066c55b7b1740de800e" category="inline-image-macro">保护页面、其中显示隐私曝光列</block>
   <block id="9dedf1958376570fec810d3b47c2d3ec" category="paragraph"><block ref="9dedf1958376570fec810d3b47c2d3ec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9a29e458dc19d719bdef7e1781fc91a" category="list-text">要启用BlueXP  分类来扫描您的数据以查找个人身份数据，请在“*隐私风险*”列中选择“*识别风险*”。</block>
   <block id="c2addd6f8ea1a9a6c5d798758a7b188a" category="paragraph">BlueXP  分类可安装BlueXP  连接器、远程连接到您的工作负载数据并在NetApp云中扫描该数据(Amazon Web Services、us-w西-1)。只有确定的洞察力和指标仍保留在NetApp云中。</block>
   <block id="cb00df8d7d83fc54f38d8f958caeff1f" category="paragraph">扫描完成后、隐私曝光列会将曝光级别显示为"低"、"中"或"高"。</block>
-  <block id="44c62ea7c0b79fd032ba2255784b788f" category="paragraph">在BlueXP  分类扫描个人身份信息(个人身份信息、个人身份信息)后、您可以查看个人身份信息(个人身份信息、</block>
   <block id="f698eb407c336f1d3c594ba3daa8afa2" category="paragraph"><block ref="f698eb407c336f1d3c594ba3daa8afa2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="892409e59d34cf771dbbaf3f9b3f3fa8" category="admonition">如果状态发生变化、隐私曝光列中会出现一个向上或向下箭头、以指示隐私曝光发生变化。</block>
   <block id="0bb4a1497d3056f8b2f0423eff14e160" category="inline-image-macro">工作负载详细信息屏幕、其中显示隐私曝光磁贴</block>
   <block id="7b0824f1068863bca201f38cc7763786" category="paragraph"><block ref="7b0824f1068863bca201f38cc7763786" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16da9377e1db1ff8cb28a6b3eb6f462" category="list-text">在工作负载详细信息页面中、查看隐私风险板块中的信息。</block>
-  <block id="0628dae6f78a8b7a2f042377f5dfa2f9" category="admonition">如果隐私风险更改影响到工作负载重要性、则工作负载重要性状态旁边会显示向上或向下箭头。</block>
-  <block id="832d9d8d5372bc4ce84e2841b0cf5035" category="section-title">直接在BlueXP  分类中调查隐私暴露情况</block>
-  <block id="967005b88b6b7e8a1d4934a2422fa68b" category="paragraph">在BlueXP  勒索软件保护中、您可以选择一个工作负载、查看其详细信息、然后在BlueXP  分类中调查此风险。</block>
-  <block id="24dbdd027eb164627feaa78ea9845741" category="paragraph">此时将打开BlueXP  分类服务、以显示"调查"选项卡。</block>
-  <block id="b527ec4bbaefe3d1e8074f5ab75d2698" category="inline-image-macro">BlueXP分类</block>
-  <block id="8b554765454fbcd031b59e4342f9d5cb" category="paragraph"><block ref="8b554765454fbcd031b59e4342f9d5cb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6736e75fd4558dc613260e8bd3225269" category="list-text">查看调查选项卡中的信息。</block>
-  <block id="df2e0d01e3d847f1df1fc2912de1bed7" category="list-text">要返回BlueXP  勒索软件保护服务、请选择*返回BlueXP  勒索软件保护*。</block>
   <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">了解更多信息</block>
   <block id="b6ed68904b26faac81b9a6914f1b95cd" category="paragraph"><block ref="b6ed68904b26faac81b9a6914f1b95cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a46946c5eab68e6301fa937c5e483bd2" category="paragraph"><block ref="a46946c5eab68e6301fa937c5e483bd2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d1da278e2b200d15590ed650467d6ca5" category="paragraph">您可以通过查看信息板上的建议或访问*Settings*选项来配置备份目标或启用威胁检测。您还可以显示未来的预览功能。</block>
-  <block id="fe22f8915783035f8b302deb7cd76e3f" category="list-text">显示即将推出的预览功能。</block>
   <block id="c442f897ba9f28d5d7d3b1643ea9284a" category="paragraph">您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。您可以选择AWS Security Hub、Microsoft Sentinel或Splunk Cloud作为您的SIEM。</block>
   <block id="cd4d66bdd803d46b839b94afd734cbcd" category="section-title">配置Microsoft Sentinel以进行威胁检测</block>
   <block id="a788a2126e1d7e43efbc7cabca65b065" category="paragraph">在BlueXP  勒索软件保护中启用Microsoft Sentinel之前、您需要在Microsoft Sentinel中执行以下高级步骤：</block>
@@ -1482,15 +1456,7 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="466e22ed907b69bcece2ccdfba36fdb4" category="list-text">在设置页面中、选择SIEM连接磁贴中的*连接*。</block>
   <block id="322bdafeaec3f2756e524c7676eec70b" category="inline-image-macro">启用威胁检测详细信息页面</block>
   <block id="a79d3cc091ba614079e19b05bd4144d7" category="paragraph"><block ref="a79d3cc091ba614079e19b05bd4144d7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="51b72b90a4718219881b0d84075810c4" category="section-title">显示预览特征</block>
-  <block id="d908f6613094698e53cc5d8f2a363d84" category="paragraph">您可以在即将推出的功能发布之前试用标记为"预览"的功能。这些功能在用户界面中显示时带有"预览"标签。</block>
-  <block id="062ede60ed0171c1667d278364784a58" category="paragraph">您需要BlueXP  勒索软件保护产品团队提供的密钥才能显示预览功能。要获取密钥、请发送电子邮件至mailto：ng) rps-key@NetApp．com。</block>
-  <block id="4c27fcab4d515ee8181a6a9243ba54f3" category="list-text">在*预览功能*图块中，选择*显示*。</block>
-  <block id="1355ef6342e870ff08b7ae39b0126c7c" category="list-text">输入密钥。</block>
-  <block id="70c1d1656e0180e79913295ab5c3c06a" category="list-text">选择*显示*。</block>
   <block id="bf43cf14a72445401d6804bee094443e" category="doc">BlueXP  勒索软件防护中的新增功能</block>
-  <block id="f3da95789fee3d76f39c270803b7c7df" category="paragraph">部署BlueX分类的客户通常可以在BlueXP  勒索软件保护中扫描可用于此类数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。</block>
-  <block id="c2cb37c5316be80c5de2706c50799610" category="paragraph">BlueXP  分类也可以作为SaaS模式部署、作为技术预览的一部分。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。如果启用预览、"保护"页面上的*隐私曝光*列旁边将显示一个"预览"标签以及其他位置。</block>
   <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">请参阅<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block>。</block>
   <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的*识别曝光*。</block>
   <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block>(英文)</block>
@@ -1509,8 +1475,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>(英文)</block>
   <block id="86510b95a05ce4c22c6d48d2fd9228a9" category="doc">启用数据分类并扫描个人身份信息(个人身份信息、个人身份信息)</block>
   <block id="d599e3d1b6a5137e404ea89f314a22e4" category="paragraph">在此版本中、您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。</block>
-  <block id="4d4b17a43409a8c299995a21ddaef39b" category="section-title">在即将推出的预览功能发布之前、请尝试这些功能</block>
-  <block id="c86f9a52cdb00d7109bfa8ee10b48074" category="paragraph">现在、您可以在发布某些标记为"预览"的功能之前试用它们。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。</block>
   <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">与Microsoft Sentinel的暹粒集成</block>
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">现在、您可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">现在30天免费试用</block>
@@ -1565,4 +1529,11 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="f6d0e776adfe1ac52ce17e76a4f5e7a4" category="paragraph">现在、您可以查看更多取证详细信息、以调查检测到的潜在攻击。<block ref="707fb9c7332f6aa933e8445c28830d7a" category="inline-link-rx"></block>(英文)。</block>
   <block id="1308d0f084fdb39839541aaf971b23ff" category="section-title">恢复过程</block>
   <block id="44d292cf2891eaa1e67cfa3d9504b58b" category="paragraph">恢复过程得到了改进。现在、您可以逐个卷或为一个工作负载恢复所有卷。<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>(英文)。</block>
+  <block id="3406306d1e826f71d49547332136491d" category="paragraph">部署BlueXP  分类的客户通常可以在BlueXP  勒索软件保护中扫描数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。</block>
+  <block id="7285eda1178a7e67d7c7d057c4e50b4c" category="admonition">单击"i"注释可查看有关此数据的提示。要增加工作负载限制，请单击此我注意到的*增加工作负载限制*。单击此选项将转到BlueXP  支持页面、您可以在此处创建案例服务单。</block>
+  <block id="6868255e9fc11eab5e761151418b48f9" category="paragraph">在开始使用此服务之前、查看以下BlueXP  分类资源可能会很有帮助：</block>
+  <block id="69fb8dfc3b2247a2a33825a8a26cde0a" category="paragraph">在BlueXP  分类扫描个人身份信息(个人身份信息、个人身份信息)后、您可以查看个人身份信息(个人身份信息、</block>
+  <block id="65dc756d3347a26af4774cab05b6f1a6" category="cell">在此隐私披露中：</block>
+  <block id="8dc6cf962cd8b6b9d4c2ec1c25942b36" category="cell">隐私风险：</block>
+  <block id="c3e1bb58158cecbe933786ef28873165" category="paragraph">您可以通过查看信息板上的建议或访问*Settings*选项来配置备份目标或启用威胁检测。</block>
 </blocks>
