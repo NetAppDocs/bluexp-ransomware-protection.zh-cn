@@ -42,10 +42,7 @@ image:screen-protection-sensitive-preview-column.png["保护页面、其中显�
 
 
 .结果
-BlueXP  分类可安装BlueXP  连接器、远程连接到您的工作负载数据并在NetApp云中扫描该数据(Amazon Web Services、us-w西-1)。只有确定的洞察力和指标仍保留在NetApp云中。
-
-
-NOTE: 扫描可能需要几分钟时间、具体取决于数据量。"保护"页面显示BlueXP  分类正在识别文件、并指示它正在扫描的文件数量。
+扫描可能需要几分钟时间、具体取决于数据量。"保护"页面显示BlueXP  分类正在识别文件、并指示它正在扫描的文件数量。
 
 扫描完成后、隐私曝光列会将曝光级别显示为"低"、"中"或"高"。
 
