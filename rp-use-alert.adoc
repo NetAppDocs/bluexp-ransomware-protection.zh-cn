@@ -66,11 +66,11 @@ CAUTION: 在消除攻击后、您不能将其改回原来的位置。如果您�
 
 == 查看警报
 
-您可以从BlueXP勒索软件保护信息板或*警报*选项卡访问警报。
+您可以从BlueXP  勒索软件保护信息板或*警报*选项卡访问警报。
 
 .步骤
 . 在BlueXP勒索软件保护信息板中、查看警报窗格。
-. 在其中一个雕像下方选择*查看全部*。
+. 在其中一个状态下选择*查看全部*。
 . 单击某个警报可查看每个卷上每个警报的所有意外事件。
 . 要查看其他警报，请单击左上角的面包屑中的*Alert*。
 . 查看警报页面上的警报。
@@ -79,8 +79,101 @@ image:screen-alerts.png["警报页面"]
 
 . 继续：
 +
+** <<Detect anomalous user behavior>>(英文)
 ** <<将勒索软件事件标记为已做好恢复准备(在消除意外事件后)>>(英文)
 ** <<消除非潜在攻击事件>>(英文)
+
+
+
+
+
+
+== 检测恶意活动和异常用户行为
+
+查看警报选项卡、您可以确定是否存在恶意活动。显示的详细信息取决于警报的触发方式：
+
+* 由ONTAP中的自动防兰软件保护功能触发。此操作将根据卷中文件的行为检测恶意活动。
+* 由Data Infrastructure Insight Workload Security触发。这需要获得数据基础架构洞察力工作负载安全性的许可证、并在BlueXP  勒索软件保护中启用该许可证。此功能可检测存储工作负载中的异常用户行为、并允许您阻止该用户进行进一步访问。
++
+要在BlueXP  勒索软件保护中启用工作负载安全性，请转到*设置*页面并选择*工作负载安全性连接*选项。
+
++
+有关Data Infrastucure Insure工作负载安全性的概述、请查看 https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["关于工作负载安全性"^]
+
+
+
+
+TIP: 如果您没有数据基础架构工作负载安全性许可证、并且未在BlueXP  勒索软件保护中启用该许可证、则不会看到异常用户行为信息。
+
+发生恶意活动时、系统会生成警报并自动生成快照。
+
+
+
+=== 仅通过自主防病毒软件保护查看恶意活动
+
+当自动勒索软件保护在BlueXP  勒索软件保护中触发警报时、您可以查看以下详细信息：
+
+* 传入数据的熵
+* 新文件的预期创建速率与检测到的速率之比
+* 与检测到的文件删除率相比、文件的预期删除率
+* 与检测到的重命名率相比、文件的预期重命名率
+
+
+.步骤
+. 从BlueXP勒索软件保护菜单中、选择*警报*。
+. 选择警报。
+. 查看警报中的意外事件。
++
+image:screen-alerts-incidents3.png["警报事件页面"]
+
+. 选择一个事件以查看该事件的详细信息。
++
+image:screen-alerts-incidents-details-arp.png["意外事件详细信息页面"]
+
+
+
+
+
+=== 在Data Infrastructure Insight Workload Security中查看异常用户行为
+
+当Data Infrastructure Insight Workload Security在BlueXP  勒索软件保护中触发警报时、您可以直接在Data Infrastructure Insight Workload Security中查看可疑用户、阻止用户并调查用户活动。
+
+
+TIP: 除了这些功能之外、还提供了"自主防兰软件保护"中提供的详细信息。
+
+.开始之前
+此选项需要获得Data Infrastructure Insight工作负载安全性的许可证、并且您需要在BlueXP  勒索软件保护中启用它。
+
+要在BlueXP  勒索软件保护中启用工作负载安全性、请执行以下操作：
+
+. 转到*Settings*页面。
+. 选择*工作负载安全性连接*选项。
++
+有关详细信息，请参见 link:rp-use-settings.html["配置BlueXP勒索软件保护设置"]。
+
+
+
+.步骤
+. 从BlueXP勒索软件保护菜单中、选择*警报*。
+. 选择警报。
+. 查看警报中的意外事件。
++
+image:screen-alerts-incidents-diiws.png["显示工作负载安全性详细信息的警报事件页面"]
+
+. 要阻止可疑用户进一步访问BlueXP  监控的环境，请选择*Block user*链接。
+. 调查警报或警报中的意外事件：
++
+.. 要在Data Infrastructure Insight Workload Security中进一步调查警报、请选择*调查工作负载安全性*链接。
+.. 选择一个事件以查看该事件的详细信息。
++
+image:screen-alerts-incidents-details-arp-diiws.png["显示工作负载安全性详细信息的意外事件详细信息页面"]
+
++
+此时将在一个新选项卡中打开Data Infrastructure Insight Workload Security。
+
++
+image:screen-alerts-incidents-diiws-diiwspage.png["在工作负载安全性中进行调查"]
+
 
 
 
@@ -99,7 +192,7 @@ image:screen-alerts.png["警报页面"]
 . 在警报页面中、选择警报。
 . 查看警报中的意外事件。
 +
-image:screen-alerts-incidents2.png["警报事件页面"]
+image:screen-alerts-incidents3.png["警报事件页面"]
 
 . 如果您确定意外事件已准备好恢复、请选择*标记需要恢复*。
 . 确认操作并选择*Mark restore Need*。
@@ -134,8 +227,8 @@ image:screen-alerts-incidents2.png["警报事件页面"]
 . 选择一个或多个意外事件。或者、选择表左上方的"Incident ID"框以选择所有事件。
 . 如果您确定事件不是威胁、请将其视为误报：
 +
-** 如果选择了一个事件，请选择*Actions*… 图标，选择*编辑状态*。
-** 如果选择了多个事件，请选择表上方的*Edit statues*按钮。
+** 选择事件。
+** 选择表格上方的*编辑状态*按钮。
 +
 image:screen-alerts-status-edit.png["警报编辑状态页面"]
 

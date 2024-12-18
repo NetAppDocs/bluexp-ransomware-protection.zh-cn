@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp' 
 summary: 了解BlueXP勒索软件保护的新增功能。 
 ---
 = BlueXP  勒索软件防护中的新增功能
@@ -15,6 +15,35 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 [role="lead"]
 了解BlueXP勒索软件保护的新增功能。
+
+
+
+== 2024年12月16日
+
+
+
+=== 使用Data Infrastructure Insight存储工作负载安全性检测异常用户行为
+
+在此版本中、您可以使用Data Infrastructure Insight存储工作负载安全性来检测存储工作负载中的异常用户行为。此功能可帮助您识别潜在的安全威胁并阻止潜在的恶意用户来保护您的数据。
+
+有关详细信息，请参见 link://rp-use-alert.html["响应检测到的勒索软件警报"]。
+
+在使用数据基础架构洞察存储工作负载安全性检测异常用户行为之前、您需要使用BlueXP  勒索软件保护*设置*选项来配置此选项。
+
+请参阅 link://rp-use-settings-html["配置BlueXP勒索软件保护设置"]。
+
+
+
+=== 选择要发现和保护的工作负载
+
+在此版本中、您现在可以执行以下操作：
+
+* 在每个Connector中、选择要发现工作负载的工作环境。如果您希望保护环境中的特定工作负载、而不是其他工作负载、则可以从该功能中受益。
+* 在发现工作负载期间、您可以为每个连接器启用工作负载自动发现。通过此功能、您可以选择要保护的工作负载。
+* 发现先前选定工作环境中新创建的工作负载。
+
+
+请参阅 link://rp-start-discover-html["发现工作负载"]。
 
 
 

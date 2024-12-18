@@ -19,7 +19,7 @@ TIP: 此过程可能会影响工作负载的重要性、以帮助您确保获得
 
 
 
-=== 启用BlueXP  分类
+== 启用BlueXP  分类
 
 在BlueXP  勒索软件保护服务中使用BlueXP  分类之前、您需要启用BlueXP  分类来扫描数据。
 
@@ -31,6 +31,9 @@ TIP: 此过程可能会影响工作负载的重要性、以帮助您确保获得
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私有数据的类别"^]
 * https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["调查存储在组织中的数据"^]
 
+
+.开始之前
+部署了BlueXP  分类的客户可以在BlueXP  勒索软件保护中扫描数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。
 
 .步骤
 . 从BlueXP勒索软件保护菜单中、选择*保护*。
@@ -48,7 +51,7 @@ image:screen-protection-sensitive-preview-column.png["保护页面、其中显�
 
 
 
-=== 查看隐私风险
+== 查看隐私风险
 
 在BlueXP  分类扫描个人身份信息(个人身份信息、个人身份信息)后、您可以查看个人身份信息(个人身份信息、
 
@@ -74,7 +77,7 @@ image:screen-protection-workload-details-privacy-exposure.png["工作负载详�
 
 
 
-=== 隐私风险对工作负载重要性的影响
+== 隐私风险对工作负载重要性的影响
 
 隐私风险更改可能会影响工作负载的重要性。
 

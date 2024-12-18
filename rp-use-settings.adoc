@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-settings.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
-summary: 您可以在BlueXP勒索软件保护服务中配置多个选项、包括备份目标。 
+summary: 您可以配置多个选项、包括备份目标、威胁检测以及在BlueXP  勒索软件保护服务中连接到Data Infrastructure Insight工作负载安全性。 
 ---
 = 配置BlueXP勒索软件保护设置
 :hardbreaks:
@@ -12,9 +12,14 @@ summary: 您可以在BlueXP勒索软件保护服务中配置多个选项、包�
 
 
 [role="lead"]
-您可以通过查看信息板上的建议或访问*Settings*选项来配置备份目标或启用威胁检测。
+您可以通过访问*设置*选项来配置备份目标、启用威胁检测或配置与Data Infrastructure Insight工作负载安全性的连接。启用威胁检测会自动将数据发送到安全和事件管理系统(SIEM)以进行威胁分析。
 
-启用威胁检测会自动将数据发送到安全和事件管理系统(SIEM)以进行威胁分析。
+在设置页面中、您可以执行以下操作：
+
+* 配置与Data Infrastructure Insight工作负载安全性的连接、以便在勒索软件警报中查看可疑用户信息。
+* 添加备份目标。
+* 连接您的安全和事件管理系统(SIEM)以进行威胁分析和检测。
+
 
 
 
@@ -24,12 +29,38 @@ summary: 您可以在BlueXP勒索软件保护服务中配置多个选项、包�
 
 . 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
 . 从下拉菜单中选择*Settings*。
-. 在设置页面中、您可以执行以下操作：
+
+
+
+
+== 连接到Data Infrastructure Insight工作负载安全性以查看可疑的异常用户行为
+
+在BlueXP  勒索软件保护中查看可疑异常用户行为的详细信息之前、您需要配置与Data Infrastructure Insight工作负载安全系统的连接。
+
+
+
+=== 从Data Infrastructure Insight工作负载安全系统获取API访问令牌
+
+从Data Infrastructure Insight工作负载安全系统获取API访问令牌。
+
+. 登录到Data Infrastructure Insight工作负载安全系统。
+. 在左侧导航栏中，选择*Admin*>*API Access*。
 +
-** 添加备份目标。
-** 连接您的安全和事件管理系统(SIEM)以进行威胁分析和检测。
+image:../media/screen-alerts-ci-api-access-token.png["Data Infrastructure Insight工作负载安全性中的API访问页面"]
+
+. 创建API访问令牌或使用现有令牌。
+. 复制API访问令牌。
 
 
+
+
+=== 连接到Data Infrastructure Insight工作负载安全性
+
+. 从BlueXP  勒索软件保护设置菜单中、选择*工作负载安全连接*。
+. 选择 * 连接 * 。
+. 输入数据基础架构工作负载安全UI的URL。
+. 输入用于访问工作负载安全性的API访问令牌。
+. 选择 * 连接 * 。
 
 
 
@@ -46,7 +77,7 @@ BlueXP勒索软件保护可以识别尚未进行任何备份的工作负载以�
 * Microsoft Azure
 
 
-您可以根据信息板中的建议操作添加备份目标。
+您可以通过信息板或访问菜单上的设置选项根据建议的操作添加备份目标。
 
 
 
@@ -62,18 +93,6 @@ image:screen-dashboard.png["信息板页面"]
 
 . 从信息板中，选择*Review and fix*以获得“准备<backup provider>作为备份目标”的建议。
 . 根据备份提供程序继续执行说明。
-
-
-
-
-=== 从操作下拉菜单访问备份目标选项
-
-您可以从顶部菜单附近的操作选项轻松访问设置页面。
-
-.步骤
-. 从BlueXP勒索软件保护菜单中、选择垂直市场 image:button-actions-vertical.png["纵向操作"]...选项。
-. 从下拉菜单中选择*Settings*。
-. 要添加备份目的地，请选择*Add*。
 
 
 
