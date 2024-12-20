@@ -1522,15 +1522,12 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="8dc6cf962cd8b6b9d4c2ec1c25942b36" category="cell">隐私风险：</block>
   <block id="e6ecd439699f8fefa13e20f9536a72a6" category="doc">使用Data Infrastructure Insight存储工作负载安全性检测异常用户行为</block>
   <block id="4b9b02f7da7210970cff1fcbe2d8369e" category="paragraph">在此版本中、您可以使用Data Infrastructure Insight存储工作负载安全性来检测存储工作负载中的异常用户行为。此功能可帮助您识别潜在的安全威胁并阻止潜在的恶意用户来保护您的数据。</block>
-  <block id="f95023611244a13b93dbe02a38838885" category="paragraph">有关详细信息，请参见 <block ref="6530a738c0275d57755f32143a89eb32" category="inline-link-macro-rx"></block>。</block>
   <block id="f06819927bc06d4d2a9a3e3e868f76de" category="paragraph">在使用数据基础架构洞察存储工作负载安全性检测异常用户行为之前、您需要使用BlueXP  勒索软件保护*设置*选项来配置此选项。</block>
-  <block id="24a6d729a8d1aa0927fb5447da199fd2" category="paragraph">请参阅 <block ref="71b7fcd43dad68a28f1c1ae3bbb6f526" category="inline-link-macro-rx"></block>。</block>
   <block id="ae65c0d044427130470e493bcfa5e9a3" category="section-title">选择要发现和保护的工作负载</block>
   <block id="df7afd566315c6467b9ae3e88d9f948d" category="paragraph">在此版本中、您现在可以执行以下操作：</block>
   <block id="8865ff9ead0ee9de28506714448478d3" category="list-text">在每个Connector中、选择要发现工作负载的工作环境。如果您希望保护环境中的特定工作负载、而不是其他工作负载、则可以从该功能中受益。</block>
   <block id="b26d0bf0b9d2f848756ba4fcb103860d" category="list-text">在发现工作负载期间、您可以为每个连接器启用工作负载自动发现。通过此功能、您可以选择要保护的工作负载。</block>
   <block id="c6ac79f6ec82abd57b723ae67e39d12b" category="list-text">发现先前选定工作环境中新创建的工作负载。</block>
-  <block id="2a4b59673cf47f4cb519a01ea261799b" category="paragraph">请参阅 <block ref="1da0570eec00a4d5dabdb7f59b574d39" category="inline-link-macro-rx"></block>。</block>
   <block id="2260f3efb7f7ff8d7a4a295911d64e87" category="list-text">*检测*可能是勒索软件攻击的异常。脚注：[虽然攻击可能无法检测到、但我们的研究表明、NetApp技术已导致对某些基于文件加密的勒索软件攻击进行了高度检测。]</block>
   <block id="1c2afeca94eb9c399bfa2c175f98ac90" category="paragraph">为了检测异常用户行为、BlueXP  勒索软件保护使用NetApp自主勒索软件保护、这是ONTAP中的一种机器学习(ML)模型、用于检测恶意文件活动。此型号包含在BlueXP  勒索软件保护许可证中。此外、您还可以使用Data Infrastructure Insight (原Cloud Insights)工作负载安全性(需要许可证)来调查用户行为并阻止特定用户进行进一步活动。</block>
   <block id="9c5ddfb123b6c64ea81793c4ce56b957" category="list-text">使用ONTAP、自动防软件保护、数据基础架构洞察(原Cloud Insights)工作负载安全性和FPolicy技术、确定攻击到关联工作负载的特定可疑文件并映射到相关工作负载。</block>
@@ -1630,4 +1627,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="7b8dea3ad80826211495f59e062f08d1" category="list-text">输入用于访问工作负载安全性的API访问令牌。</block>
   <block id="4ec94f814f491d45c196584c149a7d3e" category="paragraph">您可以通过信息板或访问菜单上的设置选项根据建议的操作添加备份目标。</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024年12月16日</block>
+  <block id="51713ddd834a60df7d06db728cf08e05" category="paragraph">有关详细信息，请参见<block ref="7a6c0b2db283aa3c348e6e1a2f1f32b0" category="inline-link-rx"></block>。</block>
+  <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">请参阅<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>。</block>
 </blocks>

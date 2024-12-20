@@ -8,11 +8,11 @@
 
 在此版本中、您可以使用Data Infrastructure Insight存储工作负载安全性来检测存储工作负载中的异常用户行为。此功能可帮助您识别潜在的安全威胁并阻止潜在的恶意用户来保护您的数据。
 
-有关详细信息，请参见 link://rp-use-alert.html["响应检测到的勒索软件警报"]。
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["响应检测到的勒索软件警报"]。
 
 在使用数据基础架构洞察存储工作负载安全性检测异常用户行为之前、您需要使用BlueXP  勒索软件保护*设置*选项来配置此选项。
 
-请参阅 link://rp-use-settings-html["配置BlueXP勒索软件保护设置"]。
+请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP勒索软件保护设置"]。
 
 
 
@@ -25,4 +25,4 @@
 * 发现先前选定工作环境中新创建的工作负载。
 
 
-请参阅 link://rp-start-discover-html["发现工作负载"]。
+请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["发现工作负载"]。
