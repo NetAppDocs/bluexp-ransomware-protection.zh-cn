@@ -22,8 +22,8 @@ indexpage:
       url: "/rp-start-quick-start.html"
     - title: 配置备份目标并启用威胁检测
       url: "/rp-use-settings.html"
-    - title: 常见问题解答
-      url: "/rp-start-faq.html"
+    - title: 模拟勒索软件攻击
+      url: "/rp-start-simulate.html"
   - title: 使用BlueXP勒索软件保护
     links:
     - title: 使用BlueXP勒索软件保护概述

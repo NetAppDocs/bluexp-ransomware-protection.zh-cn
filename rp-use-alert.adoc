@@ -28,6 +28,7 @@ TIP: 如果您决定取消警报、服务将了解此行为并将其与正常操
 * 已创建或更改文件扩展名
 * 已创建文件、并且增加了列出的百分比
 * 发生文件删除并增加了列出的百分比
+* 加密较高时、文件扩展名未更改
 
 
 警报基于以下类型的行为：
@@ -93,12 +94,12 @@ image:screen-alerts.png["警报页面"]
 查看警报选项卡、您可以确定是否存在恶意活动。显示的详细信息取决于警报的触发方式：
 
 * 由ONTAP中的自动防兰软件保护功能触发。此操作将根据卷中文件的行为检测恶意活动。
-* 由Data Infrastructure Insight Workload Security触发。这需要获得数据基础架构洞察力工作负载安全性的许可证、并在BlueXP  勒索软件保护中启用该许可证。此功能可检测存储工作负载中的异常用户行为、并允许您阻止该用户进行进一步访问。
+* 由Data Infrastructure Insight工作负载安全性触发。这需要获得Data Infrastructure Insight工作负载安全性许可证、并在BlueXP  勒索软件保护中启用该许可证。此功能可检测存储工作负载中的异常用户行为、并允许您阻止该用户进行进一步访问。
 +
-要在BlueXP  勒索软件保护中启用工作负载安全性，请转到*设置*页面并选择*工作负载安全性连接*选项。
+要在BlueXP  勒索软件保护中启用工作负载安全性，请转到*设置*页面并选择*工作负载安全连接*选项。
 
 +
-有关Data Infrastucure Insure工作负载安全性的概述、请查看 https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["关于工作负载安全性"^]
+有关Data Infrastucure Insure工作负载安全性的概述，请查看 https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["关于工作负载安全性"^]。
 
 
 
@@ -117,6 +118,7 @@ TIP: 如果您没有数据基础架构工作负载安全性许可证、并且未
 * 新文件的预期创建速率与检测到的速率之比
 * 与检测到的文件删除率相比、文件的预期删除率
 * 与检测到的重命名率相比、文件的预期重命名率
+* 受影响的文件和目录
 
 
 .步骤
@@ -127,16 +129,13 @@ TIP: 如果您没有数据基础架构工作负载安全性许可证、并且未
 image:screen-alerts-incidents3.png["警报事件页面"]
 
 . 选择一个事件以查看该事件的详细信息。
-+
-image:screen-alerts-incidents-details-arp.png["意外事件详细信息页面"]
 
 
 
 
+=== 在Data Infrastructure Insight工作负载安全性中查看异常用户行为
 
-=== 在Data Infrastructure Insight Workload Security中查看异常用户行为
-
-当Data Infrastructure Insight Workload Security在BlueXP  勒索软件保护中触发警报时、您可以直接在Data Infrastructure Insight Workload Security中查看可疑用户、阻止用户并调查用户活动。
+当Data Infrastructure Insight工作负载安全性在BlueXP  勒索软件保护中触发警报时、您可以直接在Data Infrastructure Insight工作负载安全性中查看可疑用户、阻止用户并调查用户活动。
 
 
 TIP: 除了这些功能之外、还提供了"自主防兰软件保护"中提供的详细信息。
@@ -163,11 +162,8 @@ image:screen-alerts-incidents-diiws.png["显示工作负载安全性详细信息
 . 要阻止可疑用户进一步访问BlueXP  监控的环境，请选择*Block user*链接。
 . 调查警报或警报中的意外事件：
 +
-.. 要在Data Infrastructure Insight Workload Security中进一步调查警报、请选择*调查工作负载安全性*链接。
+.. 要在Data Infrastructure Insight工作负载安全性中进一步调查警报、请选择*调查工作负载安全性*链接。
 .. 选择一个事件以查看该事件的详细信息。
-+
-image:screen-alerts-incidents-details-arp-diiws.png["显示工作负载安全性详细信息的意外事件详细信息页面"]
-
 +
 此时将在一个新选项卡中打开Data Infrastructure Insight Workload Security。
 
@@ -222,7 +218,7 @@ image:screen-alerts.png["警报页面"]
 
 . 在警报页面中、选择警报。
 +
-image:screen-alerts-incidents2.png["警报事件页面"]
+image:screen-alerts-incidents3.png["警报事件页面"]
 
 . 选择一个或多个意外事件。或者、选择表左上方的"Incident ID"框以选择所有事件。
 . 如果您确定事件不是威胁、请将其视为误报：

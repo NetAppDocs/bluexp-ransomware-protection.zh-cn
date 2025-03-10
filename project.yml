@@ -33,7 +33,9 @@ sidebar:
       url: "/rp-start-licenses.html"
     - title: 发现工作负载
       url: "/rp-start-discover.html"
-    - title: 配置备份目标并启用威胁检测
+    - title: 模拟勒索软件攻击
+      url: "/rp-start-simulate.html"
+    - title: 在设置中配置备份、威胁检测和攻击模拟
       url: "/rp-use-settings.html"
     - title: 常见问题解答
       url: "/rp-start-faq.html"
