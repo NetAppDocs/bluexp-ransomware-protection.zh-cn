@@ -51,16 +51,11 @@ image:screen-landing.png["BlueXP勒索软件保护的登录页面屏幕截图"]
 TIP: 此过程可能需要几分钟时间。
 
 +
-image:screen-discover-workloads.png["\"发现工作负载\"屏幕截图"]
+image:screen-discover-workloads1.png["\"发现工作负载\"屏幕截图"]
 
-. 执行以下操作之一：
-+
-** 要为所有连接器选择工作环境，请选择*选择所有工作环境*。
-** 要发现特定Connector的工作负载，请选择要发现工作负载的Connector旁边的*查找新工作环境*。
+. 要发现特定Connector的工作负载，请选择要发现工作负载的Connector旁边的*查找新工作环境*。
 +
 此时将显示一个工作环境列表。
-
-
 
 +
 image:screen-discover-workloads-select-no-autodiscovery.png["\"发现工作负载\"屏幕截图"]
@@ -99,7 +94,7 @@ link:rp-use-dashboard.html["了解信息板为您显示的内容。"]
 .步骤
 . 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
 . 要确定上次发现的日期，请在信息板中查看右上角*Refresh*图标旁边的日期和时间戳。
-. 在信息板中，选择*刷新图标*，然后在显示的工具提示中选择*发现工作负载*。
+. 从信息板中，选择*刷新图标*，开始发现新工作负载。
 
 
 
@@ -110,10 +105,6 @@ link:rp-use-dashboard.html["了解信息板为您显示的内容。"]
 
 .步骤
 . 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
-. 执行以下操作之一：
-+
-** 在信息板中，选择*Add new*，然后在显示的工具提示中，选择*Add new working enerities*。
-** 从BlueXP  勒索软件保护菜单中、选择image:button-actions-vertical.png["纵向操作"]右上角的垂直...选项。从下拉菜单中选择*Settings*。在工作负载发现卡中，选择*Discover Workloads*。
-
-
+. 从BlueXP  勒索软件保护菜单中、选择image:button-actions-vertical.png["纵向操作"]右上角的垂直...选项。从下拉菜单中选择*Settings*。
+. 在工作负载发现卡中，选择*Discover Workloads*。
 
