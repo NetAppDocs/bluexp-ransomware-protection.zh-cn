@@ -1649,7 +1649,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="fbb94dad4d4b0b642b9e4bcfccb31a40" category="paragraph"><block ref="fbb94dad4d4b0b642b9e4bcfccb31a40" category="inline-image-macro-rx" type="image"></block></block>
   <block id="648815687f26cfff9af80401c05502e1" category="list-text">选择*配置就绪演练测试环境*。</block>
   <block id="2e80fabefee51d121eee410fb4a3be19" category="list-text">继续按照上一节中的说明、在设置选项中配置钻孔测试环境。</block>
-  <block id="8c5a9997ae160f52e3c8ede0e2590504" category="admonition">开始钻取后、您无法编辑就绪钻取配置。您可以将其停止。</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">响应就绪演练警报</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">通过响应就绪演练警报来测试您的就绪情况。</block>
   <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">显示就绪钻取警报的警报页面</block>
@@ -1687,11 +1686,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">已取消：如果您怀疑活动不是勒索软件攻击、请将状态更改为已取消。</block>
   <block id="ff8d215b189dca41bf900d6545392594" category="admonition">在您消除攻击后、您不能将其重新分出来。如果您取消工作负载、则为应对潜在的勒索软件攻击而自动创建的所有Snapshot副本都将被永久删除。如果您取消警报、则会将就绪演练视为已完成。</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">已解决：已缓解意外事件。</block>
-  <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">查看就绪演练报告</block>
-  <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">准备工作演练完成后，您可能需要查看并保存该演练的报告。</block>
-  <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">显示就绪钻取报告的报告页面</block>
-  <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">选择*就绪演练*和*下载*以下载就绪演练报告。</block>
   <block id="7491606097f73ec9ee4cd8649e24e37b" category="list-text">加密较高时、文件扩展名未更改</block>
   <block id="0152e4b08d769def55f114d835660cb2" category="list-text">由Data Infrastructure Insight工作负载安全性触发。这需要获得Data Infrastructure Insight工作负载安全性许可证、并在BlueXP  勒索软件保护中启用该许可证。此功能可检测存储工作负载中的异常用户行为、并允许您阻止该用户进行进一步访问。</block>
   <block id="900224a7eb4d4424692600ce3e4b5262" category="paragraph">要在BlueXP  勒索软件保护中启用工作负载安全性，请转到*设置*页面并选择*工作负载安全连接*选项。</block>
@@ -1739,4 +1733,5 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="8094150588327954ce01d91cf529ccfc" category="list-text">选择警报事件。</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
   <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">选择标记有"就绪钻取"的测试工作负载、以还原该工作负载。</block>
+  <block id="241197791593ba6fe12006bc7c44e045" category="admonition">开始钻取后、您无法编辑就绪钻取配置。您可以将其重置为重新启动。</block>
 </blocks>
