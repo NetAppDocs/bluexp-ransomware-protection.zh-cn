@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: rp-reference-limitations.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
+summary: 'BlueXP  勒索软件保护使用基于角色的访问控制(Role-Based Access Control、RBAC)来控制每个用户对特定功能和操作的访问权限。该服务使用特定于BlueXP  勒索软件保护(RP)的角色。' 
+---
+= BlueXP  勒索软件保护的已知限制
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知限制确定了本产品版本不支持的平台、设备或功能、或者这些平台、设备或功能无法与产品正确交互操作。仔细审查这些限制。
+
+
+
+== 就绪钻头重置选项问题
+
+如果您为勒索软件攻击准备情况演练选择9.11.1 9.11.1卷、BlueXP  勒索软件保护将向您发出警报。如果使用"Clone to -volume"选项恢复数据并重置钻取、则重置操作将失败。

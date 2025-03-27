@@ -17,6 +17,8 @@ sidebar:
     entries:
     - title: BlueXP勒索软件防护中的新增功能
       url: "/whats-new.html"
+    - title: 已知限制
+      url: "/rp-reference-limitations.html"
   - title: 入门
     entries:
     - title: 了解BlueXP勒索软件保护

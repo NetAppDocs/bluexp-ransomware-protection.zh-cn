@@ -1646,8 +1646,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="fd9f53769c15c2cf878c35f4cbc5a081" category="paragraph"><block ref="fd9f53769c15c2cf878c35f4cbc5a081" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf6725ca3f9665491e02c1818a34d256" category="inline-image-macro">显示就绪钻取警报的意外事件页面</block>
   <block id="dba36383db70a071d84d9ad78273ce43" category="paragraph">以下是需要注意的一些事项：</block>
-  <block id="b780e790d05aeda37075d8fd4a6d9b89" category="list-text">查看潜在攻击类型。如果"Type"(类型)指示用户涉嫌进行恶意活动、请检查用户名。</block>
-  <block id="989cf4fcfe1664c1f40afc7abd89c986" category="list-text">您可能还需要在Data Infrastructure Insight Workload Security中选择*调查工作负载安全性*来对用户进行更多调查。</block>
   <block id="c7243cc109c65ad504b84c3e805c784c" category="list-text">查看文件活动和可疑进程：</block>
   <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">查看检测到的传入数据与预期数据的对比情况。</block>
   <block id="929c013ec98095ed1024dac131501e30" category="list-text">查看检测到的文件创建率与预期速率的对比情况。</block>
@@ -1672,7 +1670,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="37eb9cec5c575b48f279378f147d9523" category="section-title">在就绪演练之后更改警报状态</block>
   <block id="c5e154a9c9a68a0fdd2cda956aafb0e1" category="paragraph">查看就绪钻取警报并还原工作负载后、您可能需要更改警报状态。</block>
   <block id="b707d985234424bd425b96580911950e" category="list-text">再次选择警报。</block>
-  <block id="162c9c11fab2a0b1844f31cfa4184c72" category="list-text">通过选择*Edit*来指示状态，并将状态更改为以下状态之一：</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">已取消：如果您怀疑活动不是勒索软件攻击、请将状态更改为已取消。</block>
   <block id="ff8d215b189dca41bf900d6545392594" category="admonition">在您消除攻击后、您不能将其重新分出来。如果您取消工作负载、则为应对潜在的勒索软件攻击而自动创建的所有Snapshot副本都将被永久删除。如果您取消警报、则会将就绪演练视为已完成。</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">已解决：已缓解意外事件。</block>
@@ -1718,7 +1715,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="8d2bd4422410271303c0633a19aefea9" category="list-text">或者，从“设置”页面的“就绪”训练卡中，选择*Start*。</block>
   <block id="f54a2552361ef76d1d69e95fc2f63e90" category="list-text">如果已配置就绪演练，则在选择*开始*后，就绪演练将开始。</block>
   <block id="3764eabaa6dd82955df6528cd4a5a9b7" category="paragraph">此时将显示警报页面。在"Alert ID"(警报ID)列中、ID旁边将显示"Readery"(就绪)钻取。</block>
-  <block id="a699ac7dcfe917f4ef6bfe5b42313497" category="list-text">选择带有"就绪钻取"指示的警报。此时将显示意外事件警报列表。</block>
   <block id="c7173a995c95a8992913692d7f8b29a3" category="list-text">查看警报事件。</block>
   <block id="8094150588327954ce01d91cf529ccfc" category="list-text">选择警报事件。</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
@@ -1727,4 +1723,21 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="65314129adf0c0a55f929809a17904c9" category="section-title">发现新的工作环境</block>
   <block id="2826595d22ba9331559905631772b32d" category="paragraph">如果您已发现工作环境、则可以发现任何新创建的工作环境或先前在先前的发现过程中未选择的工作环境。</block>
   <block id="5f214ff0fb35d9a440af52567382d505" category="admonition">此过程可能需要几分钟时间、如进程中加载图标所示。</block>
+  <block id="e5c9ae1c3da88c26e9ef5e7a52710eef" category="doc">BlueXP  勒索软件保护的已知限制</block>
+  <block id="1eba71d64e6c5e410e558530711e835b" category="paragraph">已知限制确定了本产品版本不支持的平台、设备或功能、或者这些平台、设备或功能无法与产品正确交互操作。仔细审查这些限制。</block>
+  <block id="e742b92803487dd57d41c5028236224e" category="section-title">就绪钻头重置选项问题</block>
+  <block id="ac36698324cb58e80610e027dc77d907" category="paragraph">如果您为勒索软件攻击准备情况演练选择9.11.1 9.11.1卷、BlueXP  勒索软件保护将向您发出警报。如果使用"Clone to -volume"选项恢复数据并重置钻取、则重置操作将失败。</block>
+  <block id="c97840e501e12a9e468c80b3e3aaf1e4" category="list-text">从下拉菜单中选择*就绪钻*或*设置*。</block>
+  <block id="0b51810a1136dc1d22b2a572727e3531" category="paragraph">当您开始准备训练时、BlueXP  勒索软件保护会跳过学习模式、并在活动模式下开始训练。工作负载的检测状态为Active。</block>
+  <block id="4210647acc9b0dff8ae60481f5dbae02" category="admonition">工作负载可能具有勒索软件检测*学习模式*状态、表示最近为工作负载分配了勒索软件检测策略、而服务正在扫描工作负载。检测状态*活动*表示已分配勒索软件检测保护策略。</block>
+  <block id="918afe8d47cac8e65affe228df4d1798" category="list-text">选择带有"就绪钻取"指示的警报。意外事件警报列表将显示在"Alerts"详细信息页面上。</block>
+  <block id="81ec450a746d2846c599b97e0284672a" category="inline-image-macro">显示就绪钻取警报的警报详细信息页面</block>
+  <block id="2869923d8a7e4947ee11eff41f3267f2" category="paragraph"><block ref="2869923d8a7e4947ee11eff41f3267f2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7a01e31bb54fb84b5dbc9ee51947a45b" category="list-text">查看潜在攻击类型。</block>
+  <block id="7d8343c0bc6249f96b5c9e2c1d4f8d8f" category="paragraph">如果"Type"(类型)指示用户涉嫌进行恶意活动、请检查用户名。您可能希望在Data Infrastructure Insight工作负载安全性中选择*在工作负载安全性中进行调查*、以便对用户进行更多调查。</block>
+  <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">通过选择*Edit statues*来指示状态，并将状态更改为以下状态之一：</block>
+  <block id="3ce945a70891d1550d3b785a4c8624ed" category="section-title">下载就绪演练报告</block>
+  <block id="153e13288e2e43aabfecd526b2fef2b5" category="paragraph">准备工作演练完成后、您可能需要查看该演练并保存CSV报告。</block>
+  <block id="bd048471c80988072b8f583ab0ca3a12" category="list-text">选择警报并选择*Download*箭头以下载CSV文件。</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="sidebar">已知限制</block>
 </blocks>
