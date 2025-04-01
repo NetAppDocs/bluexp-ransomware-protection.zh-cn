@@ -42,6 +42,6 @@ image:screen-dashboard.png["信息板页面"]
 
 . 如果选择了*reports*选项，请选择一个预配置的CSV文件名，然后选择*Download (CCSV)或*Download (JSSON)*。
 +
-image:screen-reports.png["报告页面"]
+image:screen-reports0.png["报告页面"]
 
 

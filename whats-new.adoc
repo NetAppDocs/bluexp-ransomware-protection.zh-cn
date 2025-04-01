@@ -39,7 +39,7 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 * 您可以在最初的发现过程中或在设置选项中执行这些发现过程。
 
 
-有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["发现先前选定工作环境中新创建的工作负载"]和 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["使用设置选项配置提取"]。
+有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["发现先前选定工作环境中新创建的工作负载"]和 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["使用设置选项配置功能"]。
 
 
 

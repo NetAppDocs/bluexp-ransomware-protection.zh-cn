@@ -35,7 +35,7 @@ image:screen-landing.png["BlueXP勒索软件保护的登录页面屏幕截图"]
 否则、将显示BlueXP勒索软件保护信息板。
 
 +
-image:screen-dashboard.png["BlueXP勒索软件保护信息板"]
+image:screen-dashboard2.png["BlueXP勒索软件保护信息板"]
 
 +
 
