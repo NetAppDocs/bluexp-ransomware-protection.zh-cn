@@ -18,6 +18,38 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 
 
+== 2025年4月14日
+
+
+
+=== 就绪演练报告
+
+在此版本中、您可以查看勒索软件攻击就绪演练报告。通过准备工作演练、您可以模拟对新创建的示例工作负载的勒索软件攻击。然后、调查模拟的攻击并恢复示例工作负载。此功能通过测试警报通知、响应和恢复过程、帮助您了解在发生实际勒索软件攻击时您已做好准备。
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["进行勒索软件攻击准备演练"]。
+
+
+
+=== 新的基于角色的访问控制角色和权限
+
+以前、您可以根据用户的职责为其分配角色和权限、这有助于您管理用户对BlueXP  勒索软件保护的访问。在此版本中、BlueXP  勒索软件保护新增了两个角色、并更新了权限。新角色包括：
+
+* 勒索软件保护管理员
+* 勒索软件保护查看器
+
+
+有关权限的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["BlueXP  勒索软件保护基于角色的功能访问"]。
+
+
+
+=== 付款改进
+
+此版本对付款流程进行了多项改进。
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["设置许可和付款选项"]。
+
+
+
 == 2025年3月10日
 
 

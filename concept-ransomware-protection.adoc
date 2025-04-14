@@ -77,7 +77,7 @@ NOTE: 在2024年10月发布的版本中、全新部署的BlueXP  勒索软件�
 
 如果您同时拥有BlueXP  备份和恢复以及BlueXP  勒索软件保护功能、则受这两种产品保护的任何常见数据将仅由BlueXP  勒索软件保护功能付费。
 
-购买许可证或PayGo订阅后、任何已启用勒索软件检测策略(自主勒索软件保护)(由BlueXP  勒索软件保护发现或设置)的工作负载、 BlueXP  勒索软件保护至少会将一个快照或备份策略归类为"受保护"、并计入已购买容量或PayGo订阅。如果在没有检测策略(ARP)的情况下发现某个工作负载、即使该工作负载具有备份或快照策略、也会将其归类为"存在风险"、并且不会根据已购买容量进行_NOT _计数。
+购买许可证或PayGo订阅后、任何已启用勒索软件检测策略(自主勒索软件保护)(由BlueXP  勒索软件保护发现或设置)的工作负载、 BlueXP  勒索软件保护至少会将一个快照或备份策略归类为"受保护"、并计入已购买容量或PayGo订阅。如果在没有检测策略的情况下发现工作负载、即使该工作负载具有备份或快照策略、也会将其归类为"存在风险"、并且不会将其计入已购买容量。
 
 90天试用期结束后、受保护的工作负载将计入已购买容量或订阅。在提高效率之前、与受保护工作负载关联的数据将按GB计费BlueXP  勒索软件保护。
 
@@ -113,8 +113,7 @@ image:diagram-rp-architecture-preview3.png["显示BlueXP勒索软件保护架构
 | *识别*  a| 
 * 查找连接到BlueXP的所有客户内部NAS (NFS和CIFS协议)和Cloud Volumes ONTAP数据。
 * 识别ONTAP和SnapCenter服务API中的客户数据、并将其与工作负载关联起来。了解更多信息 https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] 和 https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter 软件"^]。
-* 发现每个卷的NetApp Snapshot副本和备份策略的当前保护级别以及任何机载检测功能。然后、该服务会使用BlueXP备份和恢复、ONTAP服务以及NetApp技术(例如、自动防兰软件保护、FPolicy、备份策略和Snapshot策略)将此保护状态与工作负载关联起来。
-了解更多信息 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护"^] 和 https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP备份和恢复"^]，和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+* 发现每个卷的NetApp Snapshot副本和备份策略的当前保护级别以及任何机载检测功能。然后、该服务会使用BlueXP  备份和恢复、ONTAP服务以及NetApp技术(例如、自动防兰软件保护(ARP或ARP/AI、具体取决于您的ONTAP版本)、FPolicy、备份策略和Snapshot策略)将此保护状态与工作负载关联起来。了解有关、和的更多信息 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件保护"^] https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["BlueXP备份和恢复"^] https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 * 根据自动发现的保护级别为每个工作负载分配业务优先级、并根据工作负载的业务优先级为其建议保护策略。工作负载优先级取决于已应用于与工作负载关联的每个卷的Snapshot频率。
 
 
@@ -129,20 +128,20 @@ image:diagram-rp-architecture-preview3.png["显示BlueXP勒索软件保护架构
 | *检测*  a| 
 * 使用集成的机器学习(ML)模型检测潜在的攻击、该模型可检测潜在的异常加密和活动。
 * 提供双层检测、从检测主存储中的潜在勒索软件攻击开始、并通过创建额外的自动Snapshot副本创建最近的数据还原点来响应异常活动。通过该服务、您可以更深入地挖掘、更精确地识别潜在攻击、而不会影响主工作负载的性能。
-* 使用ONTAP、自动防软件保护、数据基础架构洞察(原Cloud Insights)工作负载安全性和FPolicy技术、确定攻击到关联工作负载的特定可疑文件并映射到相关工作负载。
+* 使用ONTAP、自动防软件保护(ARP或ARP/AI、具体取决于您的ONTAP版本)、数据基础架构洞察(原Cloud Insights)工作负载安全性和FPolicy技术、确定攻击到关联工作负载的特定可疑文件并映射到相关工作负载。
 
 
 
 
 | *响应*  a| 
 * 显示相关数据、例如文件活动、用户活动和熵、以帮助您完成有关攻击的取证审查。
-* 使用NetApp技术和产品(例如ONTAP、自动防兰软件保护和FPolicy)启动快速Snapshot副本。
+* 使用NetApp技术和产品(例如ONTAP、自动防软件保护(ARP或ARP/AI、具体取决于您的ONTAP版本)和FPolicy)启动快速Snapshot副本。
 
 
 
 
 | *恢复*  a| 
-* 使用BlueXP备份和恢复、ONTAP、自主防兰软件保护和FPolicy技术和服务确定最佳Snapshot或备份并建议最佳实际恢复点(RPA)。
+* 通过使用BlueXP  备份和恢复、ONTAP、自动防兰软件保护(ARP或ARP/AI、具体取决于您的ONTAP版本)以及FPolicy技术和服务、确定最佳Snapshot或备份并建议最佳实际恢复点(Recovery Point、RPA)。
 * 协调工作负载(包括VM、文件共享和数据库)的恢复、确保应用程序一致性。
 
 
