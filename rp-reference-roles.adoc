@@ -30,7 +30,9 @@ TIP: 要在BlueXP  勒索软件保护中发现、除了*勒索软件保护admin
 * *数据服务角色*仅限于特定的数据服务。根据您的工作、您可以具有多个数据服务角色。BlueXP  勒索软件保护是BlueXP  数据服务之一。
 
 
-有关平台角色的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  设置和管理文档"^]。
+其他BlueXP  平台角色被视为BlueXP  勒索软件保护的查看者。例如，*组织查看器*角色允许您查看保护计划，但不允许您在BlueXP  勒索软件保护中执行任何操作。
+
+有关所有BlueXP  平台角色的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  设置和管理文档"^]。
 
 下表显示了每个BlueXP  勒索软件保护角色可以执行的操作。
 
