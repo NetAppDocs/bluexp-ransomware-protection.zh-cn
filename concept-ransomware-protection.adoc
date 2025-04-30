@@ -85,7 +85,7 @@ NOTE: 在2024年10月发布的版本中、全新部署的BlueXP  勒索软件�
 
 == 许可
 
-借助BlueXP勒索软件保护、您可以使用不同的许可计划、包括免费试用版、即付即用订阅或自带许可证。
+借助BlueXP勒索软件保护、您可以使用不同的许可计划、包括免费试用版、按需购买订阅或自带许可证。
 
 BlueXP  勒索软件保护服务需要NetApp ONTAP One许可证。
 
@@ -173,6 +173,11 @@ image:diagram-rp-architecture-preview3.png["显示BlueXP勒索软件保护架构
 * 适用于AWS的Cloud Volumes ONTAP 9.11.1或更高版本(使用NFS和CIFS协议)
 * 适用于Google云平台的Cloud Volumes ONTAP 9.11.1或更高版本(使用NFS和CIFS协议)
 * 适用于Microsoft Azure的Cloud Volumes ONTAP 9.12.1或更高版本(使用NFS和CIFS协议)
+* Amazon FSx for NetApp ONTAP、使用自动防兰软件保护(ARP、而不是ARP/AI)。
++
+
+NOTE: ARP/AI需要ONTAP 9.16或更高版本。
+
 
 
 

@@ -105,6 +105,9 @@ BlueXP勒索软件保护可以识别尚未进行任何备份的工作负载以�
 * Microsoft Azure
 
 
+
+NOTE: 备份目标不适用于Amazon FSx for NetApp ONTAP中的工作负载。使用FSx for ONTAP备份服务执行备份操作。
+
 您可以通过信息板或访问菜单上的设置选项根据建议的操作添加备份目标。
 
 

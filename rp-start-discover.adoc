@@ -57,7 +57,7 @@ image:screen-discover-workloads1.png["\"发现工作负载\"屏幕截图"]
 此时将显示一个工作环境列表。
 
 +
-image:screen-discover-workloads-select-no-autodiscovery.png["\"发现工作负载\"屏幕截图"]
+image:screen-discover-workloads-select.png["\"发现工作负载\"屏幕截图"]
 
 . 选择要发现工作负载的工作环境、或者选中表顶部的框以发现所有已发现工作负载环境中的工作负载。
 . 选择*发现*。

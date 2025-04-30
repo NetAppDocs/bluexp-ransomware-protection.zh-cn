@@ -1,0 +1,26 @@
+= 支持适用于NetApp ONTAP 的Amazon FSX
+:allow-uri-read: 
+
+
+
+
+=== 支持适用于NetApp ONTAP 的Amazon FSX
+
+此版本支持Amazon FSx for NetApp ONTAP。此功能可帮助您通过BlueXP  勒索软件保护来保护FSx for ONTAP工作负载。
+
+FSx for ONTAP是一项完全托管的服务、可在云中提供NetApp ONTAP存储的强大功能。它可提供与内部环境相同的特性、性能和管理功能、并具有原生AWS服务的灵活性和可扩展性。
+
+对BlueXP  勒索软件保护工作流进行了以下更改：
+
+* 发现功能包括FSx for ONTAP 9.15工作环境中的工作负载。
+* "保护"选项卡显示FSx for ONTAP环境中的工作负载。在此环境中、您应使用FSx for ONTAP备份服务执行备份操作。您可以使用BlueXP  勒索软件保护快照还原这些工作负载。
++
+
+TIP: 无法在BlueXP  中为在FSx for ONTAP上运行的工作负载设置备份策略。在Amazon FSx for NetApp ONTAP中设置的任何现有备份策略保持不变。
+
+* 警报事件显示了适用于ONTAP的新FSx工作环境。
+
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP  勒索软件防护和工作环境"]。
+
+有关支持的选项的信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["BlueXP  勒索软件保护限制"]。
