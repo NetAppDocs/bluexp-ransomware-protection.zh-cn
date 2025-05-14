@@ -17,7 +17,7 @@ summary: 在发现期间、BlueXP勒索软件保护功能会分析工作环境�
 BlueXP勒索软件保护可评估MySQL应用程序、Oracle应用程序、VMware数据存储库和文件共享。
 
 
-NOTE: 不会发现卷使用FlexGroup或iSCSI的工作负载。不支持Amazon FSx for NetApp ONTAP或Azure NetApp Files上的工作负载。发现过程完成后、信息板上不支持的卷会报告BlueXP  勒索软件保护。
+NOTE: 不会发现卷使用FlexGroup或iSCSI的工作负载。不支持Azure NetApp Files上的工作负载。该服务可发现并显示受支持和不受支持的工作环境配置。
 
 该服务会评估现有保护级别、包括当前备份保护、Snapshot副本和NetApp自动防软件保护选项。然后、该服务会根据评估结果建议如何改进勒索软件保护。
 
@@ -25,6 +25,7 @@ NOTE: 不会发现卷使用FlexGroup或iSCSI的工作负载。不支持Amazon FS
 
 * 在每个Connector中、选择要发现工作负载的工作环境。如果您希望保护环境中的特定工作负载、而不是其他工作负载、则可以从该功能中受益。
 * 发现先前选定工作环境中新创建的工作负载。
+* 发现新的工作环境。
 
 
 
@@ -43,35 +44,21 @@ image:screen-landing.png["BlueXP勒索软件保护的登录页面屏幕截图"]
 
 . 从初始登录页面中，选择*通过发现工作负载开始*。
 +
-该服务可在您的BlueXP  连接器中查找工作环境。
+该服务可找到受支持和不受支持的工作环境。此过程可能需要几分钟时间。
 
 +
+image:screen-discover-workloads-unsupported.png["\"发现工作负载\"屏幕截图"]
 
-TIP: 此过程可能需要几分钟时间。
-
-+
-image:screen-discover-workloads1.png["\"发现工作负载\"屏幕截图"]
-
-. 要发现特定Connector的工作负载，请选择要发现工作负载的Connector旁边的*查找新工作环境*。
-+
-此时将显示一个工作环境列表。
-
-+
-image:screen-discover-workloads-select.png["\"发现工作负载\"屏幕截图"]
-
-. 选择要发现工作负载的工作环境、或者选中表顶部的框以发现所有已发现工作负载环境中的工作负载。
+. 要发现特定Connector的工作负载，请选择要发现工作负载的Connector旁边的*选择工作环境*。
+. 选择要发现工作负载的工作环境。
 . 选择*发现*。
 +
-此服务仅会发现选定工作环境下的连接器的工作负载数据。
+此服务仅会发现选定工作环境下的连接器的工作负载数据。此过程可能需要几分钟时间。
 
 +
+image:screen-discover-workloads-unsupported-collected.png["\"已发现工作负载\"屏幕截图"]
 
-TIP: 此过程可能需要几分钟时间。
-
-+
-image:screen-discover-workloads-found2.png["\"已发现工作负载\"屏幕截图"]
-
-. 要下载已发现工作负载的列表，请选择*下载结果(CCSV)*。
+. 要下载已发现的工作负载列表，请选择*Download results*。
 . 要显示BlueXP  勒索软件保护信息板、请选择*转至信息板*。
 +
 信息板可显示数据保护的运行状况。风险或受保护的工作负载数量会根据新发现的工作负载而增加。
@@ -110,4 +97,6 @@ link:rp-use-dashboard.html["了解信息板为您显示的内容。"]
 
 TIP: 此过程可能需要几分钟时间、如进程中加载图标所示。
 
+. 该服务可发现受支持和不受支持的工作环境。服务不支持工作环境的原因有很多、例如、工作环境中的ONTAP版本可能低于所需版本。将鼠标悬停在不受支持的工作环境上时、工具提示会显示原因。选择要发现工作负载的工作环境。
+. 选择*发现*。
 
