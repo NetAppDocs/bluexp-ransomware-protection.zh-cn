@@ -39,7 +39,7 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 您可以在发现后下载发现过程的结果。
 
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discovery.html["在BlueXP勒索软件保护中发现工作负载"]。
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["在BlueXP勒索软件保护中发现工作负载"]。
 
 
 

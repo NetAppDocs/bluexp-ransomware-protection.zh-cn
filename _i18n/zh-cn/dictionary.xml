@@ -1796,7 +1796,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
   <block id="579848aa0d8bdd4f7904793483675637" category="paragraph">您可以在初始发现期间及以后通过设置页面中的*工作负载发现*选项查看不受支持的工作环境。服务不支持工作环境的原因有很多、例如、工作环境中的ONTAP版本可能低于所需版本。将鼠标悬停在不受支持的工作环境上时、工具提示会显示原因。</block>
   <block id="4c47a495695584c11b9bc39a46126b3f" category="paragraph">您可以在发现后下载发现过程的结果。</block>
-  <block id="39c54f7d4df40cc8068c415171304f04" category="paragraph">有关详细信息，请参见<block ref="52ea2f296b1d66ace77da9b46bb70668" category="inline-link-rx"></block>。</block>
   <block id="aad9baa97ac0eac36d06a06e92779e20" category="admonition">不会发现卷使用FlexGroup或iSCSI的工作负载。不支持Azure NetApp Files上的工作负载。该服务可发现并显示受支持和不受支持的工作环境配置。</block>
   <block id="63e2bb0c5a3c29dbfc9712f5986829f5" category="list-text">发现新的工作环境。</block>
   <block id="ba0a4542cb75319d2d7ef0f3aedde438" category="paragraph">该服务可找到受支持和不受支持的工作环境。此过程可能需要几分钟时间。</block>
@@ -1811,4 +1810,5 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="9d5c8a6e3597683b4559e2c596a2ead9" category="list-text">选择一个测试存储SVM。</block>
   <block id="6773f809e3f238c4a8a25adcd8e46f13" category="list-text">输入要创建的新测试工作负载的名称。请勿在名称中包含短划线。</block>
   <block id="71df7d09aaee8e6796df0c3d10989fbd" category="section-title">2025年5月13日</block>
+  <block id="61583743ac80f4ba16bec0d30aa9b643" category="paragraph">有关详细信息，请参见<block ref="fccc7436e00c13bc9cd8b09f936b4c8c" category="inline-link-rx"></block>。</block>
 </blocks>
