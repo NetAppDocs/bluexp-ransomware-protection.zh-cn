@@ -16,7 +16,7 @@ summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。通�
 [role="lead"]
 勒索软件攻击可能会阻止对数据的访问、攻击者可能会索要赎金以换取数据释放或解密。据IDC调查、勒索软件受害者遭受多次勒索软件攻击的情况并不少见。攻击可能会中断一天到几周的数据访问。
 
-BlueXP勒索软件保护是一项用于保护数据免受勒索软件攻击的服务。该服务可保护内部NAS存储(使用NFS和CIFS协议)以及Cloud Volumes ONTAP BlueXP  for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载。该服务可将数据备份到Amazon Web Services、Google Cloud、Microsoft Azure云存储和NetApp StorageGRID。
+BlueXP  勒索软件保护是一项可保护您的数据免受勒索软件攻击的服务。该服务可保护内部NAS存储(使用NFS和CIFS协议)以及Cloud Volumes ONTAP BlueXP  for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud和Cloud Volumes ONTAP for Microsoft Azure上基于应用程序的Oracle、MySQL、VM数据存储库和文件共享工作负载。该服务可将数据备份到Amazon Web Services、Google Cloud、Microsoft Azure云存储和NetApp StorageGRID。
 
 
 
