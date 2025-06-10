@@ -14,11 +14,9 @@ summary: 通过访问BlueXP中的服务开始使用BlueXP勒索软件保护。
 [role="lead"]
 您可以使用NetApp BlueXP登录到BlueXP勒索软件保护服务。
 
-BlueXP  勒索软件保护使用基于角色的访问控制(Role-Based Access Control、RBAC)来控制每个用户对特定操作的访问权限。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["详细了解所有服务的BlueXP  角色"^](英文)。
-
-有关每个角色可以执行的操作的详细信息，请参见link:rp-reference-roles.html["BlueXP  勒索软件保护基于角色的访问控制Privileges"]。
-
 要登录到BlueXP、您可以使用NetApp 支持站点 凭据、也可以使用电子邮件和密码注册NetApp云登录。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有关登录的更多信息"^]。
+
+*必需的 BlueXP 角色* 组织管理员、文件夹或项目管理员、勒索软件保护管理员或勒索软件保护查看器角色。  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^] 。
 
 .步骤
 . 打开Web浏览器并转到 https://console.bluexp.netapp.com/["BlueXP控制台"^]。
@@ -31,17 +29,17 @@ BlueXP  勒索软件保护使用基于角色的访问控制(Role-Based Access C
 如果这是您首次登录此服务、则会显示登录页面。
 
 +
+
+NOTE: 如果您没有 BlueXP 连接器或者它不是适用于此服务的连接器，则需要部署一个。link:rp-start-setup.html["了解如何设置连接器"](英文)
+
++
 image:screen-landing.png["BlueXP勒索软件保护的登录页面屏幕截图"]
 
 +
 否则、将显示BlueXP勒索软件保护信息板。
 
 +
-image:screen-dashboard2.png["BlueXP勒索软件保护信息板"]
-
-+
-
-NOTE: 如果您没有BlueXP连接器或它不是此服务的连接器、您可能需要联系NetApp支持。
+image:screen-dashboard3.png["BlueXP勒索软件保护信息板"]
 
 . 如果尚未选择*Discover Workloads*选项，请选择此选项。
 +

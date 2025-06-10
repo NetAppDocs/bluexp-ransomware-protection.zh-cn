@@ -62,7 +62,7 @@ summary: 要使用BlueXP勒索软件保护、请执行几个步骤进行设置�
 
 下一步是设置BlueXP和BlueXP勒索软件保护服务。
 
-请查看 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准BlueXP要求"^]。
+请查看。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["BlueXP 标准模式要求"^]
 
 
 
@@ -70,7 +70,7 @@ summary: 要使用BlueXP勒索软件保护、请执行几个步骤进行设置�
 
 您应联系您的NetApp销售代表试用或使用此服务。然后、当您使用BlueXP Connector时、它将包括勒索软件保护服务的相应功能。
 
-要在使用此服务之前在BlueXP中创建Connector、请参阅所述的BlueXP文档 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何创建BlueXP Connector"^]。
+要在使用服务之前在 BlueXP 中创建连接器，请联系具有创建连接器权限的 BlueXP 组织管理员，并参考描述 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何创建BlueXP Connector"^] 。
 
 
 NOTE: 如果您有多个BlueXP连接器、该服务将扫描除当前显示在BlueXP UI中的连接器之外的所有连接器上的数据。此服务将发现与此组织关联的所有项目和所有连接器。

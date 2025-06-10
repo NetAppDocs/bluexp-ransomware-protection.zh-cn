@@ -14,7 +14,9 @@ summary: 通过设置许可开始使用BlueXP勒索软件保护。
 [role="lead"]
 借助BlueXP勒索软件保护、您可以使用不同的许可计划。
 
-您可以使用以下许可证类型：
+*必需的 BlueXP 角色* 组织管理员、文件夹或项目管理员角色。  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^] 。
+
+*许可证类型* 您可以使用以下许可证类型：
 
 * 注册30天免费试用。
 * 通过Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace或Azure Marketplace购买按需购买(PAYGO)订阅。

@@ -14,7 +14,9 @@ summary: 您可以配置多个选项、包括备份目标、威胁检测以及�
 [role="lead"]
 您可以通过访问*设置*选项来配置备份目标、启用威胁检测、进行攻击准备演练、配置工作负载发现或配置与Data Infrastructure Insight工作负载安全性的连接。
 
-在设置页面中、您可以执行以下操作：
+*必需的 BlueXP 角色* 组织管理员、文件夹或项目管理员或勒索软件防护管理员角色。  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^] 。
+
+*您可以在“设置”页面做什么？*在设置页面中、您可以执行以下操作：
 
 * 通过进行准备演练并响应模拟的勒索软件警报、模拟勒索软件攻击。有关详细信息，请参见 link:rp-start-simulate.html["进行勒索软件攻击准备演练"]。
 * 配置工作负载发现。
@@ -120,7 +122,7 @@ NOTE: 备份目标不适用于Amazon FSx for NetApp ONTAP中的工作负载。�
 . 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
 . 查看信息板的"建议操作"窗格。
 +
-image:screen-dashboard.png["信息板页面"]
+image:screen-dashboard3.png["信息板页面"]
 
 . 从信息板中，选择*Review and fix*以获得“准备<backup provider>作为备份目标”的建议。
 . 根据备份提供程序继续执行说明。

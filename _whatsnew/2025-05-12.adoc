@@ -24,3 +24,11 @@ TIP: 无法在BlueXP  中为在FSx for ONTAP上运行的工作负载设置备�
 有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP  勒索软件防护和工作环境"]。
 
 有关支持的选项的信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["BlueXP  勒索软件保护限制"]。
+
+
+
+=== 需要 BlueXP 访问角色
+
+您现在需要以下访问角色之一来查看、发现或管理 BlueXP 勒索软件防护：组织管理员、文件夹或项目管理员、勒索软件防护管理员或勒索软件防护查看器。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^](英文)

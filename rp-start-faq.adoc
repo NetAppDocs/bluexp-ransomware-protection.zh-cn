@@ -44,7 +44,7 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
 
 *什么是BlueXP勒索软件保护URL？*对于URL、在浏览器中输入： https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/ransomware-protection"^] 以访问BlueXP  控制台。
 
-*如何处理访问权限？*只有组织管理员才能启动服务并发现工作负载(因为这涉及到对资源的使用)。后续交互可由任何角色完成。
+*如何处理访问权限？*https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^](英文)
 
 *什么设备分辨率是最佳的？*BlueXP勒索软件保护的建议设备分辨率为1、1080或更高。
 

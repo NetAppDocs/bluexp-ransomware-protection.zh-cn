@@ -18,6 +18,38 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 
 
+== 2025年6月9日
+
+
+
+=== 着陆页更新
+
+此版本包括对 BlueXP 勒索软件保护登陆页面的更新，使得开始免费试用和发现更加容易。
+
+
+
+=== 准备演习更新
+
+以前，您可以通过模拟对新示例工作负载的攻击来运行勒索软件就绪演练。借助此功能，您可以调查模拟攻击并恢复工作负载。使用此功能可以测试警报通知、响应和恢复。您可以根据需要定期运行和安排这些演练。
+
+在此版本中，您可以使用 BlueXP 勒索软件保护仪表板上的新按钮在测试工作负载上运行勒索软件准备演练，从而更轻松地模拟勒索软件攻击、调查其影响并有效地恢复工作负载，所有这些都在受控环境中完成。
+
+现在，除了 NFS 工作负载之外，您还可以在 CIFS（SMB）工作负载上运行准备情况演练。
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["进行勒索软件攻击准备演练"]。
+
+
+
+=== 启用 BlueXP 分类更新
+
+在BlueXP  勒索软件保护服务中使用BlueXP  分类之前、您需要启用BlueXP  分类来扫描数据。对数据进行分类有助于您找到个人身份信息 (PII)，这可能会增加安全风险。
+
+您可以在 BlueXP 勒索软件防护功能中对文件共享工作负载部署 BlueXP 分类。在“隐私暴露”列中，选择“识别暴露”选项。如果您已启用分类服务，此操作将识别暴露情况。否则，在此版本中，将出现一个对话框，其中包含部署 BlueXP 分类的选项。选择“部署”即可转到 BlueXP 分类服务登录页面，您可以在其中部署该服务。W
+
+有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["在云中部署BlueXP分类"^]并在 BlueXP 勒索软件保护中使用服务，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["扫描具有BlueXP  分类的个人身份信息"] 。
+
+
+
 == 2025年5月13日
 
 
@@ -58,6 +90,14 @@ TIP: 无法在BlueXP  中为在FSx for ONTAP上运行的工作负载设置备�
 有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP  勒索软件防护和工作环境"]。
 
 有关支持的选项的信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["BlueXP  勒索软件保护限制"]。
+
+
+
+=== 需要 BlueXP 访问角色
+
+您现在需要以下访问角色之一来查看、发现或管理 BlueXP 勒索软件防护：组织管理员、文件夹或项目管理员、勒索软件防护管理员或勒索软件防护查看器。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^](英文)
 
 
 

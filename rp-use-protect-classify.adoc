@@ -2,30 +2,33 @@
 sidebar: sidebar 
 permalink: rp-use-protect-classify.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
-summary: '在BlueXP  勒索软件保护服务中、您可以使用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载上的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。' 
+summary: 使用 BlueXP 分类提高数据的安全性和隐私合规性，以确定您的数据是否包含个人身份信息或私人信息。 
 ---
-= 扫描具有BlueXP  分类的个人身份信息
-:hardbreaks:
+= 使用 BlueXP 勒索软件保护中的 BlueXP 分类扫描个人身份信息
 :allow-uri-read: 
-:icons: font
-:imagesdir: ./media/
 
 
 [role="lead"]
-在BlueXP  勒索软件保护服务中、您可以使用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载上的数据并对其进行分类。对数据进行分类有助于确定您的数据是否包含个人身份信息(个人身份信息、个人身份信息)、这会增加安全风险。
+在 BlueXP 勒索软件防护服务中，您可以使用 BlueXP 分类功能扫描和分类文件共享工作负载中的数据。对数据进行分类有助于您确定数据集是否包含个人身份信息 (PII)，而这些信息可能会增加安全风险。BlueXP分类是 BlueXP 系列的核心组件，无需额外付费即可使用。
+
+link:https://docs.netapp.com/us-en/bluexp-classification/["BlueXP分类"^]利用人工智能驱动的自然语言处理进行上下文数据分析和分类，为您的数据提供可操作的见解，以满足合规性要求、检测安全漏洞、优化成本并加速迁移。
 
 
-TIP: 此过程可能会影响工作负载的重要性、以帮助您确保获得适当的保护。
+TIP: 此过程可以影响工作负载的重要性，以帮助确保您获得适当的保护。
+
+*必需的 BlueXP 角色* 组织管理员、文件夹或项目管理员或勒索软件防护管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^](英文)
 
 
 
-== 启用BlueXP  分类
+== 使用 BlueXP 分类识别隐私泄露
 
-在BlueXP  勒索软件保护服务中使用BlueXP  分类之前、您需要启用BlueXP  分类来扫描数据。
+在使用 BlueXP 勒索软件防护服务中的 BlueXP 分类之前，您需要link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["启用 BlueXP 分类来扫描您的数据"^] 。
 
-通过使用BlueXP  分类UI作为备用方法、管理员可以在BlueXP  勒索软件保护中启用BlueXP  分类。
+您可以在 BlueXP 勒索软件防护服务的“保护”页面中部署 BlueXP 分类。请按照以下步骤识别隐私泄露。选择“识别泄露”后，如果您尚未部署 BlueXP 分类，则会显示一个对话框，允许您启用 BlueXP 分类。
 
-在开始使用此服务之前、查看以下BlueXP  分类资源可能会很有帮助：
+image:classification-deploy.png["部署分类截图"]
+
+要了解有关 BlueXP 分类的更多信息，请参阅：
 
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私有数据的类别"^]
@@ -33,7 +36,7 @@ TIP: 此过程可能会影响工作负载的重要性、以帮助您确保获得
 
 
 .开始之前
-部署了BlueXP  分类的客户可以在BlueXP  勒索软件保护中扫描数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。
+如果您已link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["部署BlueXP分类"^] 。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。
 
 .步骤
 . 从BlueXP勒索软件保护菜单中、选择*保护*。
@@ -41,25 +44,26 @@ TIP: 此过程可能会影响工作负载的重要性、以帮助您确保获得
 +
 image:screen-protection-sensitive-preview-column.png["保护页面、其中显示隐私曝光列"]
 
-. 要启用BlueXP  分类来扫描您的数据以查找个人身份数据，请在“*隐私风险*”列中选择“*识别风险*”。
+. 要启用 BlueXP 分类来扫描您的数据中的 PII，请在 *隐私暴露* 列中选择 *识别暴露*。
 
+
+
+NOTE: 如果您尚未部署 BlueXP 分类，选择“识别暴露”将打开一个对话框，用于部署 BlueXP 分类。选择*Deploy。部署 BlueXP 分类后，您可以返回“保护”页面，然后选择“识别暴露”。
 
 .结果
-扫描可能需要几分钟时间、具体取决于数据量。"保护"页面显示BlueXP  分类正在识别文件、并指示它正在扫描的文件数量。
-
-扫描完成后、隐私曝光列会将曝光级别显示为"低"、"中"或"高"。
+扫描可能需要几分钟，具体取决于文件的大小和数量。扫描过程中，“保护”页面会指示正在识别文件并提供文件数量。扫描完成后，“隐私暴露”列会将暴露级别评定为“低”、“中”或“高”。
 
 
 
 == 查看隐私风险
 
-在BlueXP  分类扫描个人身份信息(个人身份信息、个人身份信息)后、您可以查看个人身份信息(个人身份信息、
+BlueXP 对 PII 进行分类扫描后，评估风险。
 
-您的个人信息数据可能具有以下隐私风险状态之一。
+PII 数据分为以下三类：
 
-* *高*：超过70%的文件具有可执行文件信息
-* *中*：超过30%且低于70%的文件具有可执行文件信息
-* *低*：大于0且小于30%的文件具有可执行文件信息
+* *高*：超过 70% 的文件包含 PII
+* *中*：超过 30% 且少于 70% 的文件包含 PII
+* *低*：大于 0% 且小于 30% 的文件包含 PII
 
 
 .步骤
@@ -72,7 +76,7 @@ image:screen-protection-sensitive-preview-column-medium.png["保护页面、其�
 +
 image:screen-protection-workload-details-privacy-exposure.png["工作负载详细信息屏幕、其中显示隐私曝光磁贴"]
 
-. 在工作负载详细信息页面中、查看隐私风险板块中的信息。
+. 在“工作负载详细信息”页面中，查看“隐私暴露”图块中的详细信息。
 
 
 
@@ -109,7 +113,7 @@ image:screen-protection-workload-details-privacy-exposure.png["工作负载详�
 
 == 了解更多信息
 
-有关BlueXP  分类的详细信息、请参阅以下BlueXP  分类主题：
+有关 BlueXP 分类的详细信息，请参阅 BlueXP 分类文档：
 
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解BlueXP分类"^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私有数据的类别"^]
