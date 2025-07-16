@@ -16,10 +16,10 @@ summary: 在发现期间、BlueXP勒索软件保护功能会分析工作环境�
 
 *必需的 BlueXP 角色* 组织管理员、文件夹或项目管理员或勒索软件防护管理员角色。  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^] 。
 
-*该服务发现了什么？*BlueXP勒索软件保护可评估MySQL应用程序、Oracle应用程序、VMware数据存储库和文件共享。
+*该服务发现了什么？*BlueXP ransomware protection评估 MySQL 应用程序、Oracle 应用程序、VMware 数据存储、文件共享和块存储。
 
 
-NOTE: 该服务未发现使用 FlexGroup 或 iSCSI 的卷的工作负载。
+NOTE: 该服务未发现使用FlexGroup 的卷的工作负载。
 
 BlueXP 勒索软件防护在仪表板中发现并显示受支持和不受支持的工作环境配置。
 

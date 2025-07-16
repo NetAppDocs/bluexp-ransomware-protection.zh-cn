@@ -14,19 +14,23 @@ summary: 通过验证对您的环境、网络访问、登录和Web浏览器的�
 [role="lead"]
 通过验证您的操作环境、登录、网络访问和Web浏览器是否已准备就绪、开始实施BlueXP勒索软件保护。
 
-要使用BlueXP  勒索软件保护、您需要满足以下前提条件。
+要使用BlueXP ransomware protection，您需要满足先决条件。
 
 
 
 == 在BlueXP  中
 
 * 使用组织管理Privileges发现资源的BlueXP  用户帐户。
-* 至少有一个活动BlueXP  连接器连接到内部ONTAP集群或连接到AWS或Azure中的Cloud Volumes ONTAP的BlueXP  组织。
+* 一个BlueXP组织，至少有一个活动的BlueXP连接器连接到本地ONTAP集群或者 AWS 或 Azure 中的Cloud Volumes ONTAP 。
 * BlueXP  连接器必须使 `cloudmanager-ransomware-protection`容器处于活动状态。
-* 至少一个BlueXP  工作环境、其中AWS或Azure中具有NetApp内部ONTAP集群或Cloud Volume ONTAP (使用NAS或CIFS协议)。
+* 至少一个BlueXP工作环境，其中包含NetApp本地ONTAP集群或 AWS 或 Azure 中的Cloud Volumes ONTAPBlueXP ransomware protection支持 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）协议。
 +
-** 支持使用ONTAP OS 9.11.1或更高版本的ONTAP或Cloud Volume ONTAP集群。
-** 如果您的内部ONTAP集群或AWS或Azure云中的Cloud Volume ONTAP尚未在BlueXP  中启用、则需要BlueXP  连接器。
+** 支持具有ONTAP OS 版本 9.11.1 或更高版本的ONTAP或Cloud Volumes ONTAP集群。
++
+
+NOTE: 仅ONTAP 9.17.1 及更高版本支持 SAN 工作负载。
+
+** 如果您的本地ONTAP集群或 AWS 或 Azure 云中的Cloud Volumes ONTAP尚未加入BlueXP，则您需要一个BlueXP连接器。
 +
 请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解如何配置BlueXP  连接器"] 和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准BlueXP要求"^]。
 
@@ -59,7 +63,7 @@ NOTE: 与预览版不同、BlueXP勒索软件保护的常规版本包括NetApp�
 
 == 用于数据备份
 
-* NetApp StorageGRID、AWS S3或Azure Blb中用于备份目标和访问权限集的帐户。
+* NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中用于备份目标的帐户以及设置的访问权限。
 +
 有关详细信息、请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS、Azure或S3权限列表"^] 。
 
@@ -77,7 +81,7 @@ BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。�
 
 . 登录到BlueXP  并查找需要更新其ONTAP用户权限的工作环境。
 . 双击工作环境可查看详细信息。
-. 单击显示用户名的*查看其他信息*。
+. 选择“查看其他信息”以显示用户名。
 . 使用admin用户登录到ONTAP集群命令行界面。
 . 显示该用户的现有角色。输入 ...
 +

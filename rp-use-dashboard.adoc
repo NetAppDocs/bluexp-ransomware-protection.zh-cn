@@ -63,7 +63,7 @@ TIP: 选择“i”注释即可查看此数据的提示。要增加工作量限�
 
 
 
-** *推荐的措施*：为了增强保护，请查看每条建议并选择*查看并修复*。
+** *推荐的措施*：为了增强保护，请查看每项建议，然后选择*查看并修复*。
 +
 看link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["查看仪表板上的保护建议"]或者link:rp-use-protect.html["保护工作负载"] 。
 
@@ -98,7 +98,7 @@ BlueXP勒索软件保护可评估工作负载的保护情况、并建议采取�
 请参见 link:rp-use-protect.html["保护工作负载免受勒索软件攻击"]。 
 
 
-| 连接到"安全"以报告威胁。 | 将数据发送到安全和事件管理系统(SIEM)以进行威胁分析和检测。 | 输入SIEM/XDR服务器详细信息以启用威胁检测。请参阅 link:rp-use-settings.html["配置保护设置"]。 
+| 连接到 SIEM 进行威胁报告。 | 将数据发送到安全和事件管理系统(SIEM)以进行威胁分析和检测。 | 输入SIEM/XDR服务器详细信息以启用威胁检测。请参阅 link:rp-use-settings.html["配置保护设置"]。 
 
 
 | 为应用程序或VMware提供工作负载一致的保护。 | 这些工作负载不受适用于VMware vSphere的SnapCenter软件或SnapCenter插件管理。 | 要让SnapCenter对其进行管理、请启用工作负载一致的保护。
@@ -134,7 +134,7 @@ BlueXP勒索软件保护可评估工作负载的保护情况、并建议采取�
 |===
 .步骤
 . 从BlueXP左侧导航栏中、选择*保护*>*防软件保护*。
-. 从“建议的操作”窗格中，选择一个建议，然后选择*Review and fix*。
+. 从“推荐操作”窗格中，选择一项建议，然后选择“审核并修复”。
 . 要在以后取消操作，请选择*Dismiss*。
 +
 此建议将从待办事项列表中清除、并显示在已取消列表中。
@@ -175,7 +175,7 @@ image:screen-dashboard2.png["信息板页面"]
 ** 从BlueXP勒索软件保护菜单中、选择*报告*。
 
 
-. 如果选择了*reports*选项，请选择一个预配置的命名文件，然后选择*Download (CCSV)或*Download (JSSON)*。
+. 如果您选择了“*报告*”选项，请选择一个预配置的命名文件，然后选择“*下载（CSV）*”或“*下载（JSON）*”。
 
 
 

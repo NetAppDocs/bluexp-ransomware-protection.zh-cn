@@ -83,9 +83,9 @@ link:rp-use-protect.html["了解工作负载优先级或重要性"]。
 
 * BlueXP  勒索软件保护支持哪些工作负载？*
 
-BlueXP  勒索软件保护可识别以下工作负载：Oracle、MySQL、文件共享、VM和VM数据存储库。
+BlueXP ransomware protection可以识别以下工作负载：Oracle、MySQL、文件共享、块存储、VM 和 VM 数据存储。
 
-此外、如果客户使用的是SnapCenter或SnapCenter for VMware、则这些产品支持的所有工作负载也会通过BlueXP  勒索软件保护进行标识、BlueXP  勒索软件保护可以以工作负载一致的方式保护和恢复这些工作负载。
+此外，如果您使用SnapCenter或SnapCenter for VMware，这些产品支持的所有工作负载也会在BlueXP ransomware protection中被识别，并且BlueXP ransomware protection可以以工作负载一致的方式保护和恢复这些工作负载。
 
 *如何将数据与工作负载关联起来？*
 

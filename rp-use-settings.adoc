@@ -12,7 +12,7 @@ summary: 您可以配置多个选项、包括备份目标、威胁检测以及�
 
 
 [role="lead"]
-您可以通过访问*设置*选项来配置备份目标、启用威胁检测、进行攻击准备演练、配置工作负载发现或配置与Data Infrastructure Insight工作负载安全性的连接。
+您可以通过访问“设置”选项来配置备份目标、将数据发送到外部安全和事件管理 (SIEM) 系统、进行攻击准备演习、配置工作负载发现或配置与Data Infrastructure Insights工作负载安全的连接。
 
 *必需的 BlueXP 角色* 组织管理员、文件夹或项目管理员或勒索软件防护管理员角色。  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^] 。
 
@@ -22,7 +22,7 @@ summary: 您可以配置多个选项、包括备份目标、威胁检测以及�
 * 配置工作负载发现。
 * 配置与Data Infrastructure Insight工作负载安全性的连接、以便在勒索软件警报中查看可疑用户信息。
 * 添加备份目标。
-* 启用威胁检测、并连接安全和事件管理系统(SIEM)以进行威胁分析和检测。启用威胁检测会自动将数据发送到您的SIEM以进行威胁分析。
+* 连接您的安全和事件管理系统(SIEM)以进行威胁分析和检测。启用威胁检测会自动将数据发送到您的SIEM以进行威胁分析。
 
 
 
@@ -315,7 +315,7 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面上的设
 
 
 
-== 启用威胁检测
+== 连接到安全和事件管理系统 (SIEM) 进行威胁分析和检测
 
 您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。您可以选择AWS Security Hub、Microsoft Sentinel或Splunk Cloud作为您的SIEM。
 

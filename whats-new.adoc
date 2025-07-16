@@ -18,6 +18,38 @@ summary: 了解BlueXP勒索软件保护的新增功能。
 
 
 
+== 2025年7月15日
+
+
+
+=== SAN 工作负载支持
+
+此版本包含对BlueXP ransomware protection中 SAN 工作负载的支持。现在，除了 NFS 和 CIFS 工作负载之外，您还可以保护 SAN 工作负载。
+
+有关详细信息，请参阅 link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html["BlueXP勒索软件保护前提条件"]。
+
+
+
+=== 改进的工作负载保护
+
+此版本改进了保护工作负载的工作流程，无论是否启用数据保护。如果您使用其他NetApp数据保护工具（例如SnapCenter或BlueXP backup and recovery）来处理快照或备份， BlueXP ransomware protection会发现这些工具，并允许您保留控制这些工具的策略。在此版本中，您可以将这些策略替换为BlueXP ransomware protection策略，也可以继续使用现有策略。
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["保护工作负载"]。
+
+
+
+=== 电子邮件通知
+
+如果BlueXP ransomware protection检测到可能的攻击， BlueXP通知中将显示一条通知，并向您配置的电子邮件地址发送电子邮件。该服务还会立即启动快照。
+
+此时，您应该查看电子邮件，其中列出了严重性和受影响的资源，并查看BlueXP ransomware protection*警报* 选项卡中的潜在风险。
+
+如果您在BlueXP ransomware protection中配置了安全和事件管理 (SIEM)，该服务会向您的 SIEM 系统发送警报详细信息。
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["处理检测到的勒索软件警报"]。
+
+
+
 == 2025年6月9日
 
 
