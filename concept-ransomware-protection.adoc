@@ -157,9 +157,7 @@ image:diagram-rp-architecture-preview3.png["显示BlueXP勒索软件保护架构
 
 == 支持的备份目标、工作环境和工作负载数据源
 
-使用BlueXP ransomware protection来查看您的数据对以下类型的备份目标、工作环境和工作负载数据源的网络攻击的抵御能力：
-
-BlueXP勒索软件支持以下工作环境和备份目的地：
+BlueXP勒索软件支持以下备份目标、工作环境和数据源：
 
 *支持的备份目标*
 
