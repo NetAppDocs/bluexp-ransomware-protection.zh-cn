@@ -222,8 +222,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">选择*用户凭据*。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">要确认注册过程是否成功，请选择帮助图标，然后选择*Support*。</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">屏幕截图、显示帐户序列号、绿色复选框以及注册支持的文本。</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">现有客户、但无NSS帐户</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是现有许可证和序列号但拥有_no_ nss帐户的现有NetApp客户、则需要创建一个NSS帐户并将其与BlueXP登录关联。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 支持站点 用户注册表</block>
@@ -306,7 +304,6 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="52ba8ac12050d2494572b940a0d65b25" category="list-text"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp通过多种方式为BlueXP提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp通过多种方式为BlueXP及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">获得云提供商文件服务支持</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">有关与云提供商文件服务、其基础架构或使用该服务的任何解决方案相关的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">要获得针对BlueXP及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。</block>
@@ -1893,4 +1890,22 @@ BlueXP勒索软件保护不需要任何支持。BlueXP左侧导航栏会自动�
   <block id="a815e68282b1aa9bd3ce4985ebc97a8f" category="paragraph">BlueXP勒索软件支持以下备份目标、工作环境和数据源：</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
   <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="7e15fa4f52a2b2bbe9c0fde780818748" category="paragraph-title">关于发送到 SIEM 的事件数据</block>
+  <block id="c3ea2ea9eda0d30909acf8f3da44184e" category="paragraph">BlueXP ransomware protection可以将以下事件数据发送到您的 SIEM 系统：</block>
+  <block id="5976a11ab4dca8b4245edb915c6dfbd7" category="list-text">*语境*：</block>
+  <block id="c01e6c1876fd41a917ea803c3ef48d66" category="list-text">*os*：这是一个具有ONTAP值的常量。</block>
+  <block id="4ce1af6db0b7df02b195e4f7c30882be" category="list-text">*os_version*：工作环境中运行的ONTAP版本。</block>
+  <block id="25a4742d179cd759793bc39ccefdd462" category="list-text">*connector_id*：管理工作环境的连接器的 ID。</block>
+  <block id="41666dddb2dd6789196dfc1183e219c8" category="list-text">*cluster_id*： ONTAP为工作环境报告的集群 ID。</block>
+  <block id="262ebd5abbf16e73f5fabe65a492b6fc" category="list-text">*svm_name*：发现警报的 SVM 的名称。</block>
+  <block id="481c8fc04854f327e5cb7147753f228f" category="list-text">*volume_name*：发现警报的卷的名称。</block>
+  <block id="293f7fc5e89030b45a78f1244c3fa921" category="list-text">*volume_id*： ONTAP为工作环境报告的卷的 ID。</block>
+  <block id="fbc1ce5001bb72336a31bd6789ea9410" category="list-text">*事件*：</block>
+  <block id="d9302760dcf4ba292a94a28e1de80e58" category="list-text">*incident_id*： BlueXP ransomware protection为服务中受到攻击的卷生成的事件 ID。</block>
+  <block id="fc971b044a752949d181c3330f8b3e64" category="list-text">*alert_id*： BlueXP ransomware protection为工作负载生成的 ID。</block>
+  <block id="09471f7939b8b27b32ee107cd9b1c44b" category="list-text">*严重性*：以下警报级别之一：“严重”、“高”、“中”、“低”。</block>
+  <block id="6f51b5c965cb508d8d37085592031c21" category="list-text">*描述*：有关检测到的警报的详细信息，例如“在工作负载 arp_learning_mode_test_2630 上检测到潜在的勒索软件攻击”</block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp以多种方式为BlueXP及其云服务提供支持。我们提供全天候 (24/7) 的大量免费自助支持选项，例如知识库 (KB) 文章和社区论坛。您的支持注册包含通过网络工单获取的远程技术支持。</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">屏幕截图显示了帐户序列号、绿色复选框和文本“已注册支持”。</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

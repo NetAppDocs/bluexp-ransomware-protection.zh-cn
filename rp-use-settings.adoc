@@ -321,6 +321,30 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面上的设
 
 在BlueXP  勒索软件保护中启用SIEM之前、您需要配置您的SIEM系统。
 
+.关于发送到 SIEM 的事件数据
+BlueXP ransomware protection可以将以下事件数据发送到您的 SIEM 系统：
+
+* *语境*：
++
+** *os*：这是一个具有ONTAP值的常量。
+** *os_version*：工作环境中运行的ONTAP版本。
+** *connector_id*：管理工作环境的连接器的 ID。
+** *cluster_id*： ONTAP为工作环境报告的集群 ID。
+** *svm_name*：发现警报的 SVM 的名称。
+** *volume_name*：发现警报的卷的名称。
+** *volume_id*： ONTAP为工作环境报告的卷的 ID。
+
+
+* *事件*：
++
+** *incident_id*： BlueXP ransomware protection为服务中受到攻击的卷生成的事件 ID。
+** *alert_id*： BlueXP ransomware protection为工作负载生成的 ID。
+** *严重性*：以下警报级别之一：“严重”、“高”、“中”、“低”。
+** *描述*：有关检测到的警报的详细信息，例如“在工作负载 arp_learning_mode_test_2630 上检测到潜在的勒索软件攻击”
+
+
+
+
 
 
 === 配置AWS Security Hub以进行威胁检测
