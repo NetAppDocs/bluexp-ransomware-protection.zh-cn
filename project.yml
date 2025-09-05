@@ -38,8 +38,6 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: 在设置中配置备份、威胁检测和攻击模拟
       url: "/rp-use-settings.html"
-    - title: 常见问题解答
-      url: "/rp-start-faq.html"
   - title: 使用BlueXP勒索软件保护
     entries:
     - title: 使用BlueXP勒索软件保护概述
@@ -59,6 +57,8 @@ sidebar:
     - title: 下载报告
       url: "/rp-use-reports.html"
   - section: support
+  - title: 常见问题解答
+    url: "/rp-start-faq.html"
   - title: 法律声明
     url: "/legal-notices.html"
 product-family:
